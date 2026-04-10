@@ -1,0 +1,74 @@
+import { motion } from 'motion/react';
+
+const months = [
+  { month: '2月', event: '農曆新年', type: '避開', desc: '機票最貴，人擠人', icon: '🧧' },
+  { month: '4月', event: '櫻花季', type: '旺季', desc: '提早半年買機票', icon: '🌸' },
+  { month: '5月', event: '日本黃金週', type: '避開', desc: '日本國旅大爆發', icon: '🎏' },
+  { month: '6月', event: '梅雨季', type: '便宜', desc: '機票便宜，適合室內行程', icon: '☔' },
+  { month: '8月', event: '暑假', type: '避開', desc: '機票貴，天氣炎熱', icon: '☀️' },
+  { month: '10月', event: '楓葉季', type: '旺季', desc: '秋高氣爽，提早卡位', icon: '🍁' },
+  { month: '11月', event: '淡季', type: '便宜', desc: '賞楓後、滑雪前，最划算', icon: '🍂' },
+];
+
+export default function TravelCalendar() {
+  return (
+    <section id="calendar" className="space-y-8">
+      <div className="text-center space-y-2">
+        <h2 className="text-3xl font-bold inline-block sketch-border px-6 py-2 bg-white">2026 日韓旅遊行事曆</h2>
+        <p className="text-gray-600">什麼時候去最便宜？跟著這張表買機票</p>
+      </div>
+
+      <div className="sketch-border bg-white p-6 md:p-8">
+        <div className="grid gap-4">
+          {months.map((m, idx) => (
+            <motion.div 
+              key={m.month}
+              whileHover={{ x: 10 }}
+              className="flex items-center gap-4 p-3 border-b-2 border-dashed border-gray-200 last:border-0 group"
+            >
+              <div className="w-16 h-16 shrink-0 flex flex-col items-center justify-center sketch-border bg-gray-50 group-hover:bg-gray-100 transition-colors">
+                <span className="text-sm font-bold">{m.month}</span>
+                <span className="text-xl">{m.icon}</span>
+              </div>
+              <div className="flex-grow">
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="text-lg font-bold">{m.event}</h3>
+                  <span className={`text-xs px-2 py-0.5 sketch-border font-bold ${
+                    m.type === '避開' ? 'bg-gray-800 text-white' : 
+                    m.type === '便宜' ? 'bg-gray-100' : 'bg-white'
+                  }`}>
+                    {m.type}
+                  </span>
+                </div>
+                <p className="text-sm text-gray-600">{m.desc}</p>
+              </div>
+              <div className="hidden md:block">
+                <a 
+                  href="https://klook.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  title={`${m.month}${m.event}早鳥票券`}
+                  className="text-sm font-bold underline decoration-wavy underline-offset-4 hover:text-gray-600"
+                >
+                  早鳥票券 &rarr;
+                </a>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        
+        <div className="mt-8 text-center">
+          <a 
+            href="https://kkday.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            title="查看所有日韓早鳥優惠票券與行程"
+            className="inline-block sketch-border px-8 py-3 font-bold hover:bg-gray-100 transition-colors"
+          >
+            查看所有日韓早鳥優惠
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}

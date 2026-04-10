@@ -1,0 +1,29 @@
+{
+  "lastUpdated": "2026-04-07",
+  "destinations": [
+    {
+      "city": "東京",
+      "price": 6890,
+      "status": "可入手",
+      "link": "https://afflink.one/s/nHwj5"
+    },
+    {
+      "city": "大阪",
+      "price": 4500,
+      "status": "激省",
+      "link": "https://skyscanner.com"
+    },
+    {
+      "city": "首爾",
+      "price": 8200,
+      "status": "再等等",
+      "link": "https://afflink.one/s/nHwj5"
+    },
+    {
+      "city": "釜山",
+      "price": 3999,
+      "status": "激省",
+      "link": "https://skyscanner.com"
+    }
+  ]
+}

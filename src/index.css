@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Space+Grotesk:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Klee One", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-hand: "Klee One", cursive;
+}
+
+@utility bg-notebook {
+  background-color: #fdfdfd;
+  background-image: 
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#e1e1e1 .1em, transparent .1em);
+  background-size: 100% 2em;
+  background-position: 0 0, 0 1.9em;
+}
+
+@utility sketch-border {
+  border: 2px solid #1a1a1a;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+@utility sketch-border-hover {
+  &:hover {
+    border-radius: 15px 225px 15px 255px/255px 15px 225px 15px;
+  }
+}
+
+body {
+  @apply bg-notebook text-gray-900 font-sans;
+}
