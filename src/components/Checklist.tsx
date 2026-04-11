@@ -56,7 +56,7 @@ export default function Checklist() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <motion.a 
               whileHover={{ scale: 1.05 }}
-              href="https://klook.com" 
+              href="https://afflink.one/s/J1H4B" 
               target="_blank" 
               rel="noopener noreferrer"
               title="購買出國上網吃到飽網卡或eSIM"
@@ -66,7 +66,7 @@ export default function Checklist() {
             </motion.a>
             <motion.a 
               whileHover={{ scale: 1.05 }}
-              href="https://kkday.com" 
+              href="https://afflink.one/s/RzcX0" 
               target="_blank" 
               rel="noopener noreferrer"
               title="購買旅遊不便險與平安險"
