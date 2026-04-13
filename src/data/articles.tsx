@@ -141,5 +141,82 @@ export const articlesData: Article[] = [
         </div>
       </>
     )
+  },
+  {
+    id: 'article-3',
+    title: '2026 東京自由行 5 天 4 夜終極攻略：不走回頭路，吃好買滿！',
+    author: '黑白飛主編',
+    readTime: '5 分鐘',
+    image: 'https://picsum.photos/seed/tokyo/800/400?grayscale',
+    imageAlt: '東京自由行攻略',
+    excerpt: '第一次去東京不知道怎麼排行程？想去澀谷看十字路口、去淺草穿和服，又想去迪士尼？這篇為你整理了 2026 最新版東京 5 天 4 夜完美路線，附帶省錢交通票券與網卡推薦！',
+    content: (
+      <>
+        <p>
+          第一次去東京不知道怎麼排行程？想去澀谷看十字路口、去淺草穿和服，又想去迪士尼？這篇為你整理了 2026 最新版東京 5 天 4 夜完美路線，跟著走準沒錯！
+        </p>
+
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
+          🎒 出發前：這兩樣東西先買好！
+        </h4>
+        <p className="mb-4">東京交通複雜、網路依賴度極高，出發前強烈建議先把網卡和保險準備好：</p>
+        <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <a href="https://afflink.one/s/J1H4B" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
+            <span className="text-3xl block mb-2 group-hover:scale-110 transition-transform">📱</span>
+            <span className="font-bold underline decoration-wavy underline-offset-4">日本上網吃到飽網卡 / eSIM</span>
+            <p className="text-sm text-gray-600 mt-2">找路、查電車時刻表必備，隨插即用不斷線！</p>
+          </a>
+          <a href="https://afflink.one/s/RzcX0" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
+            <span className="text-3xl block mb-2 group-hover:scale-110 transition-transform">🛡️</span>
+            <span className="font-bold underline decoration-wavy underline-offset-4">旅遊不便險 / 平安險</span>
+            <p className="text-sm text-gray-600 mt-2">班機延誤、行李遺失都不怕，花小錢買大保障！</p>
+          </a>
+        </div>
+
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
+          🗺️ 5 天 4 夜「不走回頭路」完美路線
+        </h4>
+
+        <div className="space-y-8 mt-6">
+          {/* Day 1 */}
+          <div className="sketch-border p-6 bg-white relative">
+            <div className="absolute -top-3 -left-3 bg-black text-white font-bold px-3 py-1 sketch-border rotate-[-5deg]">Day 1</div>
+            <h5 className="font-bold text-lg mb-4 ml-6">淺草雷門 ＆ 晴空塔夜景</h5>
+            <img src="https://picsum.photos/seed/asakusa/600/300?grayscale" alt="淺草" className="w-full h-48 object-cover sketch-border mb-4" />
+            <p>抵達東京後，第一站直奔充滿江戶風情的「淺草」。穿上和服在雷門前打卡，沿著仲見世通吃人形燒。傍晚散步到「晴空塔」，在觀景台俯瞰整個東京市區的璀璨夜景。</p>
+          </div>
+
+          {/* Day 2 */}
+          <div className="sketch-border p-6 bg-white relative">
+            <div className="absolute -top-3 -left-3 bg-black text-white font-bold px-3 py-1 sketch-border rotate-[-5deg]">Day 2</div>
+            <h5 className="font-bold text-lg mb-2 ml-6">東京迪士尼樂園 夢幻一日遊</h5>
+            <p>請把整整一天的時間留給迪士尼！建議提早下載官方 App 抽 Standby Pass。無論是陸地還是海洋，都能讓你找回童年的感動。記得穿一雙最好走的鞋子！</p>
+          </div>
+
+          {/* Day 3 */}
+          <div className="sketch-border p-6 bg-white relative">
+            <div className="absolute -top-3 -left-3 bg-black text-white font-bold px-3 py-1 sketch-border rotate-[-5deg]">Day 3</div>
+            <h5 className="font-bold text-lg mb-4 ml-6">築地吃海鮮 ＆ 澀谷 Shibuya Sky</h5>
+            <img src="https://picsum.photos/seed/shibuya/600/300?grayscale" alt="澀谷" className="w-full h-48 object-cover sketch-border mb-4" />
+            <p>早上到「築地場外市場」大啖新鮮海鮮丼與玉子燒。下午前往年輕人的潮流聖地「澀谷」，親眼目睹世界最繁忙的十字路口，傍晚登上超人氣的 Shibuya Sky 觀景台拍網美照！</p>
+          </div>
+
+          {/* Day 4 & 5 */}
+          <div className="sketch-border p-6 bg-white relative">
+            <div className="absolute -top-3 -left-3 bg-black text-white font-bold px-3 py-1 sketch-border rotate-[-5deg]">Day 4-5</div>
+            <h5 className="font-bold text-lg mb-2 ml-6">明治神宮 ＆ 上野阿美橫町大採買</h5>
+            <p>第四天到原宿的「明治神宮」吸收芬多精，接著逛表參道與新宿。最後一天前往「上野阿美橫町」，把藥妝、零食一次買齊，搭乘 Skyliner 輕鬆直達機場，滿載而歸！</p>
+          </div>
+        </div>
+
+        <div className="mt-10 p-6 bg-gray-50 sketch-border text-center">
+          <p className="font-bold mb-2">機票還沒買？</p>
+          <p className="text-sm text-gray-600 mb-4">現在就來看看飛東京的最新神價！</p>
+          <a href="#observatory" className="inline-block sketch-border bg-white px-6 py-2 font-bold hover:bg-gray-100 transition-colors">
+            查看東京機票價格 &rarr;
+          </a>
+        </div>
+      </>
+    )
   }
 ];
