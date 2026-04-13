@@ -8,6 +8,7 @@ export interface Article {
   image: string;
   imageAlt: string;
   excerpt: string;
+  badge?: string;
   content: ReactNode;
 }
 
@@ -150,6 +151,7 @@ export const articlesData: Article[] = [
     image: 'https://picsum.photos/seed/tokyo/800/400?grayscale',
     imageAlt: '東京自由行攻略',
     excerpt: '第一次去東京不知道怎麼排行程？想去澀谷看十字路口、去淺草穿和服，又想去迪士尼？這篇為你整理了 2026 最新版東京 5 天 4 夜完美路線，附帶省錢交通票券與網卡推薦！',
+    badge: '🏷️ 旅展限時特價中',
     content: (
       <>
         <p>

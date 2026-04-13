@@ -40,7 +40,12 @@ export default function FeaturedArticle() {
             </div>
           </header>
 
-          <div className="mb-8">
+          <div className="mb-8 relative">
+            {article.badge && (
+              <div className="absolute -top-3 -right-3 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[5deg] z-10 shadow-sm text-sm">
+                {article.badge}
+              </div>
+            )}
             <img 
               src={article.image} 
               alt={article.imageAlt} 
@@ -78,7 +83,12 @@ export default function FeaturedArticle() {
             {/* Decorative Tape */}
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-6 bg-gray-200 opacity-50 rotate-2 sketch-border z-10"></div>
 
-            <div className="mb-4 overflow-hidden sketch-border">
+            <div className="mb-4 overflow-hidden sketch-border relative">
+              {article.badge && (
+                <div className="absolute top-2 right-2 bg-black text-white font-bold px-3 py-1 text-xs sketch-border rotate-[5deg] z-10 shadow-sm">
+                  {article.badge}
+                </div>
+              )}
               <img 
                 src={article.image} 
                 alt={article.imageAlt} 
