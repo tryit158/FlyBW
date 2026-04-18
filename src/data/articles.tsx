@@ -220,5 +220,96 @@ export const articlesData: Article[] = [
         </div>
       </>
     )
+  },
+  {
+    id: 'article-4',
+    title: '2027 迪士尼探險號 (Disney Adventure) 新加坡開賣！艙房與預訂深度攻略',
+    author: '黑白飛主編',
+    readTime: '6 分鐘',
+    image: 'https://picsum.photos/seed/cruise/800/400?grayscale',
+    imageAlt: '2027 迪士尼探險號',
+    excerpt: '亞洲第一艘！2027 迪士尼探險號（Disney Adventure）正式從新加坡啟航啦！這篇深度攻略帶你秒懂航線、艙房怎麼選、開賣時間與早鳥價格，以及帶小孩出國必看的預訂防呆指南！',
+    badge: '🔥 最新開賣',
+    content: (
+      <>
+        <p>
+          各位爸媽看過來！不用再千辛萬苦飛到美國或歐洲了，<strong>亞洲第一艘迪士尼遊輪「迪士尼探險號 (Disney Adventure)」</strong>終於宣布從新加坡啟航，並且在 2027 年的航線正式開賣啦！
+        </p>
+        <p className="mt-4">
+          這篇是為你準備的<strong>深度攻略文</strong>，為你一次破解超複雜的「迪士尼遊輪價格」、「艙房怎麼挑」，以及「迪士尼遊輪預訂教學」，想找最棒的「親子遊輪推薦」，看這篇準沒錯！
+        </p>
+
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
+          🚢 亮點搶先看：亞洲迪士尼遊輪有什麼不同？
+        </h4>
+        <p className="mb-4">
+          這艘排水量高達 20.8 萬噸的海上巨無霸，是迪士尼遊輪艦隊中最大的一艘！它不僅結合了海洋、探險與魔法，還擁有七大主題區域：
+        </p>
+        <ul className="list-disc list-inside space-y-2 ml-4 text-gray-700">
+          <li><strong>Marvel Landing 漫威登陸區：</strong> 海上首創的雲霄飛車，讓超級英雄粉絲尖叫連連！</li>
+          <li><strong>Disney Discovery Reef 迪士尼探索礁：</strong> 以《小美人魚》、《海底總動員》為主題的絕美放鬆區。</li>
+          <li><strong>Town Square 小鎮廣場：</strong> 宛如把迪士尼樂園的美國小鎮大街直接搬上船，天天都有遊行與皇室公主見面會。</li>
+        </ul>
+
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
+          📅 2027 航線與行前準備
+        </h4>
+        <p className="mb-4">
+          目前公佈的 2027 年航線以 <strong>新加坡出發</strong> 的 3 晚與 4 晚航程為主。因為是從東南亞啟航，別忘了出發前先把機票、東南亞跨國網卡跟保險搞定！
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <a href="https://afflink.one/s/J1H4B" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
+            <span className="text-3xl block mb-2 group-hover:scale-110 transition-transform">📱</span>
+            <span className="font-bold underline decoration-wavy underline-offset-4">亞洲多國上網網卡 / eSIM</span>
+            <p className="text-sm text-gray-600 mt-2">新加坡落地秒連網，搶登船預約活動必備！</p>
+          </a>
+          <a href="https://afflink.one/s/RzcX0" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
+            <span className="text-3xl block mb-2 group-hover:scale-110 transition-transform">🛡️</span>
+            <span className="font-bold underline decoration-wavy underline-offset-4">海外旅遊平安險</span>
+            <p className="text-sm text-gray-600 mt-2">遊輪行程建議加保，全家大小出遊更安心！</p>
+          </a>
+        </div>
+
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
+          🛏️ 迪士尼遊輪價格與艙房怎麼選？
+        </h4>
+        <div className="space-y-6 mt-6">
+          <div className="sketch-border p-6 bg-white relative">
+            <h5 className="font-bold text-lg mb-4">1. 內艙房 (Inside Stateroom) - 預算首選</h5>
+            <p><strong>適合對象：</strong> 每天都在外面玩到瘋，回房間只為了睡覺的家庭。</p>
+            <p className="mt-2 text-sm text-gray-600">迪士尼的內艙房有首創的「魔法舷窗（Magical Porthole）」，螢幕會即時轉播船外海景，還有動畫角色偶爾驚喜飄過，完全沒有幽閉感！這也是「迪士尼遊輪價格」最好入手的級別。</p>
+          </div>
+
+          <div className="sketch-border p-6 bg-white relative">
+            <h5 className="font-bold text-lg mb-4">2. 陽台房 (Verandah) - 最受歡迎</h5>
+            <p><strong>適合對象：</strong> 喜歡在房間喝杯咖啡看海、有小小孩需要回房午睡的爸媽。</p>
+            <p className="mt-2 text-sm text-gray-600">陽台房絕對是你搜尋「親子遊輪推薦」時最常見的選項。小孩睡著後，爸媽還能坐在陽台享受安靜的兩人時光，擁有私人戶外空間真的超紓壓！</p>
+          </div>
+
+          <div className="sketch-border p-6 bg-white relative">
+            <h5 className="font-bold text-lg mb-4">3. 禮賓艙 (Concierge) - 奢華尊享</h5>
+            <p><strong>適合對象：</strong> 預算充足，不喜歡排隊，想要頂級體驗的旅客。</p>
+            <p className="mt-2 text-sm text-gray-600">享有專屬貴賓室、優先登船、優先預約餐廳與迪士尼公主見面會等特權。如果你不想和一萬人搶名額，直上禮賓艙絕對值得！</p>
+          </div>
+        </div>
+
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
+          🛒 迪士尼遊輪預訂教學：早鳥才是王道
+        </h4>
+        <ol className="list-decimal list-inside space-y-4 font-bold text-gray-800">
+          <li><strong>越早訂越好：</strong> 迪士尼遊輪的價格是浮動的，根據供需調整。開賣第一天的價格通常是「歷史最低價」，之後只會隨時間越來越貴。</li>
+          <li><strong>加入 Castaway Club：</strong> 如果你以前搭過迪士尼遊輪，就會成為會員（Silver, Gold, Platinum, Pearl），不同等級可以比一般大眾提早 1~4 天搶先預訂！</li>
+          <li><strong>留意取消政策：</strong> 下訂時通常只需支付訂金（約 20%），在尾款到期日（通常航程前 90-120 天）之前取消，多數情況可以全額退還訂金（請務必看清楚你購買的房型條款）。</li>
+        </ol>
+
+        <div className="mt-10 p-6 bg-gray-50 sketch-border text-center">
+          <p className="font-bold mb-2">準備好登上魔法遊輪了嗎？</p>
+          <p className="text-sm text-gray-600 mb-4">點擊下方透過專屬合作旅行社，享有更棒的客戶服務與報價！</p>
+          <a href="https://afflink.one/s/508Nw" target="_blank" rel="noopener noreferrer" className="inline-block sketch-border bg-white px-6 py-2 font-bold hover:bg-gray-100 transition-colors">
+            立即查詢探險號最新票價 &rarr;
+          </a>
+        </div>
+      </>
+    )
   }
 ];
