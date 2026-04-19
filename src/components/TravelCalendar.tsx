@@ -1,13 +1,15 @@
 import { motion } from 'motion/react';
+import { Gift, Flower2, Wind, CloudRain, Sun, Leaf, TreeDeciduous } from 'lucide-react';
+import { ReactNode } from 'react';
 
-const months = [
-  { month: '2月', event: '農曆新年', type: '避開', desc: '機票最貴，人擠人', icon: '🧧' },
-  { month: '4月', event: '櫻花季', type: '旺季', desc: '提早半年買機票', icon: '🌸' },
-  { month: '5月', event: '日本黃金週', type: '避開', desc: '日本國旅大爆發', icon: '🎏' },
-  { month: '6月', event: '梅雨季', type: '便宜', desc: '機票便宜，適合室內行程', icon: '☔' },
-  { month: '8月', event: '暑假', type: '避開', desc: '機票貴，天氣炎熱', icon: '☀️' },
-  { month: '10月', event: '楓葉季', type: '旺季', desc: '秋高氣爽，提早卡位', icon: '🍁' },
-  { month: '11月', event: '淡季', type: '便宜', desc: '賞楓後、滑雪前，最划算', icon: '🍂' },
+const months: { month: string; event: string; type: string; desc: string; icon: ReactNode }[] = [
+  { month: '2月', event: '農曆新年', type: '避開', desc: '機票最貴，人擠人', icon: <Gift className="w-8 h-8 text-red-500" /> },
+  { month: '4月', event: '櫻花季', type: '旺季', desc: '提早半年買機票', icon: <Flower2 className="w-8 h-8 text-pink-500" /> },
+  { month: '5月', event: '日本黃金週', type: '避開', desc: '日本國旅大爆發', icon: <Wind className="w-8 h-8 text-blue-500" /> },
+  { month: '6月', event: '梅雨季', type: '便宜', desc: '機票便宜，適合室內行程', icon: <CloudRain className="w-8 h-8 text-gray-500" /> },
+  { month: '8月', event: '暑假', type: '避開', desc: '機票貴，天氣炎熱', icon: <Sun className="w-8 h-8 text-orange-500" /> },
+  { month: '10月', event: '楓葉季', type: '旺季', desc: '秋高氣爽，提早卡位', icon: <Leaf className="w-8 h-8 text-red-600" /> },
+  { month: '11月', event: '淡季', type: '便宜', desc: '賞楓後、滑雪前，最划算', icon: <TreeDeciduous className="w-8 h-8 text-amber-600" /> },
 ];
 
 export default function TravelCalendar() {
@@ -27,8 +29,8 @@ export default function TravelCalendar() {
               className="flex items-center gap-4 p-3 border-b-2 border-dashed border-gray-200 last:border-0 group"
             >
               <div className="w-16 h-16 shrink-0 flex flex-col items-center justify-center sketch-border bg-gray-50 group-hover:bg-gray-100 transition-colors">
-                <span className="text-sm font-bold">{m.month}</span>
-                <span className="text-xl">{m.icon}</span>
+                <span className="text-sm font-bold mb-1">{m.month}</span>
+                {m.icon}
               </div>
               <div className="flex-grow">
                 <div className="flex items-center gap-2 mb-1">

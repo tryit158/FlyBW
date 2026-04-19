@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { useState } from 'react';
 import { articlesData } from '../data/articles';
+import { PenTool } from 'lucide-react';
 
 export default function FeaturedArticle() {
   const [expandedId, setExpandedId] = useState<string | null>(null);
@@ -12,7 +13,9 @@ export default function FeaturedArticle() {
     return (
       <section id="article" className="space-y-8">
         <div className="text-center space-y-2">
-          <h2 className="text-3xl font-bold inline-block sketch-border px-6 py-2 bg-white">📝 編輯精選專欄</h2>
+          <h2 className="text-3xl font-bold inline-flex items-center gap-2 sketch-border px-6 py-2 bg-white">
+            <PenTool className="w-6 h-6" /> 編輯精選專欄
+          </h2>
         </div>
 
         <motion.article 
@@ -65,7 +68,9 @@ export default function FeaturedArticle() {
   return (
     <section id="article" className="space-y-8">
       <div className="text-center space-y-2">
-        <h2 className="text-3xl font-bold inline-block sketch-border px-6 py-2 bg-white">📝 編輯精選專欄</h2>
+        <h2 className="text-3xl font-bold inline-flex items-center gap-2 sketch-border px-6 py-2 bg-white">
+          <PenTool className="w-6 h-6" /> 編輯精選專欄
+        </h2>
         <p className="text-gray-600">三分鐘讀懂，拒當機票冤大頭！</p>
       </div>
 

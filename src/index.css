@@ -31,40 +31,20 @@ body {
 }
 
 @media print {
+  @page {
+    margin: 1cm;
+  }
   body {
     background-image: none !important;
     background-color: white !important;
   }
-  
-  /* Hide practically everything */
-  body * {
-    visibility: hidden;
-  }
-
-  /* Make checklist and its contents visible */
-  #checklist, #checklist * {
-    visibility: visible;
-  }
-
-  /* Reset layout so checklist is top left */
-  #checklist {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-  }
-
   .print\:hidden {
     display: none !important;
   }
-
   .print\:visible {
     display: block !important;
     visibility: visible !important;
   }
-  
   .print-page-break {
     page-break-before: always;
   }

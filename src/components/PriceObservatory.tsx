@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { useState } from 'react';
 import priceData from '../data/dailyPrices.json';
+import { Telescope } from 'lucide-react';
 
 const getRotation = (status: string) => {
   switch (status) {
@@ -17,7 +18,9 @@ export default function PriceObservatory() {
   return (
     <section id="observatory" className="space-y-8">
       <div className="text-center space-y-2">
-        <h2 className="text-3xl font-bold inline-block sketch-border px-6 py-2 bg-white">本日最低價觀測儀</h2>
+        <h2 className="text-3xl font-bold inline-flex items-center gap-2 sketch-border px-6 py-2 bg-white">
+          <Telescope className="w-6 h-6" /> 本日最低價觀測儀
+        </h2>
         <p className="text-gray-600">看看今天的機票氣壓計，決定要不要手滑！</p>
         <p className="text-xs font-bold text-gray-400 mt-2">最後更新：{priceData.lastUpdated}</p>
       </div>

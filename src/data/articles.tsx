@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2 } from 'lucide-react';
 
 export interface Article {
   id: string;
@@ -27,46 +28,46 @@ export const articlesData: Article[] = [
           大家都想飛日本吃和牛、飛韓國吃烤肉，但每次打開購票網站，看到那精美的價格是不是又默默把網頁關掉？其實，買機票就像買股票，<strong>「進場時機」決定了你的荷包厚度！</strong>
         </p>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
-          💣 絕對要避開的「三大地雷區」
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <Bomb className="w-5 h-5"/> 絕對要避開的「三大地雷區」
         </h4>
         <p>
           如果你不是非得在這時候出國，請把這三個時段從你的行事曆上劃掉：
         </p>
         <ul className="list-none space-y-3 pl-2">
           <li className="flex gap-3">
-            <span className="shrink-0">❌</span>
+            <span className="shrink-0"><XCircle className="w-6 h-6 text-red-500" /></span>
             <span><strong>2月農曆春節：</strong> 全台灣都在放假，機票絕對是天價，而且機場人山人海，光排隊就飽了。</span>
           </li>
           <li className="flex gap-3">
-            <span className="shrink-0">❌</span>
+            <span className="shrink-0"><XCircle className="w-6 h-6 text-red-500" /></span>
             <span><strong>5月初日本黃金週：</strong> 日本人的國旅大爆發！這時候去日本，不僅機票貴，連飯店都訂不到，熱門景點全都是人。</span>
           </li>
           <li className="flex gap-3">
-            <span className="shrink-0">❌</span>
+            <span className="shrink-0"><XCircle className="w-6 h-6 text-red-500" /></span>
             <span><strong>7-8月暑假：</strong> 學生放假潮，加上天氣炎熱，除非有帶小孩的剛需，否則真的不建議這時候去人擠人。</span>
           </li>
         </ul>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
-          ✨ 內行人才知道的「黃金撿漏期」
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <Sparkles className="w-5 h-5"/> 內行人才知道的「黃金撿漏期」
         </h4>
         <p>
           想買到來回含稅 5,000 元有找的神價？鎖定這兩個月份就對了：
         </p>
         <ul className="list-none space-y-3 pl-2">
           <li className="flex gap-3">
-            <span className="shrink-0">☔</span>
+            <span className="shrink-0"><CloudRain className="w-6 h-6 text-gray-500" /></span>
             <span><strong>6月梅雨季：</strong> 雖然容易下雨，但只要安排好「室內行程」（如：逛百貨、水族館、吃美食），這時候的機票跟住宿簡直便宜到不可思議！</span>
           </li>
           <li className="flex gap-3">
-            <span className="shrink-0">🍂</span>
+            <span className="shrink-0"><Leaf className="w-6 h-6 text-orange-400" /></span>
             <span><strong>11月中下旬：</strong> 剛好卡在賞楓季尾聲與滑雪季開始前的空檔。天氣微涼舒服，遊客相對較少，是個非常適合悠哉散步的完美時機。</span>
           </li>
         </ul>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
-          💡 搶廉航促銷的 3 個必勝心法
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <Lightbulb className="w-5 h-5"/> 搶廉航促銷的 3 個必勝心法
         </h4>
         <ol className="list-decimal list-inside space-y-3 font-bold">
           <li>先把護照英文姓名、效期、出生年月日存在手機記事本，搶票時直接複製貼上！</li>
@@ -98,8 +99,8 @@ export const articlesData: Article[] = [
           暑假想出國，但看到傳統航空動輒 1.5 萬起跳的票價實在下不了手？別放棄得太早！經過我們地毯式搜索，<strong>7-8 月其實還有一些隱藏版的「萬元以下」廉航機票</strong>，這真的是最後上車機會了！
         </p>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
-          🔥 萬元以下航線大公開
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <Flame className="w-5 h-5 text-orange-500" /> 萬元以下航線大公開
         </h4>
         <ul className="list-none space-y-4 pl-2">
           <li className="flex gap-3">
@@ -125,8 +126,8 @@ export const articlesData: Article[] = [
           </li>
         </ul>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
-          🎒 暑假搭廉航的省錢秘訣
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <Backpack className="w-5 h-5"/> 暑假搭廉航的省錢秘訣
         </h4>
         <ol className="list-decimal list-inside space-y-3 font-bold">
           <li><strong>行李共用制：</strong> 如果跟朋友一起去，去程可以只買一個 20kg 托運行李一起塞，回程再各自買，省下單程的行李費！</li>
@@ -158,25 +159,25 @@ export const articlesData: Article[] = [
           第一次去東京不知道怎麼排行程？想去澀谷看十字路口、去淺草穿和服，又想去迪士尼？這篇為你整理了 2026 最新版東京 5 天 4 夜完美路線，跟著走準沒錯！
         </p>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
-          🎒 出發前：這兩樣東西先買好！
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <Backpack className="w-5 h-5"/> 出發前：這兩樣東西先買好！
         </h4>
         <p className="mb-4">東京交通複雜、網路依賴度極高，出發前強烈建議先把網卡和保險準備好：</p>
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <a href="https://afflink.one/s/J1H4B" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
-            <span className="text-3xl block mb-2 group-hover:scale-110 transition-transform">📱</span>
+            <span className="text-3xl flex justify-center mb-2 group-hover:scale-110 transition-transform"><Smartphone className="w-8 h-8" /></span>
             <span className="font-bold underline decoration-wavy underline-offset-4">日本上網吃到飽網卡 / eSIM</span>
             <p className="text-sm text-gray-600 mt-2">找路、查電車時刻表必備，隨插即用不斷線！</p>
           </a>
           <a href="https://afflink.one/s/RzcX0" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
-            <span className="text-3xl block mb-2 group-hover:scale-110 transition-transform">🛡️</span>
+            <span className="text-3xl flex justify-center mb-2 group-hover:scale-110 transition-transform"><ShieldCheck className="w-8 h-8" /></span>
             <span className="font-bold underline decoration-wavy underline-offset-4">旅遊不便險 / 平安險</span>
             <p className="text-sm text-gray-600 mt-2">班機延誤、行李遺失都不怕，花小錢買大保障！</p>
           </a>
         </div>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
-          🗺️ 5 天 4 夜「不走回頭路」完美路線
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <Map className="w-5 h-5"/> 5 天 4 夜「不走回頭路」完美路線
         </h4>
 
         <div className="space-y-8 mt-6">
@@ -239,8 +240,8 @@ export const articlesData: Article[] = [
           這篇是為你準備的<strong>深度攻略文</strong>，為你一次破解超複雜的「迪士尼遊輪價格」、「艙房怎麼挑」，以及「迪士尼遊輪預訂教學」，想找最棒的「親子遊輪推薦」，看這篇準沒錯！
         </p>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
-          🚢 亮點搶先看：亞洲迪士尼遊輪有什麼不同？
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <Ship className="w-5 h-5"/> 亮點搶先看：亞洲迪士尼遊輪有什麼不同？
         </h4>
         <p className="mb-4">
           這艘排水量高達 20.8 萬噸的海上巨無霸，是迪士尼遊輪艦隊中最大的一艘！它不僅結合了海洋、探險與魔法，還擁有七大主題區域：
@@ -251,27 +252,27 @@ export const articlesData: Article[] = [
           <li><strong>Town Square 小鎮廣場：</strong> 宛如把迪士尼樂園的美國小鎮大街直接搬上船，天天都有遊行與皇室公主見面會。</li>
         </ul>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
-          📅 2027 航線與行前準備
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <CalendarDays className="w-5 h-5"/> 2027 航線與行前準備
         </h4>
         <p className="mb-4">
           目前公佈的 2027 年航線以 <strong>新加坡出發</strong> 的 3 晚與 4 晚航程為主。因為是從東南亞啟航，別忘了出發前先把機票、東南亞跨國網卡跟保險搞定！
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <a href="https://afflink.one/s/J1H4B" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
-            <span className="text-3xl block mb-2 group-hover:scale-110 transition-transform">📱</span>
+            <span className="text-3xl flex justify-center mb-2 group-hover:scale-110 transition-transform"><Smartphone className="w-8 h-8" /></span>
             <span className="font-bold underline decoration-wavy underline-offset-4">亞洲多國上網網卡 / eSIM</span>
             <p className="text-sm text-gray-600 mt-2">新加坡落地秒連網，搶登船預約活動必備！</p>
           </a>
           <a href="https://afflink.one/s/RzcX0" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
-            <span className="text-3xl block mb-2 group-hover:scale-110 transition-transform">🛡️</span>
+            <span className="text-3xl flex justify-center mb-2 group-hover:scale-110 transition-transform"><ShieldCheck className="w-8 h-8" /></span>
             <span className="font-bold underline decoration-wavy underline-offset-4">海外旅遊平安險</span>
             <p className="text-sm text-gray-600 mt-2">遊輪行程建議加保，全家大小出遊更安心！</p>
           </a>
         </div>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
-          🛏️ 迪士尼遊輪價格與艙房怎麼選？
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <BedDouble className="w-5 h-5"/> 迪士尼遊輪價格與艙房怎麼選？
         </h4>
         <div className="space-y-6 mt-6">
           <div className="sketch-border p-6 bg-white relative">
@@ -293,8 +294,8 @@ export const articlesData: Article[] = [
           </div>
         </div>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-block sketch-border px-3 py-1 bg-gray-50">
-          🛒 迪士尼遊輪預訂教學：早鳥才是王道
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <ShoppingCart className="w-5 h-5"/> 迪士尼遊輪預訂教學：早鳥才是王道
         </h4>
         <ol className="list-decimal list-inside space-y-4 font-bold text-gray-800">
           <li><strong>越早訂越好：</strong> 迪士尼遊輪的價格是浮動的，根據供需調整。開賣第一天的價格通常是「歷史最低價」，之後只會隨時間越來越貴。</li>

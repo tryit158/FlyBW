@@ -43,6 +43,8 @@ const ScootPlane = () => (
   </svg>
 );
 
+import { Package, Briefcase, Lightbulb } from 'lucide-react';
+
 const airlines = [
   {
     name: '虎航 Tigerair',
@@ -74,7 +76,9 @@ export default function BaggageGuide() {
   return (
     <section id="baggage" className="space-y-8">
       <div className="text-center space-y-2">
-        <h2 className="text-3xl font-bold inline-block sketch-border px-6 py-2 bg-white">廉航手提行李圖解</h2>
+        <h2 className="text-3xl font-bold inline-flex items-center gap-2 sketch-border px-6 py-2 bg-white">
+          <Briefcase className="w-6 h-6" /> 廉航手提行李圖解
+        </h2>
         <p className="text-gray-600">7公斤到底能塞多少？各家規定一次看懂</p>
       </div>
 
@@ -123,8 +127,9 @@ export default function BaggageGuide() {
                 <span className="font-bold">件數限制</span>
                 <span>{airline.items}</span>
               </div>
-              <div className="pt-2 font-bold text-gray-700">
-                💡 {airline.desc}
+              <div className="pt-2 font-bold text-gray-700 flex items-start gap-1">
+                <Lightbulb className="w-4 h-4 mt-0.5 shrink-0" /> 
+                <span>{airline.desc}</span>
               </div>
             </div>
           </motion.div>
