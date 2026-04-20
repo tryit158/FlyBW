@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 提供給搜尋引擎爬蟲的網站地圖
+Sitemap: https://flybw.qzz.io/sitemap.xml
