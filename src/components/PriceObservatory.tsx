@@ -132,6 +132,19 @@ export default function PriceObservatory() {
           ))}
         </div>
       </div>
+
+      {/* Early Bird Call to Action */}
+      <div className="flex justify-center mt-8">
+        <a 
+          href="https://linkgo.one/s/ujSbR" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 sketch-border bg-yellow-300 hover:bg-yellow-400 text-black px-8 py-4 font-bold text-lg transition-transform hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] relative group"
+        >
+          <span className="absolute -top-3 -right-3 bg-red-500 text-white text-xs px-2 py-1 rotate-12 sketch-border">Hot!</span>
+          🎉 查看所有日韓早鳥優惠及早鳥票券 &rarr;
+        </a>
+      </div>
     </section>
   );
 }

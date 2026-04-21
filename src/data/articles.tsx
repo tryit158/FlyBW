@@ -15,6 +15,91 @@ export interface Article {
 
 export const articlesData: Article[] = [
   {
+    id: 'article-5',
+    title: '虎航 2026 訂閱制今天開放兌換！不想訂閱？這裡看今日最便宜單買票價。',
+    author: '黑白飛特派員',
+    readTime: '4 分鐘',
+    image: 'https://picsum.photos/seed/tigerair2/800/400?grayscale',
+    imageAlt: '虎航 2026 訂閱制與便宜機票',
+    excerpt: '萬眾矚目的「虎航 2026 訂閱制」今天終於開放兌換啦！究竟是花大錢買訂閱制划算，還是單買更省？這篇幫你深度解析，加碼告訴你不訂閱也能搶便宜的秘訣！',
+    badge: '🔥 最新消息',
+    content: (
+      <>
+        <p>
+          台灣虎航的死忠粉絲們注意啦！備受期待的<strong>「虎航 2026 全年無休訂閱制（Tiger Pass）」</strong>在今天正式開放首波航班兌換。許多群組跟論壇已經吵翻天，到底這個訂閱制是「神仙企劃」還是「強迫推銷」？
+        </p>
+
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <Plane className="w-5 h-5"/> 訂閱制適合你嗎？殘酷二選一
+        </h4>
+        <p className="mb-4">
+          如果你還在猶豫要不要上車，我們幫你整理了最核心的「適合」與「不適合」族群。請誠實面對自己的請假能力：
+        </p>
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="sketch-border p-5 bg-green-50/50">
+            <h5 className="font-bold text-green-700 mb-3 flex items-center gap-2"><CheckCircle2 className="w-5 h-5"/> 這些人快訂閱</h5>
+            <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+              <li><strong>財富與時間自由：</strong> 不用受限於特休假，講走就走的特權階級。</li>
+              <li><strong>代購業者 / 跑單幫：</strong> 每個月飛一趟日韓批貨，用訂閱制連行李托運也能回本。</li>
+              <li><strong>自由工作者：</strong> 可以平日週二、週三出發，完美避開週末加價時段的人。</li>
+            </ul>
+          </div>
+          <div className="sketch-border p-5 bg-red-50/50">
+            <h5 className="font-bold text-red-700 mb-3 flex items-center gap-2"><XCircle className="w-5 h-5"/> 這些人請三思</h5>
+            <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+              <li><strong>苦命打工仔：</strong> 只能請連假、過年、中秋出國？別傻了，旺季兌換通常會被大打折扣或根本鎖位。</li>
+              <li><strong>親子旅遊族：</strong> 帶小孩出門，除了機票還要顧慮學期時間跟請假手續，彈性極低。</li>
+              <li><strong>猶豫不決症患者：</strong> 總是拖到最後一刻才決定行程，訂閱制的熱門航班早就被別人換光了。</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <Sparkles className="w-5 h-5"/> 不想被套牢？單買機票其實更彈性！
+        </h4>
+        <p className="mb-4">
+          說實話，如果一年只飛 2 到 3 次，而且又只能挑週末或連假，<strong>直接單買各種廉航的「促銷票」絕對比訂閱制更實際、更省錢！</strong> 
+          你不必侷限只能搭虎航，樂桃、酷航甚至近期狂推特價的傳統航空，誰便宜我們就搭誰。
+        </p>
+
+        <div className="bg-yellow-50 sketch-border p-6 mt-6 mb-8 text-center relative overflow-hidden">
+          <div className="absolute top-0 right-0 -mr-4 -mt-4 opacity-10"><Bomb className="w-24 h-24"/></div>
+          <h5 className="text-xl font-bold mb-2">🔥 虎航/日韓廉航 本日超殺單買快報 🔥</h5>
+          <p className="mb-4 text-gray-700">別管訂閱制了，今天的單點價格超級香！我們每小時都會更新各家航班跳水價：</p>
+          <a href="#observatory" className="inline-block sketch-border bg-black text-white px-6 py-3 font-bold hover:bg-gray-800 transition-colors shadow-lg">
+            立刻前往「本日最低價觀測儀」查看機票 &rarr;
+          </a>
+        </div>
+
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <Backpack className="w-5 h-5"/> 出國倒數：必備防禦兩大神器
+        </h4>
+        <p className="mb-4">
+          不管你是買訂閱制、還是搶到單張超便宜機票，要安心飛出國，請一定要在出發前把「網路」和「保險」這兩樣東西買好買滿！沒有吃到飽網路，出國就是迷路；沒有旅平險，班機延誤直接讓你噴掉好幾萬！
+        </p>
+        
+        <div className="flex flex-col sm:flex-row gap-4 mb-4">
+          <a href="https://afflink.one/s/J1H4B" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-5 hover:bg-blue-50 transition-colors group relative bg-white">
+            <div className="absolute top-2 right-2 flex space-x-1">
+              <span className="w-2 h-2 rounded-full bg-blue-400"></span><span className="w-2 h-2 rounded-full bg-blue-400"></span><span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+            </div>
+            <span className="text-4xl block mb-3"><Smartphone className="w-10 h-10 text-blue-600" /></span>
+            <span className="font-bold text-lg inline-block border-b-2 border-blue-600 mb-2">日韓上網吃到飽網卡 / eSIM</span>
+            <p className="text-sm text-gray-600">免換卡、掃 QR Code 落地即刻上網！查地圖、IG 打卡限動完全不卡頓。特價優惠中！</p>
+            <span className="inline-block mt-3 text-sm font-bold text-blue-600 group-hover:translate-x-2 transition-transform">前往選購 &rarr;</span>
+          </a>
+          
+          <a href="https://afflink.one/s/RzcX0" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-5 hover:bg-orange-50 transition-colors group relative bg-white">
+            <span className="text-4xl block mb-3"><ShieldCheck className="w-10 h-10 text-orange-600" /></span>
+            <span className="font-bold text-lg inline-block border-b-2 border-orange-600 mb-2">海外旅遊平安險 / 不便險</span>
+            <p className="text-sm text-gray-600">搭廉航必備的護身符！對抗颱風停飛、行李延誤。花幾百元買到最高幾萬塊的超強理賠後盾。</p>
+            <span className="inline-block mt-3 text-sm font-bold text-orange-600 group-hover:translate-x-2 transition-transform">立即試算 &rarr;</span>
+          </a>
+        </div>
+      </>
+    )
+  },
+  {
     id: 'article-1',
     title: '2026 日韓機票怎麼買最省？淡旺季完全攻略',
     author: '黑白飛主編',

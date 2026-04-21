@@ -46,7 +46,7 @@ export default function TravelCalendar() {
               </div>
               <div className="hidden md:block">
                 <a 
-                  href="https://klook.com" 
+                  href="https://linkgo.one/s/ujSbR" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   title={`${m.month}${m.event}早鳥票券`}
@@ -61,7 +61,7 @@ export default function TravelCalendar() {
         
         <div className="mt-8 text-center">
           <a 
-            href="https://kkday.com" 
+            href="https://linkgo.one/s/ujSbR" 
             target="_blank" 
             rel="noopener noreferrer"
             title="查看所有日韓早鳥優惠票券與行程"
