@@ -27,17 +27,19 @@ export default function PriceObservatory() {
 
     Papa.parse(GOOGLE_SHEET_CSV_URL, {
       download: true,
-      header: true,
+      header: false,
       skipEmptyLines: true,
       complete: (results) => {
         try {
-          const rows = results.data as any[];
-          // 假設 Google Sheet 的直欄抬頭分別是：city, price, status, link
-          const newDestinations = rows.map(row => ({
-            city: row['city'] || '未知',
-            price: Number(row['price']) || 0,
-            status: row['status'] || '可入手',
-            link: row['link'] || '#'
+          const rows = results.data as any[][];
+          // 支援有加表頭或沒加表頭的狀況：如果第一列第一格是 'city'，就把它過濾掉
+          const dataRows = rows.filter(row => row[0] && row[0].toString().toLowerCase() !== 'city');
+
+          const newDestinations = dataRows.map(row => ({
+            city: row[0] || '未知',
+            price: Number(row[1]) || 0,
+            status: row[2] || '可入手',
+            link: row[3] || '#'
           }));
           
           if (newDestinations.length > 0) {
