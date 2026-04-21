@@ -1,7 +1,13 @@
 import { motion } from 'motion/react';
-import { useState } from 'react';
-import priceData from '../data/dailyPrices.json';
+import { useState, useEffect } from 'react';
+import defaultPriceData from '../data/dailyPrices.json';
 import { Telescope } from 'lucide-react';
+import Papa from 'papaparse';
+
+// ===== 教學設定重點 =====
+// 將您的 Google 試算表發布到網路後，請將 CSV 網址貼在下方引號內
+// (若保持為空白，則會自動讀取原 json 檔)
+const GOOGLE_SHEET_CSV_URL = "";
 
 const getRotation = (status: string) => {
   switch (status) {
@@ -14,6 +20,38 @@ const getRotation = (status: string) => {
 
 export default function PriceObservatory() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [priceData, setPriceData] = useState(defaultPriceData);
+
+  useEffect(() => {
+    if (!GOOGLE_SHEET_CSV_URL) return;
+
+    Papa.parse(GOOGLE_SHEET_CSV_URL, {
+      download: true,
+      header: true,
+      skipEmptyLines: true,
+      complete: (results) => {
+        try {
+          const rows = results.data as any[];
+          // 假設 Google Sheet 的直欄抬頭分別是：city, price, status, link
+          const newDestinations = rows.map(row => ({
+            city: row['city'] || '未知',
+            price: Number(row['price']) || 0,
+            status: row['status'] || '可入手',
+            link: row['link'] || '#'
+          }));
+          
+          if (newDestinations.length > 0) {
+            setPriceData({
+              lastUpdated: new Date().toISOString().split('T')[0],
+              destinations: newDestinations
+            });
+          }
+        } catch (error) {
+          console.error("解析 Google Sheet CSV 錯誤:", error);
+        }
+      }
+    });
+  }, []);
 
   return (
     <section id="observatory" className="space-y-8">
