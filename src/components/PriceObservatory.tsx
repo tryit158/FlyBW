@@ -7,7 +7,7 @@ import Papa from 'papaparse';
 // ===== 教學設定重點 =====
 // 將您的 Google 試算表發布到網路後，請將 CSV 網址貼在下方引號內
 // (若保持為空白，則會自動讀取原 json 檔)
-const GOOGLE_SHEET_CSV_URL = "";
+const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0TTBXWhSUVFw2L5jF80IoxS_eswnOwpCSSSXPt1AW1haaXl0OBQIEH7IHaQTqPtYS5KbFvh_vBF-3/pub?output=csv";
 
 const getRotation = (status: string) => {
   switch (status) {
