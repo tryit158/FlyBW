@@ -322,68 +322,157 @@ export const articlesData: Article[] = [
     badge: '🏷️ 旅展限時特價中',
     content: (
       <>
-        <p>
-          第一次去東京不知道怎麼排行程？想去澀谷看十字路口、去淺草穿和服，又想去迪士尼？這篇為你整理了 2026 最新版東京 5 天 4 夜完美路線，跟著走準沒錯！
+        <p className="text-lg mb-6 leading-relaxed">
+          解封後，無數旅客再次把「東京」當作重返日本的首站。這座新舊交融、四季分明的國際大都會在經歷了幾年的沉澱後，2026 年展現出了更驚豔的魅力——澀谷的天際線大洗牌、麻布台之丘嶄新落成、加上東京迪士尼海洋的全新擴地「夢幻泉鄉（Fantasy Springs）」正式迎客。第一次去東京不知道怎麼排行程？想去澀谷看十字路口、去淺草穿和服，又想去迪士尼？這篇為你整理了 2026 最新版東京 5 天 4 夜完美路線，從行前準備、交通串接到美食清單，我們講究「不走回頭路、不浪費交通費」，跟著走準沒錯！
         </p>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
-          <Backpack className="w-5 h-5"/> 出發前：這兩樣東西先買好！
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
+          <Backpack className="w-6 h-6"/> 零失敗：行前必備的 3 個通關護符
         </h4>
-        <p className="mb-4">東京交通複雜、網路依賴度極高，出發前強烈建議先把網卡和保險準備好：</p>
-        <div className="flex flex-col sm:flex-row gap-4 mb-8">
-          <a href="https://afflink.one/s/J1H4B" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
-            <span className="text-3xl flex justify-center mb-2 group-hover:scale-110 transition-transform"><Smartphone className="w-8 h-8" /></span>
-            <span className="font-bold underline decoration-wavy underline-offset-4">日本上網吃到飽網卡 / eSIM</span>
-            <p className="text-sm text-gray-600 mt-2">找路、查電車時刻表必備，隨插即用不斷線！</p>
-          </a>
-          <a href="https://afflink.one/s/RzcX0" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
-            <span className="text-3xl flex justify-center mb-2 group-hover:scale-110 transition-transform"><ShieldCheck className="w-8 h-8" /></span>
-            <span className="font-bold underline decoration-wavy underline-offset-4">旅遊不便險 / 平安險</span>
-            <p className="text-sm text-gray-600 mt-2">班機延誤、行李遺失都不怕，花小錢買大保障！</p>
-          </a>
+        <p className="mb-4 leading-relaxed">
+          東京的交通網絡如蜘蛛網般密佈，加上行動支付全面普及，出發前強烈建議「把手機武裝好」。你不需要買一堆實體票卷，但下面這幾樣東西沒準備好，在機場跟車站絕對會陷入大混亂：
+        </p>
+        <div className="grid md:grid-cols-2 gap-4 mb-10">
+          <div className="sketch-border p-5 bg-white">
+            <h5 className="font-bold text-lg mb-2 text-indigo-700">1. 西瓜卡綁定 Apple Wallet</h5>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              實體的 Suica 與 Pasmo 經常面臨晶片短缺停售。強烈建議 iPhone 使用者直接打開「錢包」App，新增一張交通卡並用信用卡加值。進出地鐵站只需手機輕觸閘門（甚至連螢幕都不用喚醒），這是提升東京自由行幸福感最關鍵的一步！
+            </p>
+          </div>
+          <div className="sketch-border p-5 bg-white">
+            <h5 className="font-bold text-lg mb-2 text-indigo-700">2. Visit Japan Web (VJW) 提前填妥</h5>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              現在日本入境已經全面數位化。請在登機前登入 Visit Japan Web 填寫入境與海關申報，目前系統已經極度簡化，<strong>入境與海關已「合併為單一 QR Code」</strong>。下飛機後截圖備用，走快速通道出關，絕對比現場排隊寫紙本海關單省下 30 分鐘以上。
+            </p>
+          </div>
         </div>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
-          <Map className="w-5 h-5"/> 5 天 4 夜「不走回頭路」完美路線
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
+          <Map className="w-6 h-6"/> 5 天 4 夜「順時鐘極限流」完美路線
         </h4>
+        <p className="mb-8 leading-relaxed">
+          排東京行程最忌諱的就是「東南西北亂跑」。東京很大，搭地鐵動輒 30-40 分鐘起跳。我們的路線設計將東京劃分為大區塊，採取「同區集中」策略，讓你每天能在特定區域徹底吃好買滿！
+        </p>
 
-        <div className="space-y-8 mt-6">
+        <div className="space-y-12 mt-6">
           {/* Day 1 */}
-          <div className="sketch-border p-6 bg-white relative">
-            <div className="absolute -top-3 -left-3 bg-black text-white font-bold px-3 py-1 sketch-border rotate-[-5deg]">Day 1</div>
-            <h5 className="font-bold text-lg mb-4 ml-6">淺草雷門 ＆ 晴空塔夜景</h5>
-            <img src="https://picsum.photos/seed/asakusa/600/300?grayscale" alt="淺草" className="w-full h-48 object-cover sketch-border mb-4" />
-            <p>抵達東京後，第一站直奔充滿江戶風情的「淺草」。穿上和服在雷門前打卡，沿著仲見世通吃人形燒。傍晚散步到「晴空塔」，在觀景台俯瞰整個東京市區的璀璨夜景。</p>
+          <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
+            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[-6deg] text-xl">Day 1：成田機場 ✈️ 淺草＆晴空塔</div>
+            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">穿梭江戶時空，將東京閃耀夜景盡收眼底</h5>
+            <img src="https://picsum.photos/seed/asakusa2/800/400?grayscale" alt="淺草雷門" className="w-full h-64 object-cover sketch-border border-2 border-black mb-6" />
+            
+            <div className="space-y-4 text-gray-800 leading-relaxed">
+              <p>
+                <strong>📌 上午：機場直達淺草</strong><br/>
+                如果你從成田機場降落，推薦搭乘「京成電鐵 Skyliner」或「Access 特快」，不到一小時就能把你直送到上野/淺草一帶。抵達飯店寄放行李後，第一站直奔充滿江戶風情的「淺草」。
+              </p>
+              <p>
+                <strong>📌 下午：雷門打卡與仲見世通吃貨之旅</strong><br/>
+                想要拍美照，推薦在淺草車站附近租借和服或浴衣（建議提前一個月上網預約）。穿戴整齊後，步行至巨大的「雷門」燈籠下拍照。通過雷門後就是有著幾百年歷史的「仲見世商店街」與充滿古味的「傳法院通」。必吃的美食包括：現烤冒著熱氣的<strong>木村家人形燒</strong>、外酥內軟的<strong>淺草炸肉餅（淺草メンチ）</strong>，以及有著濃郁抹茶香的<strong>花月堂波蘿麵包</strong>。記得，日本文化不鼓勵邊走邊吃，請在店家旁邊的指定區域吃完再丟垃圾喔！
+              </p>
+              <p>
+                <strong>📌 晚上：漫步至澄澈夜空的晴空塔</strong><br/>
+                傍晚時分，沿著隅田川漫步前往晴空塔（Tokyo Skytree）。推薦先去晴空塔底下的「墨田水族館」或「Solamachi 商場」大肆採購寶可夢中心、吉卜力專賣店的伴手禮。晚餐可以在 30 樓以上的景觀餐廳享用牛舌或親子丼。飽餐後登上 350 公尺的觀景台，俯瞰整個東京市區的璀璨夜景，遠眺東京鐵塔，做為展開東京之旅的完美序幕。
+              </p>
+            </div>
           </div>
 
           {/* Day 2 */}
-          <div className="sketch-border p-6 bg-white relative">
-            <div className="absolute -top-3 -left-3 bg-black text-white font-bold px-3 py-1 sketch-border rotate-[-5deg]">Day 2</div>
-            <h5 className="font-bold text-lg mb-2 ml-6">東京迪士尼樂園 夢幻一日遊</h5>
-            <p>請把整整一天的時間留給迪士尼！建議提早下載官方 App 抽 Standby Pass。無論是陸地還是海洋，都能讓你找回童年的感動。記得穿一雙最好走的鞋子！</p>
+          <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
+            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[3deg] text-xl">Day 2：東京迪士尼度假區 🏰</div>
+            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">從早嗨到晚！啟動你的鈔能力與體力極限</h5>
+            
+            <div className="space-y-4 text-gray-800 leading-relaxed">
+              <div className="bg-blue-50 sketch-border p-4 mb-4 border-2 border-blue-900 border-dashed">
+                <strong>💡 陸地 (Disneyland) vs 海洋 (DisneySea) 怎麼選？</strong><br/>
+                這永遠是世紀難題！如果帶 12 歲以下小孩、喜歡經典童話氛圍、想看最震撼的夜間灰姑娘城堡煙火與光雕秀，請選「迪士尼樂園 (陸地)」。如果喜歡刺激設施、帶著喜歡達菲熊的另一半、或者想朝聖最新的「夢幻泉鄉 (Fantasy Springs)」，請毫不猶豫買「迪士尼海洋」的門票！
+              </div>
+              <p>
+                <strong>📌 早上：戰略性入園與搶票（夢幻泉鄉必看）</strong><br/>
+                這一天請務必在開園前 1 到 1.5 小時抵達門口排隊安檢。入園的瞬間，請立刻打開官方 App 抽取 Standby Pass 或購買「迪士尼尊享卡 (DPA)」。<strong>注意！迪士尼海洋的【夢幻泉鄉】實施極為嚴格的區域管制，沒有抽到該區設施的 Standby Pass 或購買 DPA，連「走進該區域拍照」都無法辦到！</strong>請將其列為入園第一目標。
+              </p>
+              <p>
+                <strong>📌 中午：邊吃邊玩的不停歇攻略</strong><br/>
+                千萬不要去熱門餐廳人擠人。迪士尼的美食精華都在「餐車」上！樂園必買的<strong>煙燻火雞腿</strong>、經典不敗的<strong>三眼怪麻糬</strong>，還有各種造型浮誇到極點的<strong>爆米花桶</strong>（近期的美女與野獸立體桶或是冰雪奇緣相關款式都是搶手貨），背個爆米花桶在身上，就是迪士尼最潮的穿搭。
+              </p>
+              <p>
+                <strong>📌 晚上：佔位看秀與完美撤退</strong><br/>
+                夜間遊行絕對不容錯過。建議提前 40 分鐘買好吉拿棒，在遊行路線鋪好野餐墊卡位。看完璀璨的煙火通常大約晚上 9 點。此時如果你不是住在迪士尼官方飯店，請做好覺悟：京葉線的電車會像沙丁魚罐頭一樣擠滿了同樣筋疲力盡的遊客。撐住！回到飯店後，去便利商店買幾片「休足時間」絕對是你這輩子最正確的決定。
+              </p>
+            </div>
           </div>
 
           {/* Day 3 */}
-          <div className="sketch-border p-6 bg-white relative">
-            <div className="absolute -top-3 -left-3 bg-black text-white font-bold px-3 py-1 sketch-border rotate-[-5deg]">Day 3</div>
-            <h5 className="font-bold text-lg mb-4 ml-6">築地吃海鮮 ＆ 澀谷 Shibuya Sky</h5>
-            <img src="https://picsum.photos/seed/shibuya/600/300?grayscale" alt="澀谷" className="w-full h-48 object-cover sketch-border mb-4" />
-            <p>早上到「築地場外市場」大啖新鮮海鮮丼與玉子燒。下午前往年輕人的潮流聖地「澀谷」，親眼目睹世界最繁忙的十字路口，傍晚登上超人氣的 Shibuya Sky 觀景台拍網美照！</p>
+          <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
+            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[-4deg] text-xl">Day 3：築地市場 🍣 ＆ 潮流澀谷 🌆</div>
+            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">舌尖上的和牛海膽，與最繁忙的都市脈動</h5>
+            <img src="https://picsum.photos/seed/shibuya3/800/400?grayscale" alt="澀谷交叉口" className="w-full h-64 object-cover sketch-border border-2 border-black mb-6" />
+            
+            <div className="space-y-4 text-gray-800 leading-relaxed">
+              <p>
+                <strong>📌 上午：築地場外市場的老饕行程</strong><br/>
+                睡到自然醒，大約 9 點抵達「築地場外市場」（這時候人潮剛好，太早店家還沒全開，太晚又擠不進去）。哪怕豐洲市場已經啟用，築地的「場外攤販」依舊是吃貨天堂。先來一串現烤的<strong>玉子燒</strong>墊胃，接著尋找海膽專賣店，豪邁地吞下價格不菲但絕對鮮甜的海膽壽司。別忘了找一家站著吃的黑鮪魚專賣店，體驗大腹（Ootoro）入口即化的極致油脂。
+              </p>
+              <p>
+                <strong>📌 下午：原宿／表參道的文青與時尚</strong><br/>
+                搭乘地下鐵直奔原宿。在竹下通買一份巨大的可麗餅，看著滿街浮誇的 Y2K 穿搭。接著從原宿一路逛向表參道，這裡被譽為「東京的香榭麗舍大道」，兩岸綠樹成蔭，各種國際精品的旗艦店（如玻璃帷幕的 Prada）本身就是建築藝術。累了就鑽進隱藏的巷弄裡，找一間職人咖啡館（例如表參道的名店 <strong>Koffee Mameya</strong> 或鄰近青山的 <strong>Shozo Coffee Store</strong> 感受木質調的寧靜）休息片刻。
+              </p>
+              <p>
+                <strong>📌 傍晚與晚上：震撼的澀谷十字路口與展望台</strong><br/>
+                沿著貓街（Cat Street）一路散步到澀谷。從各個角度欣賞一次跳綠燈就有三千人同時穿越的「澀谷全向交叉路口」。晚餐前，拿出你<strong>「整整一個月前」就在網路上搶好時段</strong>的「Shibuya Sky」門票，搭乘科幻感十足的電梯直達 46 樓的無邊際露天景觀台（現場幾乎永遠買不到票，切記提前預約！）。在這裡，你可以拍下以全東京為背景的絕美剪影照。晚餐則推薦鑽進附近的「宮下公園 (Miyashita Park)」底下的澀谷橫丁，點滿桌烤肉串與生啤酒，感受最真實的日本下班後文化。
+              </p>
+            </div>
           </div>
 
-          {/* Day 4 & 5 */}
-          <div className="sketch-border p-6 bg-white relative">
-            <div className="absolute -top-3 -left-3 bg-black text-white font-bold px-3 py-1 sketch-border rotate-[-5deg]">Day 4-5</div>
-            <h5 className="font-bold text-lg mb-2 ml-6">明治神宮 ＆ 上野阿美橫町大採買</h5>
-            <p>第四天到原宿的「明治神宮」吸收芬多精，接著逛表參道與新宿。最後一天前往「上野阿美橫町」，把藥妝、零食一次買齊，搭乘 Skyliner 輕鬆直達機場，滿載而歸！</p>
+          {/* Day 4 */}
+          <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
+            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[5deg] text-xl">Day 4：明治神宮 🌳 ＆ 迷幻新宿 🌃</div>
+            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">從寧靜森林到霓虹不夜城的極端切換</h5>
+            
+            <div className="space-y-4 text-gray-800 leading-relaxed">
+              <p>
+                <strong>📌 上午：明治神宮的森林浴</strong><br/>
+                準備好被幾十萬棵樹木包圍吧！踏過巨大的原木大鳥居，走在鋪滿碎石的神宮參道上，都市的喧囂彷彿瞬間被切斷。請抱著敬畏的心情前往主殿參拜，也可以花 500 日圓寫下繪馬祈求此行平安。如果你運氣好，常常能在週末的早晨遇到穿著傳統白無垢的日本新人在此舉行神前結婚式。
+              </p>
+              <p>
+                <strong>📌 下午：新宿購物戰場，荷包見底的考驗</strong><br/>
+                離開神宮，直奔全球最龐大的車站——迷宮般的新宿。這裡分為東西兩大戰場。喜歡質感服飾與精品的請主攻「伊勢丹百貨」與周邊的旗艦店；喜歡年輕流行服飾的請進攻 LUMINE 1、2 還有 EST。別忘了來到東口朝聖那隻超人氣的「3D 巨大花貓」看板。
+              </p>
+              <p>
+                <strong>📌 晚上：歌舞伎町與回憶橫丁</strong><br/>
+                入夜後，新宿的另一種面貌才正要開始。前往亞洲最大的紅燈區「歌舞伎町」，看著這條街上浮誇的牛郎店看版與新建的「歌舞伎町 Tower」。晚餐強烈推薦前往新宿西口鐵軌旁的「回憶橫丁 (Omoide Yokocho)」。這條狹窄到兩個人無法並肩行走的巷子裡，塞滿了幾十家煙霧迷漫的燒鳥（日式烤雞串）店。在吧檯前和陌生人或老闆比手畫腳點餐，喝下冰涼的沙瓦，絕對是你行程中最具電影感的一夜。
+              </p>
+            </div>
+          </div>
+
+           {/* Day 5 */}
+           <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
+            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[0deg] text-xl">Day 5：上野阿美橫町 🛒 ＆ 滿載歸國</div>
+            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">把沒買齊的伴手禮一次補足的最後衝刺</h5>
+            
+            <div className="space-y-4 text-gray-800 leading-relaxed">
+              <p>
+                <strong>📌 上午：上野公園與不忍池</strong><br/>
+                旅程的最後一天，整理好爆滿的行李，將它們寄放在上野車站的超大置物櫃中。早晨可以悠哉地漫步上野恩賜公園，這裡春天是賞櫻聖地，秋天有銀杏大道。前往不忍池看看滿池的荷花，或是到附設的星巴克喝杯限定星冰樂，平復這幾天狂奔的心情。
+              </p>
+              <p>
+                <strong>📌 近午：阿美橫町的終極採購</strong><br/>
+                保留最後幾公升的行李箱空間，因為「阿美橫町 (Ameyoko)」絕對會讓你失心瘋！這裡是東京最知名的露天平價市集。直接鎖定兩大地標：「OS Drug」或「松本清」把親戚交代的感冒藥、腸胃藥、痠痛貼布一網打盡；接著去「二木的菓子」採買抹茶巧克力、干貝糖等伴手禮。街邊到處都是大聲叫賣的海鮮乾貨攤販與草莓串，充滿著傳統市井的活力。
+              </p>
+              <p>
+                <strong>📌 下午：前往機場與最後血拚</strong><br/>
+                在上野吃完炸牛排（牛かつ）或知名鰻魚飯後，拖著行李走到「京成上野站」，跳上 Skyliner 直達機場。在機場過完海關後，千萬別放鬆！成田/羽田機場的免稅店「Fa-So-La」裡，還有東京芭娜娜 (Tokyo Banana)、白色戀人、薯條三兄弟等著你做最後的「報復性消費」。帶著這五天美好的記憶與空掉的錢包，心滿意足地登機吧！
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="mt-10 p-6 bg-gray-50 sketch-border text-center">
-          <p className="font-bold mb-2">機票還沒買？</p>
-          <p className="text-sm text-gray-600 mb-4">現在就來看看飛東京的最新神價！</p>
-          <a href="#observatory" className="inline-block sketch-border bg-white px-6 py-2 font-bold hover:bg-gray-100 transition-colors">
-            查看東京機票價格 &rarr;
+        <div className="mt-10 p-6 bg-yellow-50 sketch-border text-center relative overflow-hidden mb-10">
+          <div className="absolute -bottom-4 -right-4 opacity-20"><Map className="w-40 h-40"/></div>
+          <p className="font-bold mb-2 text-xl">機票還沒買？行程規劃可是不等人的！</p>
+          <p className="text-gray-700 mb-6">馬上看看最近飛東京的最新神價，抓住萬元以下的早鳥票！</p>
+          <a href="#observatory" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
+            查看東京本日最低機票 &rarr;
           </a>
         </div>
 
