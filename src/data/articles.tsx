@@ -13,7 +13,109 @@ export interface Article {
   content: ReactNode;
 }
 
+export const AffiliateFooter = () => (
+  <>
+    <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+      <ShoppingCart className="w-5 h-5"/> 行前守護清單：避開超重與突發狀況
+    </h4>
+    <p className="mb-4">
+      除了買機票時算好行李重量，出國防身裝備也絕對不能少！我幫大家整理了廉航常客必備的三大法寶：
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-4 mb-8">
+      <a href="https://linkgo.one/s/ujSbR" target="_blank" rel="noopener noreferrer" className="sketch-border p-4 hover:bg-yellow-50 transition-colors bg-white group">
+        <div className="font-bold text-lg mb-2 text-yellow-700">1. 行李秤 & 收納神器</div>
+        <p className="text-sm text-gray-600 mb-4">不想在櫃檯前大粒汗小粒汗？帶個行李秤最安心，超生火的壓縮袋/早鳥旅遊神物都在這！</p>
+        <span className="text-sm font-bold underline decoration-wavy underline-offset-4 group-hover:text-yellow-600">探索早鳥優惠區</span>
+      </a>
+      <a href="https://afflink.one/s/J1H4B" target="_blank" rel="noopener noreferrer" className="sketch-border p-4 hover:bg-blue-50 transition-colors bg-white group">
+        <div className="font-bold text-lg mb-2 text-blue-700">2. 吃到飽網卡/eSIM</div>
+        <p className="text-sm text-gray-600 mb-4">在機場被卡住還要查資料？免換卡直接掃 QR Code 落地就上網，解決迷路危機。</p>
+        <span className="text-sm font-bold underline decoration-wavy underline-offset-4 group-hover:text-blue-600">選購網上吃到飽</span>
+      </a>
+      <a href="https://afflink.one/s/RzcX0" target="_blank" rel="noopener noreferrer" className="sketch-border p-4 hover:bg-orange-50 transition-colors bg-white group">
+        <div className="font-bold text-lg mb-2 text-orange-700">3. 旅遊不便險</div>
+        <p className="text-sm text-gray-600 mb-4">行李不僅可能超重，還可能被寄丟！花杯咖啡錢買理賠後盾，搭廉航必備護身符。</p>
+        <span className="text-sm font-bold underline decoration-wavy underline-offset-4 group-hover:text-orange-600">立即試算保費</span>
+      </a>
+    </div>
+  </>
+);
+
 export const articlesData: Article[] = [
+  {
+    id: 'article-6',
+    title: '【2026 避坑圖解】日韓廉航行李限制：這 2kg 的差距，可能讓你多付 $1,500！',
+    author: '黑白飛避雷針',
+    readTime: '3 分鐘',
+    image: 'https://picsum.photos/seed/cat-baggage/800/400?grayscale',
+    imageAlt: '日韓廉航行李限制',
+    excerpt: '買到便宜機票的快樂，往往在櫃檯秤重那一刻消失。虎航、樂桃、酷航，每一家的『手提 7kg』其實長得都不一樣。圖解教你不再機場出糗！',
+    badge: '📛 避坑指南',
+    content: (
+      <>
+        <p>
+          買到便宜機票的快樂，往往在櫃檯秤重那一刻消失。虎航、樂桃、酷航，每一家的「手提 7kg」其實長得都不一樣。不想在機場狼狽地翻行李箱湊重量？看懂這篇就夠了。
+        </p>
+
+        <div className="my-8 sketch-border bg-white overflow-hidden">
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse min-w-[500px]">
+              <thead>
+                <tr className="bg-gray-100 border-b-2 border-black">
+                  <th className="p-3 font-bold border-r-2 border-black text-center">航空公司</th>
+                  <th className="p-3 font-bold border-r-2 border-black text-center">總重限制</th>
+                  <th className="p-3 font-bold border-r-2 border-black">件數規定</th>
+                  <th className="p-3 font-bold">尺寸限制</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b-2 border-dashed border-gray-300 hover:bg-gray-50 transition-colors">
+                  <td className="p-3 font-bold border-r-2 border-black text-center">台灣虎航 🐯</td>
+                  <td className="p-3 text-green-700 font-bold border-r-2 border-black text-center text-lg">10 <span className="text-sm">kg</span></td>
+                  <td className="p-3 border-r-2 border-black text-sm">最多 2 件<br/><span className="text-xs text-gray-500">(1件手提 + 1件隨身)</span></td>
+                  <td className="p-3 text-sm">54 x 38 x 23 cm</td>
+                </tr>
+                <tr className="border-b-2 border-dashed border-gray-300 hover:bg-red-50 bg-red-50/30 transition-colors">
+                  <td className="p-3 font-bold border-r-2 border-black text-center text-red-700">樂桃航空 🍑</td>
+                  <td className="p-3 text-red-600 font-bold border-r-2 border-black text-center text-lg">7 <span className="text-sm">kg</span><span className="text-xs block text-red-500">(最嚴格)</span></td>
+                  <td className="p-3 border-r-2 border-black text-sm">最多 2 件<br/><span className="text-xs text-red-500">(機場免稅品也算件數)</span></td>
+                  <td className="p-3 text-sm">3邊合計 115 cm</td>
+                </tr>
+                <tr className="hover:bg-gray-50 transition-colors">
+                  <td className="p-3 font-bold border-r-2 border-black text-center">酷航 🟡</td>
+                  <td className="p-3 text-green-700 font-bold border-r-2 border-black text-center text-lg">10 <span className="text-sm">kg</span></td>
+                  <td className="p-3 border-r-2 border-black text-sm">最多 2 件<br/><span className="text-xs text-gray-500">(若有筆電可額外+3kg)</span></td>
+                  <td className="p-3 text-sm">54 x 38 x 23 cm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="bg-gray-900 text-white p-3 text-sm flex flex-col md:flex-row items-center justify-center gap-2">
+            <span className="font-bold text-yellow-300">⚠️ 避坑重點：</span>
+            <span>提袋、免稅袋、腰包通通算一件！超件時請務必在櫃檯前想辦法塞進同一個登機箱內。</span>
+          </div>
+        </div>
+
+        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
+          <Map className="w-5 h-5"/> 實際機場觀測分析
+        </h4>
+        <p className="mb-4">
+          根據我在 <code>flybw.qzz.io</code> 的觀測與讀者回報，2026 年各家廉航對手提行李的尺寸查核變得<strong>非常嚴格</strong>。地勤不只看重量，還會拿皮尺量，或是直接叫你把行李塞進那個「萬惡的鐵框框」裡。
+        </p>
+
+        <div className="sketch-border p-5 bg-red-50/50 mb-8">
+          <h5 className="font-bold text-red-700 mb-2 flex items-center gap-2"><Lightbulb className="w-5 h-5"/> 給大採購族的良心建議</h5>
+          <p className="text-sm text-gray-800">
+            如果你計畫去日本狂買藥妝、電器、零食，<strong>強烈建議在「訂單買機票」時就直接加購托運行李！</strong><br/><br/>
+            千萬不要抱著僥倖心態想在機場闖關，萬一超重或尺寸不合，現場被罰加買托運的費用，高達台幣 $1,500 以上——<strong>這筆錢足夠讓你在大阪多吃三盤超豪華章魚燒還有找！</strong>
+          </p>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
   {
     id: 'article-5',
     title: '虎航 2026 訂閱制今天開放兌換！不想訂閱？這裡看今日最便宜單買票價。',
@@ -71,31 +173,7 @@ export const articlesData: Article[] = [
           </a>
         </div>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
-          <Backpack className="w-5 h-5"/> 出國倒數：必備防禦兩大神器
-        </h4>
-        <p className="mb-4">
-          不管你是買訂閱制、還是搶到單張超便宜機票，要安心飛出國，請一定要在出發前把「網路」和「保險」這兩樣東西買好買滿！沒有吃到飽網路，出國就是迷路；沒有旅平險，班機延誤直接讓你噴掉好幾萬！
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 mb-4">
-          <a href="https://afflink.one/s/J1H4B" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-5 hover:bg-blue-50 transition-colors group relative bg-white">
-            <div className="absolute top-2 right-2 flex space-x-1">
-              <span className="w-2 h-2 rounded-full bg-blue-400"></span><span className="w-2 h-2 rounded-full bg-blue-400"></span><span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
-            </div>
-            <span className="text-4xl block mb-3"><Smartphone className="w-10 h-10 text-blue-600" /></span>
-            <span className="font-bold text-lg inline-block border-b-2 border-blue-600 mb-2">日韓上網吃到飽網卡 / eSIM</span>
-            <p className="text-sm text-gray-600">免換卡、掃 QR Code 落地即刻上網！查地圖、IG 打卡限動完全不卡頓。特價優惠中！</p>
-            <span className="inline-block mt-3 text-sm font-bold text-blue-600 group-hover:translate-x-2 transition-transform">前往選購 &rarr;</span>
-          </a>
-          
-          <a href="https://afflink.one/s/RzcX0" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-5 hover:bg-orange-50 transition-colors group relative bg-white">
-            <span className="text-4xl block mb-3"><ShieldCheck className="w-10 h-10 text-orange-600" /></span>
-            <span className="font-bold text-lg inline-block border-b-2 border-orange-600 mb-2">海外旅遊平安險 / 不便險</span>
-            <p className="text-sm text-gray-600">搭廉航必備的護身符！對抗颱風停飛、行李延誤。花幾百元買到最高幾萬塊的超強理賠後盾。</p>
-            <span className="inline-block mt-3 text-sm font-bold text-orange-600 group-hover:translate-x-2 transition-transform">立即試算 &rarr;</span>
-          </a>
-        </div>
+        <AffiliateFooter />
       </>
     )
   },
@@ -167,6 +245,8 @@ export const articlesData: Article[] = [
             前往下載行李清單 &rarr;
           </a>
         </div>
+
+        <AffiliateFooter />
       </>
     )
   },
@@ -226,6 +306,8 @@ export const articlesData: Article[] = [
             查看本日最低價 &rarr;
           </a>
         </div>
+
+        <AffiliateFooter />
       </>
     )
   },
@@ -304,6 +386,8 @@ export const articlesData: Article[] = [
             查看東京機票價格 &rarr;
           </a>
         </div>
+
+        <AffiliateFooter />
       </>
     )
   },
@@ -395,6 +479,8 @@ export const articlesData: Article[] = [
             立即查詢探險號最新票價 &rarr;
           </a>
         </div>
+
+        <AffiliateFooter />
       </>
     )
   }
