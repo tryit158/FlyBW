@@ -73,7 +73,7 @@ export default function Checklist() {
 
         {/* Affiliate Links Section - Only visible on web */}
         <div className="mt-12 pt-6 border-t-2 border-dashed border-gray-300 print:hidden">
-          <p className="text-center font-bold mb-4 text-lg inline-flex items-center justify-center gap-2 w-full">
+          <p className="text-center font-bold mb-4 text-lg md:inline-flex items-center justify-center gap-2 w-full hidden md:flex">
             <ShoppingBag className="w-5 h-5"/> 爸媽看過來！出國神隊友裝備 (買了再打勾！)
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -83,9 +83,9 @@ export default function Checklist() {
               target="_blank" 
               rel="noopener noreferrer"
               title="購買出國上網吃到飽網卡或eSIM"
-              className="sketch-border px-6 py-3 text-center font-bold hover:bg-yellow-50 bg-white flex items-center justify-center gap-2"
+              className="sketch-border px-4 py-3 text-center font-bold hover:bg-yellow-50 bg-white flex items-center justify-center gap-2 w-full md:w-auto text-sm md:text-base"
             >
-              <Smartphone className="w-5 h-5" /> 亞洲多國上網網卡 / eSIM
+              <Smartphone className="w-5 h-5 shrink-0" /> 亞洲多國上網網卡 / eSIM
             </motion.a>
             <motion.a 
               whileHover={{ scale: 1.05 }}
@@ -93,9 +93,9 @@ export default function Checklist() {
               target="_blank" 
               rel="noopener noreferrer"
               title="購買旅遊不便險與平安險"
-              className="sketch-border px-6 py-3 text-center font-bold hover:bg-yellow-50 bg-white flex items-center justify-center gap-2"
+              className="sketch-border px-4 py-3 text-center font-bold hover:bg-yellow-50 bg-white flex items-center justify-center gap-2 w-full md:w-auto text-sm md:text-base"
             >
-              <ShieldCheck className="w-5 h-5" /> 海外旅遊不便險 / 平安險
+              <ShieldCheck className="w-5 h-5 shrink-0" /> 海外旅遊不便險 / 平安險
             </motion.a>
           </div>
         </div>

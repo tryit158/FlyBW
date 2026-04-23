@@ -50,7 +50,7 @@ export default function TravelCalendar() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   title={`${m.month}${m.event}早鳥票券`}
-                  className="text-sm font-bold underline decoration-wavy underline-offset-4 hover:text-gray-600"
+                  className="text-sm font-bold underline decoration-wavy underline-offset-4 hover:text-gray-600 truncate"
                 >
                   早鳥票券 &rarr;
                 </a>

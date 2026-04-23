@@ -88,7 +88,7 @@ export default function FeaturedArticle() {
             {/* Decorative Tape */}
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-20 h-6 bg-gray-200 opacity-50 rotate-2 sketch-border z-10"></div>
 
-            <div className="mb-4 overflow-hidden sketch-border relative">
+        <div className="mb-4 overflow-hidden sketch-border relative border-2 border-black border-r-4 border-b-4">
               {article.badge && (
                 <div className="absolute top-2 right-2 bg-black text-white font-bold px-3 py-1 text-xs sketch-border rotate-[5deg] z-10 shadow-sm">
                   {article.badge}
@@ -98,13 +98,13 @@ export default function FeaturedArticle() {
                 src={article.image} 
                 alt={article.imageAlt} 
                 referrerPolicy="no-referrer"
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-48 md:h-56 object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
             
-            <h3 className="text-xl font-bold mb-2 leading-snug group-hover:text-gray-600 transition-colors" dangerouslySetInnerHTML={{ __html: article.title }}></h3>
+            <h3 className="text-xl md:text-2xl font-bold mb-3 leading-snug group-hover:text-gray-600 transition-colors line-clamp-2" dangerouslySetInnerHTML={{ __html: article.title }}></h3>
             
-            <p className="text-gray-600 text-sm mb-6 flex-grow line-clamp-3">
+            <p className="text-gray-600 text-sm md:text-base mb-6 flex-grow line-clamp-3">
               {article.excerpt}
             </p>
 
