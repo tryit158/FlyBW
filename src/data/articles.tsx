@@ -286,6 +286,7 @@ export const articlesData: Article[] = [
             <p className="text-sm text-gray-600 leading-relaxed">
               避開 7 月初的「剛放假瘋狂潮」以及 8 月中的「日本盂蘭盆節（超大連假，飯店貴到爆）」。在 8 月底準備開學前的「空窗期」，沖繩的票價會出現明顯跳水。這幾天實測，只要你不買托運行李，萬元內絕對保證能飛去吃石垣牛、玩浮潛。
             </p>
+            <a href="https://linkgo.one/s/RKSkQ" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-sm font-bold text-orange-600 border-b border-orange-600 hover:text-orange-800 transition-colors">前往查看虎航最新報價 &rarr;</a>
           </div>
 
           <div className="sketch-border p-6 bg-white hover:bg-pink-50 transition-colors">
@@ -299,6 +300,7 @@ export const articlesData: Article[] = [
             <p className="text-sm text-gray-600 leading-relaxed">
               暑假的大阪環球影城超夯，好時段的票早就被搶光。樂桃還剩下一些「晚去早回」或「超級紅眼（半夜 2 點飛）」的極端航班能壓在萬元邊緣。這適合體力極佳的大學生，或想把省下的飯店跟機票錢拿去買環球影城 VIP 快速通關的人。
             </p>
+            <a href="https://linkgo.one/s/t1gVf" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-sm font-bold text-pink-600 border-b border-pink-600 hover:text-pink-800 transition-colors">前往查看樂桃最新報價 &rarr;</a>
           </div>
 
           <div className="sketch-border p-6 bg-white hover:bg-yellow-100 transition-colors">
@@ -312,6 +314,7 @@ export const articlesData: Article[] = [
             <p className="text-sm text-gray-600 leading-relaxed">
               東京是暑假最貴的戰區！酷航的大飛機 (787 夢幻客機) 坐起來比一般廉航寬敞許多，目前 7 月底還有零星的萬元出頭機票。<strong>但注意，這個價格是「全裸票」（無餐點、無托運行李）</strong>。帶小孩的家庭不適合，但如果你是去代購或者背包客，這票價已經是沙漠中的綠洲。
             </p>
+            <a href="https://onelink.one/s/pbpzz" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-sm font-bold text-yellow-600 border-b border-yellow-600 hover:text-yellow-800 transition-colors">前往查看酷航最新報價 &rarr;</a>
           </div>
         </div>
 
