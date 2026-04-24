@@ -260,50 +260,88 @@ export const articlesData: Article[] = [
     excerpt: '暑假想出國，但看到傳統航空動輒 1.5 萬起跳的票價實在下不了手？別放棄得太早！經過我們地毯式搜索，7-8 月其實還有一些隱藏版的「萬元以下」廉航機票...',
     content: (
       <>
-        <p>
-          暑假想出國，但看到傳統航空動輒 1.5 萬起跳的票價實在下不了手？別放棄得太早！經過我們地毯式搜索，<strong>7-8 月其實還有一些隱藏版的「萬元以下」廉航機票</strong>，這真的是最後上車機會了！
+        <p className="text-lg mb-6 leading-relaxed">
+          「現在買暑假的機票是不是太晚了？」這絕對是每年 5 月底、6 月初大家最愛問的問題。傳統航空（長榮、華航、星宇）飛日本的票價早已飆破 1.5 萬，甚至直衝 2 萬大關，讓許多家長跟學生看著荷包嘆氣。
+        </p>
+        <p className="mb-8 leading-relaxed">
+          先別放棄！經過我們地毯式的瘋狂搜索與每天盯盤，<strong>2026 年的 7-8 月其實還有隱藏版的「萬元以下」廉航機票</strong>。這篇不廢話，直接告訴你哪些航線還有救、怎麼組合最便宜，這真的是今年暑假的「絕版最後上車機會」！
         </p>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
-          <Flame className="w-5 h-5 text-orange-500" /> 萬元以下航線大公開
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
+          <Flame className="w-6 h-6 text-red-600" /> 殘酷真相：萬元以下航線的「妥協點」在哪？
         </h4>
-        <ul className="list-none space-y-4 pl-2">
-          <li className="flex gap-3">
-            <span className="shrink-0">🐯</span>
-            <div>
-              <strong>虎航 (Tigerair)：台北 ✈️ 沖繩 (約 NT$ 8,500)</strong>
-              <p className="text-sm text-gray-600 mt-1">鎖定 8 月下旬！避開 7 月初的放假第一波高峰，8 月底準備開學前，沖繩的票價會出現一波小回檔，非常適合抓緊夏天的尾巴去玩水。</p>
+        <p className="mb-4 text-gray-800 leading-relaxed">
+          要買到暑假萬元以下的票，你必須接受一些「不完美」。我們幫你找出了目前還沒被買光的 3 條黃金神級航線，並告訴你該注意什麼：
+        </p>
+        
+        <div className="space-y-6 mt-6 mb-10">
+          <div className="sketch-border p-6 bg-white hover:bg-orange-50 transition-colors">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-2xl">🐯</span>
+              <h5 className="font-bold text-xl text-orange-800">虎航 (Tigerair)：台北 ✈️ 沖繩 (來回約 NT$ 7,500 ~ 8,800)</h5>
             </div>
-          </li>
-          <li className="flex gap-3">
-            <span className="shrink-0">🍑</span>
-            <div>
-              <strong>樂桃 (Peach)：台北 ✈️ 大阪 (約 NT$ 9,200)</strong>
-              <p className="text-sm text-gray-600 mt-1">紅眼航班是你的好朋友！樂桃的晚去早回雖然累，但省下來的錢剛好可以去環球影城買快速通關。建議鎖定 7 月中旬的週二、週三出發。</p>
-            </div>
-          </li>
-          <li className="flex gap-3">
-            <span className="shrink-0">🟡</span>
-            <div>
-              <strong>酷航 (Scoot)：台北 ✈️ 東京 (約 NT$ 9,800)</strong>
-              <p className="text-sm text-gray-600 mt-1">酷航的大飛機坐起來相對舒適！目前 7 月底還有零星的萬元以下機票，但通常不含行李，適合背包客或只帶登機箱的輕裝旅人。</p>
-            </div>
-          </li>
-        </ul>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              <strong>最佳進場時機：鎖定 8 月下旬 (8/20 之後出發)！</strong>
+            </p>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              避開 7 月初的「剛放假瘋狂潮」以及 8 月中的「日本盂蘭盆節（超大連假，飯店貴到爆）」。在 8 月底準備開學前的「空窗期」，沖繩的票價會出現明顯跳水。這幾天實測，只要你不買托運行李，萬元內絕對保證能飛去吃石垣牛、玩浮潛。
+            </p>
+          </div>
 
-        <h4 className="text-xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-3 py-1 bg-gray-50">
-          <Backpack className="w-5 h-5"/> 暑假搭廉航的省錢秘訣
+          <div className="sketch-border p-6 bg-white hover:bg-pink-50 transition-colors">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-2xl">🍑</span>
+              <h5 className="font-bold text-xl text-pink-800">樂桃 (Peach)：台北 ✈️ 大阪 (來回約 NT$ 9,200 ~ 10,500)</h5>
+            </div>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              <strong>最佳進場時機：擁抱紅眼航班，鎖定 7-8 月的「週二去、週三回」！</strong>
+            </p>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              暑假的大阪環球影城超夯，好時段的票早就被搶光。樂桃還剩下一些「晚去早回」或「超級紅眼（半夜 2 點飛）」的極端航班能壓在萬元邊緣。這適合體力極佳的大學生，或想把省下的飯店跟機票錢拿去買環球影城 VIP 快速通關的人。
+            </p>
+          </div>
+
+          <div className="sketch-border p-6 bg-white hover:bg-yellow-100 transition-colors">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-2xl">🟡</span>
+              <h5 className="font-bold text-xl text-yellow-800">酷航 (Scoot)：台北 ✈️ 東京成田 (來回約 NT$ 9,800 ~ 11,500)</h5>
+            </div>
+            <p className="text-gray-700 leading-relaxed mb-3">
+              <strong>最佳進場時機：7 月中下旬，捨棄大行李箱！</strong>
+            </p>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              東京是暑假最貴的戰區！酷航的大飛機 (787 夢幻客機) 坐起來比一般廉航寬敞許多，目前 7 月底還有零星的萬元出頭機票。<strong>但注意，這個價格是「全裸票」（無餐點、無托運行李）</strong>。帶小孩的家庭不適合，但如果你是去代購或者背包客，這票價已經是沙漠中的綠洲。
+            </p>
+          </div>
+        </div>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
+          <Backpack className="w-6 h-6"/> 專家破解：暑假廉航「魔鬼藏在細節裡」的省錢秘訣
         </h4>
-        <ol className="list-decimal list-inside space-y-3 font-bold">
-          <li><strong>行李共用制：</strong> 如果跟朋友一起去，去程可以只買一個 20kg 托運行李一起塞，回程再各自買，省下單程的行李費！</li>
-          <li><strong>自備空水壺與零食：</strong> 廉航上連水都要錢，過完安檢後記得裝滿水壺，帶點小餅乾解饞。</li>
+        <p className="mb-4 text-gray-800">
+          看到萬元以下的票別高興得太早，暑假搭廉航，如果你不懂以下三個操作，到機場絕對會被反扒一層皮：
+        </p>
+        <ol className="list-decimal list-inside space-y-4 font-bold text-gray-800 mb-8 border-l-4 border-black pl-4 ml-2">
+          <li>
+            <span className="text-lg">行李「去中心化」共用制：</span>
+            <p className="text-sm font-normal text-gray-600 mt-1 pl-5">不要四個人都買 20kg 托運！去程大家的箱子通常很空，請只買「一個 30kg」把大家的衣物塞一起。回程戰利品多，再依照需求加買，這樣來回現省近兩千元台幣。</p>
+          </li>
+          <li>
+            <span className="text-lg">千萬不要在機上才想買水：</span>
+            <p className="text-sm font-normal text-gray-600 mt-1 pl-5">廉航上連白開水都要收費。暑假天氣極熱，請務必帶「空寶特瓶或保溫瓶」過安檢，到了登機門附近的飲水機裝滿再上飛機。</p>
+          </li>
+          <li>
+            <span className="text-lg">交叉開票大法 (A航空去、B航空回)：</span>
+            <p className="text-sm font-normal text-gray-600 mt-1 pl-5">廉航的最大優勢是可以買單程票而不會變貴。如果虎航去程便宜、但回程很貴，請大膽地「去程買虎航、回程買捷星」。透過本站的「觀測儀」找組合，常常能配出更便宜的黃金交叉價。</p>
+          </li>
         </ol>
 
-        <div className="mt-10 p-6 bg-gray-50 sketch-border text-center">
-          <p className="font-bold mb-2">還在猶豫？機票可是不等人的！</p>
-          <p className="text-sm text-gray-600 mb-4">趕快去查查最新的機票價格吧！</p>
-          <a href="#observatory" className="inline-block sketch-border bg-white px-6 py-2 font-bold hover:bg-gray-100 transition-colors">
-            查看本日最低價 &rarr;
+        <div className="mt-10 p-6 bg-yellow-50 sketch-border text-center relative">
+          <div className="absolute top-2 right-2 text-3xl">⏳</div>
+          <p className="font-bold mb-2 text-xl">猶豫，就會敗北！</p>
+          <p className="text-gray-700 mb-6">暑假的廉航機票，每隔一天價格可能就往上跳一千塊。現在就打開觀測儀查詢明天的價格吧！</p>
+          <a href="#observatory" className="inline-block sketch-border bg-black text-white px-8 py-3 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] hover:shadow-none hover:translate-y-1 hover:translate-x-1">
+            前往查看每日最低價觀測儀 &rarr;
           </a>
         </div>
 
