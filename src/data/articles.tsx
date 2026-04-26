@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2 } from 'lucide-react';
+import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins } from 'lucide-react';
 
 export interface Article {
   id: string;
@@ -43,6 +43,101 @@ export const AffiliateFooter = () => (
 );
 
 export const articlesData: Article[] = [
+  {
+    id: 'article-tigerair-shareholder-2026',
+    title: '2026 虎航股東回饋金 800 元領取教學：3 分鐘完成登錄',
+    author: '黑白飛金算盤',
+    readTime: '4 分鐘',
+    image: '/tiger-real.png',
+    imageAlt: '台灣虎航股東回饋金登錄教學',
+    excerpt: '手上持有虎航（6757）股票的股民請注意！今年的股東機票回饋金已經正式開放登錄了。千萬別讓你的權益睡著了，到底怎麼登錄？有什麼限制？這篇手把手教你拿到 800 元的機票折抵金！',
+    badge: '💰 股民必看',
+    content: (
+      <>
+        <p className="text-lg mb-6 leading-relaxed">
+          呼叫所有「虎粉」與持有虎航（6757）的股民們！一年一度的<strong>台灣虎航股東回饋金</strong>正式開放登錄啦！如果你手邊有虎航的股票，千萬不要讓這個好康從指縫中溜走。
+        </p>
+        <p className="mb-8 leading-relaxed">
+          今年的回饋金機制非常誘人，只要完成登錄就能領取 800 元折抵！但條款同樣也藏著不少「魔鬼細節」。這篇大補帖幫你把冗長的官方公告濃縮成白話文，包含怎麼登錄、注意事項，看完立刻去登錄，年底飛日韓就靠這筆折抵金了！
+        </p>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
+          <Coins className="w-6 h-6 text-yellow-600" /> 我能拿多少？股東回饋大公開
+        </h4>
+        <p className="mb-4 leading-relaxed">
+          今年的股東回饋非常阿莎力！只要你在「停止過戶日」（通常是股東會前兩個月）帳戶裡持有虎航股票：
+        </p>
+        
+        <div className="space-y-4 mb-10 overflow-hidden sketch-border border-2 border-black border-b-4 border-r-4 rounded-none">
+          <div className="flex flex-col sm:flex-row bg-yellow-100 border-b-2 border-black font-bold">
+            <div className="p-4 sm:w-1/3 border-b-2 sm:border-b-0 sm:border-r-2 border-black">持有股數</div>
+            <div className="p-4 sm:w-2/3">回饋額度</div>
+          </div>
+          <div className="flex flex-col sm:flex-row border-b border-gray-300">
+            <div className="p-4 sm:w-1/3 border-b sm:border-b-0 sm:border-r border-gray-300 bg-white font-bold text-gray-800">持有規定數量股數以上</div>
+            <div className="p-4 sm:w-2/3 bg-white text-red-600 font-bold">贈送 800 點 tigerpoints (價值 NT$ 800)！</div>
+          </div>
+        </div>
+        <p className="text-sm font-bold text-gray-600 mb-8">💡 小知識：tigerpoints 可直接 1:1 折抵台灣虎航機票票價，但不含稅金及機場附加費。</p>
+
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
+          <Ticket className="w-6 h-6 text-indigo-600"/> 手把手教學：三步驟完成登錄
+        </h4>
+        <p className="mb-4 text-gray-800">
+          要注意，這筆回饋金<strong>不會自動掉入你的帳戶</strong>，你必須手動進行「股東身分綁定與登錄」。請準備好你的身分證字號與 tigerclub 會員帳號。
+        </p>
+        <ol className="list-decimal list-inside space-y-4 font-bold text-gray-800 mb-10 border-l-4 border-black pl-4 ml-2">
+          <li>
+            <span className="text-lg">註冊 / 確保已有 tigerclub 會員</span>
+            <p className="text-sm font-normal text-gray-600 mt-1 pl-5">如果你還不是會員，請先到台灣虎航官網或 APP 免費註冊。<strong>註冊的「身分證字號」與「姓名」必須與你證券戶登記的資料一模一樣。</strong></p>
+          </li>
+          <li>
+            <span className="text-lg">前往專屬的「<a href="https://tigerairtw.my.salesforce-sites.com/cc/ShareholdersLogin" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline decoration-wavy underline-offset-4 hover:text-indigo-800 transition-colors">股東登錄網頁</a>」</span>
+            <p className="text-sm font-normal text-gray-600 mt-1 pl-5">在虎航發送的股東大會通知書上，或是前往官網的「最新公告」，點擊進入專屬登錄入口。</p>
+          </li>
+          <li>
+            <span className="text-lg">輸入與確認資料</span>
+            <p className="text-sm font-normal text-gray-600 mt-1 pl-5">登入會員後，輸入你的股東戶號或身分證字號進行檢核。確認畫面顯示「登錄成功」即完成，點數將在指定的作業期（通常是股東會後一個月左右）自動發放至帳戶。</p>
+          </li>
+        </ol>
+
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-red-50 border-red-800 border-2 border-b-4 border-r-4 text-red-800">
+          <AlertTriangle className="w-6 h-6"/> 避雷針：你必須知道的 3 個魔鬼規則
+        </h4>
+        <p className="mb-4 text-gray-800">
+          「拿到點數好開心，我要等到賞櫻季一口氣折抵！」等等，在你幻想之前，請先讀懂這三條鐵則，否則點數只會歸零：
+        </p>
+        
+        <div className="space-y-6 mb-10">
+          <div className="sketch-border p-6 bg-white hover:bg-gray-50 transition-colors">
+            <h5 className="font-bold text-xl mb-2 flex items-center gap-2"><XCircle className="w-5 h-5 text-red-500"/> 無法折抵稅金與拖運行李</h5>
+            <p className="text-gray-700 leading-relaxed text-sm">tigerpoints 只能折抵「純機票的基準票價 (Base Fare)」。機場稅、燃油附加費、額外購買的行李或超重費、餐點選位，<strong>通通不能使用點數折抵</strong>，仍需刷卡支付。</p>
+          </div>
+          <div className="sketch-border p-6 bg-white hover:bg-gray-50 transition-colors">
+            <h5 className="font-bold text-xl mb-2 flex items-center gap-2"><CalendarDays className="w-5 h-5 text-indigo-500"/> 點數會過期！而且效期不長</h5>
+            <p className="text-gray-700 leading-relaxed text-sm">股東回饋點數通常會有嚴格的「使用期限」（請看當年活動公告，多數為發放日起半年或一年內要「訂完票」）。如果放著沒用，時間一到直接報銷歸零。</p>
+          </div>
+          <div className="sketch-border p-6 bg-white hover:bg-gray-50 transition-colors">
+            <h5 className="font-bold text-xl mb-2 flex items-center gap-2"><Plane className="w-5 h-5 text-gray-500"/> 連續假期與機位限制 (Blackout Dates)</h5>
+            <p className="text-gray-700 leading-relaxed text-sm">依據往年經驗，使用股東特惠可能會有「禁運期」，像是農曆春節、連續大休假可能無法使用，或是單一航班有開放折抵的名額上限。建議拿到點數後，盡快下手規劃你的淡季或平假日旅遊！</p>
+          </div>
+        </div>
+
+        <div className="mt-10 p-6 bg-yellow-50 sketch-border text-center relative overflow-hidden mb-10 border-2 border-black">
+          <div className="absolute -bottom-4 -right-4 opacity-10"><Plane className="w-40 h-40"/></div>
+          <p className="font-bold mb-2 text-xl">點數準備入帳，機票看好了嗎？</p>
+          <p className="text-gray-700 mb-6">趕快去專屬連結看你的虎航點數狀態，順便透過本站查查有沒有合適的特價機票能折抵！</p>
+          <a href="https://onelink.one/s/ypRRk" target="_blank" rel="noopener noreferrer" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
+            前往查看虎航最新報價與活動 &rarr;
+          </a>
+        </div>
+        
+        <AffiliateFooter />
+      </>
+    )
+  },
   {
     id: 'article-6',
     title: '【2026 避坑圖解】日韓廉航行李限制：這 2kg 的差距，可能讓你多付 $1,500！',

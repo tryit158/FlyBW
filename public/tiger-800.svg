@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%" style="background-color: #f8f9fa; font-family: sans-serif;">
+  <defs>
+    <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#e5e7eb" />
+    </pattern>
+  </defs>
+  
+  <!-- Background with comic dots -->
+  <rect width="800" height="400" fill="url(#dot-pattern)" />
+
+  <g transform="translate(400, 240)">
+    
+    <!-- Shadow under the flying ticket -->
+    <ellipse cx="0" cy="110" rx="180" ry="30" fill="#000" opacity="0.1" />
+
+    <!-- Big Flying Ticket ($800 Boarding Pass) -->
+    <g transform="rotate(-10)">
+      <!-- Main body of ticket -->
+      <path d="M -250 -20 Q -100 20 200 -20 L 250 30 Q 100 70 -200 30 Z" fill="#fff" stroke="#000" stroke-width="5" stroke-linejoin="round" />
+      <!-- Ticket details/perforations -->
+      <path d="M -220 5 Q -100 40 180 5" fill="none" stroke="#000" stroke-dasharray="10 10" stroke-width="2" />
+      <path d="M 150 -15 L 180 20" stroke="#000" stroke-width="3" />
+      <!-- "BOARDING PASS" text / 800 -->
+      <text x="-150" y="15" font-family="monospace" font-weight="900" font-size="24" fill="#000" transform="rotate(5)">$800 回饋金</text>
+      <text x="80" y="5" font-family="monospace" font-weight="900" font-size="16" fill="#000" transform="rotate(5)">BOARDING PASS</text>
+    </g>
+
+    <!-- The Cute Chibi Tiger -->
+    <g transform="translate(0, -20) scale(0.65)">
+      
+      <!-- Tail -->
+      <path d="M 100 60 C 130 60 160 40 130 10 C 120 0 110 0 100 -10 Z" fill="#fff" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 125 40 L 115 50 M 130 20 L 115 30 M 120 0 L 110 5" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+
+      <!-- Back Legs -->
+      <!-- Left hind leg -->
+      <path d="M -90 60 C -140 60 -150 145 -70 145 C -40 145 -30 140 -40 110" fill="#fff" stroke="#000" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M -115 145 L -115 125 M -95 145 L -95 125" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+      
+      <!-- Right hind leg -->
+      <path d="M 90 60 C 140 60 150 145 70 145 C 40 145 30 140 40 110" fill="#fff" stroke="#000" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M 115 145 L 115 125 M 95 145 L 95 125" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+
+      <!-- Body -->
+      <path d="M -60 50 C -60 150 60 150 60 50 Z" fill="#fff" stroke="#000" stroke-width="8"/>
+      
+      <!-- Front Legs -->
+      <path d="M -30 60 L -30 140 C -45 150 -10 150 -5 140 L -5 60 Z" fill="#fff" stroke="#000" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M -20 145 L -20 125" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+      
+      <path d="M 30 60 L 30 140 C 45 150 10 150 5 140 L 5 60 Z" fill="#fff" stroke="#000" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M 20 145 L 20 125" stroke="#000" stroke-width="5" stroke-linecap="round"/>
+
+      <!-- Body side lines and stripes -->
+      <path d="M -60 70 C -45 50 -35 70 -35 70" stroke="#000" stroke-width="5" fill="none"/>
+      <path d="M 60 70 C 45 50 35 70 35 70" stroke="#000" stroke-width="5" fill="none"/>
+
+      <path d="M -60 110 Q -40 100 -35 120 Z" fill="#000"/>
+      <path d="M 60 110 Q 40 100 35 120 Z" fill="#000"/>
+
+      <path d="M -75 100 Q -60 90 -65 110 Z" fill="#000"/>
+      <path d="M 75 100 Q 60 90 65 110 Z" fill="#000"/>
+
+      <!-- Head Base -->
+      <path d="M 0 -130 C 130 -130 170 -50 140 20 C 100 90 -100 90 -140 20 C -170 -50 -130 -130 0 -130 Z" fill="#fff" stroke="#000" stroke-width="8"/>
+
+      <!-- Ears (Behind head visually because we draw them first? Let's redraw them but keeping them in front or connected) -->
+      <!-- Left Ear Base -->
+      <path d="M -90 -90 C -150 -170 -30 -180 -20 -120" fill="#fff" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+      <path d="M -80 -100 C -120 -150 -50 -150 -40 -115" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round"/>
+      <path d="M -50 -125 C -60 -135 -70 -135 -80 -120 Q -60 -115 -50 -125" fill="#000"/>
+      
+      <!-- Right Ear Base -->
+      <path d="M 90 -90 C 150 -170 30 -180 20 -120" fill="#fff" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 80 -100 C 120 -150 50 -150 40 -115" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 50 -125 C 60 -135 70 -135 80 -120 Q 60 -115 50 -125" fill="#000"/>
+
+      <!-- Redraw outline of head on top to hide ear intersection -->
+      <path d="M 0 -130 C 130 -130 170 -50 140 20 C 100 90 -100 90 -140 20 C -170 -50 -130 -130 0 -130 Z" fill="none" stroke="#000" stroke-width="8"/>
+      <path d="M -110 -100 C -70 -140 70 -140 110 -100 L 90 -90 C 50 -120 -50 -120 -90 -90 Z" fill="#fff"/> <!-- Quick mask over ear join -->
+      <path d="M 0 -130 C 130 -130 170 -50 140 20 C 100 90 -100 90 -140 20 C -170 -50 -130 -130 0 -130 Z" fill="none" stroke="#000" stroke-width="8"/>
+
+
+      <!-- Head Stripes / Spikes -->
+      <path d="M 0 -130 C -20 -90 -10 -70 0 -50 C 10 -70 20 -90 0 -130" fill="#000"/>
+      <path d="M -40 -120 C -60 -80 -60 -70 -30 -60 C -40 -80 -25 -100 -40 -120" fill="#000"/>
+      <path d="M 40 -120 C 60 -80 60 -70 30 -60 C 40 -80 25 -100 40 -120" fill="#000"/>
+
+      <!-- Side Face Stripes -->
+      <path d="M -153 -30 C -120 -20 -95 -20 -85 -10 C -105 -5 -125 -15 -148 -10 Z" fill="#000"/>
+      <path d="M -145 10 C -100 5 -75 5 -60 10 C -80 15 -100 15 -130 20 Z" fill="#000"/>
+      <path d="M -125 35 C -90 35 -70 30 -60 40 C -80 45 -95 45 -110 50 Z" fill="#000"/>
+
+      <path d="M 153 -30 C 120 -20 95 -20 85 -10 C 105 -5 125 -15 148 -10 Z" fill="#000"/>
+      <path d="M 145 10 C 100 5 75 5 60 10 C 80 15 100 15 130 20 Z" fill="#000"/>
+      <path d="M 125 35 C 90 35 70 30 60 40 C 80 45 95 45 110 50 Z" fill="#000"/>
+      
+      <!-- Eyebrows -->
+      <path d="M -70 -80 C -50 -100 -30 -80 -20 -70 C -30 -90 -50 -105 -70 -80" fill="#000"/>
+      <path d="M 70 -80 C 50 -100 30 -80 20 -70 C 30 -90 50 -105 70 -80" fill="#000"/>
+
+      <!-- Eyes -->
+      <!-- Left Eye -->
+      <circle cx="-55" cy="-25" r="35" fill="#000"/>
+      <circle cx="-65" cy="-40" r="12" fill="#fff"/>
+      <circle cx="-35" cy="-15" r="5" fill="#fff"/>
+      
+      <!-- Right Eye -->
+      <circle cx="55" cy="-25" r="35" fill="#000"/>
+      <circle cx="45" cy="-40" r="12" fill="#fff"/>
+      <circle cx="75" cy="-15" r="5" fill="#fff"/>
+
+      <!-- Muzzle / Nose -->
+      <!-- Nose outline -->
+      <path d="M -20 -2 L 20 -2 C 25 -2 20 8 0 12 C -20 8 -25 -2 -20 -2 Z" fill="#fff" stroke="#000" stroke-width="6"/>
+      <path d="M -12 2 L 12 2 C 15 2 12 6 0 8 C -12 6 -15 2 -12 2 Z" fill="#000"/>
+      <!-- Mouth W -->
+      <path d="M -40 25 C -40 45 -5 45 0 25 C 0 45 40 45 40 25" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round"/>
+      <!-- Tongue/open mouth -->
+      <path d="M 0 25 C -20 25 -20 65 0 65 C 20 65 20 25 0 25 Z" fill="#000"/>
+      <path d="M 0 12 L 0 25" fill="none" stroke="#000" stroke-width="6"/>
+    </g>
+
+    <!-- Speed/Wind lines -->
+    <path d="M -280 -40 L -220 -30 M -320 0 L -250 10 M -260 40 L -190 50" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-dasharray="15 15" />
+
+  </g>
+  
+  <!-- Clouds at the bottom -->
+  <g transform="translate(0, 350)" fill="#fff" stroke="#000" stroke-width="5">
+    <circle cx="100" cy="50" r="60" />
+    <circle cx="200" cy="20" r="80" />
+    <circle cx="320" cy="60" r="70" />
+    <circle cx="600" cy="30" r="90" />
+    <circle cx="750" cy="60" r="60" />
+    <!-- Rect to fill bottom -->
+    <rect x="-10" y="40" width="820" height="100" stroke="none"/>
+    <path d="M -10 40 L 810 40" />
+  </g>
+
+</svg>
