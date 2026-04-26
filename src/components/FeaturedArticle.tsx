@@ -1,10 +1,21 @@
 import { motion } from 'motion/react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { articlesData } from '../data/articles';
 import { PenTool } from 'lucide-react';
 
 export default function FeaturedArticle() {
   const [expandedId, setExpandedId] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (expandedId) {
+      const article = articlesData.find(a => a.id === expandedId);
+      if (article) {
+        document.title = `${article.title.replace(/<[^>]+>/g, '')} | 黑白飛 Fly B&W`;
+      }
+    } else {
+      document.title = "黑白飛 Fly B&W | 日韓廉航攻略、特價觀測機與親子出國裝備表";
+    }
+  }, [expandedId]);
 
   if (expandedId) {
     const article = articlesData.find(a => a.id === expandedId);
@@ -35,7 +46,7 @@ export default function FeaturedArticle() {
           <div className="absolute -top-4 right-8 w-24 h-8 bg-gray-200 opacity-50 rotate-6 sketch-border hidden md:block"></div>
 
           <header className="mb-8 border-b-2 border-dashed border-gray-300 pb-6 text-center mt-4 md:mt-0">
-            <h3 className="text-2xl md:text-3xl font-bold leading-snug mb-4" dangerouslySetInnerHTML={{ __html: article.title }}></h3>
+            <h1 className="text-2xl md:text-3xl font-bold leading-snug mb-4" dangerouslySetInnerHTML={{ __html: article.title }}></h1>
             <div className="flex items-center justify-center gap-4 text-sm font-bold text-gray-500 font-hand">
               <span>By {article.author}</span>
               <span>•</span>
