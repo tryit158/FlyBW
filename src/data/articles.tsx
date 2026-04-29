@@ -47,7 +47,7 @@ export const articlesData: Article[] = [
     id: 'article-tigerair-shareholder-2026',
     title: '2026 虎航股東回饋金 800 元領取教學：3 分鐘完成登錄',
     author: '黑白飛金算盤',
-    readTime: '4 分鐘',
+    readTime: '3 分鐘',
     image: '/tiger-real.png',
     imageAlt: '台灣虎航股東回饋金登錄教學',
     excerpt: '手上持有虎航（6757）股票的股民請注意！今年的股東機票回饋金已經正式開放登錄了。千萬別讓你的權益睡著了，到底怎麼登錄？有什麼限制？這篇手把手教你拿到 800 元的機票折抵金！',
