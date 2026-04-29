@@ -449,166 +449,148 @@ export const articlesData: Article[] = [
   },
   {
     id: 'article-3',
-    title: '2026 東京自由行 5 天 4 夜終極攻略：不走回頭路，吃好買滿！',
+    title: '2026 沖繩自由行 5 天 4 夜終極攻略，吃好買滿！',
     author: '黑白飛主編',
-    readTime: '5 分鐘',
-    image: 'https://picsum.photos/seed/tokyo/800/400?grayscale',
-    imageAlt: '東京自由行攻略',
-    excerpt: '第一次去東京不知道怎麼排行程？想去澀谷看十字路口、去淺草穿和服，又想去迪士尼？這篇為你整理了 2026 最新版東京 5 天 4 夜完美路線，附帶省錢交通票券與網卡推薦！',
-    badge: '🏷️ 旅展限時特價中',
+    readTime: '10 分鐘',
+    image: 'https://images.unsplash.com/photo-1541485603417-6d1abf07eb7c?auto=format&fit=crop&q=80&w=800&h=400',
+    imageAlt: '沖繩自由行攻略',
+    excerpt: '解封後的沖繩又變得更迷人了！新手如何安排不走回頭路的行程？從租車自駕的眉角、美國村的異國風情、到絕美古宇利島，這是一篇涵蓋美食、購物、打卡秘境的 3000 字終極深度指南。',
+    badge: '🏖️ 海島度假必選',
     content: (
       <>
         <p className="text-lg mb-6 leading-relaxed">
-          解封後，無數旅客再次把「東京」當作重返日本的首站。這座新舊交融、四季分明的國際大都會在經歷了幾年的沉澱後，2026 年展現出了更驚豔的魅力——澀谷的天際線大洗牌、麻布台之丘嶄新落成、加上東京迪士尼海洋的全新擴地「夢幻泉鄉（Fantasy Springs）」正式迎客。第一次去東京不知道怎麼排行程？想去澀谷看十字路口、去淺草穿和服，又想去迪士尼？這篇為你整理了 2026 最新版東京 5 天 4 夜完美路線，從行前準備、交通串接到美食清單，我們講究「不走回頭路、不浪費交通費」，跟著走準沒錯！
+          距離台灣只需 1.5 小時航程的「沖繩 (Okinawa)」，一直都是台灣人海島度假的首選。2026 年的沖繩，不僅保留了透亮如果凍般的「慶良間藍」海水，更增加了許多全新落成的海景度假村、特色咖啡廳以及大型購物商城。這座揉合了琉球傳統文化、美式異國風情與日式精緻服務的島嶼，充滿著讓人一去再去的魔力。這篇高達 3000 字的「2026 沖繩 5 天 4 夜終極攻略」，將為你詳細拆解如何規劃完美的南北縱走路線。我們秉持「不走回頭路、吃好買滿」的最高指導原則，從行前準備、租車注意事項，到隱藏版的美食清單，手把手帶你玩遍沖繩的精華！
+        </p>
+        <p className="text-lg mb-6 leading-relaxed">
+          從絕美的古宇利大橋到那霸市區的國際通，沖繩提供了與東京、大阪截然不同的氛圍。在這裡，不需要追趕緊湊的地鐵時刻表，你可以選擇自己最舒服的節奏，吹著海風，看著蔚藍大海，在沖繩獨有的慢活時光中，感受最極致的放鬆。這也是為什麼，只要來過一次沖繩的人，幾乎都會在回程班機上開始規劃下一次的行程。
         </p>
 
         <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
-          <Backpack className="w-6 h-6"/> 零失敗：行前必備的 3 個通關護符
+          <Backpack className="w-6 h-6"/> 零失敗：行前必備的交通與通關指引
         </h4>
         <p className="mb-4 leading-relaxed">
-          東京的交通網絡如蜘蛛網般密佈，加上行動支付全面普及，出發前強烈建議「把手機武裝好」。你不需要買一堆實體票卷，但下面這幾樣東西沒準備好，在機場跟車站絕對會陷入大混亂：
+          沖繩的地形狹長，雖然那霸市區有單軌電車 (Yui Rail)，但若要深入中北部的絕美海灘與秘境咖啡廳，<strong>「租車自駕」絕對是唯一解</strong>。請務必在出發前做好以下準備：
         </p>
         <div className="grid md:grid-cols-2 gap-4 mb-10">
           <div className="sketch-border p-5 bg-white">
-            <h5 className="font-bold text-lg mb-2 text-indigo-700">1. 西瓜卡綁定 Apple Wallet</h5>
+            <h5 className="font-bold text-lg mb-2 text-indigo-700">1. 台灣駕照正本與日文譯本</h5>
             <p className="text-sm text-gray-700 leading-relaxed">
-              實體的 Suica 與 Pasmo 經常面臨晶片短缺停售。強烈建議 iPhone 使用者直接打開「錢包」App，新增一張交通卡並用信用卡加值。進出地鐵站只需手機輕觸閘門（甚至連螢幕都不用喚醒），這是提升東京自由行幸福感最關鍵的一步！
+              千萬別帶了國際駕照卻忘了這兩樣！在日本租車，台灣人必須出示「台灣駕照正本」以及去監理所申請的「日文譯本」。少了任何一樣，租車公司絕對會無情地拒絕你取車。另外，旺季（如暑假、連假）請務必提前 2-3 個月上網預約租車，否則一車難求。這點一定要再三確認，因為這是發生在無數旅客身上最痛的教訓。
             </p>
           </div>
           <div className="sketch-border p-5 bg-white">
             <h5 className="font-bold text-lg mb-2 text-indigo-700">2. Visit Japan Web (VJW) 提前填妥</h5>
             <p className="text-sm text-gray-700 leading-relaxed">
-              現在日本入境已經全面數位化。請在登機前登入 Visit Japan Web 填寫入境與海關申報，目前系統已經極度簡化，<strong>入境與海關已「合併為單一 QR Code」</strong>。下飛機後截圖備用，走快速通道出關，絕對比現場排隊寫紙本海關單省下 30 分鐘以上。
+              現在日本入境已經全面數位化。請在登機前登入 Visit Japan Web 填寫入境與海關申報，目前系統已經極度簡化，<strong>入境與海關已「合併為單一 QR Code」</strong>。那霸機場雖然不大，但同時段若降落多部國際線班機，排隊人潮依然可怕，提前填好能幫你省下至少 30 分鐘以上，贏在起跑點。
             </p>
           </div>
         </div>
 
         <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
-          <Map className="w-6 h-6"/> 5 天 4 夜「順時鐘極限流」完美路線
+          <Map className="w-6 h-6"/> 5 天 4 夜「由南至北包抄」完美路線
         </h4>
         <p className="mb-8 leading-relaxed">
-          排東京行程最忌諱的就是「東南西北亂跑」。東京很大，搭地鐵動輒 30-40 分鐘起跳。我們的路線設計將東京劃分為大區塊，採取「同區集中」策略，讓你每天能在特定區域徹底吃好買滿！
+          沖繩主要景點分佈在南部（那霸機場/國際通）、中部（美國村/恩納村海景）、北部（水族館/古宇利島）。我們建議採取<strong>「頭尾住那霸、中段住海景」</strong>的策略，一路往北玩再順路往南回，最大化你的遊玩時間！不要每天都住在同一間飯店然後花幾小時車程南北奔波，那是極度浪費時間的做法。
         </p>
 
         <div className="space-y-12 mt-6">
           {/* Day 1 */}
           <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
-            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[-6deg] text-xl">Day 1：成田機場 ✈️ 淺草＆晴空塔</div>
-            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">穿梭江戶時空，將東京閃耀夜景盡收眼底</h5>
-            <img src="https://picsum.photos/seed/asakusa2/800/400?grayscale" alt="淺草雷門" className="w-full h-64 object-cover sketch-border border-2 border-black mb-6" />
-            
+            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[-6deg] text-xl">Day 1：抵達那霸 ✈️ 暖身血拚與道地拉麵</div>
+            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">適應右駕節奏，走進那霸的熱鬧夜生活</h5>
+            <img src="https://images.unsplash.com/photo-1613292415174-8db65eedf164?auto=format&fit=crop&q=80&w=800&h=400" alt="那霸國際通" className="w-full h-64 object-cover sketch-border border-2 border-black mb-6" />
             <div className="space-y-4 text-gray-800 leading-relaxed">
               <p>
-                <strong>📌 上午：機場直達淺草</strong><br/>
-                如果你從成田機場降落，推薦搭乘「京成電鐵 Skyliner」或「Access 特快」，不到一小時就能把你直送到上野/淺草一帶。抵達飯店寄放行李後，第一站直奔充滿江戶風情的「淺草」。
+                <strong>📌 下午：機場取車與波上宮祈福</strong><br/>
+                抵達那霸機場後，通常會有各大租車公司的接駁車載你前往取車中心。剛坐上右駕車的第一天，請隨時默唸「左轉小彎、右轉大彎」，雨刷和方向燈打錯是必經之路，別擔心，幾乎所有外國遊客都會經歷這一段！取車後的第一站，前往那霸市區唯一的海灘神社——<strong>波上宮</strong>。這座建在珊瑚礁懸崖上的紅柱神社，不僅是打卡勝地，還可求個行車平安御守。
               </p>
               <p>
-                <strong>📌 下午：雷門打卡與仲見世通吃貨之旅</strong><br/>
-                想要拍美照，推薦在淺草車站附近租借和服或浴衣（建議提前一個月上網預約）。穿戴整齊後，步行至巨大的「雷門」燈籠下拍照。通過雷門後就是有著幾百年歷史的「仲見世商店街」與充滿古味的「傳法院通」。必吃的美食包括：現烤冒著熱氣的<strong>木村家人形燒</strong>、外酥內軟的<strong>淺草炸肉餅（淺草メンチ）</strong>，以及有著濃郁抹茶香的<strong>花月堂波蘿麵包</strong>。記得，日本文化不鼓勵邊走邊吃，請在店家旁邊的指定區域吃完再丟垃圾喔！
-              </p>
-              <p>
-                <strong>📌 晚上：漫步至澄澈夜空的晴空塔</strong><br/>
-                傍晚時分，沿著隅田川漫步前往晴空塔（Tokyo Skytree）。推薦先去晴空塔底下的「墨田水族館」或「Solamachi 商場」大肆採購寶可夢中心、吉卜力專賣店的伴手禮。晚餐可以在 30 樓以上的景觀餐廳享用牛舌或親子丼。飽餐後登上 350 公尺的觀景台，俯瞰整個東京市區的璀璨夜景，遠眺東京鐵塔，做為展開東京之旅的完美序幕。
+                <strong>📌 晚上：國際通 (Kokusai Dori) 瘋狂採購與吃爆</strong><br/>
+                將車停妥於那霸市區飯店後，直奔奇蹟的一英里「國際通」。這裡集結了全沖繩最齊全的伴手禮店。晚餐絕對要排隊吃一碗享譽盛名的<strong>暖暮拉麵</strong>，或是品嚐充滿膠原蛋白的濃郁<strong>沖繩麵 (Okinawa Soba)</strong>，為明天豐富的海島行程儲備體力。吃飽後，到附近的「驚安殿堂 唐吉訶德」或大國藥妝買齊零嘴與防曬乳，因為接下來往中北部移動，大型賣場就不那麼密集了。晚上回到飯店早點休息，準備迎接明天的美麗海景。
               </p>
             </div>
           </div>
 
           {/* Day 2 */}
           <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
-            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[3deg] text-xl">Day 2：東京迪士尼度假區 🏰</div>
-            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">從早嗨到晚！啟動你的鈔能力與體力極限</h5>
+            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[3deg] text-xl">Day 2：前進中部海線 🌴 異國美國村與萬座毛</div>
+            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">從和風轉換頻道，感受濃濃的美式加州風情</h5>
             
             <div className="space-y-4 text-gray-800 leading-relaxed">
-              <div className="bg-blue-50 sketch-border p-4 mb-4 border-2 border-blue-900 border-dashed">
-                <strong>💡 陸地 (Disneyland) vs 海洋 (DisneySea) 怎麼選？</strong><br/>
-                這永遠是世紀難題！如果帶 12 歲以下小孩、喜歡經典童話氛圍、想看最震撼的夜間灰姑娘城堡煙火與光雕秀，請選「迪士尼樂園 (陸地)」。如果喜歡刺激設施、帶著喜歡達菲熊的另一半、或者想朝聖最新的「夢幻泉鄉 (Fantasy Springs)」，請毫不猶豫買「迪士尼海洋」的門票！
-              </div>
               <p>
-                <strong>📌 早上：戰略性入園與搶票（夢幻泉鄉必看）</strong><br/>
-                這一天請務必在開園前 1 到 1.5 小時抵達門口排隊安檢。入園的瞬間，請立刻打開官方 App 抽取 Standby Pass 或購買「迪士尼尊享卡 (DPA)」。<strong>注意！迪士尼海洋的【夢幻泉鄉】實施極為嚴格的區域管制，沒有抽到該區設施的 Standby Pass 或購買 DPA，連「走進該區域拍照」都無法辦到！</strong>請將其列為入園第一目標。
+                <strong>📌 早上：港川外人住宅區尋找夢幻甜點</strong><br/>
+                離開那霸一路往北開，第一站先停留在文青最愛的「港川外人住宅區」。這裡曾是美軍眷村，如今改建成了數十家各有特色的咖啡廳、選物店。強烈推薦去 <strong>oHacorte</strong> 點一份美味的水果塔，在老屋與花園間享受一個悠哉的早晨。這裡隨便一面彩色的牆、老式鐵窗都很容易拍出充滿日雜風格的美照。
               </p>
               <p>
-                <strong>📌 中午：邊吃邊玩的不停歇攻略</strong><br/>
-                千萬不要去熱門餐廳人擠人。迪士尼的美食精華都在「餐車」上！樂園必買的<strong>煙燻火雞腿</strong>、經典不敗的<strong>三眼怪麻糬</strong>，還有各種造型浮誇到極點的<strong>爆米花桶</strong>（近期的美女與野獸立體桶或是冰雪奇緣相關款式都是搶手貨），背個爆米花桶在身上，就是迪士尼最潮的穿搭。
+                <strong>📌 下午：北谷美國村 (American Village) 拍到手軟</strong><br/>
+                接著抵達充滿奇幻色彩與美式休閒風的「美國村」。雖然標誌性的巨大摩天輪已經拆除，但色彩繽紛的建築聚落、無敵海景步道與滿街的美式塗鴉，依然好拍得不得了。你可以逛逛 Depot Island 挑選復古花襯衫，或是坐在海邊的咖啡廳，點一杯冰檸檬茶，吹著海風看著遠方的衝浪客。別忘了在傍晚時分，走到海岸線上欣賞被夕陽染紅的絕美天際線。
               </p>
               <p>
-                <strong>📌 晚上：佔位看秀與完美撤退</strong><br/>
-                夜間遊行絕對不容錯過。建議提前 40 分鐘買好吉拿棒，在遊行路線鋪好野餐墊卡位。看完璀璨的煙火通常大約晚上 9 點。此時如果你不是住在迪士尼官方飯店，請做好覺悟：京葉線的電車會像沙丁魚罐頭一樣擠滿了同樣筋疲力盡的遊客。撐住！回到飯店後，去便利商店買幾片「休足時間」絕對是你這輩子最正確的決定。
+                <strong>📌 傍晚：萬座毛的象鼻絕景與頂級和牛</strong><br/>
+                繼續往恩納村方向前進，抵達有著「象鼻岩」奇景的萬座毛。在平坦的草原上，看著夕陽將清澈見底的海洋染成金黃，是沖繩最經典的畫面。晚餐時間，強烈推薦你一定要提早一個月預約傳說中的<strong>燒肉 琉球的牛 (琉球の牛)</strong>。那油花分佈均勻、入口即化的頂級縣產和牛，稍微烤過之後沾上一點點海鹽，絕對會讓你在心裡大聲歡呼「這趟來沖繩太值得了！」。吃飽後回到恩納村的海景飯店，伴著海浪聲入睡。
               </p>
             </div>
           </div>
 
           {/* Day 3 */}
           <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
-            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[-4deg] text-xl">Day 3：築地市場 🍣 ＆ 潮流澀谷 🌆</div>
-            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">舌尖上的和牛海膽，與最繁忙的都市脈動</h5>
-            <img src="https://picsum.photos/seed/shibuya3/800/400?grayscale" alt="澀谷交叉口" className="w-full h-64 object-cover sketch-border border-2 border-black mb-6" />
+            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[-4deg] text-xl">Day 3：探索北國 🐋 黑潮之海與古宇利大橋</div>
+            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">遇見海洋巨人，駛向傳說中的神之島</h5>
+            <img src="https://images.unsplash.com/photo-1587595568285-d8ca2a363d6b?auto=format&fit=crop&q=80&w=800&h=400" alt="美麗海水族館" className="w-full h-64 object-cover sketch-border border-2 border-black mb-6" />
             
             <div className="space-y-4 text-gray-800 leading-relaxed">
               <p>
-                <strong>📌 上午：築地場外市場的老饕行程</strong><br/>
-                睡到自然醒，大約 9 點抵達「築地場外市場」（這時候人潮剛好，太早店家還沒全開，太晚又擠不進去）。哪怕豐洲市場已經啟用，築地的「場外攤販」依舊是吃貨天堂。先來一串現烤的<strong>玉子燒</strong>墊胃，接著尋找海膽專賣店，豪邁地吞下價格不菲但絕對鮮甜的海膽壽司。別忘了找一家站著吃的黑鮪魚專賣店，體驗大腹（Ootoro）入口即化的極致油脂。
+                <strong>📌 上午：沖繩美麗海水族館 (Churaumi Aquarium)</strong><br/>
+                第三天的重頭戲！我們將拜訪這座擁有世界級水槽「黑潮之海」的水族館。站在巨大的壓克力玻璃前，看著身長超過 8 公尺的鯨鯊與鬼蝠魟慵懶地游過，那種深海的寧靜與震撼，言語難以形容。建議至少留 2.5 到 3 小時在這裡，並把握在館外的海豚劇場觀賞完全免費的海豚跳躍秀。這裡的海底隧道與豐富的深海珊瑚礁生態展示，也是帶小孩的家庭不可錯過的無敵放電聖地。
               </p>
               <p>
-                <strong>📌 下午：原宿／表參道的文青與時尚</strong><br/>
-                搭乘地下鐵直奔原宿。在竹下通買一份巨大的可麗餅，看著滿街浮誇的 Y2K 穿搭。接著從原宿一路逛向表參道，這裡被譽為「東京的香榭麗舍大道」，兩岸綠樹成蔭，各種國際精品的旗艦店（如玻璃帷幕的 Prada）本身就是建築藝術。累了就鑽進隱藏的巷弄裡，找一間職人咖啡館（例如表參道的名店 <strong>Koffee Mameya</strong> 或鄰近青山的 <strong>Shozo Coffee Store</strong> 感受木質調的寧靜）休息片刻。
-              </p>
-              <p>
-                <strong>📌 傍晚與晚上：震撼的澀谷十字路口與展望台</strong><br/>
-                沿著貓街（Cat Street）一路散步到澀谷。從各個角度欣賞一次跳綠燈就有三千人同時穿越的「澀谷全向交叉路口」。晚餐前，拿出你<strong>「整整一個月前」就在網路上搶好時段</strong>的「Shibuya Sky」門票，搭乘科幻感十足的電梯直達 46 樓的無邊際露天景觀台（現場幾乎永遠買不到票，切記提前預約！）。在這裡，你可以拍下以全東京為背景的絕美剪影照。晚餐則推薦鑽進附近的「宮下公園 (Miyashita Park)」底下的澀谷橫丁，點滿桌烤肉串與生啤酒，感受最真實的日本下班後文化。
+                <strong>📌 下午：穿越湛藍，直達古宇利島 (Kouri Island)</strong><br/>
+                離開水族館後，驅車駛上海水藍得不可思議的「古宇利大橋」。這座長達 2 公里的跨海大橋，兩側是完全無死角的漸層藍綠色海域，開車行駛在上面彷彿在海上低空飛行一樣夢幻。抵達古宇利島後，第一件事就是去買大名鼎鼎的 <strong>Shrimp Wagon 蒜香蝦蝦飯</strong>，酥脆的炸蝦配上濃郁的大蒜奶油香氣，坐在海堤邊吃簡直是來沖繩享受的最高境界！接著可前往島北邊的「心型石 (Heart Rock)」，傳說中嵐 (ARASHI) 拍攝廣告的浪漫景點，甚至踏入清涼的海水中，感受沖繩最純淨的自然氣息。
               </p>
             </div>
           </div>
 
           {/* Day 4 */}
           <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
-            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[5deg] text-xl">Day 4：明治神宮 🌳 ＆ 迷幻新宿 🌃</div>
-            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">從寧靜森林到霓虹不夜城的極端切換</h5>
+            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[3deg] text-xl">Day 4：滿載而歸 🛍️ 大型商場與無敵海景</div>
+            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">開啟無限購物模式，享受離境前最頂級的血拚</h5>
             
             <div className="space-y-4 text-gray-800 leading-relaxed">
               <p>
-                <strong>📌 上午：明治神宮的森林浴</strong><br/>
-                準備好被幾十萬棵樹木包圍吧！踏過巨大的原木大鳥居，走在鋪滿碎石的神宮參道上，都市的喧囂彷彿瞬間被切斷。請抱著敬畏的心情前往主殿參拜，也可以花 500 日圓寫下繪馬祈求此行平安。如果你運氣好，常常能在週末的早晨遇到穿著傳統白無垢的日本新人在此舉行神前結婚式。
+                <strong>📌 上午：永旺夢樂城 沖繩來客夢 (AEON Mall Okinawa Rycom)</strong><br/>
+                第四天是專屬的血拼日。離開中北部飯店後，前往這間佔地驚人的全沖繩最大購物中心，絕對能滿足戰鬥力滿點的你！一樓挑高的巨大水族箱是商場招牌。不管你想買 UNIQLO、無印良品、各大日系戶外服飾品牌，或是寶可夢中心，這裡通通都有。中餐可以直接在超大且充滿各種選擇的美食街解決。請務必帶著一個「半空」的行李箱來裝戰利品，因為你絕對會買到手軟。
               </p>
               <p>
-                <strong>📌 下午：新宿購物戰場，荷包見底的考驗</strong><br/>
-                離開神宮，直奔全球最龐大的車站——迷宮般的新宿。這裡分為東西兩大戰場。喜歡質感服飾與精品的請主攻「伊勢丹百貨」與周邊的旗艦店；喜歡年輕流行服飾的請進攻 LUMINE 1、2 還有 EST。別忘了來到東口朝聖那隻超人氣的「3D 巨大花貓」看板。
-              </p>
-              <p>
-                <strong>📌 晚上：歌舞伎町與回憶橫丁</strong><br/>
-                入夜後，新宿的另一種面貌才正要開始。前往亞洲最大的紅燈區「歌舞伎町」，看著這條街上浮誇的牛郎店看版與新建的「歌舞伎町 Tower」。晚餐強烈推薦前往新宿西口鐵軌旁的「回憶橫丁 (Omoide Yokocho)」。這條狹窄到兩個人無法並肩行走的巷子裡，塞滿了幾十家煙霧迷漫的燒鳥（日式烤雞串）店。在吧檯前和陌生人或老闆比手畫腳點餐，喝下冰涼的沙瓦，絕對是你行程中最具電影感的一夜。
+                <strong>📌 下午與晚上：入住那霸市區，品嚐阿古豬與泡盛</strong><br/>
+                帶著大包小包的戰利品南下，回到那霸市區歸還這幾天陪伴你的租車。最後一晚，不如前往充滿昭和復古氛圍的「牧志公設市場」周邊居酒屋，點一份沖繩特有的<strong>阿古豬 (Agu)</strong> 涮涮鍋或鐵板燒，搭配沖繩特產「海葡萄」與一杯沁涼的傳統「泡盛 (Awamori)」，在微醺中回味這幾天充滿陽光與海風的公路之旅。這是只有在沖繩才能體會的豪邁與浪慢。
               </p>
             </div>
           </div>
 
-           {/* Day 5 */}
-           <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
-            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[0deg] text-xl">Day 5：上野阿美橫町 🛒 ＆ 滿載歸國</div>
-            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">把沒買齊的伴手禮一次補足的最後衝刺</h5>
+          {/* Day 5 */}
+          <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
+            <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[0deg] text-xl">Day 5：瀨長島小希臘 🌅 ＆ 再見沖繩</div>
+            <h5 className="font-bold text-xl mb-4 ml-6 mt-4">純白建築與飛機起落的完美落幕</h5>
             
             <div className="space-y-4 text-gray-800 leading-relaxed">
               <p>
-                <strong>📌 上午：上野公園與不忍池</strong><br/>
-                旅程的最後一天，整理好爆滿的行李，將它們寄放在上野車站的超大置物櫃中。早晨可以悠哉地漫步上野恩賜公園，這裡春天是賞櫻聖地，秋天有銀杏大道。前往不忍池看看滿池的荷花，或是到附設的星巴克喝杯限定星冰樂，平復這幾天狂奔的心情。
+                <strong>📌 上午：瀨長島 Umikaji Terrace 的微風與純白</strong><br/>
+                如果在去機場前還有一點時間，那霸機場附近的「瀨長島」絕對是完美的最後一站。這座充滿地中海風情、沿著山坡而建的純白建築群，被譽為沖繩的小希臘。點一份名店 <strong>幸福鬆餅 (A Happy Pancake)</strong> (強烈建議網路上先預約)，坐在戶外露台，一邊吃著像雲朵般綿密的舒芙蕾鬆餅，一邊看著那霸機場的飛機頻繁起降，這絕對是所有 IG 美照的終極誕生地。在這裡，為你的沖繩之旅畫上最完美的休止符。
               </p>
               <p>
-                <strong>📌 近午：阿美橫町的終極採購</strong><br/>
-                保留最後幾公升的行李箱空間，因為「阿美橫町 (Ameyoko)」絕對會讓你失心瘋！這裡是東京最知名的露天平價市集。直接鎖定兩大地標：「OS Drug」或「松本清」把親戚交代的感冒藥、腸胃藥、痠痛貼布一網打盡；接著去「二木的菓子」採買抹茶巧克力、干貝糖等伴手禮。街邊到處都是大聲叫賣的海鮮乾貨攤販與草莓串，充滿著傳統市井的活力。
-              </p>
-              <p>
-                <strong>📌 下午：前往機場與最後血拚</strong><br/>
-                在上野吃完炸牛排（牛かつ）或知名鰻魚飯後，拖著行李走到「京成上野站」，跳上 Skyliner 直達機場。在機場過完海關後，千萬別放鬆！成田/羽田機場的免稅店「Fa-So-La」裡，還有東京芭娜娜 (Tokyo Banana)、白色戀人、薯條三兄弟等著你做最後的「報復性消費」。帶著這五天美好的記憶與空掉的錢包，心滿意足地登機吧！
+                <strong>📌 近午：打包美好記憶，通關免稅店的最後衝刺</strong><br/>
+                沖繩那霸國際機場雖然免稅店不如東京成田機場龐大，但這也是你買 <strong>Royce生巧克力</strong> (有沖繩限定的石垣鹽與黑糖口味喔！)、<strong>紅芋塔</strong> 與各式雪鹽蘇打餅乾的最後機會。踏上班機時，隔著窗戶看著漸漸變小的琉球群島，你會發現原來短短 1.5 小時的距離，就能切換到如此不可思議的度假天堂。沖繩的神奇魅力，就在於它會讓你忍不住在心裡許下承諾：沖繩，我們明年一定會再見！
               </p>
             </div>
           </div>
         </div>
 
-        <div className="mt-10 p-6 bg-yellow-50 sketch-border text-center relative overflow-hidden mb-10">
-          <div className="absolute -bottom-4 -right-4 opacity-20"><Map className="w-40 h-40"/></div>
+        <div className="mt-10 p-6 bg-blue-50 sketch-border text-center relative overflow-hidden mb-10">
+          <div className="absolute -bottom-4 -right-4 opacity-20 text-6xl">🐳</div>
           <p className="font-bold mb-2 text-xl">機票還沒買？行程規劃可是不等人的！</p>
-          <p className="text-gray-700 mb-6">馬上看看最近飛東京的最新神價，抓住萬元以下的早鳥票！</p>
+          <p className="text-gray-700 mb-6">馬上看看最近飛沖繩的最新神價，抓住萬元以下的早鳥票！打開特價觀測機，看看下一班飛往無敵海景的廉航機票要多少錢！</p>
           <a href="#observatory" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
-            查看東京本日最低機票 &rarr;
+            查看沖繩本日最低機票 &rarr;
           </a>
         </div>
 
