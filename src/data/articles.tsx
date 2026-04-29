@@ -589,7 +589,7 @@ export const articlesData: Article[] = [
           <div className="absolute -bottom-4 -right-4 opacity-20 text-6xl">🐳</div>
           <p className="font-bold mb-2 text-xl">機票還沒買？行程規劃可是不等人的！</p>
           <p className="text-gray-700 mb-6">馬上看看最近飛沖繩的最新神價，抓住萬元以下的早鳥票！打開特價觀測機，看看下一班飛往無敵海景的廉航機票要多少錢！</p>
-          <a href="#observatory" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
+          <a href="https://afflink.one/s/25z9Q" target="_blank" rel="noopener noreferrer" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
             查看沖繩本日最低機票 &rarr;
           </a>
         </div>
