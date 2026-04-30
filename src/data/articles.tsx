@@ -10,8 +10,11 @@ export interface Article {
   imageAlt: string;
   excerpt: string;
   badge?: string;
+  category: string;
   content: ReactNode;
 }
+
+export const CATEGORIES = ['必讀攻略', '行李圖解', '最新消息', '票券攻略'];
 
 export const AffiliateFooter = () => (
   <>
@@ -45,6 +48,7 @@ export const AffiliateFooter = () => (
 export const articlesData: Article[] = [
   {
     id: 'article-tigerair-shareholder-2026',
+    category: '最新消息',
     title: '2026 虎航股東回饋金 800 元領取教學：3 分鐘完成登錄',
     author: '黑白飛金算盤',
     readTime: '3 分鐘',
@@ -140,6 +144,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 'article-6',
+    category: '行李圖解',
     title: '【2026 避坑圖解】日韓廉航行李限制：這 2kg 的差距，可能讓你多付 $1,500！',
     author: '黑白飛避雷針',
     readTime: '3 分鐘',
@@ -213,6 +218,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 'article-5',
+    category: '最新消息',
     title: '虎航 2026 訂閱制今天開放兌換！不想訂閱？這裡看今日最便宜單買票價。',
     author: '黑白飛特派員',
     readTime: '4 分鐘',
@@ -274,6 +280,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 'article-1',
+    category: '必讀攻略',
     title: '2026 日韓機票怎麼買最省？淡旺季完全攻略',
     author: '黑白飛主編',
     readTime: '3 分鐘',
@@ -347,6 +354,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 'article-2',
+    category: '必讀攻略',
     title: '2026 暑假機票最後上車機會！7-8 月萬元以下廉航總整理',
     author: '黑白飛特派員',
     readTime: '2 分鐘',
@@ -388,6 +396,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 'article-3',
+    category: '必讀攻略',
     title: '2026 沖繩自由行 5 天 4 夜終極攻略，吃好買滿！',
     author: '黑白飛主編',
     readTime: '10 分鐘',
@@ -539,6 +548,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 'article-7',
+    category: '票券攻略',
     title: '【深度解析】美麗海水族館門票怎麼買？Okinawa Fun Pass 真實評測與使用教學',
     author: '黑白飛主編',
     readTime: '8 分鐘',
@@ -668,6 +678,7 @@ export const articlesData: Article[] = [
   },
   {
     id: 'article-4',
+    category: '最新消息',
     title: '2027 迪士尼探險號 (Disney Adventure) 新加坡開賣！艙房與預訂深度攻略',
     author: '黑白飛主編',
     readTime: '6 分鐘',
