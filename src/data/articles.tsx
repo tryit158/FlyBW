@@ -356,68 +356,7 @@ export const articlesData: Article[] = [
     content: (
       <>
         <p className="text-lg mb-6 leading-relaxed">
-          「現在買暑假的機票是不是太晚了？」這絕對是每年 5 月底、6 月初大家最愛問的問題。傳統航空（長榮、華航、星宇）飛日本的票價早已飆破 1.5 萬，甚至直衝 2 萬大關，讓許多家長跟學生看著荷包嘆氣。
-        </p>
-        <p className="mb-8 leading-relaxed">
-          先別放棄！經過我們地毯式的瘋狂搜索與每天盯盤，<strong>2026 年的 7-8 月其實還有隱藏版的「萬元以下」廉航機票</strong>。這篇不廢話，直接告訴你哪些航線還有救、怎麼組合最便宜，這真的是今年暑假的「絕版最後上車機會」！
-        </p>
-
-        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
-          <Flame className="w-6 h-6 text-red-600" /> 殘酷真相：萬元以下航線的「妥協點」在哪？
-        </h4>
-        <p className="mb-4 text-gray-800 leading-relaxed">
-          要買到暑假萬元以下的票，你必須接受一些「不完美」。我們幫你找出了目前還沒被買光的 3 條黃金神級航線，並告訴你該注意什麼：
-        </p>
-        
-        <div className="space-y-6 mt-6 mb-10">
-          <div className="sketch-border p-6 bg-white hover:bg-orange-50 transition-colors">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-2xl">🐯</span>
-              <h5 className="font-bold text-xl text-orange-800">虎航 (Tigerair)：台北 ✈️ 沖繩 (來回約 NT$ 7,500 ~ 8,800)</h5>
-            </div>
-            <p className="text-gray-700 leading-relaxed mb-3">
-              <strong>最佳進場時機：鎖定 8 月下旬 (8/20 之後出發)！</strong>
-            </p>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              避開 7 月初的「剛放假瘋狂潮」以及 8 月中的「日本盂蘭盆節（超大連假，飯店貴到爆）」。在 8 月底準備開學前的「空窗期」，沖繩的票價會出現明顯跳水。這幾天實測，只要你不買托運行李，萬元內絕對保證能飛去吃石垣牛、玩浮潛。
-            </p>
-            <a href="https://linkgo.one/s/RKSkQ" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-sm font-bold text-orange-600 border-b border-orange-600 hover:text-orange-800 transition-colors">前往查看虎航最新報價 &rarr;</a>
-          </div>
-
-          <div className="sketch-border p-6 bg-white hover:bg-pink-50 transition-colors">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-2xl">🍑</span>
-              <h5 className="font-bold text-xl text-pink-800">樂桃 (Peach)：台北 ✈️ 大阪 (來回約 NT$ 9,200 ~ 10,500)</h5>
-            </div>
-            <p className="text-gray-700 leading-relaxed mb-3">
-              <strong>最佳進場時機：擁抱紅眼航班，鎖定 7-8 月的「週二去、週三回」！</strong>
-            </p>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              暑假的大阪環球影城超夯，好時段的票早就被搶光。樂桃還剩下一些「晚去早回」或「超級紅眼（半夜 2 點飛）」的極端航班能壓在萬元邊緣。這適合體力極佳的大學生，或想把省下的飯店跟機票錢拿去買環球影城 VIP 快速通關的人。
-            </p>
-            <a href="https://linkgo.one/s/t1gVf" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-sm font-bold text-pink-600 border-b border-pink-600 hover:text-pink-800 transition-colors">前往查看樂桃最新報價 &rarr;</a>
-          </div>
-
-          <div className="sketch-border p-6 bg-white hover:bg-yellow-100 transition-colors">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-2xl">🟡</span>
-              <h5 className="font-bold text-xl text-yellow-800">酷航 (Scoot)：台北 ✈️ 東京成田 (來回約 NT$ 9,800 ~ 11,500)</h5>
-            </div>
-            <p className="text-gray-700 leading-relaxed mb-3">
-              <strong>最佳進場時機：7 月中下旬，捨棄大行李箱！</strong>
-            </p>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              東京是暑假最貴的戰區！酷航的大飛機 (787 夢幻客機) 坐起來比一般廉航寬敞許多，目前 7 月底還有零星的萬元出頭機票。<strong>但注意，這個價格是「全裸票」（無餐點、無托運行李）</strong>。帶小孩的家庭不適合，但如果你是去代購或者背包客，這票價已經是沙漠中的綠洲。
-            </p>
-            <a href="https://onelink.one/s/pbpzz" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 text-sm font-bold text-yellow-600 border-b border-yellow-600 hover:text-yellow-800 transition-colors">前往查看酷航最新報價 &rarr;</a>
-          </div>
-        </div>
-
-        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
-          <Backpack className="w-6 h-6"/> 專家破解：暑假廉航「魔鬼藏在細節裡」的省錢秘訣
-        </h4>
-        <p className="mb-4 text-gray-800">
-          看到萬元以下的票別高興得太早，暑假搭廉航，如果你不懂以下三個操作，到機場絕對會被反扒一層皮：
+          「現在買暑假的機票是不是太晚了？」這絕對是每年 5 月底、6 月初大家最愛問的問題。傳統航空（長榮、華航、星宇）的暑假票價往往讓人望之卻步。但也別擔心，如果善加運用廉航機票，照樣能把交通預算控制在萬元以下。以下是三個買廉價機票的注意事項，照著做，到機場才不會被反扒一層皮：
         </p>
         <ol className="list-decimal list-inside space-y-4 font-bold text-gray-800 mb-8 border-l-4 border-black pl-4 ml-2">
           <li>
@@ -481,7 +420,7 @@ export const articlesData: Article[] = [
           <div className="sketch-border p-5 bg-white">
             <h5 className="font-bold text-lg mb-2 text-indigo-700">2. Visit Japan Web (VJW) 提前填妥</h5>
             <p className="text-sm text-gray-700 leading-relaxed">
-              現在日本入境已經全面數位化。請在登機前登入 Visit Japan Web 填寫入境與海關申報，目前系統已經極度簡化，<strong>入境與海關已「合併為單一 QR Code」</strong>。那霸機場雖然不大，但同時段若降落多部國際線班機，排隊人潮依然可怕，提前填好能幫你省下至少 30 分鐘以上，贏在起跑點。
+              現在日本入境已經全面數位化。請在登機前登入 Visit Japan Web 填寫入境與海關申報，目前系統已經極度簡化，<strong>入境與海關已「合併為單一 QR Code」</strong>。那霸機場雖然不大，但同時段若降落多部國際線班機，排隊人潮依然可怕，提前填好能幫省下至少 30 分鐘以上，贏在起跑點。
             </p>
           </div>
         </div>
@@ -611,73 +550,67 @@ export const articlesData: Article[] = [
       <>
         <div className="space-y-6 text-gray-800 leading-relaxed">
           <p className="text-lg">
-            「要去美麗海水族館，門票到底怎麼買最划算？」這幾乎是所有沖繩新手都會在出發前 Google 的問題。目前市面上有現場購票、旅遊平台單買、以及套票形式的<strong>「Okinawa Fun Pass（好好玩沖繩護照）」</strong>和<strong>「Okinawa Enjoy Pass」</strong>。在 2026 年的現在，各式數位票券百花齊放，到底哪一張才符合你的「真實實用性」？
+            「要去美麗海水族館，門票到底怎麼買最划算？」這幾乎是所有沖繩新手都會在出發前 Google 的問題。目前市面上有現場購票、旅遊平台單買，以及最受歡迎的套票形式——<strong>「Okinawa Fun Pass（好好玩沖繩護照）」</strong>。
           </p>
           <p className="text-lg">
-            這裡我們直接幫你破解盲點，透過最真實深度的實戰分析，教你如何買對票券，既省錢又不變成斯巴達行軍！
+            許多新手常被網路上過去的舊資訊誤導，或者不清楚這個 Pass 到底實不實用。這裡我們直接幫你破解盲點，透過最真實深度的實戰分析，教你如何挑選 Okinawa Fun Pass 最適合的方案，既省錢又不變成斯巴達行軍！
           </p>
           
           <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&h=400&fit=crop&q=80&sat=-100" alt="美麗海水族館" className="grayscale w-full h-64 object-cover sketch-border border-2 border-black my-6" />
 
           <h5 className="font-bold text-xl mt-8 mb-4 text-indigo-700 flex items-center gap-2"><div className="w-2 h-6 bg-indigo-600"></div> 1. 什麼是 Okinawa Fun Pass？</h5>
           <p>
-            <strong>Okinawa Fun Pass</strong> 是一種「景點＋餐飲＋購物」三合一的電子通行證。它主打讓你用一個 App 的 QR Code 就能搞定熱門景點門票，同時還附帶了像是 Blue Seal 冰淇淋、Zooton\'s 手工漢堡等熱門餐飲，甚至有松本清或大國藥妝的折扣優惠。你可以把它想像成沖繩版的「遊樂園快速通關 ＋ 餐券 ＋ 購物折價券」。有別於傳統「吃到飽」的景點通票，它更講求彈性與不會過勞的度假感。
+            <strong>Okinawa Fun Pass</strong> 是一種「景點＋餐飲＋購物」三合一的電子通行證。它主打讓你用一個 App 的 QR Code 就能搞定熱門景點門票，同時還附帶了像是 Blue Seal 冰淇淋、Zooton\'s 手工漢堡等熱門餐飲，甚至有松本清或大國藥妝的折扣優惠。你可以把它想像成沖繩版的「遊樂園快速通關 ＋ 餐券 ＋ 購物折價券」。
           </p>
 
-          <h5 className="font-bold text-xl mt-8 mb-4 text-indigo-700 flex items-center gap-2"><div className="w-2 h-6 bg-indigo-600"></div> 2. Okinawa Fun Pass vs Enjoy Pass 終極比較圖</h5>
-          <p>為了不讓你被一堆複雜的通票名稱搞混，我們整理了這張「2026 水族館套票終極比較表」，讓你一眼就看出差異：</p>
+          <h5 className="font-bold text-xl mt-8 mb-4 text-indigo-700 flex items-center gap-2"><div className="w-2 h-6 bg-indigo-600"></div> 2. 方案怎麼選？3+1、4+1、5+1 終極比較圖</h5>
+          <p>Okinawa Fun Pass 最大的特色，就是它根據您想去的景點數量不同，提供了彈性的搭配方案。不論哪個方案，都一定包含一張「美麗海水族館」門票，差別在於您可以「額外自選」幾個景點。讓我們看看以下比較圖：</p>
           
           <div className="overflow-x-auto my-6 border-2 border-black sketch-border bg-white outline-none">
             <table className="w-full text-left border-collapse min-w-[700px]">
               <thead>
                 <tr className="bg-indigo-100 text-indigo-900 border-b-2 border-black">
                   <th className="border-r-2 border-black p-4 font-black">比較項目</th>
-                  <th className="border-r-2 border-black p-4 font-black">現場購票 / 網路單買</th>
-                  <th className="border-r-2 border-black p-4 font-black text-indigo-700">Okinawa Fun Pass (推)</th>
-                  <th className="p-4 font-black text-red-700">Okinawa Enjoy Pass</th>
+                  <th className="border-r-2 border-black p-4 font-black text-indigo-700">3 + 1 方案 (激推)</th>
+                  <th className="border-r-2 border-black p-4 font-black">4 + 1 方案</th>
+                  <th className="p-4 font-black">5 + 1 方案</th>
                 </tr>
               </thead>
               <tbody className="divide-y-2 divide-black">
                 <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="border-r-2 border-black p-4 font-bold bg-gray-100 w-1/4">適合對象</td>
-                  <td className="border-r-2 border-black p-4 text-gray-700 w-1/4">只去水族館，其他行程隨性只想在海邊廢</td>
-                  <td className="border-r-2 border-black p-4 font-semibold text-indigo-800 w-1/4">喜歡精算，吃冰且會搭配 1~2 個知名大景點</td>
-                  <td className="p-4 text-gray-700 w-1/4">體力無限、狂走景點不嫌累的超強大腿</td>
+                  <td className="border-r-2 border-black p-4 font-bold bg-gray-100 w-1/4">方案內容</td>
+                  <td className="border-r-2 border-black p-4 font-semibold text-indigo-800 w-1/4">美麗海水族館 <br/>+ 2個自選景點 <br/>+ 1份小吃</td>
+                  <td className="border-r-2 border-black p-4 text-gray-700 w-1/4">美麗海水族館 <br/>+ 3個自選景點 <br/>+ 1份小吃</td>
+                  <td className="p-4 text-gray-700 w-1/4">美麗海水族館 <br/>+ 4個自選景點 <br/>+ 1份小吃</td>
                 </tr>
                 <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="border-r-2 border-black p-4 font-bold bg-gray-100">涵蓋景點</td>
-                  <td className="border-r-2 border-black p-4 text-gray-700">單一景點</td>
-                  <td className="border-r-2 border-black p-4 font-semibold text-indigo-800">美麗海水族館 + 2 至 3 個自選景點</td>
-                  <td className="p-4 text-gray-700">美麗海水族館 + 11 個景點 (吃到飽)</td>
+                  <td className="border-r-2 border-black p-4 font-bold bg-gray-100">適合天數</td>
+                  <td className="border-r-2 border-black p-4 font-semibold text-indigo-800">4天3夜 / 5天4夜</td>
+                  <td className="border-r-2 border-black p-4 text-gray-700">5天4夜 / 6天5夜</td>
+                  <td className="p-4 text-gray-700">超過 6 天的長天數旅客</td>
                 </tr>
                 <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="border-r-2 border-black p-4 font-bold bg-gray-100">特色附加價值</td>
-                  <td className="border-r-2 border-black p-4 text-gray-700">通常無附加優惠</td>
-                  <td className="border-r-2 border-black p-4 font-semibold text-indigo-800">包含 Blue Seal 冰淇淋 / 指定餐飲 / 藥妝折扣</td>
-                  <td className="p-4 text-gray-700">純粹打卡景點的通票，無特殊餐飲折抵</td>
-                </tr>
-                <tr className="hover:bg-gray-50 transition-colors">
-                  <td className="border-r-2 border-black p-4 font-bold bg-gray-100">開卡效期</td>
-                  <td className="border-r-2 border-black p-4 text-gray-700">該日或指定時段有效</td>
-                  <td className="border-r-2 border-black p-4 font-semibold text-indigo-800">開卡後 5 天內有效 (極度彈性)</td>
-                  <td className="p-4 text-gray-700">開卡後 5 天內有效</td>
+                  <td className="border-r-2 border-black p-4 font-bold bg-gray-100">行程節奏</td>
+                  <td className="border-r-2 border-black p-4 font-semibold text-indigo-800">一天一亮點，彈性休閒</td>
+                  <td className="border-r-2 border-black p-4 text-gray-700">行程較緊湊</td>
+                  <td className="p-4 text-gray-700">打卡狂人，挑戰極限</td>
                 </tr>
                 <tr className="bg-indigo-50 hover:bg-indigo-100 transition-colors">
                   <td className="border-r-2 border-black p-4 font-bold bg-gray-100">疲累指數 (真實)</td>
-                  <td className="border-r-2 border-black p-4">★☆☆☆☆ (極度休閒)</td>
-                  <td className="border-r-2 border-black p-4 text-indigo-600 font-bold">★★★☆☆ (節奏剛好、彈性極佳)</td>
-                  <td className="p-4 text-red-600 font-bold">★★★★★ (斯巴達式打卡行軍)</td>
+                  <td className="border-r-2 border-black p-4 text-indigo-600 font-bold">★★☆☆☆ (最完美節奏)</td>
+                  <td className="border-r-2 border-black p-4 text-gray-700 font-bold">★★★☆☆ (稍微充實)</td>
+                  <td className="p-4 text-red-600 font-bold">★★★★★ (非常疲累)</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <h5 className="font-bold text-xl mt-8 mb-4 text-indigo-700 flex items-center gap-2"><div className="w-2 h-6 bg-indigo-600"></div> 3. 殘酷的真實實用性：你真的需要買 Pass 嗎？</h5>
+          <h5 className="font-bold text-xl mt-8 mb-4 text-indigo-700 flex items-center gap-2"><div className="w-2 h-6 bg-indigo-600"></div> 3. 殘酷的真實實用性：你真的需要買到 5+1 嗎？</h5>
           <p>
-            我們看過太多旅客，為了把 <strong>Enjoy Pass</strong> 的 12 個景點「吃乾抹淨」，硬生生把美好的海島度假變成了「斯巴達行軍」。帶小孩的爸媽為了趕下一個景點不給午休，小提琴在後座崩潰大哭；情侶為了多去一個琉球村，放棄了在海邊發呆看夕陽的浪漫。<strong>強烈建議：出來度假，不要被無盡的票券清單綁架。</strong>
+            我們看過太多旅客，為了想著「買越多越划算」，直接下訂了 5+1 方案。結果為了把景點券「用好用滿」，硬生生把美好的海島度假變成了「斯巴達打卡行軍」。帶小孩的爸媽為了趕下一個景點不給午休，小孩在汽車後座崩潰大哭；情侶為了多去一個琉球村，放棄了在海邊發呆看夕陽的浪漫。<strong>強烈建議：出來度假，千萬不要被無盡的票券清單綁架。</strong>
           </p>
           <p>
-            <strong>Okinawa Fun Pass</strong> 的出現，其實完美解決了這個痛點。它採取「核心水族館 + 自選少數亮點」的輕量設定。這意味著什麼？
+            這也是為什麼我們<strong>極度推薦新手直接買「3+1 方案」</strong>（核心水族館 + 2 個自選亮點 + 1 餐食）的輕量設定。這意味著什麼？
           </p>
           <ul className="list-disc pl-6 space-y-3 mt-4 text-gray-700 bg-white p-6 border-2 border-black sketch-border">
             <li><span className="font-bold text-black border-b-2 border-indigo-400">✅ 完美契合 5 天 4 夜節奏：</span> 在去水族館那天，順路安插一個「名護動植物園 (Neo Park)」，隔天從中北部南下時，再去「沖繩世界文化王國」看天然鐘乳石洞。一天排一個大景點，剛好夠精彩，又預留了下午茶與購物的廢人時間。</li>
@@ -723,7 +656,7 @@ export const articlesData: Article[] = [
             <div className="absolute -bottom-4 -right-4 opacity-20 text-6xl">🐳</div>
             <p className="font-bold mb-2 text-xl">心動不如馬上行動</p>
             <p className="text-gray-700 mb-6">點擊下方按鈕，了解最新的 Okinawa Fun Pass 票價與優惠！</p>
-            <a href="#observatory" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
+            <a href="https://onelink.one/s/pPngT" target="_blank" rel="noopener noreferrer" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
               查看 Okinawa Fun Pass 優惠 &rarr;
             </a>
           </div>
