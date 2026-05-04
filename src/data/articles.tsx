@@ -138,7 +138,7 @@ export const articlesData: Article[] = [
           </a>
         </div>
         
-        <AffiliateFooter />
+        
       </>
     )
   },
@@ -212,7 +212,7 @@ export const articlesData: Article[] = [
           </p>
         </div>
 
-        <AffiliateFooter />
+        
       </>
     )
   },
@@ -274,7 +274,7 @@ export const articlesData: Article[] = [
           </a>
         </div>
 
-        <AffiliateFooter />
+        
       </>
     )
   },
@@ -348,7 +348,7 @@ export const articlesData: Article[] = [
           </a>
         </div>
 
-        <AffiliateFooter />
+        
       </>
     )
   },
@@ -390,7 +390,7 @@ export const articlesData: Article[] = [
           </a>
         </div>
 
-        <AffiliateFooter />
+        
       </>
     )
   },
@@ -542,7 +542,7 @@ export const articlesData: Article[] = [
           </a>
         </div>
 
-        <AffiliateFooter />
+        
       </>
     )
   },
@@ -671,7 +671,7 @@ export const articlesData: Article[] = [
             </a>
           </div>
 
-          <AffiliateFooter />
+          
         </div>
       </>
     )
@@ -801,7 +801,7 @@ export const articlesData: Article[] = [
           </a>
         </div>
 
-        <AffiliateFooter />
+        
       </>
     )
   }
