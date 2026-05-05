@@ -2,6 +2,7 @@ import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import InAppBrowserBanner from '../components/InAppBrowserBanner';
 
 export default function RootLayout() {
   const location = useLocation();
@@ -20,6 +21,7 @@ export default function RootLayout() {
 
   return (
     <div className="min-h-screen flex flex-col pt-8 px-4 md:px-8 max-w-5xl mx-auto print:p-0 print:m-0 print:min-h-0 print:block print:w-full">
+      <InAppBrowserBanner />
       <div className="print:hidden"><Header /></div>
       <main className="flex-grow space-y-24 py-12 print:space-y-0 print:py-0 print:m-0">
         <Outlet />
