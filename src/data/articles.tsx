@@ -26,17 +26,17 @@ export const AffiliateFooter = () => (
     </p>
 
     <div className="grid md:grid-cols-3 gap-4 mb-8">
-      <a href="https://linkgo.one/s/ujSbR" target="_blank" rel="noopener" className="sketch-border p-4 hover:bg-yellow-50 transition-colors bg-white group">
+      <a href="https://linkgo.one/s/ujSbR" target="_blank" rel="noopener noreferrer" className="sketch-border p-4 hover:bg-yellow-50 transition-colors bg-white group">
         <div className="font-bold text-lg mb-2 text-yellow-700">1. 行李秤 & 收納神器</div>
         <p className="text-sm text-gray-600 mb-4">不想在櫃檯前大粒汗小粒汗？帶個行李秤最安心，超生火的壓縮袋/早鳥旅遊神物都在這！</p>
         <span className="text-sm font-bold underline decoration-wavy underline-offset-4 group-hover:text-yellow-600">探索早鳥優惠區</span>
       </a>
-      <a href="https://afflink.one/s/J1H4B" target="_blank" rel="noopener" className="sketch-border p-4 hover:bg-blue-50 transition-colors bg-white group">
+      <a href="https://afflink.one/s/J1H4B" target="_blank" rel="noopener noreferrer" className="sketch-border p-4 hover:bg-blue-50 transition-colors bg-white group">
         <div className="font-bold text-lg mb-2 text-blue-700">2. 吃到飽網卡/eSIM</div>
         <p className="text-sm text-gray-600 mb-4">在機場被卡住還要查資料？免換卡直接掃 QR Code 落地就上網，解決迷路危機。</p>
         <span className="text-sm font-bold underline decoration-wavy underline-offset-4 group-hover:text-blue-600">選購網上吃到飽</span>
       </a>
-      <a href="https://afflink.one/s/RzcX0" target="_blank" rel="noopener" className="sketch-border p-4 hover:bg-orange-50 transition-colors bg-white group">
+      <a href="https://afflink.one/s/RzcX0" target="_blank" rel="noopener noreferrer" className="sketch-border p-4 hover:bg-orange-50 transition-colors bg-white group">
         <div className="font-bold text-lg mb-2 text-orange-700">3. 旅遊不便險</div>
         <p className="text-sm text-gray-600 mb-4">行李不僅可能超重，還可能被寄丟！花杯咖啡錢買理賠後盾，搭廉航必備護身符。</p>
         <span className="text-sm font-bold underline decoration-wavy underline-offset-4 group-hover:text-orange-600">立即試算保費</span>
@@ -97,7 +97,7 @@ export const articlesData: Article[] = [
             <p className="text-sm font-normal text-gray-600 mt-1 pl-5">如果你還不是會員，請先到台灣虎航官網或 APP 免費註冊。<strong>註冊的「身分證字號」與「姓名」必須與你證券戶登記的資料一模一樣。</strong></p>
           </li>
           <li>
-            <span className="text-lg">前往專屬的「<a href="https://tigerairtw.my.salesforce-sites.com/cc/ShareholdersLogin" target="_blank" rel="noopener" className="text-indigo-600 underline decoration-wavy underline-offset-4 hover:text-indigo-800 transition-colors">股東登錄網頁</a>」</span>
+            <span className="text-lg">前往專屬的「<a href="https://tigerairtw.my.salesforce-sites.com/cc/ShareholdersLogin" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline decoration-wavy underline-offset-4 hover:text-indigo-800 transition-colors">股東登錄網頁</a>」</span>
             <p className="text-sm font-normal text-gray-600 mt-1 pl-5">在虎航發送的股東大會通知書上，或是前往官網的「最新公告」，點擊進入專屬登錄入口。</p>
           </li>
           <li>
@@ -133,7 +133,7 @@ export const articlesData: Article[] = [
           <div className="absolute -bottom-4 -right-4 opacity-10"><Plane className="w-40 h-40"/></div>
           <p className="font-bold mb-2 text-xl">點數準備入帳，機票看好了嗎？</p>
           <p className="text-gray-700 mb-6">趕快去專屬連結看你的虎航點數狀態，順便透過本站查查有沒有合適的特價機票能折抵！</p>
-          <a href="https://onelink.one/s/ypRRk" target="_blank" rel="noopener" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
+          <a href="https://onelink.one/s/ypRRk" target="_blank" rel="noopener noreferrer" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
             前往查看虎航最新報價與活動 &rarr;
           </a>
         </div>
@@ -537,7 +537,7 @@ export const articlesData: Article[] = [
           <div className="absolute -bottom-4 -right-4 opacity-20 text-6xl">🐳</div>
           <p className="font-bold mb-2 text-xl">機票還沒買？行程規劃可是不等人的！</p>
           <p className="text-gray-700 mb-6">馬上看看最近飛沖繩的最新神價，抓住萬元以下的早鳥票！打開特價觀測機，看看下一班飛往無敵海景的廉航機票要多少錢！</p>
-          <a href="https://afflink.one/s/25z9Q" target="_blank" rel="noopener" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
+          <a href="https://afflink.one/s/25z9Q" target="_blank" rel="noopener noreferrer" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
             查看沖繩本日最低機票 &rarr;
           </a>
         </div>
@@ -666,7 +666,7 @@ export const articlesData: Article[] = [
             <div className="absolute -bottom-4 -right-4 opacity-20 text-6xl">🐳</div>
             <p className="font-bold mb-2 text-xl">心動不如馬上行動</p>
             <p className="text-gray-700 mb-6">點擊下方按鈕，了解最新的 Okinawa Fun Pass 票價與優惠！</p>
-            <a href="https://onelink.one/s/pPngT" target="_blank" rel="noopener" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
+            <a href="https://onelink.one/s/pPngT" target="_blank" rel="noopener noreferrer" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
               查看 Okinawa Fun Pass 優惠 &rarr;
             </a>
           </div>
@@ -780,12 +780,12 @@ export const articlesData: Article[] = [
           即使不用飛歐美，飛新加坡也需要提前做足準備。強烈建議「提前一天」飛達新加坡，避免第一天因為航班延誤而眼睜睜看著遊輪開走（遊輪是不等人的）！出發前先把機票、東南亞跨國網卡跟保險搞定。
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mb-10">
-          <a href="https://afflink.one/s/J1H4B" target="_blank" rel="noopener" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
+          <a href="https://afflink.one/s/J1H4B" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
             <span className="text-3xl flex justify-center mb-2 group-hover:scale-110 transition-transform"><Smartphone className="w-8 h-8" /></span>
             <span className="font-bold underline decoration-wavy underline-offset-4">亞洲多國上網網卡 / eSIM</span>
             <p className="text-sm text-gray-600 mt-2">新加坡落地秒連網，登船前排隊刷 App 搶活動預約必備！</p>
           </a>
-          <a href="https://afflink.one/s/RzcX0" target="_blank" rel="noopener" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
+          <a href="https://afflink.one/s/RzcX0" target="_blank" rel="noopener noreferrer" className="flex-1 sketch-border p-4 hover:bg-gray-50 transition-colors text-center group">
             <span className="text-3xl flex justify-center mb-2 group-hover:scale-110 transition-transform"><ShieldCheck className="w-8 h-8" /></span>
             <span className="font-bold underline decoration-wavy underline-offset-4">海外旅遊平安險</span>
             <p className="text-sm text-gray-600 mt-2">遊輪行程建議加保，對抗班機延誤，全家出遊更安心！</p>
@@ -796,7 +796,7 @@ export const articlesData: Article[] = [
           <div className="absolute -bottom-4 -right-4 opacity-10"><Ship className="w-40 h-40"/></div>
           <p className="font-bold mb-2 text-xl">準備好登上亞洲專屬的魔法遊輪了嗎？</p>
           <p className="text-gray-700 mb-6">探險號首航季價格已經出爐，趕緊去看看還有什麼房型可以撿寶！</p>
-          <a href="https://afflink.one/s/508Nw" target="_blank" rel="noopener" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
+          <a href="https://afflink.one/s/508Nw" target="_blank" rel="noopener noreferrer" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
             立即查詢探險號最新早鳥票價 &rarr;
           </a>
         </div>

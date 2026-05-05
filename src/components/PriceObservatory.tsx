@@ -101,7 +101,7 @@ export default function PriceObservatory() {
               key={dest.city}
               href={dest.link}
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               title={`前往查詢 ${dest.city} 便宜機票`}
               className="block sketch-border bg-white p-4 text-center cursor-pointer sketch-border-hover relative group overflow-hidden"
               onMouseEnter={() => setHoveredIndex(idx)}
@@ -138,7 +138,7 @@ export default function PriceObservatory() {
         <a 
           href="https://onelink.one/s/sWpTM" 
           target="_blank" 
-          rel="noopener"
+          rel="noopener noreferrer"
           className="inline-flex items-center justify-center text-center gap-2 sketch-border bg-yellow-300 hover:bg-yellow-400 text-black px-4 md:px-8 py-4 font-bold text-base md:text-lg transition-transform hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] relative group w-full md:w-auto"
         >
           <span className="absolute -top-3 -right-3 bg-red-500 text-white text-xs px-2 py-1 rotate-12 sketch-border">Hot!</span>
