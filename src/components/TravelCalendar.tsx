@@ -48,7 +48,7 @@ export default function TravelCalendar() {
                 <a 
                   href="https://linkgo.one/s/ujSbR" 
                   target="_blank" 
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   title={`${m.month}${m.event}早鳥票券`}
                   className="text-sm font-bold underline decoration-wavy underline-offset-4 hover:text-gray-600 truncate"
                 >
@@ -63,7 +63,7 @@ export default function TravelCalendar() {
           <a 
             href="https://linkgo.one/s/ujSbR" 
             target="_blank" 
-            rel="noopener noreferrer"
+            rel="noopener"
             title="查看所有日韓早鳥優惠票券與行程"
             className="inline-block sketch-border px-8 py-3 font-bold hover:bg-gray-100 transition-colors"
           >

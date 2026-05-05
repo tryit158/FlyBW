@@ -81,7 +81,7 @@ export default function Checklist() {
               whileHover={{ scale: 1.05 }}
               href="https://afflink.one/s/J1H4B" 
               target="_blank" 
-              rel="noopener noreferrer"
+              rel="noopener"
               title="購買出國上網吃到飽網卡或eSIM"
               className="sketch-border px-4 py-3 text-center font-bold hover:bg-yellow-50 bg-white flex items-center justify-center gap-2 w-full md:w-auto text-sm md:text-base"
             >
@@ -91,7 +91,7 @@ export default function Checklist() {
               whileHover={{ scale: 1.05 }}
               href="https://afflink.one/s/RzcX0" 
               target="_blank" 
-              rel="noopener noreferrer"
+              rel="noopener"
               title="購買旅遊不便險與平安險"
               className="sketch-border px-4 py-3 text-center font-bold hover:bg-yellow-50 bg-white flex items-center justify-center gap-2 w-full md:w-auto text-sm md:text-base"
             >
