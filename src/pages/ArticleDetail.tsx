@@ -52,7 +52,7 @@ export default function ArticleDetail() {
           src={article.image} 
           alt={article.imageAlt} 
           referrerPolicy="no-referrer"
-          className="w-full h-auto max-h-[500px] object-cover sketch-border shadow-md"
+          className="w-full h-auto max-h-[500px] object-cover sketch-border shadow-md grayscale"
         />
       </div>
 

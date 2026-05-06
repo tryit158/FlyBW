@@ -51,7 +51,7 @@ export default function Home() {
                     src={article.image} 
                     alt={article.imageAlt} 
                     referrerPolicy="no-referrer"
-                    className="w-full h-48 md:h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-48 md:h-56 object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105"
                   />
                 </div>
                 

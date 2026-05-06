@@ -52,7 +52,7 @@ export const articlesData: Article[] = [
     title: '深入沖繩絕美秘境：青之洞窟（藍洞）浮潛與水肺潛水 100% 真實體驗全攻略',
     author: '黑白飛潛水客',
     readTime: '12 分鐘',
-    image: 'https://images.unsplash.com/photo-1544400762-cb0d0cda24ec?auto=format&fit=crop&q=80&w=2000',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/0/09/Inside_the_Blue_Cave_on_Bisevo_island%2C_Croatia_%2848693429148%29.jpg',
     imageAlt: '沖繩青之洞窟潛水體驗',
     excerpt: '很多人到沖繩的第一個願望清單就是「青之洞窟（藍洞）」！但不會游泳真的可以去嗎？浮潛跟水肺潛水到底差在哪？這篇完整記錄我兩次前往沖繩藍洞，分別體驗浮潛與水肺的 100% 真實心得以及防雷建議。',
     badge: '🤿 沖繩必玩',
@@ -141,7 +141,7 @@ export const articlesData: Article[] = [
           </p>
 
           <div className="my-8">
-             <img src="https://images.unsplash.com/photo-1544400762-cb0d0cda24ec?auto=format&fit=crop&q=80&w=2000" alt="沖繩潛水" className="w-full h-auto rounded-lg shadow-lg border-4 border-black" />
+             <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Inside_the_Blue_Cave_on_Bisevo_island%2C_Croatia_%2848693429148%29.jpg" alt="沖繩潛水" className="grayscale w-full h-auto rounded-lg shadow-lg border-4 border-black" />
              <p className="text-center text-sm text-gray-500 mt-2">如同寶石般閃耀的海水，完全不需濾鏡。</p>
           </div>
 
