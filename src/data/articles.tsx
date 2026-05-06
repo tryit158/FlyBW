@@ -180,9 +180,27 @@ export const articlesData: Article[] = [
             <p className="text-lg">推薦度：⭐⭐⭐⭐⭐ (沒去過別說你來過沖繩玩水)</p>
           </div>
 
-          <p className="text-lg font-bold text-center mb-8">
+          <p className="text-lg font-bold text-center mb-10">
             只要找到專業的中文潛水店，放下對海水的恐懼，把這輩子的命交給教練（笑），你絕對會愛上沖繩的這片蔚藍！
           </p>
+
+          <div className="text-center bg-blue-50 p-8 sketch-border border-blue-200 mt-8 mb-4">
+            <h4 className="text-2xl font-bold text-blue-900 mb-4 flex items-center justify-center gap-2">
+              <Ticket className="w-6 h-6 text-blue-600" />
+              準備好跳入藍洞了嗎？
+            </h4>
+            <p className="text-gray-700 mb-6">現在預約享專屬折扣，中文教練帶你安全看見最美海景！</p>
+            <a 
+              href="https://afflink.one/s/u4DaH" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-black hover:bg-blue-600 text-white font-bold py-4 px-8 sketch-border transition-all duration-300 transform hover:-translate-y-1 text-lg group"
+            >
+              🌊 立即查看青之洞窟體驗＆早鳥優惠
+              <span className="group-hover:translate-x-1 transition-transform inline-block">→</span>
+            </a>
+            <p className="mt-4 text-xs text-gray-500">此為本站專屬優惠連結，數量有限，售完為止。手刀預約以免向隅！</p>
+          </div>
 
         </div>
       </>
