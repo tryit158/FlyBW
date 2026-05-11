@@ -64,10 +64,10 @@ export default function TravelCalendar() {
             href="https://linkgo.one/s/ujSbR" 
             target="_blank" 
             rel="noopener"
-            title="查看所有日韓早鳥優惠票券與行程"
+            title="查看所有早鳥優惠票券與行程"
             className="inline-block sketch-border px-8 py-3 font-bold hover:bg-gray-100 transition-colors"
           >
-            查看所有日韓早鳥優惠
+            查看所有早鳥優惠
           </a>
         </div>
       </div>

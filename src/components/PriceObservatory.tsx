@@ -142,7 +142,7 @@ export default function PriceObservatory() {
           className="inline-flex items-center justify-center text-center gap-2 sketch-border bg-yellow-300 hover:bg-yellow-400 text-black px-4 md:px-8 py-4 font-bold text-base md:text-lg transition-transform hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] relative group w-full md:w-auto"
         >
           <span className="absolute -top-3 -right-3 bg-red-500 text-white text-xs px-2 py-1 rotate-12 sketch-border">Hot!</span>
-          🎉 查看所有日韓早鳥優惠及早鳥票券 &rarr;
+          🎉 查看所有早鳥優惠及早鳥票券 &rarr;
         </a>
       </div>
     </section>
