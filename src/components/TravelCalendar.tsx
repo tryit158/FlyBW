@@ -61,7 +61,7 @@ export default function TravelCalendar() {
         
         <div className="mt-8 text-center">
           <a 
-            href="https://linkgo.one/s/ujSbR" 
+            href="https://onelink.one/s/j7GYr" 
             target="_blank" 
             rel="noopener"
             title="查看所有早鳥優惠票券與行程"

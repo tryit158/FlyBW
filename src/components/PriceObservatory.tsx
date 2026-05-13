@@ -136,7 +136,7 @@ export default function PriceObservatory() {
       {/* Early Bird Call to Action */}
       <div className="flex justify-center mt-8 px-4">
         <a 
-          href="https://onelink.one/s/sWpTM" 
+          href="https://onelink.one/s/j7GYr" 
           target="_blank" 
           rel="noopener"
           className="inline-flex items-center justify-center text-center gap-2 sketch-border bg-yellow-300 hover:bg-yellow-400 text-black px-4 md:px-8 py-4 font-bold text-base md:text-lg transition-transform hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] relative group w-full md:w-auto"
