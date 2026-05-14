@@ -11,9 +11,9 @@ import { useMemo } from 'react';
 export default function Home() {
   const previewArticles = useMemo(() => {
     // 優先顯示沖繩相關文章 (article-3: 沖繩 5 天 4 夜, article-7: Okinawa Fun Pass)
-    const okinawaArticles = articlesData.filter(a => a.id === 'article-3' || a.id === 'article-7');
-    const otherArticles = articlesData.filter(a => a.id !== 'article-3' && a.id !== 'article-7');
-    return [...okinawaArticles, ...otherArticles].slice(0, 4);
+    const okinawaArticles = articlesData.filter(a => a.id === 'article-3' || a.id === 'article-7' || a.id === 'okinawa-family-churaumi-dino');
+    const otherArticles = articlesData.filter(a => a.id !== 'article-3' && a.id !== 'article-7' && a.id !== 'okinawa-family-churaumi-dino');
+    return [...okinawaArticles, ...otherArticles].slice(0, 6);
   }, []);
 
   return (
@@ -28,7 +28,7 @@ export default function Home() {
           <p className="text-gray-600">三分鐘讀懂，拒當機票冤大頭！</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {previewArticles.map((article, idx) => (
             <Link to={`/articles/${article.id}`} key={article.id}>
               <motion.div 
