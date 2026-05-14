@@ -52,7 +52,7 @@ export const articlesData: Article[] = [
     title: '小孩電力放光光！沖繩親子景點首選：水族館＋恐龍樂園半日遊攻略',
     author: '黑白飛超人爸媽',
     readTime: '15 分鐘',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Okinawa_Churaumi_Aquarium_-_Kuroshio_Sea.jpg/800px-Okinawa_Churaumi_Aquarium_-_Kuroshio_Sea.jpg',
+    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
     imageAlt: '美麗海水族館與恐龍樂園',
     excerpt: '帶小孩去沖繩，除了玩水跟溜滑梯公園，還有什麼景點能讓孩子為之瘋狂，甚至回頭率100%？這篇分享我們實際走訪北部「美麗海水族館」加上隱藏版神級景點「DINO恐龍PARK 山原亞熱帶之森」的超完美順路半日遊攻略，真實心得、避雷指南一次看。保證小孩電力放光光，上車秒睡！',
     badge: '👶 親子神路線',
@@ -72,7 +72,7 @@ export const articlesData: Article[] = [
           </p>
 
           <div className="my-8">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Tyrannosaurus_rex_Dinosaur_Park_Munchehagen.jpg/800px-Tyrannosaurus_rex_Dinosaur_Park_Munchehagen.jpg" alt="沖繩恐龍公園" className="grayscale w-full h-auto rounded-lg shadow-lg border-4 border-black" />
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&q=80" alt="沖繩恐龍公園" className="grayscale w-full h-auto rounded-lg shadow-lg border-4 border-black" />
             <p className="text-center text-sm text-gray-500 mt-2">完全隱藏在真實亞熱帶雨林中的恐龍公園，臨場感十足。</p>
           </div>
 
@@ -141,7 +141,7 @@ export const articlesData: Article[] = [
           </p>
 
           <div className="my-8">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Okinawa_Churaumi_Aquarium_-_Kuroshio_Sea.jpg/800px-Okinawa_Churaumi_Aquarium_-_Kuroshio_Sea.jpg" alt="沖繩美麗海水族館" className="grayscale w-full h-auto rounded-lg shadow-lg border-4 border-black" />
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="沖繩美麗海水族館" className="grayscale w-full h-auto rounded-lg shadow-lg border-4 border-black" />
             <p className="text-center text-sm text-gray-500 mt-2">黑潮之海的震撼，是照片永遠無法完全傳遞的。</p>
           </div>
 
@@ -223,7 +223,7 @@ export const articlesData: Article[] = [
     title: '深入沖繩絕美秘境：青之洞窟（藍洞）浮潛與水肺潛水 100% 真實體驗全攻略',
     author: '黑白飛潛水客',
     readTime: '12 分鐘',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/0/09/Inside_the_Blue_Cave_on_Bisevo_island%2C_Croatia_%2848693429148%29.jpg',
+    image: 'https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?w=800&q=80',
     imageAlt: '沖繩青之洞窟潛水體驗',
     excerpt: '很多人到沖繩的第一個願望清單就是「青之洞窟（藍洞）」！但不會游泳真的可以去嗎？浮潛跟水肺潛水到底差在哪？這篇完整記錄我兩次前往沖繩藍洞，分別體驗浮潛與水肺的 100% 真實心得以及防雷建議。',
     badge: '🤿 沖繩必玩',
@@ -312,7 +312,7 @@ export const articlesData: Article[] = [
           </p>
 
           <div className="my-8">
-             <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Inside_the_Blue_Cave_on_Bisevo_island%2C_Croatia_%2848693429148%29.jpg" alt="沖繩潛水" className="grayscale w-full h-auto rounded-lg shadow-lg border-4 border-black" />
+             <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?w=800&q=80" alt="沖繩潛水" className="grayscale w-full h-auto rounded-lg shadow-lg border-4 border-black" />
              <p className="text-center text-sm text-gray-500 mt-2">如同寶石般閃耀的海水，完全不需濾鏡。</p>
           </div>
 
@@ -384,7 +384,7 @@ export const articlesData: Article[] = [
     title: '2026 虎航股東回饋金 800 元領取教學：3 分鐘完成登錄',
     author: '黑白飛金算盤',
     readTime: '3 分鐘',
-    image: '/tiger-real.png',
+    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80',
     imageAlt: '台灣虎航股東回饋金登錄教學',
     excerpt: '手上持有虎航（6757）股票的股民請注意！今年的股東機票回饋金已經正式開放登錄了。千萬別讓你的權益睡著了，到底怎麼登錄？有什麼限制？這篇手把手教你拿到 800 元的機票折抵金！',
     badge: '💰 股民必看',
@@ -480,7 +480,7 @@ export const articlesData: Article[] = [
     title: '【2026 避坑圖解】日韓廉航行李限制：這 2kg 的差距，可能讓你多付 $1,500！',
     author: '黑白飛避雷針',
     readTime: '3 分鐘',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Suitcase_with_luggage_tags.jpg/800px-Suitcase_with_luggage_tags.jpg',
+    image: 'https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=800&q=80',
     imageAlt: '日韓廉航行李限制',
     excerpt: '買到便宜機票的快樂，往往在櫃檯秤重那一刻消失。虎航、樂桃、酷航，每一家的『手提 7kg』其實長得都不一樣。圖解教你不再機場出糗！',
     badge: '📛 避坑指南',
@@ -554,7 +554,7 @@ export const articlesData: Article[] = [
     title: '虎航 2026 訂閱制今天開放兌換！不想訂閱？這裡看今日最便宜單買票價。',
     author: '黑白飛特派員',
     readTime: '4 分鐘',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tigers_Japan_2004.jpg/800px-Tigers_Japan_2004.jpg',
+    image: 'https://images.unsplash.com/photo-1569154941061-e231b4732ef1?w=800&q=80',
     imageAlt: '虎航 2026 訂閱制與便宜機票',
     excerpt: '萬眾矚目的「虎航 2026 訂閱制」今天終於開放兌換啦！究竟是花大錢買訂閱制划算，還是單買更省？這篇幫你深度解析，加碼告訴你不訂閱也能搶便宜的秘訣！',
     badge: '🔥 最新消息',
@@ -616,7 +616,7 @@ export const articlesData: Article[] = [
     title: '2026 日韓機票怎麼買最省？淡旺季完全攻略',
     author: '黑白飛主編',
     readTime: '3 分鐘',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Baggage_carousel_at_airport_terminal.jpg/800px-Baggage_carousel_at_airport_terminal.jpg',
+    image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80',
     imageAlt: '日韓機票攻略',
     excerpt: '大家都想飛日本吃和牛、飛韓國吃烤肉，但每次打開購票網站，看到那精美的價格是不是又默默把網頁關掉？其實，買機票就像買股票...',
     content: (
@@ -690,7 +690,7 @@ export const articlesData: Article[] = [
     title: '2026 暑假機票最後上車機會！7-8 月萬元以下廉航總整理',
     author: '黑白飛特派員',
     readTime: '2 分鐘',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Summer_Beach_%28214227784%29.jpeg/800px-Summer_Beach_%28214227784%29.jpeg',
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
     imageAlt: '暑假機票最後上車機會',
     excerpt: '暑假想出國，但看到傳統航空動輒 1.5 萬起跳的票價實在下不了手？別放棄得太早！經過我們地毯式搜索，7-8 月其實還有一些隱藏版的「萬元以下」廉航機票...',
     content: (
@@ -732,7 +732,7 @@ export const articlesData: Article[] = [
     title: '2026 沖繩自由行 5 天 4 夜終極攻略，吃好買滿！',
     author: '黑白飛主編',
     readTime: '10 分鐘',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Kabira_Bay_Ishigaki_Okinawa.jpg/800px-Kabira_Bay_Ishigaki_Okinawa.jpg',
+    image: 'https://images.unsplash.com/photo-1589394815804-964ce0ff9718?w=800&q=80',
     imageAlt: '沖繩自由行攻略',
     excerpt: '解封後的沖繩又變得更迷人了！新手如何安排不走回頭路的行程？從租車自駕的眉角、美國村的異國風情、到絕美古宇利島，這是一篇涵蓋美食、購物、打卡秘境的 3000 字終極深度指南。',
     badge: '🏖️ 海島度假必選',
@@ -778,7 +778,7 @@ export const articlesData: Article[] = [
           <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
             <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[-6deg] text-xl">Day 1：抵達那霸 ✈️ 暖身血拚與道地拉麵</div>
             <h5 className="font-bold text-xl mb-4 ml-6 mt-4">適應右駕節奏，走進那霸的熱鬧夜生活</h5>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Kokusai_dori.jpg/800px-Kokusai_dori.jpg" alt="那霸國際通" className="grayscale w-full h-64 object-cover sketch-border border-2 border-black mb-6" />
+            <img src="https://images.unsplash.com/photo-1624253321171-1be53e12f5f4?w=800&q=80" alt="那霸國際通" className="grayscale w-full h-64 object-cover sketch-border border-2 border-black mb-6" />
             <div className="space-y-4 text-gray-800 leading-relaxed">
               <p>
                 <strong>📌 下午：機場取車與波上宮祈福</strong><br/>
@@ -816,7 +816,7 @@ export const articlesData: Article[] = [
           <div className="sketch-border p-8 bg-white relative hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-shadow">
             <div className="absolute -top-4 -left-4 bg-black text-white font-bold px-4 py-2 sketch-border rotate-[-4deg] text-xl">Day 3：探索北國 🐋 黑潮之海與古宇利大橋</div>
             <h5 className="font-bold text-xl mb-4 ml-6 mt-4">遇見海洋巨人，駛向傳說中的神之島</h5>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Okinawa_Churaumi_Aquarium_-_Kuroshio_Sea.jpg/800px-Okinawa_Churaumi_Aquarium_-_Kuroshio_Sea.jpg" alt="美麗海水族館" className="grayscale w-full h-64 object-cover sketch-border border-2 border-black mb-6" />
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="美麗海水族館" className="grayscale w-full h-64 object-cover sketch-border border-2 border-black mb-6" />
             
             <div className="space-y-4 text-gray-800 leading-relaxed">
               <p>
@@ -884,7 +884,7 @@ export const articlesData: Article[] = [
     title: '【深度解析】美麗海水族館門票怎麼買？Okinawa Fun Pass 真實評測與使用教學',
     author: '黑白飛主編',
     readTime: '8 分鐘',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Okinawa_Churaumi_Aquarium_-_Kuroshio_Sea.jpg/800px-Okinawa_Churaumi_Aquarium_-_Kuroshio_Sea.jpg', // Need replace if dead, but we will use the working one
+    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80', // Need replace if dead, but we will use the working one
     imageAlt: 'Okinawa Fun Pass',
     excerpt: '「要去美麗海水族館，門票到底怎麼買最划算？」這幾乎是所有沖繩新手都會在出發前 Google 的問題。透過最真實深度的實戰分析，教你如何買對票券，既省錢又不變成斯巴達行軍！',
     badge: '🎫 票券攻略',
@@ -898,7 +898,7 @@ export const articlesData: Article[] = [
             許多新手常被網路上過去的舊資訊誤導，或者不清楚這個 Pass 到底實不實用。這裡我們直接幫你破解盲點，透過最真實深度的實戰分析，教你如何挑選 Okinawa Fun Pass 最適合的方案，既省錢又不變成斯巴達行軍！
           </p>
           
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Okinawa_Churaumi_Aquarium_-_Kuroshio_Sea.jpg/800px-Okinawa_Churaumi_Aquarium_-_Kuroshio_Sea.jpg" alt="美麗海水族館" className="grayscale w-full h-64 object-cover sketch-border border-2 border-black my-6" />
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="美麗海水族館" className="grayscale w-full h-64 object-cover sketch-border border-2 border-black my-6" />
 
           <h5 className="font-bold text-xl mt-8 mb-4 text-indigo-700 flex items-center gap-2"><div className="w-2 h-6 bg-indigo-600"></div> 1. 什麼是 Okinawa Fun Pass？</h5>
           <p>
@@ -1014,7 +1014,7 @@ export const articlesData: Article[] = [
     title: '2027 迪士尼探險號 (Disney Adventure) 新加坡開賣！艙房與預訂深度攻略',
     author: '黑白飛主編',
     readTime: '6 分鐘',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Cruise_ship_in_Geirangerfjord.jpg/800px-Cruise_ship_in_Geirangerfjord.jpg',
+    image: 'https://images.unsplash.com/photo-1599640842225-85d111c60e6b?w=800&q=80',
     imageAlt: '2027 迪士尼探險號',
     excerpt: '亞洲第一艘！2027 迪士尼探險號（Disney Adventure）正式從新加坡啟航啦！這篇深度攻略帶你秒懂航線、艙房怎麼選、開賣時間與早鳥價格，以及帶小孩出國必看的預訂防呆指南！',
     badge: '🔥 最新開賣',
