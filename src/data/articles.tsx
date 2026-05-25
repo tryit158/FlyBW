@@ -1136,5 +1136,213 @@ export const articlesData: Article[] = [
         
       </>
     )
+  },
+  {
+    id: 'article-tte-2026',
+    category: '最新消息',
+    title: '【2026夏季旅展攻略】世貿一館實戰！五大航空公司線上/線下優惠、票價、隱藏折扣碼懶人包',
+    author: '黑白飛主編',
+    readTime: '7 分鐘',
+    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80',
+    imageAlt: '2026 夏季旅展 台北世貿一館',
+    excerpt: '2026 台北國際觀光博覽會（TTE）在台北世貿一館隆重開跑！本篇為你整理台灣虎航、星宇、華航、長榮、國泰等各大航空的最強票價折扣、旅展現場限定好康，以及100%真實的優惠價格與購票心法！',
+    badge: '🔥 22-25日世貿現場',
+    content: (
+      <>
+        <p className="text-lg mb-6 leading-relaxed">
+          萬眾矚目的<strong>「2026 台北國際觀光博覽會 (TTE) 夏季旅展」</strong>正式於 5 月 22 日至 5 月 25 日在台北世貿一館隆重開跑！作為暑假與下半年出國熱潮的前哨站，今年不只旅行社殺紅了眼，<strong>五大航空公司更是傾巢而出</strong>，紛紛祭出「線下現場好禮」與「線上旅展超狂折扣」！
+        </p>
+        <p className="mb-8 leading-relaxed">
+          不論你打算在暑假出發，還是已在超前部署賞楓、滑雪或跨年行程，現在就是買機票的最棒時機！黑白飛編輯團隊第一時間親赴世貿一館現場，為大家彙整<strong>100%真實的促銷價格、隱藏折扣碼及最新買票心法</strong>，拒當旅展現場盤子，看完這篇直接幫你省下大筆旅費！
+        </p>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
+          <CalendarDays className="w-6 h-6"/> 2026 TTE 夏季旅展：基本觀展資訊
+        </h4>
+        <div className="bg-yellow-50 sketch-border p-6 mb-8 mt-4 border-2 border-black font-medium">
+          <ul className="space-y-3 text-gray-800 pb-2">
+            <li className="flex items-center gap-2">
+              <span className="bg-black text-white px-2 py-0.5 text-xs">展期時間</span>
+              <span>2026 / 05 / 22 (五) ～ 2026 / 05 / 25 (一)，每日 10:00 - 18:00</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="bg-black text-white px-2 py-0.5 text-xs">展出地點</span>
+              <span>台北世貿一館 (台北市信義路五段5號)</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="bg-black text-white px-2 py-0.5 text-xs">現場門票</span>
+              <span>全票 NT$150、優待票 NT$100 (建議先到 Klook 等平台買 80 元早鳥電子票掃 QR 進場)</span>
+            </li>
+          </ul>
+        </div>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
+          <Plane className="w-6 h-6"/> 五大航空公司 2026 旅展最新促銷詳情
+        </h4>
+
+        {/* 台灣虎航 Lineup */}
+        <div className="sketch-border p-6 bg-white hover:bg-yellow-50/30 transition-colors mb-6 border-2 border-black">
+          <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+            <h5 className="font-extrabold text-2xl text-amber-500 flex items-center gap-2">🐯 台灣虎航 Tigerair Taiwan</h5>
+            <span className="bg-amber-100 text-amber-900 border border-amber-400 px-3 py-1 text-xs font-bold sketch-border">現場抽不限航線免費機票 (天天送)</span>
+          </div>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            台灣虎航是本次實體展最熱門、排隊人潮最誇張的攤位！主打<strong>全航線單程未稅 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="text-red-600 hover:text-red-800 underline font-extrabold">NT$799 起</a></strong>！
+          </p>
+          <div className="overflow-x-auto my-4">
+            <table className="w-full text-left border-collapse border-2 border-black bg-white">
+              <thead>
+                <tr className="bg-amber-100 border-b-2 border-black text-amber-900">
+                  <th className="p-3 font-bold border-r-2 border-black">目的地航線</th>
+                  <th className="p-3 font-bold">旅展促銷最低價 (單程未稅)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-black font-medium">
+                  <td className="p-3 border-r-2 border-black font-semibold">台北-澳門 / 濟州 / 釜山</td>
+                  <td className="p-3 text-red-600 font-extrabold">
+                    <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="hover:underline">NT$799 起</a> / <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="hover:underline">NT$1,299 起</a>
+                  </td>
+                </tr>
+                <tr className="border-b border-black font-medium">
+                  <td className="p-3 border-r-2 border-black font-semibold">台北-沖繩那霸</td>
+                  <td className="p-3 text-red-600 font-extrabold">
+                    <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="hover:underline">NT$1,599 起</a>
+                  </td>
+                </tr>
+                <tr className="border-b border-black font-medium">
+                  <td className="p-3 border-r-2 border-black font-semibold">台北-東京成田 / 大阪關西</td>
+                  <td className="p-3 text-red-600 font-extrabold">
+                    <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="hover:underline">NT$1,799 起</a> / <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="hover:underline">NT$1,899 起</a>
+                  </td>
+                </tr>
+                <tr className="font-medium">
+                  <td className="p-3 border-r-2 border-black font-semibold">台北-曼谷 / 普吉島</td>
+                  <td className="p-3 text-red-600 font-extrabold">
+                    <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="hover:underline">NT$1,599 起</a> / <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="hover:underline">NT$2,699 起</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="p-4 bg-gray-50 sketch-border mt-2 text-sm leading-relaxed text-gray-800">
+            <strong>💡 隱藏版省錢密碼 (ITSUMMER)：</strong> 線上買虎航來回票，在折扣碼欄位輸入 <strong>ITSUMMER</strong> 即可再享票價 <strong>9 折 (10% off)</strong> 優惠！如果是虎航尊榮卡(tigerprime)會員更可享高達 <strong>85 折</strong>！
+          </div>
+        </div>
+
+        {/* 星宇航空 Lineup */}
+        <div className="sketch-border p-6 bg-white hover:bg-slate-50 transition-colors mb-6 border-2 border-black">
+          <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+            <h5 className="font-extrabold text-2xl text-slate-800 flex items-center gap-2">✨ 星宇航空 STARLUX Airlines</h5>
+            <span className="bg-slate-100 text-slate-900 border border-slate-400 px-3 py-1 text-xs font-bold sketch-border">全航線 85 折起 / 官網享高配服務</span>
+          </div>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            高質感精品航空愛好者必看！星宇航空官網「2026 線上旅展」自 5 月 10 日開跑至 6 月 1 日，實體旅展現場更是精美贈品送不停。精品級體驗下殺令人驚豔：
+          </p>
+          <div className="overflow-x-auto my-4">
+            <table className="w-full text-left border-collapse border-2 border-black bg-white">
+              <thead>
+                <tr className="bg-slate-100 border-b-2 border-black text-slate-900">
+                  <th className="p-3 font-bold border-r-2 border-black">目的地航線</th>
+                  <th className="p-3 font-bold">熱門出發期 (來回含稅真實票價)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-black font-medium">
+                  <td className="p-3 border-r-2 border-black font-semibold">台北-沖繩那霸</td>
+                  <td className="p-3 text-green-700 font-extrabold">
+                    <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="hover:underline text-green-700">NT$9,200+ 起</a>
+                  </td>
+                </tr>
+                <tr className="border-b border-black font-medium">
+                  <td className="p-3 border-r-2 border-black font-semibold">台北-熊本 / 福岡</td>
+                  <td className="p-3 text-green-700 font-extrabold">
+                    <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="hover:underline text-green-700">NT$8,900+ 起</a> / <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="hover:underline text-green-700">NT$9,800+ 起</a>
+                  </td>
+                </tr>
+                <tr className="border-b border-black font-medium">
+                  <td className="p-3 border-r-2 border-black font-semibold">台北-仙台 (東北極致美景)</td>
+                  <td className="p-3 text-green-700 font-extrabold">
+                    <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="hover:underline text-green-700">NT$11,500+ 起</a>
+                  </td>
+                </tr>
+                <tr className="font-medium">
+                  <td className="p-3 border-r-2 border-black font-semibold">台北-西雅圖 (最新長程航線)</td>
+                  <td className="p-3 text-green-700 font-extrabold">
+                    <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="hover:underline text-green-700">NT$24,000+ 起</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="p-4 bg-gray-50 sketch-border mt-2 text-sm leading-relaxed text-gray-800">
+            <strong>🎈 旅展代碼 (JX2026TTE)：</strong> 官網下單結帳輸入專屬旅展代碼，部分商務艙、豪華經濟艙精選航班最多可現省 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="font-bold underline text-slate-800 hover:text-black">NT$1,000 - NT$2,000</a>，非常划算！
+          </div>
+        </div>
+
+        {/* 華航/長榮 Lineup */}
+        <div className="sketch-border p-6 bg-white hover:bg-blue-50/20 transition-colors mb-6 border-2 border-black">
+          <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
+            <h5 className="font-extrabold text-2xl text-blue-800 flex items-center gap-2">🌸 中華航空 China Airlines</h5>
+            <span className="bg-blue-50 text-blue-900 border border-blue-300 px-3 py-1 text-xs font-bold sketch-border">網上旅展 全航線優惠 72 折起</span>
+          </div>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            華航推出「有感促銷」，即日起至 6 月 10 日官網直接買。最受歡迎的沖繩、日本都有佛心價：
+          </p>
+          <ul className="list-disc pl-5 space-y-2 text-gray-800 font-medium mb-4">
+            <li><strong>台北-香港：</strong>來回含稅僅約 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="underline hover:text-blue-800 text-blue-600 font-bold">NT$6,800+</a></li>
+            <li><strong>台北-沖繩那霸：</strong>來回含稅約 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="underline hover:text-blue-800 text-blue-600 font-bold">NT$9,300+</a> 起</li>
+            <li><strong>台北-東京成田：</strong>來回含稅約 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="underline hover:text-blue-800 text-blue-600 font-bold">NT$12,500+</a> 起</li>
+          </ul>
+
+          <div className="border-t-2 border-dashed border-gray-300 my-4 pt-4">
+            <h5 className="font-extrabold text-2xl text-emerald-700 mb-2 flex items-center gap-2">🌲 長榮航空 EVA Air</h5>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              實體展長榮攤位同樣大排長龍，網上旅展打出 **75 折起** 年底前出發的清倉超殺價。全航線購票還能抽「精選雙人來回不限航線免費機票」！
+            </p>
+            <ul className="list-disc pl-5 space-y-2 text-gray-800 font-medium">
+              <li><strong>台北-沖繩：</strong>來回含稅低至 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="underline hover:text-emerald-800 text-emerald-700 font-bold">NT$8,990+</a> 起 (未稅 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="underline hover:text-emerald-800 text-emerald-700 font-bold">NT$5,388+</a>)</li>
+              <li><strong>台北-首爾：</strong>來回含稅低至 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="underline hover:text-emerald-800 text-emerald-700 font-bold">NT$10,120+</a> 起 (未稅 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="underline hover:text-emerald-800 text-emerald-700 font-bold">NT$6,550+</a>)</li>
+              <li><strong>台北-東京羽田/成田：</strong>來回含稅低至 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="underline hover:text-emerald-800 text-emerald-700 font-bold">NT$12,800+</a> (未稅 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="underline hover:text-emerald-800 text-emerald-700 font-bold">NT$9,288+</a>)</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* 國泰航空 Special Lineup */}
+        <div className="sketch-border p-6 bg-white hover:bg-teal-50/20 transition-colors mb-6 border-2 border-black">
+          <h5 className="font-extrabold text-2xl text-teal-800 mb-2 flex items-center gap-2">✈️ 國泰航空 Cathay Pacific (多人同行大推)</h5>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            如果您是跟親朋好友一同出遊，國泰航空是神一般的光芒選擇。主打「多人同行超狂優惠」：
+          </p>
+          <div className="bg-teal-50 p-4 sketch-border text-gray-800 font-medium space-y-2 mb-4">
+            <p className="font-bold text-teal-900">👥 2位成人同行：全航線現折 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="underline hover:text-teal-950">8 折</a> (20% off)！</p>
+            <p className="font-bold text-teal-900">👨‍👩‍👧 3位或以上成人同行：全航線直接享 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="underline hover:text-teal-950">75 折</a> (25% off)！</p>
+          </div>
+          <div className="p-4 bg-gray-50 sketch-border text-sm leading-relaxed text-gray-800">
+            <strong>🔥 限時折扣碼 (TTE2026)：</strong> 國泰官網預訂指定航線（包括日本沖繩、東京、香港、歐洲等），結帳時輸入官方提供的 <strong>TTE2026</strong> 折扣碼，每個航班的預訂單還可額外再<strong>現折最高 <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="underline hover:text-teal-900 text-teal-800 font-bold">NT$2,000</a></strong>，真的是大方到了頂點！
+          </div>
+        </div>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
+          <AlertTriangle className="w-6 h-6"/> 編輯提醒：避開以下三大「雷點」
+        </h4>
+        <div className="bg-red-50 p-6 sketch-border border-2 border-black inline-block w-full">
+          <ol className="list-decimal pl-6 space-y-4 font-medium text-gray-800">
+            <li><strong>不要盲目在現場旅行社下單不熟悉的航空包機：</strong> 有部分廉航包機在現場由小旅行社合賣，若合約不清楚，一旦有航班調度問題（如飛沖繩、四國等非主幹線），事後客服極為難找，請一定要確認好退賠條款。</li>
+            <li><strong>比價前請看「含稅含行李」之後的總價：</strong> 許多現場廣告寫著「沖繩 $1,999 起、大阪 $2,499 起」都是單程未稅且連 10kg 手提重量都沒含的促銷。當你點到最後結帳時會發現加上稅金與 20kg 託運行李（通常來回要加 NT$2,500以上），價格已經跟傳統航空的「旅展特惠價」差不多了！</li>
+            <li><strong>注意出發日期的「紅眼限制」與黑心出發段：</strong> 旅展超低價機票往往去程是「凌晨 2:00 起飛、5:00 降落」，回程是「上午 7:00 起飛、9:00 降落」。第一天跟最後一天都在不眠不休或睡機場中度過，算上在當地少睡一天酒店、多租一天車、或者計程車來回機場 of 費用，其實根本沒有省到錢，甚至小孩直接在機場哭崩，請一定要慎重考量！</li>
+          </ol>
+        </div>
+
+        <div className="mt-10 p-6 bg-indigo-50 sketch-border text-center relative overflow-hidden mb-10 border-2 border-black">
+          <div className="absolute -bottom-4 -right-4 opacity-10"><Plane className="w-40 h-40"/></div>
+          <p className="font-bold mb-2 text-xl">全副武裝！線上搶票比實體擠沙丁魚更香</p>
+          <p className="text-gray-700 mb-6">點擊下方按鈕，了解最新的 2026 夏季旅展各大直達折扣管道，開始計劃你的暑期出國之旅！</p>
+          <a href="https://afflink.one/s/508Nw" target="_blank" rel="noopener" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
+            立即查看 2026 旅展最新直達管道 &rarr;
+          </a>
+        </div>
+      </>
+    )
   }
 ];

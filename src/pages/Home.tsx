@@ -10,10 +10,15 @@ import { useMemo } from 'react';
 
 export default function Home() {
   const previewArticles = useMemo(() => {
-    // 優先顯示沖繩相關文章 (article-3: 沖繩 5 天 4 夜, article-7: Okinawa Fun Pass)
-    const okinawaArticles = articlesData.filter(a => a.id === 'article-3' || a.id === 'article-7' || a.id === 'okinawa-family-churaumi-dino');
-    const otherArticles = articlesData.filter(a => a.id !== 'article-3' && a.id !== 'article-7' && a.id !== 'okinawa-family-churaumi-dino');
-    return [...okinawaArticles, ...otherArticles].slice(0, 6);
+    // 優先顯示夏季旅展與沖繩相關文章 (article-tte-2026, article-3, article-7, okinawa-family-churaumi-dino)
+    const priorityIds = ['article-tte-2026', 'article-3', 'article-7', 'okinawa-family-churaumi-dino'];
+    const priorityArticles = articlesData.filter(a => priorityIds.includes(a.id));
+    const otherArticles = articlesData.filter(a => !priorityIds.includes(a.id));
+    
+    // Sort priorityArticles based on their order in priorityIds
+    priorityArticles.sort((a, b) => priorityIds.indexOf(a.id) - priorityIds.indexOf(b.id));
+    
+    return [...priorityArticles, ...otherArticles].slice(0, 6);
   }, []);
 
   return (
