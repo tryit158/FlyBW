@@ -1344,5 +1344,134 @@ export const articlesData: Article[] = [
         </div>
       </>
     )
+  },
+  {
+    id: 'okinawa-typhoon-guide',
+    category: '必讀攻略',
+    title: '【沖繩颱風生存指南】100%真實實戰！航班取消、自駕禁忌、景點關閉與囤糧避難全攻略',
+    author: '黑白飛主編',
+    readTime: '6 分鐘',
+    image: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&q=80',
+    imageAlt: '沖繩 颱風天 自救 避難 備案',
+    excerpt: '暑假與秋季去沖繩最怕碰上颱風！當暴風警報響起，單軌電車與公車停駛時，連美麗海水族館都會關閉！本文為你解密最真實的沖繩颱風天交通規則、租車駕駛自救方針、景點應變方案與防颱準備。',
+    badge: '⚠️ 夏秋防颱必看',
+    content: (
+      <>
+        <p className="text-lg mb-6 leading-relaxed text-gray-800">
+          沖繩的夏天（7月～9月）是藍天白雲的自駕天堂，但也正好是<strong>西北太平洋颱風最活躍的季節</strong>。出發前或在當地猛然發現颱風正朝著沖繩撲來，應該怎麼辦？
+        </p>
+        <p className="mb-8 leading-relaxed">
+          「機票會不會取消？」「能不能繼續開車出門？」「水族館還會開嗎？」「便利商店真的會沒食物嗎？」這些都是所有受困旅客最真實也最慌張的疑問。
+          黑白飛團隊為大家整理這篇<strong>100%沖繩現場真實防颱實戰守則</strong>，教你如何安全、優雅且有條不紊地應對沖繩颱風天！
+        </p>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-yellow-50 border-black border-2 border-b-4 border-r-4">
+          <CloudRain className="w-6 h-6 text-blue-600"/> 關鍵鐵則一：公車、單軌電車停駛之日，即景點關閉之時
+        </h4>
+        <p className="mb-4 leading-relaxed">
+          在沖繩防颱最重要、100%真實的判斷指標就是<strong>「路線巴士（公車）是否停駛」</strong>。
+        </p>
+        <div className="bg-gray-50 border-2 border-black sketch-border p-5 mb-6">
+          <p className="font-bold text-gray-900 mb-2">沖繩官方與各大景點（如：美麗海水族館、首里城、沖繩世界等）的硬性規定：</p>
+          <ul className="list-disc pl-5 space-y-2 text-gray-700">
+            <li>當沖繩氣象台發布<strong>「暴風警報」</strong>，且琉球巴士、沖繩巴士、那霸巴士等四大巴士公司宣布<strong>全天停駛（路線バスが運行中止）</strong>時，公營與大型私人景點將<strong>同步休館、暫停對外開放</strong>。</li>
+            <li><strong>單軌電車 (Yui Rail)：</strong> 當風速達到一定限制，單軌電車也會同步宣布預防性停駛。此時連那霸市區的交通都會陷入半癱瘓。</li>
+            <li><strong>如何查詢：</strong> 當天清晨 6:00 ～ 7:00 上 <strong>「沖繩觀光會議局 (OCVB)」</strong> 或各大巴士公司官網，就會公布今日是否停駛。</li>
+          </ul>
+        </div>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-yellow-50 border-black border-2 border-b-4 border-r-4">
+          <AlertTriangle className="w-6 h-6 text-amber-500"/> 關鍵鐵則二：颱風暴風圈籠罩時，絕對不要開租車外出！
+        </h4>
+        <p className="mb-4 leading-relaxed">
+          許多自駕遊客心想：「反正外面風雨大，我開租來的車出門逛街、去看海，在車裡很安全吧？」<strong>這是最危險、最致命的錯誤觀念！</strong>
+        </p>
+        <div className="bg-red-50 border-2 border-red-500 text-red-955 sketch-border p-6 mb-8">
+          <ul className="space-y-3 font-semibold text-sm md:text-base">
+            <li className="flex items-start gap-2">
+              <span className="bg-red-600 text-white text-xs px-2 py-0.5 rounded mt-1">1</span>
+              <span><strong>風力足以翻車：</strong> 沖繩颱風學名叫作「島颱風」，威力極大沒有中央山脈阻擋。強風在平坦無遮蔽的海濱道路上，可以<strong>輕易吹翻輕量級車輛 (K-Car)</strong>，甚至造成多台車連環側翻。</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="bg-red-600 text-white text-xs px-2 py-0.5 rounded mt-1">2</span>
+              <span><strong>飛石與招牌暗器：</strong> 暴風中會有大片折斷路樹、掉落招牌、飛石、倒塌鐵皮。一旦砸中車窗，玻璃破碎將造成嚴重人身傷害。</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="bg-red-600 text-white text-xs px-2 py-0.5 rounded mt-1">3</span>
+              <span><strong>保險 (免責補償 / NOC) 恐失效：</strong> 在暴風警報發布期間，若旅客仍執意駕駛車輛出外導致毀損，部分租車公司（如 OTS、Times 等）可能會<strong>判定為「個人疏忽」而拒絕理賠</strong>，屆時所有的車損均需由旅客全額買單！</span>
+            </li>
+          </ul>
+        </div>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-yellow-50 border-black border-2 border-b-4 border-r-4">
+          <Lightbulb className="w-6 h-6 text-yellow-500"/> 關鍵鐵則三：黃金避難 24 小時——「超商與食物囤積術」
+        </h4>
+        <p className="mb-4 leading-relaxed">
+          沖繩與日本本土不相連，島上的各類物資（尤其是生鮮食品、麵包、御飯糰、牛奶與蔬菜）100% 依賴大型貨輪從九州或大阪運送。
+        </p>
+        <p className="mb-4 leading-relaxed">
+          一旦颱風接近、海象變航，<strong>海上貨輪會預防性停航至少 3 - 5 天</strong>。這代表沖繩全島的便利商店（FamilyMart、Lawson）、超商與超市會出現<strong>「斷貨潮」</strong>，架上在颱風登陸前 24 小時就會被徹底清空！
+        </p>
+        <div className="bg-blue-50 border-2 border-black sketch-border p-5 mb-8 text-gray-800">
+          <p className="font-bold text-lg mb-2 text-blue-900">🏠 編輯貼心防颱囤糧清单：</p>
+          <ol className="list-decimal pl-5 space-y-2 font-medium">
+            <li>在暴風雨來臨前一天，務必前往 <strong>San-A (サンエー)</strong>、<strong>AEON 永旺超市</strong> 或 <strong>Union (ユニオン) 超市</strong> 採購。(Union超市以24小時不打烊出名，但風雨過大時依然會安全休店)。</li>
+            <li>採購<strong>不需烹煮、可用溫水或直接食用的食品：</strong> 泡麵（部分飯店備有熱水瓶）、小零食、麵包、罐頭、礦泉水。</li>
+            <li><strong>預防大停電：</strong> 沖繩電線桿很多，強風極容易扯斷電線引起局部大停電（甚至持續12-24小時）。請將行動電源充滿電，並準備好手電筒或應急白手電筒。</li>
+          </ol>
+        </div>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-yellow-50 border-black border-2 border-b-4 border-r-4">
+          <Smartphone className="w-6 h-6 text-purple-600"/> 關鍵鐵則四：班機停飛？實戰退改與保險索賠四步驟
+        </h4>
+        <p className="mb-4 leading-relaxed">
+          如果航班正好在颱風暴風半徑襲擊時間內，有 90% 以上的機率會延誤或取消。這時千萬別慌，按照以下四個最穩妥的步驟處理：
+        </p>
+        <div className="border-l-4 border-black pl-5 space-y-6 my-8">
+          <div>
+            <h5 className="font-bold text-lg text-gray-900">1. 確認航班狀態，切勿盲目衝機場</h5>
+            <p className="text-gray-700 text-sm mt-1">當那霸機場大眾交通工具全數停運時，機場航廈（Terminal）會直接鎖閉大門。此時留在原飯店房間或留在那霸市區最安全，絕不要在此時冒強風搭計程車強行前往沒開門的機場。</p>
+          </div>
+          <div>
+            <h5 className="font-bold text-lg text-gray-900">2. 自助排隊改簽，或聯絡客服退改</h5>
+            <p className="text-gray-700 text-sm mt-1">傳統航空會傳送免費改簽連結。如果是搭乘廉航（如台灣虎航、樂桃），一旦宣布航班取消，即可上網申請全額退票或改簽後面班次。</p>
+          </div>
+          <div>
+            <h5 className="font-bold text-lg text-gray-900">3. 下載保存「欠航證明書 (Certificate of Flight Cancellation)」</h5>
+            <p className="text-gray-700 text-sm mt-1">這是向保險公司索賠<strong>「旅遊不便險」</strong>的最核心憑證，直接在航空官方 App 或官網輸入班機編號即可免費下載 PDF 版本。</p>
+          </div>
+          <div>
+            <h5 className="font-bold text-lg text-gray-900">4. 收集所有延誤期間的額外開銷收據</h5>
+            <p className="text-gray-700 text-sm mt-1">因航班取消多留所需之額外<strong>住宿費、交通費、必要餐飲費</strong>等，記得全部索取「紙本正式收據 (領収書 / Receipt)」。返台後連同欠航證明、登機證一起送件給保險公司進行退款理賠。</p>
+          </div>
+        </div>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-yellow-50 border-black border-2 border-b-4 border-r-4">
+          <ShieldCheck className="w-6 h-6 text-emerald-600"/> 關鍵鐵則五：大風大雨中的「勉強備案」景點
+        </h4>
+        <p className="mb-4 leading-relaxed">
+          如果是<strong>颱風接近前夕（尚未發布暴風警報，大眾交通正常，僅是大風大雨）</strong>，不想悶在飯店，有哪些 100% 全室內、不受風雨侵襲的好去處？
+        </p>
+        <div className="grid md:grid-cols-2 gap-4 mb-10">
+          <div className="border-2 border-black sketch-border p-4 bg-white">
+            <h5 className="font-bold text-lg text-indigo-900 mb-2">🛍️ PARCO CITY 浦添 or 永旺來客夢</h5>
+            <p className="text-sm text-gray-700">這兩個是沖繩最大的全室內巨型購物商城。裡面吃的、買的全在一棟樓，雨下再大都不會淋濕。唯一要注意的是：當暴風警報正式掛起，為了員工生命安全，商場也會公告提前打烊！</p>
+          </div>
+          <div className="border-2 border-black sketch-border p-4 bg-white">
+            <h5 className="font-bold text-lg text-teal-900 mb-2">🐠 DMM Kariyushi 水族館</h5>
+            <p className="text-sm text-gray-700">位於豐見城市，是純室內的沉浸式高科技水族館。比起偏遠、半露天的北部美麗海水族館，DMM水族館在南部的室內高樓中，即使外面暴風驟雨，裡面依舊與世隔絕、光影絢麗。</p>
+          </div>
+        </div>
+
+        <div className="mt-10 p-6 bg-red-50 sketch-border text-center relative overflow-hidden mb-10 border-2 border-black">
+          <div className="absolute -bottom-4 -right-4 opacity-10"><CloudRain className="w-40 h-40"/></div>
+          <p className="font-bold mb-2 text-xl">預防勝於補救！出國首要先備妥不便險與網卡</p>
+          <p className="text-gray-700 mb-6">在風雨中查詢航班進度、與保險公司溝通，穩定的網路最重要。點擊下方連結購入防颱神物與旅展大推的不便險工具！</p>
+          <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
+            立即查看 2026 夏季防颱超狂優惠機票/備案方案 &rarr;
+          </a>
+        </div>
+      </>
+    )
   }
 ];
