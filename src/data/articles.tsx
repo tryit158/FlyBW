@@ -1473,5 +1473,154 @@ export const articlesData: Article[] = [
         </div>
       </>
     )
+  },
+  {
+    id: 'esim-usage-guide',
+    category: '必讀攻略',
+    title: '【eSIM完整教學】iOS / Android 實戰安裝指南！出國免換卡，雙系統設定與常見雷點排解',
+    author: '黑白飛主編',
+    readTime: '8 分鐘',
+    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80',
+    imageAlt: 'eSIM 安裝設定 入門 蘋果 安卓 雙系統',
+    excerpt: '出國不想再攜帶笨重 WiFi 分享器或用別針狼狽換 SIM 卡？最新高實用 eSIM 旅遊必看！手把手帶您看：購買前後兼容性檢測、iOS 蘋果系統與 Android 安卓系統（三星、Pixel）安裝細節，以及落地無法連線上網的最速排障心法！',
+    badge: '📱 出國上網必看',
+    content: (
+      <>
+        <p className="text-lg mb-6 leading-relaxed text-gray-800">
+          近年出國旅遊，<strong>eSIM (虛動態嵌入式SIM卡)</strong> 已經徹底改變了大家的手機上網習慣！只要在出發前掃描 QR Code，不用替換原實體 SIM 卡、不怕弄丟卡針，落地就能無縫開網，超級優雅！
+        </p>
+        <p className="mb-8 leading-relaxed">
+          但在購買之後呢？不少旅人在機場臨櫃或飛機落地時，常發生「掃描出現錯誤」、「連不上網」、「電話打不通」等狀況。
+          本篇黑白飛主編將為大家帶來<strong>100%實測真實的 Apple iOS 及 Android（安卓）雙系統設定全圖解</strong>，並提醒你三大絕不可忽視的避雷關鍵！
+        </p>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-yellow-50 border-black border-2 border-b-4 border-r-4">
+          <AlertTriangle className="w-6 h-6 text-amber-500"/> 關鍵核心：購買 eSIM 前，請先做「機型與鎖卡檢測」
+        </h4>
+        <p className="mb-4 leading-relaxed">
+          不是所有手機都支援 eSIM！在興高采烈購買或掃描前，不論你是 iOS 或安卓手機，一定要先核對以下兩點：
+        </p>
+        <div className="bg-red-50 border-2 border-black sketch-border p-5 mb-6 space-y-3 text-gray-800">
+          <p className="font-bold text-red-900">⚠️ eSIM 不相容的兩大真實地雷：</p>
+          <ul className="list-disc pl-5 space-y-2">
+            <li><strong>iPhone 的實體雙卡版本：</strong> 中國大陸銷售的所有 iPhone，以及港澳部分機型（如 iPhone 11~15 Pro Max 港版）為雙實體 SIM 卡插槽，<strong>出廠即不具備 eSIM 晶片</strong>，無法使用！</li>
+            <li><strong>電信鎖卡機：</strong> 若你的手機是國外電信商綁約、鎖定的合約機 (Carrier Locked)，無法新增其他電信商的 plan。</li>
+          </ul>
+          <p className="font-bold text-gray-900 mt-4">🔍 測試相容性密技：</p>
+          <p className="text-sm">手機打開「撥號鍵盤」，輸入 <strong className="bg-yellow-100 px-1 py-0.5 border border-yellow-400 font-mono">*#06#</strong>。如果畫面上出現了 <strong className="font-bold">「EID」</strong>（長串數值與條碼），就代表晶片支援 eSIM，可以安心購入！</p>
+        </div>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
+          <Smartphone className="w-6 h-6 text-blue-600"/> Apple iOS (iPhone) 詳細設定步驟
+        </h4>
+        <p className="mb-4 leading-relaxed">
+          建議在<strong>出發前一天、於家中有穩定 WiFi 的環境下</strong>先掃描加入方案。落地沖繩或海外時再開啟漫遊即可：
+        </p>
+        <div className="border-l-4 border-blue-600 pl-5 space-y-4 my-6">
+          <div>
+            <span className="bg-blue-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 1</span>
+            <p className="font-bold text-gray-900 mt-1">打開網頁，找到條碼</p>
+            <p className="text-sm text-gray-700">準備好商家發送的 eSIM 二維條碼信件。因為手機鏡頭要掃描，建議將二維條碼顯示在另一台手機、平板、電腦上，或是列印成紙張。</p>
+          </div>
+          <div>
+            <span className="bg-blue-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 2</span>
+            <p className="font-bold text-gray-900 mt-1">設定新增 eSIM</p>
+            <p className="text-sm text-gray-700">到手機「設定」 &rarr; 「行動服務」 &rarr; 點選「加入行動方案」或「加入 eSIM」。</p>
+          </div>
+          <div>
+            <span className="bg-blue-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 3</span>
+            <p className="font-bold text-gray-900 mt-1">鏡頭對準掃描二維條碼</p>
+            <p className="text-sm text-gray-700">掃描成功後，系統會下載描述檔。若掃不到，可點按最下方的手動輸入，複製貼上信件中的「SM-DP+ 位址」與「啟用代碼 (Activation Code)」。</p>
+          </div>
+          <div>
+            <span className="bg-blue-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 4</span>
+            <p className="font-bold text-gray-900 mt-1">標籤命名與主副卡切換</p>
+            <p className="text-sm text-gray-700">系統會詢問如何命名。將原本的台灣門號命名防呆為「主要 (Primary)」，新下載的國外門號命名為「出國」、「eSIM」或「旅遊」。</p>
+          </div>
+          <div>
+            <span className="bg-blue-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 5 (落地後關鍵)</span>
+            <p className="font-bold text-red-600 mt-1">飛機降落後：開啟數據漫遊</p>
+            <ul className="text-sm text-gray-700 list-disc pl-5 mt-1 space-y-1">
+              <li>關閉原「主要」卡片的數據，但可保留通話接收台灣重要簡訊（把主要卡的漫遊上網關閉，避免產生天價台灣漫遊費）。</li>
+              <li>進入「設定」 &rarr; 「行動服務」，將「行動數據」預設指向 <strong className="font-bold text-blue-600">eSIM 旅遊卡</strong>。</li>
+              <li>點進該 eSIM 欄位，將「開啟此號碼」切換為啟用，並<strong>務必勾選開啟「數據漫遊 (Data Roaming)」</strong>！</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-gray-50 border-black border-2 border-b-4 border-r-4">
+          <Smartphone className="w-6 h-6 text-emerald-600"/> Android (安卓系統：三星、Pixel) 詳細設定步驟
+        </h4>
+        <p className="mb-4 leading-relaxed">
+          Android 手機因廠商介面不同，選單名稱稍有差異，但核心邏輯相同。以下以主流的三星 OneUI 及 Google 原生系統為示範：
+        </p>
+        <div className="border-l-4 border-emerald-600 pl-5 space-y-4 my-6">
+          <div>
+            <span className="bg-emerald-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 1</span>
+            <p className="font-bold text-gray-900 mt-1">進入網路管理介面</p>
+            <p className="text-sm text-gray-700">
+              <strong>原生/Pixel：</strong>「設定」 &rarr; 「網路和網際網路」 &rarr; SIM卡旁的「+ (新增)」 &rarr; 點按「改為下載 SIM 卡嗎？」。<br />
+              <strong>三星：</strong>「設定」 &rarr; 「連接」 &rarr; 「SIM 卡管理工具」 &rarr; 「加入行動方案」。
+            </p>
+          </div>
+          <div>
+            <span className="bg-emerald-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 2</span>
+            <p className="font-bold text-gray-900 mt-1">掃描與下載設置</p>
+            <p className="text-sm text-gray-700">選擇「使用 QR 碼掃描」，對準商家提供的 eSIM 設定檔。下載通常需要 1-2 分鐘，請確保在 WiFi 穩定的場所，千萬不要中途退出。</p>
+          </div>
+          <div>
+            <span className="bg-emerald-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 3</span>
+            <p className="font-bold text-gray-900 mt-1">給予卡片標籤</p>
+            <p className="text-sm text-gray-700">下載完成後，將此下載之 SIM 卡啟用並命名為「旅遊eSIM」。</p>
+          </div>
+          <div>
+            <span className="bg-emerald-600 text-white text-xs px-2 py-0.5 rounded font-bold">STEP 4 (飛機落地後)</span>
+            <p className="font-bold text-red-600 mt-1">選定行動數據並開啟漫遊</p>
+            <ul className="text-sm text-gray-700 list-disc pl-5 mt-1 space-y-1">
+              <li>於「SIM 卡管理工具 / 行動網路」中，將<strong>預設「行動數據」</strong>調整為剛剛下載的 eSIM 上網方案。</li>
+              <li>點擊該張 eSIM 卡片詳情，找到並且<strong>打開「數據漫遊 (Data Roaming)」切換開關</strong>。此時手機會自動搜索當地的軟銀 Softbank 或 docomo 網路，約過 15-30 秒即會顯示 4G/5G 訊號上網！</li>
+            </ul>
+          </div>
+        </div>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-yellow-50 border-black border-2 border-b-4 border-r-4">
+          <AlertTriangle className="w-6 h-6 text-red-500"/> 進階除錯：落地連不上網的三大急救心法
+        </h4>
+        <p className="mb-4">
+          如果您照著步驟做完，甚至看到有收訊訊號格，卻「無法正常載入網頁、通訊軟體打轉」，請不要慌。99% 以上的旅客靠以下這三個動作就能獲得完美解決：
+        </p>
+        <div className="bg-amber-50 p-6 border-2 border-black sketch-border space-y-4">
+          <div>
+            <h5 className="font-bold text-gray-900 flex items-center gap-1">❌ 狀況一：顯示有訊號但完全連不上網</h5>
+            <p className="text-sm text-gray-700 mt-1">
+              <strong>💡 急救藥方：</strong> 請 100% 確認該國外 eSIM 卡的<strong>「數據漫遊」開關是否有打開</strong>。多數國外上網卡是漫遊卡，如果「行動漫遊」未打開，電信商絕不會配發 IP 網路配額。
+            </p>
+          </div>
+          <div className="border-t border-dashed border-black pt-4">
+            <h5 className="font-bold text-gray-900 flex items-center gap-1">❌ 狀況二：跳出來「無法加入此門號 / 條碼代碼無效」</h5>
+            <p className="text-sm text-gray-700 mt-1">
+              <strong>💡 急救藥方：</strong> 每個 eSIM QR Code 在<strong>全世界通常只有一次「一機下載」的權利</strong>。如果你之前曾無意間掃過，即使後來移除了或是下載到一半中斷，官方電信安全機制會自動註銷它。請勿更動已下載的描述檔；若遇到，請立刻拍下錯誤代碼，使用網路與原賣家客服對接（此時能有備用漫遊或備用卡就很重要啦！）。
+            </p>
+          </div>
+          <div className="border-t border-dashed border-black pt-4">
+            <h5 className="font-bold text-gray-900 flex items-center gap-1">❌ 狀況三：APN 設定不對 (部分舊版機型需手動指定)</h5>
+            <p className="text-sm text-gray-700 mt-1">
+              <strong>💡 急救藥方：</strong> 在「行動網路設定」中有一個 APN 欄位。主流 eSIM 會自動帶入；若卡住，請看信件說明，例如部分日卡需要手動在 APN 名稱輸入 <code className="font-mono bg-white px-1 border border-gray-400">vmobile.jp</code> 或其他專屬字。
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-10 p-6 bg-indigo-50 sketch-border text-center relative overflow-hidden mb-10 border-2 border-black">
+          <div className="absolute -bottom-4 -right-4 opacity-10"><Smartphone className="w-40 h-40"/></div>
+          <p className="font-bold mb-2 text-xl">出國完美神隊友！最速購買優質 eSIM 方案</p>
+          <p className="text-gray-700 mb-6">了解了如此詳細的步驟，是時候預約你下一段完美出國旅程的上網卡了！
+          立即透過我們的專屬連結，選購全球吃到飽、最穩定的不降速 eSIM 與網卡方案，享受流暢不斷網的沖繩/日本絕讚旅程！</p>
+          <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="inline-block sketch-border bg-black text-white px-8 py-4 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1">
+            看 2026 夏季旅展 eSIM 與網卡最強折扣方案 &rarr;
+          </a>
+        </div>
+      </>
+    )
   }
 ];
+

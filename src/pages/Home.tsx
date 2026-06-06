@@ -10,8 +10,8 @@ import { useMemo } from 'react';
 
 export default function Home() {
   const previewArticles = useMemo(() => {
-    // 優先顯示夏季旅展與沖繩相關文章 (article-tte-2026, okinawa-typhoon-guide, article-3, article-7, okinawa-family-churaumi-dino)
-    const priorityIds = ['article-tte-2026', 'okinawa-typhoon-guide', 'article-3', 'article-7', 'okinawa-family-churaumi-dino'];
+    // 優先顯示夏季旅展、沖繩與上網卡相關文章 (article-tte-2026, esim-usage-guide, okinawa-typhoon-guide, article-3, article-7, okinawa-family-churaumi-dino)
+    const priorityIds = ['article-tte-2026', 'esim-usage-guide', 'okinawa-typhoon-guide', 'article-3', 'article-7', 'okinawa-family-churaumi-dino'];
     const priorityArticles = articlesData.filter(a => priorityIds.includes(a.id));
     const otherArticles = articlesData.filter(a => !priorityIds.includes(a.id));
     
