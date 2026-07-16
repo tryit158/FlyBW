@@ -1746,7 +1746,7 @@ export const articlesData: Article[] = [
     title: '【2026日本自助必備】手機 Suica / PASMO 交通卡綁定與儲值全攻略！實體卡限購停售後的終極解決方案',
     author: '黑白飛日本線主編',
     readTime: '8 分鐘',
-    image: 'https://images.unsplash.com/photo-1542640244-7e672d6cef21?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1494707924440-51579294a62e?w=800&q=80',
     imageAlt: '日本 手機 Suica 交通卡 西瓜卡 綁定 儲值 信用卡 失敗 解決',
     excerpt: '自日本實體 Suica / PASMO 交通卡因全球晶片短缺宣布無限期停售、甚至連機場特別卡（Welcome Suica）也受到嚴格限制後，旅日自助到底該怎麼辦？這篇為你手把手整理最完美的「手機綁定」教學：iPhone 錢包 10 秒免費開卡、JCB/Visa 信用卡儲值阻擋破解，以及 Android 手機的替代神方案！',
     badge: '🚇 旅日必學神技',
