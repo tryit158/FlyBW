@@ -1873,6 +1873,160 @@ export const articlesData: Article[] = [
         </div>
       </>
     )
+  },
+  {
+    id: 'japan-tax-free-2026',
+    category: '必讀攻略',
+    title: '【2026日本退稅新制】別再排錯隊！先付稅、機場退稅流程與實測避坑指南，必備三大數位省時神招',
+    author: '黑白飛日本線主編',
+    readTime: '9 分鐘',
+    image: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800&q=80',
+    imageAlt: '日本 退稅 新制 2026 機場 流程 攻略 免稅 百貨 藥妝 信用卡 失敗',
+    excerpt: '2026 年日本正式上路全新免稅退稅制度（全面改為「先付稅、機場出境再退稅」）。本篇為你詳解新制免稅三大流程轉變、如何在機場快速辦理退稅、避開排隊人龍的黃金法則，以及黑白飛讀者專屬的行前避坑提醒！',
+    badge: '🛍️ 2026 退稅新制',
+    content: (
+      <>
+        <p className="text-lg mb-6 leading-relaxed text-gray-800 font-medium">
+          過去到日本血拼，最吸引人的莫過於在藥妝店、百貨公司「結帳當下直接免除 10% 消費稅」的暢快感。
+        </p>
+        <p className="mb-8 leading-relaxed text-gray-700">
+          但為了根絕「境內轉售非法牟利」以及「離境未補稅」等逃漏稅漏洞，日本官方宣布<strong>於 2026 年全面實施「先付稅、機場出境再退稅」的全新機制</strong>。
+          這意味著，未來不論是在 Bic Camera、唐吉訶德還是各大百貨，<strong>所有結帳流程一律都得以「含稅價」支付</strong>。想要拿回退稅，就必須在起飛前於機場的專屬櫃檯辦理！
+          不想在機場因為排退稅而趕不上飛機？這篇黑白飛日本線主編將帶你徹底實測最新退稅動線，並奉上三大省時神招！
+        </p>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-indigo-50 border-black border-2 border-b-4 border-r-4">
+          <Sparkles className="w-6 h-6 text-indigo-600"/> 一分鐘對比：日本退稅新舊制差異
+        </h4>
+        <div className="overflow-x-auto my-6 border-2 border-black sketch-border">
+          <table className="w-full text-left border-collapse bg-white">
+            <thead>
+              <tr className="bg-gray-100 border-b-2 border-black">
+                <th className="p-3 font-bold border-r-2 border-black text-gray-900">項目</th>
+                <th className="p-3 font-bold border-r-2 border-black text-emerald-800">2026 以前 (舊制)</th>
+                <th className="p-3 font-bold text-red-800">2026 全新上路 (新制)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-black">
+                <td className="p-3 font-bold border-r-2 border-black bg-gray-50">商店結帳金額</td>
+                <td className="p-3 border-r-2 border-black text-gray-700">直接支付 <strong>「免稅價」</strong></td>
+                <td className="p-3 text-gray-700 font-semibold text-red-600">一律支付 <strong>「含稅價」</strong></td>
+              </tr>
+              <tr className="border-b border-black">
+                <td className="p-3 font-bold border-r-2 border-black bg-gray-50">退稅辦理地點</td>
+                <td className="p-3 border-r-2 border-black text-gray-700">店鋪櫃檯現場扣除/現場退現</td>
+                <td className="p-3 text-gray-700 font-semibold text-indigo-600"><strong>機場出境大廳 / 專屬退稅機台</strong></td>
+              </tr>
+              <tr className="border-b border-black">
+                <td className="p-3 font-bold border-r-2 border-black bg-gray-50">退稅款項方式</td>
+                <td className="p-3 border-r-2 border-black text-gray-700">現金（日圓）直接折抵</td>
+                <td className="p-3 text-gray-700">可選擇：<strong>退回信用卡 / 數位支付(微信、支付寶) / 日圓現金</strong></td>
+              </tr>
+              <tr>
+                <td className="p-3 font-bold border-r-2 border-black bg-gray-50">海關隨機抽查</td>
+                <td className="p-3 border-r-2 border-black text-gray-700">機率極低（海關系統刷護照即可）</td>
+                <td className="p-3 text-gray-700 font-semibold text-red-600"><strong>機率大幅提高</strong>（出境前須隨身攜帶備查，如不符直接拒絕退稅）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-yellow-50 border-black border-2 border-b-4 border-r-4">
+          <Smartphone className="w-6 h-6 text-yellow-600"/> 實戰演練：最新日本「機場退稅」四大步驟
+        </h4>
+        <p className="mb-4 leading-relaxed">
+          既然必須在機場辦理，整個流程的順序就變得至關重要。稍有不慎，卡在出境關卡前，你的 10% 退稅可能就直接泡湯！請務必遵循以下實測黃金步驟：
+        </p>
+        <div className="border-l-4 border-indigo-600 pl-5 space-y-6 my-6">
+          <div>
+            <span className="bg-indigo-600 text-white text-xs px-2 py-0.5 rounded font-bold">步驟一：商店消費與登錄數位免稅紀錄</span>
+            <p className="font-bold text-gray-900 mt-1">購物時出示護照與 QR Code</p>
+            <p className="text-sm text-gray-700">
+              在合作的免稅店購物結帳時，請出示護照。店員會掃描護照並將免稅明細數位傳送至日本國稅廳的雲端系統。結帳後，請保留店鋪提供給你的<strong>「退稅專用電子交易收據 / QR Code明細」</strong>，這是之後在機場退稅的核心憑證！
+            </p>
+          </div>
+          <div>
+            <span className="bg-indigo-600 text-white text-xs px-2 py-0.5 rounded font-bold">步驟二：帶著商品抵達機場（先別托運！）</span>
+            <p className="font-bold text-red-600 mt-1">🚨 核心防坑點：商品必須在身邊備查 🚨</p>
+            <p className="text-sm text-gray-700">
+              海關在退稅確認時有權要求抽查你的免稅品（特別是高價名牌包、電子產品、未拆封藥妝等）。
+              如果你<strong>先把行李箱托運了，海關抽查不到商品，將會直接判定不予退稅</strong>！
+              因此，請在航空公司櫃檯 Check-in 時告知地勤：「我有需要退稅的免稅品，等下海關檢查完後再進行托運。」
+            </p>
+          </div>
+          <div>
+            <span className="bg-indigo-600 text-white text-xs px-2 py-0.5 rounded font-bold">步驟三：前往「機場免稅確認櫃檯/自助機」辦理</span>
+            <p className="font-bold text-gray-900 mt-1">刷護照、掃交易明細，選擇退款管道</p>
+            <p className="text-sm text-gray-700">
+              出發安檢（Security Check）前，前往安檢口旁的<strong>「稅關 (Customs)」</strong>或新設的<strong>「免稅退稅確認大廳 / 專屬退稅自助機台」</strong>。
+              將護照與店家的 QR Code 放上機台掃描。系統會比對你的雲端免稅消費資料，經確認無誤後，即可點選退稅方式。
+              推薦選擇<strong>「退回信用卡」</strong>或<strong>「行動支付」</strong>，能省去排隊領現鈔的漫長等待！
+            </p>
+          </div>
+          <div>
+            <span className="bg-indigo-600 text-white text-xs px-2 py-0.5 rounded font-bold">步驟四：領取退款並過安檢/出境</span>
+            <p className="font-bold text-gray-900 mt-1">退款即刻入帳，行李正式交運</p>
+            <p className="text-sm text-gray-700 font-medium">
+              如果是選擇退現，機台會吐出日圓現鈔；選擇信用卡的，通常會在 3-10 個工作天內入帳。
+              完成退稅程序後，即可返回航空公司櫃檯交運行李，並安心過安檢出境囉！
+            </p>
+          </div>
+        </div>
+
+        <h4 className="text-2xl font-bold mt-10 mb-6 inline-flex items-center gap-2 sketch-border px-4 py-2 bg-red-50 border-black border-2 border-b-4 border-r-4">
+          <AlertTriangle className="w-6 h-6 text-red-600"/> 避坑必看！黑白飛讀者專屬「省時退稅三大神招」
+        </h4>
+        <p className="mb-4 leading-relaxed">
+          由於成田、羽田、關西國際機場在旺季的人潮本就極為恐怖，新制上路後，機場退稅區極易排成誇張的「貪食蛇人龍」。主編在此傳授三招，幫你優雅度過新制：
+        </p>
+        <div className="bg-gray-50 border-2 border-black sketch-border p-5 mb-8 space-y-4">
+          <div className="flex gap-3">
+            <span className="font-bold text-indigo-700 text-lg min-w-[30px]">💡 1.</span>
+            <div>
+              <p className="font-bold text-gray-950">行前綁定 Visit Japan Web (VJW)</p>
+              <p className="text-sm text-gray-600 mt-1">
+                2026 最新版 <strong>Visit Japan Web</strong> 已整合了個人免稅申報條碼。在入店消費時直接出示 VJW 上的 QR Code，商家系統就能自動與你的出入境證照對接，免去反覆人工登錄，能大幅縮短在店家結帳等候的時間！
+              </p>
+            </div>
+          </div>
+          <div className="border-t border-gray-200 pt-4 flex gap-3">
+            <span className="font-bold text-indigo-700 text-lg min-w-[30px]">💡 2.</span>
+            <div>
+              <p className="font-bold text-gray-950">起飛前「至少 3.5 小時」抵達機場</p>
+              <p className="text-sm text-gray-600 mt-1">
+                以前提早 2 小時到機場綽綽有餘，但自退稅新制全面普及後，退稅排隊的不可控性大幅提高。強烈建議在<strong>起飛前 3.5 小時</strong>就抵達，把退稅流程走完，才不會因為卡在排隊而與好不容易買到的免稅品甚至飛機擦身而過。
+              </p>
+            </div>
+          </div>
+          <div className="border-t border-gray-200 pt-4 flex gap-3">
+            <span className="font-bold text-indigo-700 text-lg min-w-[30px]">💡 3.</span>
+            <div>
+              <p className="font-bold text-gray-950">液體、化妝品退稅，請在行李櫃檯告知</p>
+              <p className="text-sm text-gray-600 mt-1">
+                像日本清酒、大容量乳液、藥水等液體免稅品，根據國際安檢法規是<strong>「絕對不能攜帶隨身登機」</strong>的。
+                遇到這種必須托運的液體免稅品，請在航空公司櫃檯辦理登機時，<strong>明確出示該物品，並請地勤貼上行李標籤後，再帶至退稅海關櫃檯檢查</strong>。檢查完畢後，直接在海關旁邊的專用行李道託運即可。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 p-6 bg-indigo-50 sketch-border text-center relative overflow-hidden mb-10 border-2 border-black">
+          <div className="absolute -bottom-4 -right-4 opacity-10"><Coins className="w-40 h-40"/></div>
+          <p className="font-bold mb-2 text-xl">出國刷卡賺回退稅差額！最神旅日信用卡推薦</p>
+          <p className="text-gray-700 mb-6">退稅新制下雖然要先墊付 10% 稅金，但只要選對了神卡，海外高回饋不僅能補貼稅差，還能額外賺取驚人的哩程與紅利！
+          立刻點選下方專屬連結，選購最穩定的日本不降速 eSIM 與最殺購物折價券，讓你的 2026 日本血拼之旅不花冤枉錢！</p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="https://afflink.one/s/508Nw" target="_blank" rel="noopener" className="inline-block sketch-border bg-black text-white px-6 py-3 font-bold hover:bg-gray-800 transition-colors shadow-[4px_4px_0px_0px_#1a1a1a] hover:shadow-none hover:translate-x-1 hover:translate-y-1 text-sm">
+              領取 2026 百貨與藥妝店最新 17% 獨家折價券 &rarr;
+            </a>
+            <a href="https://afflink.one/s/9FiVT" target="_blank" rel="noopener" className="inline-block sketch-border bg-indigo-600 text-white px-6 py-3 font-bold hover:bg-indigo-700 transition-colors shadow-[4px_4px_0px_0px_#2e1065] hover:shadow-none hover:translate-x-1 hover:translate-y-1 text-sm">
+              選購日韓吃到飽不降速上網卡 &rarr;
+            </a>
+          </div>
+        </div>
+      </>
+    )
   }
 ];
 
