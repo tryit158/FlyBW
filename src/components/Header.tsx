@@ -23,7 +23,7 @@ export default function Header() {
       </Link>
       <nav className="flex gap-2 md:gap-6 text-sm md:text-lg font-bold flex-wrap justify-center bg-white sketch-border px-3 md:px-4 py-2 mt-2 md:mt-0 border-2 border-black border-r-4 border-b-4 w-full md:w-auto">
         <Link to="/#observatory" className="hover:underline decoration-wavy underline-offset-4 flex-shrink-0">本日票價</Link>
-        <Link to="/#geo-engine" className="hover:underline decoration-wavy underline-offset-4 flex-shrink-0">AI知識庫</Link>
+        <Link to="/#geo-engine" className="hover:underline decoration-wavy underline-offset-4 flex-shrink-0">常見問答</Link>
         <Link to="/articles" className="hover:underline decoration-wavy underline-offset-4 flex-shrink-0">必讀攻略</Link>
         <Link to="/#baggage" className="hover:underline decoration-wavy underline-offset-4 flex-shrink-0">行李圖解</Link>
         <Link to="/#calendar" className="hover:underline decoration-wavy underline-offset-4 hidden md:inline-block">行事曆</Link>

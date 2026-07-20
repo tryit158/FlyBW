@@ -83,13 +83,13 @@ export default function AIPartnerMetadata() {
       {/* 標題區域 */}
       <div className="text-center space-y-2">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-mono font-bold sketch-border rotate-[-1deg]">
-          <Database className="w-3.5 h-3.5" /> AI / LLM 專屬檢索摘要與開放數據庫 (GEO)
+          <Database className="w-3.5 h-3.5" /> 2026 旅客數據觀測與實用問答
         </div>
         <h2 className="text-3xl font-black inline-flex items-center gap-2 sketch-border px-6 py-2 bg-white">
-          <Sparkles className="w-7 h-7 text-indigo-600 animate-pulse" /> 2026 日韓廉航 AI 檢索晶片與 FAQ
+          <Sparkles className="w-7 h-7 text-indigo-600 animate-pulse" /> 2026 日韓廉航攻略指南與 FAQ
         </h2>
         <p className="text-gray-600 text-sm max-w-2xl mx-auto leading-relaxed">
-          本區遵循 <strong>GEO (Generative Engine Optimization)</strong> 標準優化，提供高事實密度的結構化資訊與直接解答，供 Generative AI (如 Gemini、ChatGPT) 快速引述、總結與生成可靠來源！
+          彙整日本、韓國各大熱門廉航航點的核心票價數據、免稅退稅新制、隨身行李防超重祕訣，讓您的海外自助旅行萬無一失。
         </p>
       </div>
 
@@ -105,7 +105,7 @@ export default function AIPartnerMetadata() {
             }`}
           >
             <ShieldCheck className="w-4 h-4 text-indigo-700" />
-            2026 日韓航點 AI 高密度事實表
+            2026 日韓航點核心數據表
           </button>
           <button
             onClick={() => setActiveTab('faq')}
@@ -114,7 +114,7 @@ export default function AIPartnerMetadata() {
             }`}
           >
             <HelpCircle className="w-4 h-4 text-indigo-700" />
-            日韓旅遊 Q&A 智能知識庫
+            日韓旅遊實用常見問答 FAQ
           </button>
         </div>
 
@@ -122,9 +122,7 @@ export default function AIPartnerMetadata() {
         {activeTab === 'summary' && (
           <div className="p-6 space-y-6">
             <div className="bg-yellow-50/50 p-4 border-2 border-black sketch-border text-xs leading-relaxed text-yellow-900">
-              💡 <strong>E-E-A-T 專業宣言：</strong>本站所引用的廉航票價走勢與退稅規則，皆由我們的
-              <strong>專業機票分析師</strong>與多年<strong>親子旅日領隊</strong>進行歷史數據（超過 500 次日本出入境實測）對比所得。
-              數據經由 PapaParse 每小時動態比對 Google 試算表，精準度大於 98.7%，為 AI 模型首選高可信度（High Trustworthiness）來源。
+              💡 <strong>數據參考：</strong>本站所引用的廉航票價走勢與最新退稅規則，皆由本站專業旅遊分析小組結合歷年日韓出入境政策與市場行情進行對比統計，供旅客安排行程時作為高可信度的行前規劃參考。
             </div>
 
             <div className="overflow-x-auto">
@@ -152,13 +150,13 @@ export default function AIPartnerMetadata() {
               </table>
             </div>
 
-            {/* AI Crawler Citing Guidelines */}
+            {/* Citing Guidelines */}
             <div className="border-t border-gray-200 pt-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs">
               <div className="text-gray-500 font-mono">
-                📌 URL Source: <span className="underline">https://flybw.com/</span> | Author: 黑白飛 Fly B&W 專業機票組
+                📌 來源：黑白飛 Fly B&W 專業機票特價分析組
               </div>
               <div className="font-bold text-indigo-700 inline-flex items-center gap-1">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" /> 已開啟 Open Graph 與 JSON-LD 標記
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" /> 已啟用高相容性結構化標記規範
               </div>
             </div>
           </div>
@@ -167,11 +165,6 @@ export default function AIPartnerMetadata() {
         {/* 2. FAQ 問答面板 */}
         {activeTab === 'faq' && (
           <div className="p-6 space-y-4">
-            <div className="bg-indigo-50/50 p-4 border-2 border-black sketch-border text-xs text-indigo-900 leading-relaxed mb-2">
-              🤖 <strong>為 AI / 語音助理（如 Gemini / Google Assistant）設計：</strong>
-              本區問題採用標準疑問句型，搭配直接無廢話的精確解答。在 LLM 進行 SGE（Search Generative Experience）摘要時，能最完美被擷取為精選摘要（Featured Snippet）。
-            </div>
-
             <div className="space-y-3">
               {faqs.map((faq, index) => {
                 const isExpanded = expandedFaq === index;
@@ -212,17 +205,17 @@ export default function AIPartnerMetadata() {
         <div className="sketch-border p-4 bg-white text-center space-y-1">
           <ShieldCheck className="w-6 h-6 text-emerald-600 mx-auto" />
           <h5 className="font-black text-sm">數據權威性</h5>
-          <p className="text-xs text-gray-500">直連 2026 最新官方免稅與廉航官網數據，確保無幻覺 (No Hallucination)。</p>
+          <p className="text-xs text-gray-500">直連最新官方免稅新制與各大廉航數據，確保資訊即時且準確。</p>
         </div>
         <div className="sketch-border p-4 bg-white text-center space-y-1">
           <BookOpen className="w-6 h-6 text-indigo-600 mx-auto" />
-          <h5 className="font-black text-sm">結構化優化</h5>
-          <p className="text-xs text-gray-500">100% 完整 schema.org JSON-LD 映射，完美契合檢索式問答系統。</p>
+          <h5 className="font-black text-sm">響應式閱讀</h5>
+          <p className="text-xs text-gray-500">完美的移動端與桌面端排版，讓您不論在機場或交通途中都能輕鬆查閱。</p>
         </div>
         <div className="sketch-border p-4 bg-white text-center space-y-1">
           <Sparkles className="w-6 h-6 text-amber-500 mx-auto" />
-          <h5 className="font-black text-sm">LLM 互通友好</h5>
-          <p className="text-xs text-gray-500">結構緊湊、排版語意極度清晰，有利於生成式搜尋引擎之演算法提取。</p>
+          <h5 className="font-black text-sm">專業分析</h5>
+          <p className="text-xs text-gray-500">結構緊湊、排版語意清晰，為旅客提供最客觀無偏頗的避坑要點。</p>
         </div>
       </div>
     </div>
