@@ -2206,6 +2206,250 @@ export const articlesData: Article[] = [
         </div>
       </>
     )
+  },
+  {
+    id: 'japan-kansai-icoca-haruka-2026',
+    title: '【2026 關西交通必讀】ICOCA卡與 Haruka 特急全攻略！關空進大阪/京都最便宜買法與劃位避坑',
+    author: '黑白飛機票特價組',
+    readTime: '7 分鐘',
+    image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '日本京都神社與交通列車手繪意象',
+    excerpt: '2026 搭乘廉航降落關西機場 (KIX)，究竟該搭南海電鐵還是 JR Haruka？最新 ICOCA & Haruka 優惠套票實名制、電子票自動改閘與 Hello Kitty 合作車廂快速劃位圖解！',
+    badge: '2026交通必讀',
+    category: '票券攻略',
+    content: (
+      <>
+        <div className="bg-amber-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-3">
+            KIX 關空實測
+          </div>
+          <h3 className="font-bold text-lg text-amber-900 mb-2 flex items-center gap-2">
+            <Ticket className="w-5 h-5 text-amber-800" /> 2026 關西機場出關首要難題：我該買哪張票？
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            降落大阪關西國際機場（KIX）後，光是出關跟排綠色窗口（Midori-no-madoguchi）買票就能耗掉你 1~2 小時！2026 最新政策已大幅更新電子 QR Code 兌換流程與實名制規定，這篇教你不用排隊、輕鬆 45 分鐘內直達京都或難波！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Plane className="w-6 h-6 text-indigo-600" /> 一圖搞懂：目的地 vs 交通工具選擇矩陣
+        </h3>
+        <p className="mb-4">
+          許多第一次去關西的新手最常犯的錯誤，就是目的地去大阪「難波/心齋橋」，卻誤買了直達「京都/新大阪」的 JR Haruka 特急！請直接依照下方目的地對號入座：
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-4 mb-8">
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <div className="font-bold text-lg text-rose-700 mb-2 flex items-center gap-2">
+              <Ticket className="w-5 h-5" /> 直奔大阪難波、心齋橋、天王寺
+            </div>
+            <p className="text-sm text-gray-700 leading-relaxed mb-3">
+              <strong>首選：南海電鐵 (Nankai Line)</strong>
+            </p>
+            <ul className="text-xs text-gray-600 space-y-1 list-disc list-inside">
+              <li><strong>南海特急 Rapi:t：</strong>約 38 分鐘直達難波（全車對號座，舒服安靜）。</li>
+              <li><strong>南海空港急行：</strong>約 44 分鐘直達難波（車資僅約 ¥970，班次極多）。</li>
+              <li><strong>筆記：</strong>用手機綁定 Apple Pay 實體 Pay / VISA 感應支付即可刷卡過閘！</li>
+            </ul>
+          </div>
+
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <div className="font-bold text-lg text-indigo-700 mb-2 flex items-center gap-2">
+              <Ship className="w-5 h-5" /> 直奔京都、新大阪、奈良、神戶
+            </div>
+            <p className="text-sm text-gray-700 leading-relaxed mb-3">
+              <strong>首選：JR 関空特急 Haruka</strong>
+            </p>
+            <ul className="text-xs text-gray-600 space-y-1 list-disc list-inside">
+              <li><strong>直達京都：</strong>約 75 分鐘不需換車，行車極平穩。</li>
+              <li><strong>直達新大阪：</strong>約 45 分鐘，轉乘新幹線往廣島/岡山極方便。</li>
+              <li><strong>車廂亮點：</strong>Hello Kitty 塗裝車廂，指定席車廂附有大型行李置物架與專用鎖。</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Coins className="w-6 h-6 text-amber-600" /> 2026 聰明劃位省時 3 步驟 (避開排隊人潮)
+        </h3>
+        <div className="space-y-4 mb-8">
+          <div className="flex gap-4 items-start p-4 bg-gray-50 sketch-border border">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">1</span>
+            <div>
+              <p className="font-bold text-gray-900">出發前先線上預訂電子 QR Code</p>
+              <p className="text-sm text-gray-600 mt-1">
+                切勿到了關西機場現場排隊買紙本票！出發前在 Klook 或 KKday 預訂 JR Haruka 折扣電子票，價格比現場原價便宜近 20%。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-gray-50 sketch-border border">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">2</span>
+            <div>
+              <p className="font-bold text-gray-900">善用「白色綠色護照機」自動取票</p>
+              <p className="text-sm text-gray-600 mt-1">
+                出關後直奔 JR 改閘口旁設有「護照讀取器」的白色售票機，掃描手機 QR Code 與護照，30 秒即可印出指定席車票。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-gray-50 sketch-border border">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">3</span>
+            <div>
+              <p className="font-bold text-gray-900">ICOCA 綁定 iPhone 錢包免實體卡</p>
+              <p className="text-sm text-gray-600 mt-1">
+                iPhone 使用者只需在錢包點擊「+」新增交通卡，搜尋「ICOCA」即可直接用台灣信用卡加值，完全省去實體卡押金與退卡手續費！
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'korea-travel-budget-guide-2026',
+    title: '【2026 韓國自由行新手指南】首爾/釜山雙城廉航省錢全攻略！WOWPASS、交通卡與金浦進市區祕訣',
+    author: '黑白飛機票特價組',
+    readTime: '6 分鐘',
+    image: 'https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '首爾南山塔與繁華夜景',
+    excerpt: '韓國廉航特價機票破盤 NT$ 4,500 起！首爾仁川 (ICN) vs 金浦 (GMP) 怎麼選？WOWPASS 預付卡台幣換匯、無現金支付與釜山輕軌進市區全實測。',
+    badge: '新手必讀',
+    category: '必讀攻略',
+    content: (
+      <>
+        <div className="bg-sky-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <h3 className="font-bold text-lg text-sky-900 mb-2 flex items-center gap-2">
+            <Sparkles className="w-5 h-5 text-sky-700" /> 2026 韓流小資族：廉航機票比日本更划算！
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            包含真航空、濟州航空、德威航空、易斯達航空與台灣虎航，每到淡季（如 3 月、11 月）經常出現未稅 NT$ 1,200 的震撼特價！加上韓國消費稅退稅簡易、交通便捷，是兩天一夜快閃或週休三日旅遊首選！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Plane className="w-6 h-6 text-sky-600" /> 首爾機場二選一：仁川 (ICN) vs 金浦 (GMP)
+        </h3>
+        <p className="mb-4">
+          買韓國機票時，千萬別只看價格！降落「金浦機場 (GMP)」省下的交通時間與車資，往往遠勝過仁川機場特價票：
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-4 mb-8">
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <h4 className="font-bold text-lg text-gray-900 mb-2">仁川國際機場 (ICN)</h4>
+            <p className="text-xs text-gray-600 mb-3">各大廉航主陣地，班次極多。</p>
+            <ul className="text-xs text-gray-700 space-y-1.5 list-disc list-inside">
+              <li><strong>直達市區：</strong>搭乘 A'REX 直達車至首爾站約 43 分鐘（約 10,800 韓元）。</li>
+              <li><strong>普通列車：</strong>至弘大入口站約 58 分鐘，票價極便宜。</li>
+              <li><strong>缺點：</strong>入境通關人潮極多，旺季可能排隊超過 1 小時。</li>
+            </ul>
+          </div>
+
+          <div className="sketch-border p-5 bg-sky-50 border-2 border-black">
+            <h4 className="font-bold text-lg text-sky-900 mb-2">金浦國際機場 (GMP) ★首推</h4>
+            <p className="text-xs text-sky-700 mb-3">類似台北松山機場，超神地段！</p>
+            <ul className="text-xs text-gray-700 space-y-1.5 list-disc list-inside">
+              <li><strong>直達市區：</strong>搭地鐵 5/9 號線或 A'REX，約 15-20 分鐘直達弘大與金浦商圈。</li>
+              <li><strong>車資極省：</strong>僅需約 1,450 韓元（約 NT$ 35）。</li>
+              <li><strong>優勢：</strong>通關神速、出關 5 分鐘直接上地鐵，快閃極致！</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Coins className="w-6 h-6 text-amber-600" /> 2026 韓國無現金神器：WOWPASS 信用卡實測
+        </h3>
+        <div className="p-5 sketch-border bg-white border-2 border-black mb-8 space-y-3">
+          <p className="text-sm text-gray-800 leading-relaxed">
+            韓國目前已近乎 99% 邁入無現金社會，傳統換錢所（如明洞民間換錢所）不再是唯一選擇。2026 必備神卡 <strong>WOWPASS</strong> 具備以下三大特點：
+          </p>
+          <div className="grid md:grid-cols-3 gap-3 text-xs pt-2">
+            <div className="p-3 bg-gray-50 border border-black sketch-border">
+              <p className="font-bold text-gray-900">1. 台幣直接卡內換匯</p>
+              <p className="text-gray-600 mt-1">在機場或明洞機台插入新台幣千元鈔，直接以即期優良匯率換成韓幣存入卡內。</p>
+            </div>
+            <div className="p-3 bg-gray-50 border border-black sketch-border">
+              <p className="font-bold text-gray-900">2. 內建 T-money 交通卡</p>
+              <p className="text-gray-600 mt-1">一張卡兼具一般店家刷卡消費與搭乘首爾/釜山地鐵、公車之雙重功能。</p>
+            </div>
+            <div className="p-3 bg-gray-50 border border-black sketch-border">
+              <p className="font-bold text-gray-900">3. App 帳目與回饋即時通知</p>
+              <p className="text-gray-600 mt-1">綁定手機 App 每一筆消費立刻扣款提醒，並享有星巴克、CU 超市專屬現金回饋。</p>
+            </div>
+          </div>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'hand-baggage-packing-hacks-2026',
+    title: '【廉航手提行李免超重】極致 7 公斤收納術！液體過關規範與壓縮袋選購全圖解',
+    author: '黑白飛機票特價組',
+    readTime: '5 分鐘',
+    image: 'https://images.unsplash.com/photo-1553531384-397c80973a0b?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '打包極簡行李箱與旅行裝備',
+    excerpt: '搭廉航沒買託運行李也能玩 5 天？獨家公開 7kg 完美配重法、透明夾鏈袋 100ml 液體安檢規定與 2026 必備三折式壓縮袋防坑心法！',
+    badge: '省錢必備',
+    category: '行李圖解',
+    content: (
+      <>
+        <div className="bg-emerald-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <h3 className="font-bold text-lg text-emerald-900 mb-2 flex items-center gap-2">
+            <Backpack className="w-5 h-5 text-emerald-700" /> 告別臨櫃加價罰款！手提 7kg 才是真正的廉航高手
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            台灣虎航、樂桃航空與捷星日本均嚴格執行「手提 2 件合算不超過 7.0 kg」規定（超重 0.1kg 都不行！）。地勤在登機門前常會再次放秤重，不想現場被罰 NT$ 1,500 - 2,000，請熟記這套打包法則！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <AlertTriangle className="w-6 h-6 text-rose-600" /> 致命地雷：隨身攜帶液體/噴霧 100ml 鐵律
+        </h3>
+        <p className="mb-4">
+          安檢區（Security Check）每天被扔掉最多的就是高價化妝水、防曬乳與護手霜！請嚴格遵照以下規定收納：
+        </p>
+
+        <div className="p-5 bg-white border-2 border-black sketch-border mb-8 space-y-2 text-sm text-gray-700">
+          <div className="flex items-start gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <p><strong>單容器不得超過 100ml (100g)：</strong>就算 200ml 的瓶子只剩最後 10ml，安檢依然看「容器容量標示」直接沒收！</p>
+          </div>
+          <div className="flex items-start gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <p><strong>必須集中於 20cm x 20cm 透明夾鏈袋：</strong>所有液體瓶罐必須能輕鬆封口，每人限帶 1 包。</p>
+          </div>
+          <div className="flex items-start gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <p><strong>行動電源/鋰電池：</strong>嚴禁託運！必須隨身手提，且單顆容量需小於 100Wh（約 20,000mAh）。</p>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Lightbulb className="w-6 h-6 text-amber-500" /> 7kg 完美黃金配重比例表
+        </h3>
+        <div className="grid md:grid-cols-3 gap-4 mb-8">
+          <div className="sketch-border p-4 bg-gray-50 border-2 border-black text-center">
+            <p className="font-bold text-gray-900 text-base">輕量登機背包</p>
+            <p className="text-2xl font-black font-mono text-indigo-600 my-1">0.8 kg</p>
+            <p className="text-xs text-gray-500">選用無鋼架布質後背包，省下硬殼箱體重量</p>
+          </div>
+          <div className="sketch-border p-4 bg-gray-50 border-2 border-black text-center">
+            <p className="font-bold text-gray-900 text-base">衣物壓縮袋 (3套)</p>
+            <p className="text-2xl font-black font-mono text-indigo-600 my-1">2.5 kg</p>
+            <p className="text-xs text-gray-500">使用免抽氣壓縮袋，體積直接縮小 50%</p>
+          </div>
+          <div className="sketch-border p-4 bg-gray-50 border-2 border-black text-center">
+            <p className="font-bold text-gray-900 text-base">電子產品與備品</p>
+            <p className="text-2xl font-black font-mono text-indigo-600 my-1">3.0 kg</p>
+            <p className="text-xs text-gray-500">含行動電源、相機、相應線材與個人藥品</p>
+          </div>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
   }
 ];
+
 
