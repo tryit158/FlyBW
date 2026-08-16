@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins } from 'lucide-react';
+import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins, QrCode, Wifi, Clock, Compass, Coffee } from 'lucide-react';
 
 export interface Article {
   id: string;
@@ -2449,7 +2449,307 @@ export const articlesData: Article[] = [
         <AffiliateFooter />
       </>
     )
+  },
+  {
+    id: 'japan-vjw-visit-japan-web-2026',
+    title: '【2026 日本入境必讀】Visit Japan Web 快速通關全圖解！二合一 QR Code 填寫、同行家人綁定與海關電子申報避雷實測',
+    author: '黑白飛機票特價組',
+    readTime: '6 分鐘',
+    image: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '日本東京機場通關與繁華街景',
+    excerpt: '2026 入境日本不再手忙腳亂！Visit Japan Web (VJW) 全面升級「入境審查與海關申報合一 QR Code」。從註冊帳號、同行嬰幼兒綁定、免紙本申報卡，到成田/關西/福岡機場出關電子閘門刷臉 30 秒秒過全流程實測！',
+    badge: '2026入境必讀',
+    category: '必讀攻略',
+    content: (
+      <>
+        <div className="bg-rose-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-2">
+            2026最新改版
+          </div>
+          <h3 className="font-bold text-lg text-rose-900 mb-2 flex items-center gap-2">
+            <QrCode className="w-5 h-5 text-rose-700" /> 出發前 3 天填好 VJW，下飛機免排 1 小時長龍！
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            日本數位廳已全面簡化 Visit Japan Web（VJW）流程，原本分開的「入境審查（黃碼）」與「海關申報（藍碼）」已整合成<strong>單一「二合一 QR Code」</strong>。抵達成田、羽田、關西、福岡等大機場時，只要一支手機出示 QR Code 並刷臉，就能走電子申報閘門直接出關！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Smartphone className="w-6 h-6 text-indigo-600" /> VJW 填寫 4 步驟防呆教學 (手機 5 分鐘搞定)
+        </h3>
+        <div className="space-y-4 mb-8">
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">1</span>
+            <div>
+              <p className="font-bold text-gray-900">建立帳號與登錄本人資料</p>
+              <p className="text-sm text-gray-600 mt-1">
+                進入 Visit Japan Web 官方網站（建議加入手機主畫面捷徑），用 Email 註冊帳號並填寫護照資訊。支援相機掃描護照自動帶入英文姓名與護照號碼。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">2</span>
+            <div>
+              <p className="font-bold text-gray-900">登錄同行家人 (幼兒/年長長輩適用)</p>
+              <p className="text-sm text-gray-600 mt-1">
+                若有無法自行操作智慧型手機的嬰幼兒或高齡長輩，可在「同行家人」項目內直接綁定最多 10 人。通關時由主帳號持有人一次切換 QR Code 即可！
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">3</span>
+            <div>
+              <p className="font-bold text-gray-900">登錄本次入境預定 (航班與飯店)</p>
+              <p className="text-sm text-gray-600 mt-1">
+                輸入出發地、抵達日期、航班代號（如 IT202、MM859）以及日本第一晚飯店名稱、地址與電話（可直接 Google 複製貼上郵遞區號自動帶入）。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">4</span>
+            <div>
+              <p className="font-bold text-gray-900">產生二合一通關 QR Code 並「螢幕截圖備用」</p>
+              <p className="text-sm text-gray-600 mt-1">
+                回答入境審查（有無犯罪紀錄等）與海關申報（有無攜帶黃金、肉品、超額菸酒等），確認後點擊「顯示 QR 碼」。<strong>強烈建議將 QR Code 截圖存入手機相簿</strong>，避免機場航廈 Wi-Fi 斷線無法開啟！
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <AlertTriangle className="w-6 h-6 text-amber-600" /> 機場實測避坑：3 大常見新手錯誤
+        </h3>
+        <div className="grid md:grid-cols-3 gap-4 mb-8">
+          <div className="sketch-border p-4 bg-gray-50 border-2 border-black">
+            <div className="font-bold text-base text-rose-800 mb-2 flex items-center gap-1.5">
+              <XCircle className="w-4 h-4" /> 誤以為小孩也能刷電子閘門
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              身高不足 135 公分或無法配合電子閘門臉部識別的幼兒，海關申報依然需走「人工查驗櫃台」，但仍可出示 VJW 同行家人 QR Code 免寫紙本。
+            </p>
+          </div>
+          <div className="sketch-border p-4 bg-gray-50 border-2 border-black">
+            <div className="font-bold text-base text-amber-800 mb-2 flex items-center gap-1.5">
+              <Wifi className="w-4 h-4" /> 沒截圖遇到機場網路塞車
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              數百名廉航旅客同時下機時，機場免費 Wi-Fi 常常瞬間卡死。若沒事先截圖或開通 eSIM，往往會卡在入境長廊手忙腳亂。
+            </p>
+          </div>
+          <div className="sketch-border p-4 bg-gray-50 border-2 border-black">
+            <div className="font-bold text-base text-indigo-800 mb-2 flex items-center gap-1.5">
+              <ShieldCheck className="w-4 h-4" /> 忘了領行李後再刷海關機
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              正確流程：下機 ➔ 入境審查（壓指紋+看鏡頭）➔ 提領行李轉盤 ➔ 在行李區旁的「電子申報機」刷護照與 QR Code ➔ 走電子申報閘門出關。
+            </p>
+          </div>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'fukuoka-48h-express-itinerary-2026',
+    title: '【2026 福岡廉航快閃指南】機場 5 分鐘直奔市區！博多、天神、太宰府 48 小時不走回頭路手繪攻略',
+    author: '黑白飛機票特價組',
+    readTime: '8 分鐘',
+    image: 'https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '日本福岡博多街景與屋台文化',
+    excerpt: '買到台灣虎航福岡特價票不知道怎麼排？福岡機場 (FUK) 是全日本最狂機場，地鐵 2 站 5 分鐘直達博多！獨家整理 48 小時週休二日快閃路線、中洲屋台防坑規則與太宰府梅枝餅排隊指南。',
+    badge: '48h極速快閃',
+    category: '必讀攻略',
+    content: (
+      <>
+        <div className="bg-emerald-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-[-2deg]">
+            特價首選航點
+          </div>
+          <h3 className="font-bold text-lg text-emerald-900 mb-2 flex items-center gap-2">
+            <Plane className="w-5 h-5 text-emerald-700" /> 全日本離市區最近的機場！福岡週休二日說走就走
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            比起東京成田搭 Skyliner 要 40 分鐘、大阪關西搭 Haruka 要 75 分鐘，<strong>福岡機場（FUK）搭乘地鐵空港線到博多站只要 5 分鐘、到天神只要 11 分鐘！</strong>出關後不用奔波轉車，下機直接開吃博多拉麵，是上班族快閃無痛首選！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Compass className="w-6 h-6 text-indigo-600" /> 48 小時極速快閃行程表 (不走回頭路)
+        </h3>
+        
+        <div className="space-y-6 mb-8">
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <div className="flex items-center justify-between border-b-2 border-black pb-2 mb-3">
+              <span className="font-black text-lg text-indigo-900">DAY 1：機場光速進城 ➔ 天神購物 ➔ 中洲屋台宵夜</span>
+              <span className="text-xs bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 sketch-border">週六首日</span>
+            </div>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-indigo-600 shrink-0">10:30</span>
+                <span>抵達福岡機場國際線，搭乘免費接駁巴士 10 分鐘至國內線航廈轉乘地下鐵。</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-indigo-600 shrink-0">11:30</span>
+                <span><strong>博多車站（JR Hakata City）</strong>寄放行李，午餐直奔博多一雙或 Shin-Shin 拉麵（濃郁泡沫系豚骨！）。</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-indigo-600 shrink-0">14:00</span>
+                <span>地鐵 5 分鐘抵達<strong>天神地下街</strong>與福岡 PARCO，集中採買藥妝與日系服飾（全面免稅退稅）。</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-indigo-600 shrink-0">19:00</span>
+                <span>步行至<strong>中洲川端屋台街</strong>或<strong>天神渡邊通屋台</strong>，體驗烤串、明太子煎餃與關東煮，感受福岡夜生活！</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <div className="flex items-center justify-between border-b-2 border-black pb-2 mb-3">
+              <span className="font-black text-lg text-emerald-900">DAY 2：太宰府求學問 ➔ 大濠公園 ➔ 免稅買伴手禮回台</span>
+              <span className="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 sketch-border">週日滿載</span>
+            </div>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-emerald-600 shrink-0">08:30</span>
+                <span>西鐵天神站搭乘「太宰府旅人列車」直達<strong>太宰府天滿宮</strong>，摸御神牛祈求好運，品嚐熱騰騰現烤「梅枝餅」。</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-emerald-600 shrink-0">12:30</span>
+                <span>返回市區，在<strong>大濠公園</strong>湖畔散步並在隈研吾設計的星巴克喝杯咖啡放鬆。</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-emerald-600 shrink-0">15:30</span>
+                <span>博多車站最後採買「博多通饅頭 (Hakata Torimon)」、「福砂屋長崎蛋糕」與「明太子仙貝」。</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-emerald-600 shrink-0">17:00</span>
+                <span>地鐵 5 分鐘抵達機場，輕鬆出關登機返台！</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Coffee className="w-6 h-6 text-amber-700" /> 中洲屋台防坑 3 大潛規則
+        </h3>
+        <div className="bg-amber-50 p-5 sketch-border border-2 border-black mb-8 space-y-3 text-sm text-gray-800">
+          <div className="flex items-start gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <p><strong>低消一人一杯飲料（ワンオーダー制）：</strong>日本屋台文化約定俗成每位入座顧客都必須點一杯飲品（含烏龍茶或啤酒），不可多人共吃一份料理。</p>
+          </div>
+          <div className="flex items-start gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <p><strong>看清菜單明細價目：</strong>入座前確認攤位上有清楚標價的菜單。若遇上無標價之時價海鮮攤位，建議先詢問計價方式再點餐。</p>
+          </div>
+          <div className="flex items-start gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <p><strong>現金為王：</strong>絕大多數傳統屋台只收日圓現金或 PayPay，請備妥千元鈔與零錢，避免無法刷信用卡。</p>
+          </div>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'japan-korea-esim-sim-wifi-guide-2026',
+    title: '【2026 日韓出國上網終極對決】eSIM / 實體 SIM 卡 / Wi-Fi 分享器優缺點全實測！廉航小資省錢選法與斷網急救包',
+    author: '黑白飛機票特價組',
+    readTime: '6 分鐘',
+    image: 'https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '智慧型手機地圖導航與日本旅遊科技',
+    excerpt: '買廉航機票出國，網路到底該選哪種？eSIM 免換卡 3 分鐘開通、實體 SIM 卡長輩防呆、Wi-Fi 分享器家庭共用！精選日本 Docomo/Softbank 與韓國 SKT/KT 訊號實測，加上手機斷網 3 大自救招式。',
+    badge: '網卡省錢指南',
+    category: '票券攻略',
+    content: (
+      <>
+        <div className="bg-sky-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-2">
+            小資省錢首選
+          </div>
+          <h3 className="font-bold text-lg text-sky-900 mb-2 flex items-center gap-2">
+            <Wifi className="w-5 h-5 text-sky-700" /> 出國網路選錯，廉航省下來的機票錢全被漫遊吃光！
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            現在出國查乘車路線、翻譯菜單、退稅出示 QR Code 都要用到網路。2026 市面上主流有三大上網方式：<strong>eSIM（虛擬網卡）、實體 SIM 卡、Wi-Fi 機</strong>。這篇用一張圖表幫你找出最適合你旅遊型態的高 CP 值方案！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Ticket className="w-6 h-6 text-indigo-600" /> 三大上網方式超級比一比 (實測總整理)
+        </h3>
+
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full text-left border-collapse border-2 border-black text-sm bg-white">
+            <thead>
+              <tr className="bg-gray-50 border-b-2 border-black">
+                <th className="p-3 border-r-2 border-black font-black">上網方式</th>
+                <th className="p-3 border-r-2 border-black font-black">優點</th>
+                <th className="p-3 border-r-2 border-black font-black">缺點</th>
+                <th className="p-3 font-black">適合族群</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y-2 divide-black">
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-indigo-900">eSIM (虛擬SIM卡) ★推薦</td>
+                <td className="p-3 border-r-2 border-black text-xs text-gray-700">免換實體卡、不用帶退卡針、Email 掃碼 3 分鐘啟用、原台灣門號可收簡訊 OTP 驗證碼。</td>
+                <td className="p-3 border-r-2 border-black text-xs text-rose-700">需手機型號支援（iPhone XR以上/部分安卓機）、掃描後無法轉移給他人。</td>
+                <td className="p-3 font-bold text-xs text-emerald-700">自由行小資族、獨旅背包客、科技控首選！</td>
+              </tr>
+              <tr className="bg-gray-50/50">
+                <td className="p-3 border-r-2 border-black font-bold text-gray-900">實體 SIM 卡</td>
+                <td className="p-3 border-r-2 border-black text-xs text-gray-700">任何解鎖手機皆可用、插卡即連線、長輩完全免複雜設定。</td>
+                <td className="p-3 border-r-2 border-black text-xs text-rose-700">需小心保管原本台灣小 SIM 卡（弄丟補發很麻煩）、飛機上需找退卡針換卡。</td>
+                <td className="p-3 font-bold text-xs text-indigo-700">長輩出國、舊型手機使用者。</td>
+              </tr>
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-amber-900">Wi-Fi 分享器 (隨身機)</td>
+                <td className="p-3 border-r-2 border-black text-xs text-gray-700">一台可連 3-5 台設備、多人分攤價格最便宜、筆電平板同時上網。</td>
+                <td className="p-3 border-r-2 border-black text-xs text-rose-700">每天需充電、增加手提行李重量（約 200g）、同行者一旦分開逛街就斷網！</td>
+                <td className="p-3 font-bold text-xs text-amber-700">家庭親子同遊（不分開行動）、商務筆電族。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <ShieldCheck className="w-6 h-6 text-emerald-600" /> 日韓電信業者實測訊號評比
+        </h3>
+        <div className="grid md:grid-cols-2 gap-4 mb-8">
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <div className="font-bold text-lg text-indigo-900 mb-2">🇯🇵 日本上網電信建議</div>
+            <ul className="text-xs text-gray-700 space-y-2">
+              <li><strong>SoftBank（軟銀）：</strong>東京、大阪、福岡市區訊號最穩，地鐵地下街測速破 80Mbps。</li>
+              <li><strong>NTT Docomo：</strong>郊區、富士山、合掌村、北海道山區涵蓋率最高，戶外踏青首推。</li>
+              <li><strong>避坑提醒：</strong>避免購買標榜「每日高速 500MB 後降速 128kbps」的低價卡，降速後連 Google Maps 都跑不動！</li>
+            </ul>
+          </div>
+
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <div className="font-bold text-lg text-sky-900 mb-2">🇰🇷 韓國上網電信建議</div>
+            <ul className="text-xs text-gray-700 space-y-2">
+              <li><strong>SK Telecom (SKT)：</strong>韓國最大電信龍頭，網速極快，首爾釜山無死角。</li>
+              <li><strong>KT (Olleh)：</strong>性價比極高，機場櫃檯提領服務完善，支援熱點分享穩定。</li>
+              <li><strong>特色推薦：</strong>部分韓國 eSIM 支援內建 010 韓國受話電話號碼，叫外送或排隊餐廳登記超方便！</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Lightbulb className="w-6 h-6 text-amber-500" /> 出發前 eSIM 防呆 3 大口訣
+        </h3>
+        <div className="p-5 bg-gray-50 border-2 border-black sketch-border mb-8 space-y-2 text-sm text-gray-800">
+          <p><strong>1. 在台灣機場登機前先連 Wi-Fi 掃描 QR Code 安裝：</strong>安裝完成後先關閉此標籤，抵達目的地再打開。</p>
+          <p><strong>2. 降落日本/韓國後才開啟「數據漫遊」：</strong>將行動數據切換至 eSIM 方案，並開啟該方案的「數據漫遊」。</p>
+          <p><strong>3. 原台灣門號關閉漫遊並保留開啟：</strong>如此即可免費接收信用卡刷卡簡訊 OTP 驗證碼，又不會產生高額海外漫遊上網費！</p>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
   }
 ];
+
 
 
