@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins, QrCode, Wifi, Clock, Compass, Coffee } from 'lucide-react';
+import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins, QrCode, Wifi, Clock, Compass, Coffee, FileText, Receipt, Umbrella, Train, DollarSign, Building } from 'lucide-react';
 
 export interface Article {
   id: string;
@@ -2743,6 +2743,337 @@ export const articlesData: Article[] = [
           <p><strong>1. 在台灣機場登機前先連 Wi-Fi 掃描 QR Code 安裝：</strong>安裝完成後先關閉此標籤，抵達目的地再打開。</p>
           <p><strong>2. 降落日本/韓國後才開啟「數據漫遊」：</strong>將行動數據切換至 eSIM 方案，並開啟該方案的「數據漫遊」。</p>
           <p><strong>3. 原台灣門號關閉漫遊並保留開啟：</strong>如此即可免費接收信用卡刷卡簡訊 OTP 驗證碼，又不會產生高額海外漫遊上網費！</p>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'japan-tax-free-new-rules-2026',
+    title: '【2026 日本退稅新制全面解析】市區不再直接免稅？先付後退機場查驗新制、電子退稅流程與手提/託運避雷全攻略',
+    author: '黑白飛機票特價組',
+    readTime: '8 分鐘',
+    image: 'https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '日本購物街景與免稅退稅標誌圖解',
+    excerpt: '日本全面實施「先付後退」免稅新制！市區購物結帳需先付 10% 消費稅，離境機場查驗核銷後再退回信用卡或現金。搭廉航手提行李僅 7kg 怎麼裝免稅品？託運商品被抽查怎麼辦？2026 最新退稅 SOP、自助退稅機操作與 5 大防踩雷重點一次看懂！',
+    badge: '2026退稅新制',
+    category: '必讀攻略',
+    content: (
+      <>
+        <div className="bg-amber-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-2">
+            2026 全面改制
+          </div>
+          <h3 className="font-bold text-lg text-amber-900 mb-2 flex items-center gap-2">
+            <Receipt className="w-5 h-5 text-amber-800" /> 日本免稅大變革：告別現場免稅，全面改為「機場先查驗後退稅」！
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            過去在唐吉訶德、Bic Camera 結帳只要出示護照就能直接免除 10% 消費稅；但為了防範海外轉賣套利，日本自 2026 年起正式推行<strong>「先付全額含稅價，出境機場海關核對商品後退稅」</strong>的全新機制。尤其對於搭乘低成本航空（LCC）有嚴格行李限重的旅客，打包方式必須全面升級！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <DollarSign className="w-6 h-6 text-emerald-600" /> 2026 日本購物退稅 4 步驟 SOP (出境流暢過關)
+        </h3>
+        <div className="space-y-4 mb-8">
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">1</span>
+            <div>
+              <p className="font-bold text-gray-900">市區購物：出示護照或 VJW QR Code 結帳付全額</p>
+              <p className="text-sm text-gray-600 mt-1">
+                於貼有 Tax-Free 標誌的店家單日單店消費滿 5,000 日圓（未稅）。結帳時出示護照或 Visit Japan Web 免稅代碼，店家將退稅明細連線至日本國稅廳，並開立含稅發票與退稅電子聯。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">2</span>
+            <div>
+              <p className="font-bold text-gray-900">商品打包分流：手提隨身 vs 託運行李</p>
+              <p className="text-sm text-gray-600 mt-1">
+                藥妝、零食等「消耗品」依然會被密封袋封裝，在出境日本前嚴禁拆封！請依液體限制與重量將免稅品妥善分配，若需放入託運行李務必提早到機場處理。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">3</span>
+            <div>
+              <p className="font-bold text-gray-900">機場海關查驗機：刷護照完成核銷</p>
+              <p className="text-sm text-gray-600 mt-1">
+                在成田、羽田、關西、福岡等機場的海關電子申報機（Customs Tax-Free Kiosk）掃描護照與登記退稅信用卡。海關若抽查商品，需現場出示實物核驗。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">4</span>
+            <div>
+              <p className="font-bold text-gray-900">退稅款項返還：信用卡刷退或電子錢包</p>
+              <p className="text-sm text-gray-600 mt-1">
+                核驗完成後，10% 消費稅將於 3 至 7 個工作天內直接刷退至原信用卡，或選擇退至電子支付帳戶，免去攜帶大量日幣零錢回台的煩惱。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <AlertTriangle className="w-6 h-6 text-rose-600" /> 廉航旅客 3 大致命踩雷警告 (沒注意直接補繳 10% 稅金)
+        </h3>
+        <div className="grid md:grid-cols-3 gap-4 mb-8">
+          <div className="sketch-border p-4 bg-rose-50 border-2 border-black">
+            <div className="font-bold text-base text-rose-900 mb-2 flex items-center gap-1.5">
+              <XCircle className="w-4 h-4 text-rose-700" /> 託運前未先找海關申報
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              <strong>超重要！</strong>如果免稅品放在大行李箱準備託運，務必在航空公司櫃檯秤重前，先至「海關查驗櫃檯」蓋章確認。一旦行李被輸送帶送走，過安檢時被海關抽查要求看商品卻拿不出來，<strong>會被判定未攜帶出境直接追繳稅金！</strong>
+            </p>
+          </div>
+          <div className="sketch-border p-4 bg-amber-50 border-2 border-black">
+            <div className="font-bold text-base text-amber-900 mb-2 flex items-center gap-1.5">
+              <Backpack className="w-4 h-4 text-amber-700" /> 手提 7kg 限制超重罰款
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              為了方便海關查驗而全部手提？小心廉航登機門前地勤秤重！若手提超過 7.0kg，臨櫃被迫加購託運費用動輒 NT$ 1,500 - 2,000，比退稅退回來的錢還貴！
+            </p>
+          </div>
+          <div className="sketch-border p-4 bg-indigo-50 border-2 border-black">
+            <div className="font-bold text-base text-indigo-900 mb-2 flex items-center gap-1.5">
+              <ShieldCheck className="w-4 h-4 text-indigo-700" /> 密封袋在日本境內偷拆
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              消耗品（藥品、零食、化妝品）包裝若有拆封破損痕跡，海關查驗時將視同「已在日本國內消費」，無法享有免稅資格，必須現場全額補稅。
+            </p>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Lightbulb className="w-6 h-6 text-amber-500" /> 聰明退稅隨身清單整理訣竅
+        </h3>
+        <div className="p-5 bg-gray-50 border-2 border-black sketch-border mb-8 space-y-2 text-sm text-gray-800">
+          <p><strong>• 高單價精品/手錶/相機：</strong>一律隨身手提，方便海關核對，同時避免託運碰撞遺失。</p>
+          <p><strong>• 大容量化妝水/防曬乳液（超過100ml）：</strong>受航空安檢法規限制「嚴禁手提」，必須放入託運行李，並提早到機場完成海關預先審驗。</p>
+          <p><strong>• 購物發票統一收集：</strong>準備專用透明夾鏈袋存放所有退稅明細單據，核銷對帳 1 分鐘搞定。</p>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'flight-delay-inconvenience-insurance-claim-guide',
+    title: '【廉航延誤取消自救手冊】2026 旅遊不便險理賠實測全指南！航班異動證明取得、餐飲住宿收據留存與申請 5 步驟',
+    author: '黑白飛機票特價組',
+    readTime: '7 分鐘',
+    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '機場停機坪班機與旅遊不便險理賠實測',
+    excerpt: '搭廉航遇到颱風、暴雪或機械故障班機延誤 4 小時以上甚至取消怎麼辦？別慌！教你現場索取「航班延誤證明 (遅延証明書)」、免費改期/退票技巧，以及實測旅遊不便險如何實報實銷吃大餐、住星級飯店的理賠 5 大關鍵步驟！',
+    badge: '理賠自救指南',
+    category: '最新消息',
+    content: (
+      <>
+        <div className="bg-rose-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-[-1deg]">
+            搭廉航必備護身符
+          </div>
+          <h3 className="font-bold text-lg text-rose-900 mb-2 flex items-center gap-2">
+            <Umbrella className="w-5 h-5 text-rose-700" /> 廉航遇上天候延誤不包食宿？「旅遊不便險」就是你的第二張免費機票！
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            不同於傳統航空，低成本航空（LCC）若遭遇颱風天候、航管或機械檢修等不可抗力因素導致班機延誤或取消，通常<strong>不提供免費過夜飯店或餐券補償</strong>。只要在出發前花幾百元投保「產險公司旅遊不便險」，延誤滿 4 小時就能啟動定額補償或實報實銷，把損失變升級！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Clock className="w-6 h-6 text-indigo-600" /> 航班延誤/取消當下！黃金 30 分鐘必做 3 件事
+        </h3>
+        <div className="space-y-4 mb-8">
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">1</span>
+            <div>
+              <p className="font-bold text-gray-900">立即索取「班機延誤/取消證明 (遅延・欠航証明書)」</p>
+              <p className="text-sm text-gray-600 mt-1">
+                若在機場現場，至航空公司地勤櫃檯索取紙本證明；若已離開機場，可於台灣虎航、樂桃、酷航官網的「航班動態」頁面下載電子版 PDF（理賠效力完全相同）。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">2</span>
+            <div>
+              <p className="font-bold text-gray-900">保留原本的「實體登機證」或電子登機證截圖</p>
+              <p className="text-sm text-gray-600 mt-1">
+                所有保險公司出險必備<strong>「原航班登機證存根」</strong>與<strong>「重新安排後之新登機證」</strong>！千萬別隨手揉掉丟進垃圾桶。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">3</span>
+            <div>
+              <p className="font-bold text-gray-900">確認延誤時數門檻：達 4 小時立即啟動理賠</p>
+              <p className="text-sm text-gray-600 mt-1">
+                台灣多數產險不便險以「延誤滿 4 小時」為基準。一旦確定延誤超過門檻，在等待期間產生的合理必要飲食、住宿及前往飯店之交通費用即可依約請款。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Receipt className="w-6 h-6 text-emerald-600" /> 實測理賠申請 5 步驟 (回台 7 天內款項入帳)
+        </h3>
+        <div className="p-5 bg-white border-2 border-black sketch-border mb-8 space-y-3 text-sm text-gray-800">
+          <div className="flex items-start gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <p><strong>第一步：收集所有紙本發票收據正本（Receipt / 領収書）</strong>——包含延誤期間的餐費明細、過夜飯店住宿證明、往返機場交通車票（需記載搭乘時間）。</p>
+          </div>
+          <div className="flex items-start gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <p><strong>第二步：登入產險公司官網下載理賠申請書</strong>——填寫事故經過（例如：因受康芮颱風影響，原定 8/18 MM860 班機延誤 6 小時）。</p>
+          </div>
+          <div className="flex items-start gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <p><strong>第三步：附上護照出入境戳章頁影本或出入境證明</strong>——若走自動通關，可使用電子機票存根或移民署出入境證明佐證。</p>
+          </div>
+          <div className="flex items-start gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <p><strong>第四步：檢附存摺封面影本</strong>——確保給付帳號與被保險人身分證字號完全相符。</p>
+          </div>
+          <div className="flex items-start gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <p><strong>第五步：掛號郵寄或線上專區上傳送件</strong>——目前多家保險支援 App 拍照快速理賠，審核通過後約 3-5 個工作天直接匯入帳戶！</p>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <ShieldCheck className="w-6 h-6 text-amber-600" /> 信用卡附贈險 vs 自行投保產險不便險差在哪？
+        </h3>
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full text-left border-collapse border-2 border-black text-sm bg-white">
+            <thead>
+              <tr className="bg-gray-50 border-b-2 border-black">
+                <th className="p-3 border-r-2 border-black font-black">比較項目</th>
+                <th className="p-3 border-r-2 border-black font-black">信用卡刷卡附贈不便險</th>
+                <th className="p-3 font-black">產險公司自購不便險 ★推薦</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y-2 divide-black">
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-gray-900">理賠方式</td>
+                <td className="p-3 border-r-2 border-black text-xs text-gray-600">多為<strong>「實報實銷」</strong>（需每一筆發票單據實額審核）</td>
+                <td className="p-3 text-xs font-bold text-emerald-700">多提供<strong>「定額給付」</strong>（如滿4小時直接給 NT$ 5,000，免收據核銷）</td>
+              </tr>
+              <tr className="bg-gray-50/50">
+                <td className="p-3 border-r-2 border-black font-bold text-gray-900">出發地在台灣</td>
+                <td className="p-3 border-r-2 border-black text-xs text-rose-600">多數<strong>不賠台灣出發</strong>（人在家裡延誤不賠）</td>
+                <td className="p-3 text-xs font-bold text-emerald-700">許多專案<strong>涵蓋台灣境內出發延誤</strong>！</td>
+              </tr>
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-gray-900">隨行家人保障</td>
+                <td className="p-3 border-r-2 border-black text-xs text-gray-600">僅限持卡人配偶與未滿 25 歲未婚子女</td>
+                <td className="p-3 text-xs text-gray-700">只要有投保每位同行者均有獨立完整保額</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'tokyo-narita-haneda-transit-guide-2026',
+    title: '【2026 東京機場交通終極懶人包】成田 (NRT) vs 羽田 (HND) 進市區全評比！Skyliner、N\'EX、Access特快與紅眼班機交通解法',
+    author: '黑白飛機票特價組',
+    readTime: '9 分鐘',
+    image: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '東京成田特快與城市天際線',
+    excerpt: '買了廉航飛東京，成田機場第三航廈走多遠？Skyliner 41 分鐘直奔上野、JR N\'EX 直達新宿澀谷、Access 特快免特急費進淺草！2026 最完整票價耗時對照矩陣與半夜清晨紅眼班機通宵巴士實戰攻略。',
+    badge: '東京交通速查',
+    category: '票券攻略',
+    content: (
+      <>
+        <div className="bg-sky-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-1">
+            東京快閃必備
+          </div>
+          <h3 className="font-bold text-lg text-sky-900 mb-2 flex items-center gap-2">
+            <Train className="w-5 h-5 text-sky-700" /> 東京兩大機場定位：成田航線特價多、羽田近市區班次少！
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            絕大多數低成本航空（台灣虎航、樂桃、酷航、捷星日本）均以<strong>成田國際機場（NRT）</strong>為主基地；而<strong>羽田機場（HND）</strong>則離市區僅 20 分鐘。降落成田後如何以最快、最省錢的方式抵達飯店？這篇幫你省下大把冤枉路！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Map className="w-6 h-6 text-indigo-600" /> 成田機場進市區 4 大主力交通對決矩陣
+        </h3>
+
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full text-left border-collapse border-2 border-black text-sm bg-white">
+            <thead>
+              <tr className="bg-gray-50 border-b-2 border-black">
+                <th className="p-3 border-r-2 border-black font-black">交通工具</th>
+                <th className="p-3 border-r-2 border-black font-black">直達主要車站</th>
+                <th className="p-3 border-r-2 border-black font-black">抵達時間</th>
+                <th className="p-3 border-r-2 border-black font-black">單程票價 (約)</th>
+                <th className="p-3 font-black">特點與推薦族群</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y-2 divide-black">
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-indigo-900">京成電鐵 Skyliner ★最快</td>
+                <td className="p-3 border-r-2 border-black font-bold">日暮里、京成上野</td>
+                <td className="p-3 border-r-2 border-black font-mono text-emerald-700 font-bold">41 分鐘</td>
+                <td className="p-3 border-r-2 border-black font-mono font-bold">¥2,570 (網訂特價¥2,300)</td>
+                <td className="p-3 text-xs text-gray-700">全車指定席、配備插座與免費 Wi-Fi，住上野/淺草/秋葉原首選！</td>
+              </tr>
+              <tr className="bg-gray-50/50">
+                <td className="p-3 border-r-2 border-black font-bold text-rose-900">JR 成田特快 N'EX</td>
+                <td className="p-3 border-r-2 border-black font-bold">東京站、品川、澀谷、新宿</td>
+                <td className="p-3 border-r-2 border-black font-mono text-gray-700">約 60~85 分鐘</td>
+                <td className="p-3 border-r-2 border-black font-mono font-bold">來回特價 ¥5,000</td>
+                <td className="p-3 text-xs text-gray-700">直達東京西側各大站免換車，行李箱放置架附密碼鎖，住新宿澀谷最省力。</td>
+              </tr>
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-amber-900">京成 Access 特快 ★高CP</td>
+                <td className="p-3 border-r-2 border-black font-bold">押上(晴空塔)、淺草、日本橋、東銀座</td>
+                <td className="p-3 border-r-2 border-black font-mono text-gray-700">約 50~65 分鐘</td>
+                <td className="p-3 border-r-2 border-black font-mono text-emerald-700 font-bold">¥1,350~1,450</td>
+                <td className="p-3 text-xs text-gray-700">免特急券費用！直通運轉都營淺草線，住淺草/人形町/銀座高性價比。</td>
+              </tr>
+              <tr className="bg-gray-50/50">
+                <td className="p-3 border-r-2 border-black font-bold text-gray-900">利木津巴士 (Airport Bus)</td>
+                <td className="p-3 border-r-2 border-black font-bold">各大指定星級飯店門口、東京站</td>
+                <td className="p-3 border-r-2 border-black font-mono text-gray-700">約 70~90 分鐘</td>
+                <td className="p-3 border-r-2 border-black font-mono font-bold">¥1,300~3,600</td>
+                <td className="p-3 text-xs text-gray-700">專人幫忙搬行李上車，免在車站爬樓梯轉車，親子與長輩族最輕鬆。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Building className="w-6 h-6 text-indigo-600" /> 成田第三航廈（LCC 大本營）出關注意事項
+        </h3>
+        <div className="p-5 bg-white border-2 border-black sketch-border mb-8 space-y-3 text-sm text-gray-800">
+          <p className="leading-relaxed">
+            搭乘捷星（Jetstar）、樂桃部分國際航班、春秋航空降落於<strong>成田 T3 航廈</strong>。請注意：<strong>T3 航廈內沒有任何鐵路車站！</strong>
+          </p>
+          <div className="grid md:grid-cols-2 gap-3 pt-1">
+            <div className="p-3 bg-gray-50 border border-black sketch-border">
+              <p className="font-bold text-gray-900">方式 A：走 PU 跑道步道至 T2 (推薦)</p>
+              <p className="text-xs text-gray-600 mt-1">沿著藍色田徑跑道地面指標步行約 500 公尺（約 6-8 分鐘），即可抵達 T2 地下一樓的鐵路售票處與月台。</p>
+            </div>
+            <div className="p-3 bg-gray-50 border border-black sketch-border">
+              <p className="font-bold text-gray-900">方式 B：搭乘免費航廈接駁巴士</p>
+              <p className="text-xs text-gray-600 mt-1">每 3 至 5 分鐘一班車，車程約 3 分鐘，若攜帶大件行李箱或推嬰兒車可利用接駁車。</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Clock className="w-6 h-6 text-amber-600" /> 紅眼班機深夜與清晨交通指南
+        </h3>
+        <div className="bg-amber-50 p-5 sketch-border border-2 border-black mb-8 space-y-3 text-sm text-gray-800">
+          <p><strong>• 抵達羽田機場半夜（如虎航清晨抵達）：</strong>羽田機場國際線航廈設有 24 小時營業的<strong>「泉天空之湯」溫泉水療中心</strong>，可泡湯、躺平休息至清晨 05:30 首班電車發車。</p>
+          <p><strong>• 抵達或出發成田機場清晨：</strong>可利用成田 T2 航廈地下一樓的<strong>「9h Nine Hours」膠囊旅館</strong>短暫補眠與淋浴，或搭乘深夜通宵 Airport Bus 直達東京車站（車資約 ¥1,500）。</p>
         </div>
 
         <AffiliateFooter />
