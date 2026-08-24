@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins, QrCode, Wifi, Clock, Compass, Coffee, FileText, Receipt, Umbrella, Train, DollarSign, Building } from 'lucide-react';
+import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins, QrCode, Wifi, Clock, Compass, Coffee, FileText, Receipt, Umbrella, Train, DollarSign, Building, BatteryCharging, Zap, CreditCard, Navigation, Utensils } from 'lucide-react';
 
 export interface Article {
   id: string;
@@ -3074,6 +3074,352 @@ export const articlesData: Article[] = [
         <div className="bg-amber-50 p-5 sketch-border border-2 border-black mb-8 space-y-3 text-sm text-gray-800">
           <p><strong>• 抵達羽田機場半夜（如虎航清晨抵達）：</strong>羽田機場國際線航廈設有 24 小時營業的<strong>「泉天空之湯」溫泉水療中心</strong>，可泡湯、躺平休息至清晨 05:30 首班電車發車。</p>
           <p><strong>• 抵達或出發成田機場清晨：</strong>可利用成田 T2 航廈地下一樓的<strong>「9h Nine Hours」膠囊旅館</strong>短暫補眠與淋浴，或搭乘深夜通宵 Airport Bus 直達東京車站（車資約 ¥1,500）。</p>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'korea-travel-apps-guide-2026',
+    title: '【2026 韓國自由行必備 App 懶人包】Google Maps 在首爾大迷航？Naver Map 中文導航、Kakao T 叫車與 WOWPASS 換匯刷卡實測手繪指南',
+    author: '黑白飛機票特價組',
+    readTime: '7 分鐘',
+    image: 'https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '韓國首爾市區街景與首爾塔夜景',
+    excerpt: '去首爾釜山自由行，打開 Google Maps 卻發現「無法規劃步行路線」？因為韓國國防安全法規限制，地圖導航一定要用 Naver Map！搭配 Kakao T 免綁韓國電話叫計程車、Papago 拍照秒翻韓文菜單、WOWPASS 韓幣提領儲值卡，新手也能無痛玩遍韓國。',
+    badge: '韓國自由行神器',
+    category: '必讀攻略',
+    content: (
+      <>
+        <div className="bg-sky-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-2">
+            首爾釜山必載
+          </div>
+          <h3 className="font-bold text-lg text-sky-900 mb-2 flex items-center gap-2">
+            <Navigation className="w-5 h-5 text-sky-700" /> 為什麼在韓國不能只靠 Google Maps？
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            許多第一次去韓國自由行的旅客，一落地打開 Google Maps 想找烤肉店或咖啡廳，卻發現<strong>「無法使用步行導航與汽車路線規劃」</strong>！這是因為韓國《雲端數據法》與國防法規限制高精度地理資料輸出海外。想在首爾、釜山暢行無阻，出發前一定要先下載這 4 款在地神級 App！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Smartphone className="w-6 h-6 text-indigo-600" /> 韓國自由行 4 大天王 App 實測評比
+        </h3>
+        <div className="space-y-4 mb-8">
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">1</span>
+            <div>
+              <p className="font-bold text-gray-900 flex items-center gap-2">
+                Naver Map（中文版地圖導航） <span className="text-xs bg-emerald-100 text-emerald-800 px-2 py-0.5 font-bold sketch-border">必裝第一名</span>
+              </p>
+              <p className="text-sm text-gray-600 mt-1">
+                支援簡體中文與繁體搜尋，提供超精準的地鐵公車轉乘班次、月台最佳搭車車廂、以及小巷弄步行即時箭頭導航。還能查看店家營業時間、真實訪客照片與 Naver 評分！
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">2</span>
+            <div>
+              <p className="font-bold text-gray-900 flex items-center gap-2">
+                Kakao T（叫車出行神隊友） <span className="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 font-bold sketch-border">深夜/提行李必備</span>
+              </p>
+              <p className="text-sm text-gray-600 mt-1">
+                韓國路邊攔計程車難度高，且司機多不諳英文。Kakao T 支援海外信用卡綁定，或選擇「現場向司機付款（General Request）」，免韓語對話、目的地精準定位，防坑防繞路！
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">3</span>
+            <div>
+              <p className="font-bold text-gray-900 flex items-center gap-2">
+                Papago（Naver 旗下中韓翻譯神器） <span className="text-xs bg-indigo-100 text-indigo-800 px-2 py-0.5 font-bold sketch-border">看菜單無障礙</span>
+              </p>
+              <p className="text-sm text-gray-600 mt-1">
+                比 Google 翻譯更懂韓語口語、敬語與餐飲專有名詞！直接開啟相機「即時拍照翻譯」，牆壁上的手寫韓文菜單或商品標籤 1 秒變成繁體中文。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">4</span>
+            <div>
+              <p className="font-bold text-gray-900 flex items-center gap-2">
+                WOWPASS / NAMANE（換匯+交通卡合一卡） <span className="text-xs bg-rose-100 text-rose-800 px-2 py-0.5 font-bold sketch-border">省去明洞排隊</span>
+              </p>
+              <p className="text-sm text-gray-600 mt-1">
+                直接拿新台幣千元鈔在機場或弘大、明洞機台存入卡片，即時轉為韓元餘額！具備一般簽帳金融卡（百貨/餐廳刷卡）與 T-money 交通卡雙重功能，App 隨時查餘額與消費明細。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <CreditCard className="w-6 h-6 text-emerald-600" /> 韓國消費換匯小撇步：現金 vs WOWPASS vs 台灣海外回饋卡
+        </h3>
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full text-left border-collapse border-2 border-black text-sm bg-white">
+            <thead>
+              <tr className="bg-gray-50 border-b-2 border-black">
+                <th className="p-3 border-r-2 border-black font-black">支付方式</th>
+                <th className="p-3 border-r-2 border-black font-black">匯率優勢</th>
+                <th className="p-3 border-r-2 border-black font-black">適用場合</th>
+                <th className="p-3 font-black">注意事項</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y-2 divide-black">
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-indigo-900">台灣高回饋信用卡</td>
+                <td className="p-3 border-r-2 border-black text-emerald-700 font-bold">國際組織即時匯率 - 1.5%手續費 + 3~5%回饋</td>
+                <td className="p-3 text-xs text-gray-700">大型百貨、Olive Young、超商、品牌服飾店</td>
+                <td className="p-3 text-xs text-gray-600">刷卡時務必選擇「韓元 (KRW)」結帳，避免 DCC 動態貨幣轉換手續費。</td>
+              </tr>
+              <tr className="bg-gray-50/50">
+                <td className="p-3 border-r-2 border-black font-bold text-amber-900">WOWPASS 預付卡</td>
+                <td className="p-3 border-r-2 border-black text-gray-700">台幣直接存入換韓元，匯率優於台灣銀行現鈔</td>
+                <td className="p-3 text-xs text-gray-700">一般餐廳、咖啡廳、地鐵公車刷卡</td>
+                <td className="p-3 text-xs text-gray-600">T-money 交通卡餘額與主帳戶餘額分開，搭地鐵前需先在機台轉存。</td>
+              </tr>
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-rose-900">韓元現金現鈔</td>
+                <td className="p-3 border-r-2 border-black text-gray-700">傳統市場與明洞換錢所匯率最佳</td>
+                <td className="p-3 text-xs text-gray-700">廣藏市場小吃攤、路邊布帳馬車、地鐵單程票</td>
+                <td className="p-3 text-xs text-gray-600">建議每人準備 5~10 萬韓元現金備用即可，多數店家皆已無現金化。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Lightbulb className="w-6 h-6 text-amber-500" /> 出發前韓國 App 防呆設定 3 招
+        </h3>
+        <div className="p-5 bg-gray-50 border-2 border-black sketch-border mb-8 space-y-2 text-sm text-gray-800">
+          <p><strong>1. 在台灣就先下載並註冊 Kakao Talk 帳號：</strong>Kakao T 叫車 App 需連動 Kakao 帳號，在台灣先收簡訊驗證碼最順暢。</p>
+          <p><strong>2. Naver Map 預先收藏想去的景點：</strong>登入帳號後可建立「首爾咖啡廳」、「弘大美食」等自訂圖層清單，到當地一點開就能導航。</p>
+          <p><strong>3. 準備好護照掃描 WOWPASS：</strong>首次於機台開卡需掃描護照正本，出國前確認護照效期大於 6 個月。</p>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'power-bank-aviation-rules-2026',
+    title: '【2026 航空行動電源規定】搭廉航帶錯安檢直接沒收！額定容量 Wh 換算公式、嚴禁託運與日韓安檢防踩雷圖解',
+    author: '黑白飛機票特價組',
+    readTime: '6 分鐘',
+    image: 'https://images.unsplash.com/photo-1609592424364-4e4d58850ce9?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '旅行行動電源與充電線材安全檢驗',
+    excerpt: '「我的行動電源 20000mAh 可以帶上飛機嗎？」、「標示磨損看不清楚會怎樣？」2026 最新各家廉航（虎航、樂桃、酷航）與民航局鋰電池規範：嚴禁放行李箱託運、額定容量 Wh 計算方式、每人限帶顆數、以及無清晰規格標示直接沒收等 4 大致命痛點一次解惑！',
+    badge: '行動電源新規',
+    category: '行李圖解',
+    content: (
+      <>
+        <div className="bg-rose-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-[-1deg]">
+            機場沒收排行榜 No.1
+          </div>
+          <h3 className="font-bold text-lg text-rose-900 mb-2 flex items-center gap-2">
+            <BatteryCharging className="w-5 h-5 text-rose-700" /> 行李箱放行動電源？地勤安檢直接開箱攔截重驗！
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            行動電源（鋰電池）在高空氣壓變化與貨艙撞擊下具有起火燃燒風險，因此<strong>全世界所有民航法規一律「嚴禁託運」！</strong>必須全程放在「隨身手提行李」中。然而隨身攜帶也有嚴格的瓦時（Wh）上限與標示規定，稍不注意就會在海關安檢台被當場丟棄！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Zap className="w-6 h-6 text-amber-600" /> 1 秒搞懂容量限制：mAh 如何換算成航空規定的「瓦時 (Wh)」？
+        </h3>
+        <div className="p-5 bg-white border-2 border-black sketch-border mb-8 text-sm text-gray-800 leading-relaxed">
+          <p className="mb-3">
+            航空安全標準看的是<strong>能量單位「瓦時 (Wh)」</strong>，而非單純的電容量毫安時（mAh）。鋰電池標準電壓通常為 <strong>3.7V</strong>，換算公式如下：
+          </p>
+          <div className="bg-amber-100/70 p-4 border-2 border-black sketch-border font-mono font-bold text-center text-base text-gray-900 mb-4">
+            瓦時 (Wh) = [ 電容量 (mAh) × 電壓 (3.7V) ] ÷ 1000
+          </div>
+          <div className="grid md:grid-cols-3 gap-3">
+            <div className="p-3 bg-emerald-50 border border-black sketch-border">
+              <p className="font-bold text-emerald-900">10,000 mAh 行動電源</p>
+              <p className="text-xs text-gray-700 mt-1">10000 × 3.7 ÷ 1000 = <strong>37 Wh</strong><br/><span className="text-emerald-700 font-bold">✅ 綠燈：隨身攜帶完全合法！</span></p>
+            </div>
+            <div className="p-3 bg-emerald-50 border border-black sketch-border">
+              <p className="font-bold text-emerald-900">20,000 mAh 行動電源</p>
+              <p className="text-xs text-gray-700 mt-1">20000 × 3.7 ÷ 1000 = <strong>74 Wh</strong><br/><span className="text-emerald-700 font-bold">✅ 綠燈：隨身攜帶完全合法！</span></p>
+            </div>
+            <div className="p-3 bg-amber-50 border border-black sketch-border">
+              <p className="font-bold text-amber-900">27,000 mAh 大容量電芯</p>
+              <p className="text-xs text-gray-700 mt-1">27000 × 3.7 ÷ 1000 = <strong>99.9 Wh</strong><br/><span className="text-amber-700 font-bold">⚠️ 壓線合格（不可超標）</span></p>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <ShieldCheck className="w-6 h-6 text-indigo-600" /> 2026 航空鋰電池攜帶標準一覽表
+        </h3>
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full text-left border-collapse border-2 border-black text-sm bg-white">
+            <thead>
+              <tr className="bg-gray-50 border-b-2 border-black">
+                <th className="p-3 border-r-2 border-black font-black">電池容量 (Wh)</th>
+                <th className="p-3 border-r-2 border-black font-black">手提隨身攜帶規定</th>
+                <th className="p-3 border-r-2 border-black font-black">託運規定</th>
+                <th className="p-3 font-black">常見設備</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y-2 divide-black">
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-emerald-900">小於等於 100 Wh (約 27,000mAh 以下)</td>
+                <td className="p-3 border-r-2 border-black text-emerald-700 font-bold">✅ 免報備，每人通常限帶 2~4 顆</td>
+                <td className="p-3 border-r-2 border-black text-rose-700 font-bold">❌ 嚴禁託運</td>
+                <td className="p-3 text-xs text-gray-700">一般手機行動電源、相機電池、Switch、藍牙耳機</td>
+              </tr>
+              <tr className="bg-gray-50/50">
+                <td className="p-3 border-r-2 border-black font-bold text-amber-900">100 Wh ~ 160 Wh 之間</td>
+                <td className="p-3 border-r-2 border-black text-amber-800 font-bold">⚠️ 需航空公司報備同意，每人限帶 2 顆</td>
+                <td className="p-3 border-r-2 border-black text-rose-700 font-bold">❌ 嚴禁託運</td>
+                <td className="p-3 text-xs text-gray-700">高功率筆電外接電源、專業空拍機大電池</td>
+              </tr>
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-rose-900">大於 160 Wh</td>
+                <td className="p-3 border-r-2 border-black text-rose-700 font-bold">❌ 嚴禁隨身攜帶（需走危險品貨運）</td>
+                <td className="p-3 border-r-2 border-black text-rose-700 font-bold">❌ 嚴禁託運</td>
+                <td className="p-3 text-xs text-gray-700">戶外儲能行動電站、電動滑板車大電池</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <AlertTriangle className="w-6 h-6 text-rose-600" /> 安檢最常被沒收的 3 個冤枉原因
+        </h3>
+        <div className="grid md:grid-cols-3 gap-4 mb-8">
+          <div className="sketch-border p-4 bg-rose-50 border-2 border-black">
+            <div className="font-bold text-base text-rose-900 mb-2 flex items-center gap-1.5">
+              <XCircle className="w-4 h-4 text-rose-700" /> 1. 機身容量標示磨損不清
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              <strong>超多苦主！</strong>日韓或台灣海關安檢人員若無法在電池外殼上明確辨識「容量規格（mAh 或 Wh）」字樣，一律視同「規格不明危險品」直接強制丟棄，無法通融！
+            </p>
+          </div>
+          <div className="sketch-border p-4 bg-amber-50 border-2 border-black">
+            <div className="font-bold text-base text-amber-900 mb-2 flex items-center gap-1.5">
+              <Flame className="w-4 h-4 text-amber-700" /> 2. 膨脹變形或外殼裂損
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              已有膨脹現象或外殼摔破露芯的行動電源，機艙增壓時極易發生短路自燃，安檢一旦查獲立即沒收。
+            </p>
+          </div>
+          <div className="sketch-border p-4 bg-indigo-50 border-2 border-black">
+            <div className="font-bold text-base text-indigo-900 mb-2 flex items-center gap-1.5">
+              <Plane className="w-4 h-4 text-indigo-700" /> 3. 飛行途中禁止使用行動電源
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              部分廉航（如樂桃、酷航等）規定飛機起飛降落滑行期間，或全程禁止將行動電源插著手機充電，以確保機艙消防安全。
+            </p>
+          </div>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'kansai-kix-airport-transit-guide-2026',
+    title: '【2026 大阪關西機場 (KIX) 交通全攻略】Haruka 特急 vs 南海電鐵 Rapi:t 怎麼選？T1 翻新過關秘訣與 T2 樂桃搭車全圖解',
+    author: '黑白飛機票特價組',
+    readTime: '8 分鐘',
+    image: 'https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '日本關西機場特急列車與大阪市區',
+    excerpt: '降落關西機場直奔大阪或京都！JR Haruka 45 分鐘抵達天王寺、80 分鐘直達京都；南海電鐵 Rapi:t 34 分鐘狂飆難波！精闢解析 KIX T1 翻新後的通關動線、T2 廉航（樂桃航廈）免費接駁車搭乘教學，以及省下數百日圓的早鳥優惠票券買法。',
+    badge: '關西交通全解',
+    category: '票券攻略',
+    content: (
+      <>
+        <div className="bg-emerald-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-1">
+            關西進城首選
+          </div>
+          <h3 className="font-bold text-lg text-emerald-900 mb-2 flex items-center gap-2">
+            <Train className="w-5 h-5 text-emerald-700" /> 大阪京都快速進城：去大阪住難波選南海，去京都新大阪選 JR Haruka！
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            關西國際機場（KIX）是前往大阪、京都、神戶與奈良的大門戶。出關之後過一條空中空橋，就是 JR 與南海電鐵的聯合車站。只要掌握<strong>「住大阪難波/心齋橋搭南海電鐵」</strong>、<strong>「住京都/新大阪/梅田搭 JR Haruka」</strong>的黃金口訣，就能省時又省錢！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Ticket className="w-6 h-6 text-indigo-600" /> KIX 兩大王牌鐵道全方位比較表
+        </h3>
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full text-left border-collapse border-2 border-black text-sm bg-white">
+            <thead>
+              <tr className="bg-gray-50 border-b-2 border-black">
+                <th className="p-3 border-r-2 border-black font-black">鐵路業者</th>
+                <th className="p-3 border-r-2 border-black font-black">列車車種</th>
+                <th className="p-3 border-r-2 border-black font-black">直達車站與時間</th>
+                <th className="p-3 border-r-2 border-black font-black">單程票價</th>
+                <th className="p-3 font-black">最推薦住宿地區</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y-2 divide-black">
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-indigo-900">南海電鐵</td>
+                <td className="p-3 border-r-2 border-black font-bold text-indigo-700">特急 Rapi:t (藍色鐵人車頭)</td>
+                <td className="p-3 border-r-2 border-black font-mono">難波 (Namba) <strong>約 34 分鐘</strong></td>
+                <td className="p-3 border-r-2 border-black font-mono font-bold">¥1,490 (全車指定席)</td>
+                <td className="p-3 text-xs text-gray-700">心齋橋、道頓堀、難波、日本橋</td>
+              </tr>
+              <tr className="bg-gray-50/50">
+                <td className="p-3 border-r-2 border-black font-bold text-gray-900">南海電鐵</td>
+                <td className="p-3 border-r-2 border-black font-bold text-gray-700">空港急行 (普通電車)</td>
+                <td className="p-3 border-r-2 border-black font-mono">難波 (Namba) <strong>約 44 分鐘</strong></td>
+                <td className="p-3 border-r-2 border-black font-mono font-bold text-emerald-700">¥970 (免特急券，刷IC卡可)</td>
+                <td className="p-3 text-xs text-gray-700">小資背包客省錢首選</td>
+              </tr>
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-rose-900">JR 西日本</td>
+                <td className="p-3 border-r-2 border-black font-bold text-rose-700">關空特急 Haruka (Hello Kitty彩繪)</td>
+                <td className="p-3 border-r-2 border-black font-mono">
+                  天王寺 (35分)<br/>
+                  大阪/梅田 (47分)<br/>
+                  新大阪 (50分)<br/>
+                  <strong>京都 (80分)</strong>
+                </td>
+                <td className="p-3 border-r-2 border-black font-mono font-bold">
+                  至大阪約 ¥1,800<br/>
+                  至京都約 ¥2,200 (海外優惠票)
+                </td>
+                <td className="p-3 text-xs text-gray-700">直奔京都、住梅田或新大阪轉乘新幹線</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Building className="w-6 h-6 text-amber-600" /> 樂桃航空專屬：第二航廈 (T2) 轉乘 T1 注意事項
+        </h3>
+        <div className="p-5 bg-white border-2 border-black sketch-border mb-8 space-y-3 text-sm text-gray-800">
+          <p className="leading-relaxed">
+            搭乘<strong>樂桃航空（Peach Aviation）</strong>國際線與國內線均降落於獨立的 <strong>第二航廈（T2）</strong>。
+          </p>
+          <div className="bg-gray-50 p-4 border border-black sketch-border space-y-2">
+            <p className="font-bold text-gray-900">🚌 免費接駁巴士指南：</p>
+            <p className="text-xs text-gray-700">
+              出關後跟著「免費接駁巴士（Free Shuttle Bus）」指標走，搭乘約 7~9 分鐘即可直達「第一航廈旁 Aeroplaza」，再步行 2 分鐘即抵達南海與 JR 關西機場站。
+            </p>
+            <p className="text-xs text-rose-700 font-bold">
+              ⚠️ 回程搭機提醒：請在起飛前至少 2.5 小時抵達 T1，預留 15 分鐘搭接駁車至 T2 辦理報到手續！
+            </p>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Lightbulb className="w-6 h-6 text-amber-500" /> 關西出關購票省錢 3 大秘技
+        </h3>
+        <div className="p-5 bg-gray-50 border-2 border-black sketch-border mb-8 space-y-2 text-sm text-gray-800">
+          <p><strong>1. 在台灣出發前先線上訂好 Haruka / Rapi:t 車票：</strong>抵達現場持 QR Code 直接在綠色自助售票機台掃碼劃位取票，省下排人工售票窗口 30 分鐘以上！</p>
+          <p><strong>2. 關西機場 T1 免稅店 2026 最新美食街已全面升級：</strong>過安檢後有超大型免稅精品與知名拉麵甜點進駐，回程記得提早進關採買伴手禮。</p>
+          <p><strong>3. 綁定手機 Apple Wallet 虛擬 ICOCA / Suica：</strong>搭乘南海空港急行或大阪市區地鐵，進出閘門直接感應手機嗶一聲秒過，免去購票排隊煩惱！</p>
         </div>
 
         <AffiliateFooter />
