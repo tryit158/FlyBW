@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins, QrCode, Wifi, Clock, Compass, Coffee, FileText, Receipt, Umbrella, Train, DollarSign, Building, BatteryCharging, Zap, CreditCard, Navigation, Utensils } from 'lucide-react';
+import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins, QrCode, Wifi, Clock, Compass, Coffee, FileText, Receipt, Umbrella, Train, DollarSign, Building, BatteryCharging, Zap, CreditCard, Navigation, Utensils, Car, Package, RefreshCw } from 'lucide-react';
 
 export interface Article {
   id: string;
@@ -3420,6 +3420,331 @@ export const articlesData: Article[] = [
           <p><strong>1. 在台灣出發前先線上訂好 Haruka / Rapi:t 車票：</strong>抵達現場持 QR Code 直接在綠色自助售票機台掃碼劃位取票，省下排人工售票窗口 30 分鐘以上！</p>
           <p><strong>2. 關西機場 T1 免稅店 2026 最新美食街已全面升級：</strong>過安檢後有超大型免稅精品與知名拉麵甜點進駐，回程記得提早進關採買伴手禮。</p>
           <p><strong>3. 綁定手機 Apple Wallet 虛擬 ICOCA / Suica：</strong>搭乘南海空港急行或大阪市區地鐵，進出閘門直接感應手機嗶一聲秒過，免去購票排隊煩惱！</p>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'okinawa-car-rental-self-drive-guide-2026',
+    title: '【2026 沖繩租車自駕避坑手冊】那霸機場接駁、右駕黃金口訣、ETC/高速公路收費與免責保險 (CDW/NOC) 實測全解',
+    author: '黑白飛機票特價組',
+    readTime: '8 分鐘',
+    image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '沖繩沿海公路自駕與租車圖解',
+    excerpt: '廉航飛沖繩只要 80 分鐘，但租車踩雷可能毀了整趟旅程！2026 最新那霸機場租車接駁避排隊技巧、日文譯本正本攜帶原則、右駕「左小轉、右大轉」防呆口訣、CDW vs NOC 全險怎麼買最安心，以及沖繩唯一高速公路收費實測！',
+    badge: '沖繩自駕全攻略',
+    category: '必讀攻略',
+    content: (
+      <>
+        <div className="bg-emerald-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-2">
+            自由行首選
+          </div>
+          <h3 className="font-bold text-lg text-emerald-900 mb-2 flex items-center gap-2">
+            <Car className="w-5 h-5 text-emerald-700" /> 飛行 80 分鐘直奔蔚藍海島！沖繩自駕新手上路必備保命手冊
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            沖繩大眾運輸除了那霸市區的單軌電車（Yui-Rail）外，前往美麗海水族館、古宇利大橋、美國村等中北部景點最方便自由的方式絕對是<strong>「租車自駕」</strong>。第一次在日本右駕不用慌，搞懂這篇核心規則，新手也能輕鬆上手！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <ShieldCheck className="w-6 h-6 text-indigo-600" /> 租車取車 3 大關鍵必備文件與流程
+        </h3>
+        <div className="space-y-4 mb-8">
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">1</span>
+            <div>
+              <p className="font-bold text-gray-900">黃金三角證件（缺一不可，否則絕對無法取車！）</p>
+              <p className="text-sm text-gray-600 mt-1">
+                <strong>① 台灣駕照正本</strong>（效期內）、<strong>② 監理所申請之日文譯本正本</strong>（注意：國際駕照在日本無效！）、<strong>③ 駕駛人護照</strong>。三者姓名英文拼音必須完全一致。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">2</span>
+            <div>
+              <p className="font-bold text-gray-900">那霸機場接駁車搭乘避開排隊潮</p>
+              <p className="text-sm text-gray-600 mt-1">
+                出國際線航廈後走到對面公車月台，找到預約租車公司（如 OTS、Times、ORIX 等）旗幟，出示預約單號領取號碼牌搭乘免費接駁巴士（車程約 15~20 分鐘抵達營業所）。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">3</span>
+            <div>
+              <p className="font-bold text-gray-900">取車時全程錄影檢查外觀傷痕</p>
+              <p className="text-sm text-gray-600 mt-1">
+                交車時與店員一同確認車身刮痕與凹痕，並<strong>拿起手機環繞錄影存證</strong>（包含輪框、前後保險桿底側），避免還車時產生認知爭議。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Compass className="w-6 h-6 text-indigo-600" /> 日本右駕 3 大黃金防呆口訣
+        </h3>
+        <div className="grid md:grid-cols-3 gap-4 mb-8">
+          <div className="sketch-border p-4 bg-sky-50 border-2 border-black">
+            <div className="font-bold text-base text-sky-900 mb-2 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-sky-700" /> 1. 左轉小彎、右轉大彎
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              日本靠左行駛！轉彎時牢記<strong>「左轉貼近左側車道（小彎），右轉跨過對向車道（大彎）」</strong>。駕駛座始終保持靠馬路中央分隔線！
+            </p>
+          </div>
+          <div className="sketch-border p-4 bg-amber-50 border-2 border-black">
+            <div className="font-bold text-base text-amber-900 mb-2 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-amber-700" /> 2. 雨刷在左、方向燈在右
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              轉彎時打成雨刷是每位台灣人的必經之路！上車前先在心裡默念：<strong>右手打方向燈</strong>，給自己 10 分鐘市區慢速適應。
+            </p>
+          </div>
+          <div className="sketch-border p-4 bg-rose-50 border-2 border-black">
+            <div className="font-bold text-base text-rose-900 mb-2 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-rose-700" /> 3. 遇「止まれ」標誌必完全煞停
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              地面或路口倒三角形紅底<strong>「止まれ（STOP）」</strong>標誌，必須完全靜止停止 3 秒，左右擺頭確認無人車後方可前行，否則日本警察會直接開罰！
+            </p>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <ShieldCheck className="w-6 h-6 text-emerald-600" /> 保險方案怎麼買？CDW vs NOC 全險比較表
+        </h3>
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full text-left border-collapse border-2 border-black text-sm bg-white">
+            <thead>
+              <tr className="bg-gray-50 border-b-2 border-black">
+                <th className="p-3 border-r-2 border-black font-black">保險類別</th>
+                <th className="p-3 border-r-2 border-black font-black">保障範圍</th>
+                <th className="p-3 border-r-2 border-black font-black">自負額負擔</th>
+                <th className="p-3 font-black">建議與推薦指數</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y-2 divide-black">
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-gray-900">強制基本險 (已內含)</td>
+                <td className="p-3 border-r-2 border-black text-xs text-gray-600">第三人責任險與乘客體傷</td>
+                <td className="p-3 border-r-2 border-black text-xs text-rose-700 font-bold">自負額約 5~10 萬日圓 + 營業損失</td>
+                <td className="p-3 text-xs text-rose-600">❌ 極度不推薦（出事賠慘）</td>
+              </tr>
+              <tr className="bg-gray-50/50">
+                <td className="p-3 border-r-2 border-black font-bold text-indigo-900">CDW 車輛免責補償</td>
+                <td className="p-3 border-r-2 border-black text-xs text-gray-700">車輛碰撞受損修復費用免賠</td>
+                <td className="p-3 border-r-2 border-black text-xs text-amber-700 font-bold">仍需賠償 NOC (2~5 萬日圓)</td>
+                <td className="p-3 text-xs text-gray-700">⚠️ 基本及格線</td>
+              </tr>
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-emerald-900">安心全險 (CDW + NOC 免除)</td>
+                <td className="p-3 border-r-2 border-black text-xs text-gray-700">車損、NOC 營業損失、道路救援、爆胎拖吊全包</td>
+                <td className="p-3 border-r-2 border-black text-xs text-emerald-700 font-bold">0 元（完全免負擔）</td>
+                <td className="p-3 text-xs font-bold text-emerald-700">★★★★★ 唯一指定必保！</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Lightbulb className="w-6 h-6 text-amber-500" /> 沖繩高速公路（西原 ⇄ 許田）收費指南
+        </h3>
+        <div className="p-5 bg-gray-50 border-2 border-black sketch-border mb-8 space-y-2 text-sm text-gray-800">
+          <p><strong>• 有租借 ETC 卡：</strong>直接走紫色「ETC 專用車道」，時速降至 20km/h 感應自動扣款開閘門。</p>
+          <p><strong>• 無 ETC 卡（走一般通道）：</strong>入口處抽一張通行券，出口處走綠色「一般通道」將通行券與日幣現金或信用卡交給收費員即可（那霸到許田終點單程約 ¥1,040）。</p>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'busan-48h-visit-busan-pass-guide-2026',
+    title: '【2026 釜山自由行極速攻略】金海機場 20 分鐘進市區！海雲台膠囊列車預約、Visit Busan Pass 免費暢玩 48 小時不走回頭路',
+    author: '黑白飛機票特價組',
+    readTime: '8 分鐘',
+    image: 'https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '韓國釜山海雲台海景與天空膠囊列車',
+    excerpt: '買到釜山特價機票怎麼排行程？金海機場搭輕軌 20 分鐘光速進市區！海雲台 Blue Line Park 天空膠囊列車官方搶票教學、Visit Busan Pass（釜山通行證）免費玩樂天世界+松島纜車+X the SKY 觀景台回本密技與 48 小時行程表大公開。',
+    badge: '釜山48h極速攻略',
+    category: '必讀攻略',
+    content: (
+      <>
+        <div className="bg-sky-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-1">
+            CP值最高海港城市
+          </div>
+          <h3 className="font-bold text-lg text-sky-900 mb-2 flex items-center gap-2">
+            <Ship className="w-5 h-5 text-sky-700" /> 廉航機票超便宜！釜山週休二日快閃吃海鮮、搭海岸列車
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            比起首爾的都市節奏，釜山擁有蔚藍無敵海景、便宜肥美的生醃醬蟹與烤鰻魚。從<strong>金海國際機場（PUS）</strong>搭乘機場輕軌轉地鐵 2 號線到西面站只要 25 分鐘！搭配神級「Visit Busan Pass」，兩天就能省下破千元台幣門票費用！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <CalendarDays className="w-6 h-6 text-indigo-600" /> 48 小時精華快閃行程表 (順路不繞路)
+        </h3>
+        
+        <div className="space-y-6 mb-8">
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <div className="flex items-center justify-between border-b-2 border-black pb-2 mb-3">
+              <span className="font-black text-lg text-indigo-900">DAY 1：海雲台海岸線 ➔ 天空膠囊 ➔ 廣安里夜景</span>
+              <span className="text-xs bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 sketch-border">首日海景大餐</span>
+            </div>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-indigo-600 shrink-0">10:00</span>
+                <span>抵達金海機場，搭乘輕軌至<strong>西面站</strong>飯店寄放行李，午餐先來一碗滾燙濃郁的<strong>「松亭 3 代豬肉湯飯」</strong>。</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-indigo-600 shrink-0">13:30</span>
+                <span>地鐵至尾浦站（Mipo），搭乘超人氣<strong>「海雲台天空膠囊列車 (Sky Capsule)」</strong>至青沙浦，欣賞海天一線絕景與灌籃高手平交道。</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-indigo-600 shrink-0">16:30</span>
+                <span>登上<strong>「BUSAN X the SKY」</strong>100 樓觀景台（全球最高星巴克），俯瞰整座海雲台沙灘與夕陽。</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-indigo-600 shrink-0">19:30</span>
+                <span>前往<strong>廣安里海水浴場</strong>，邊吃烤烤生蠔邊欣賞廣安大橋夜景（週六晚間還有免費常態無人機燈光秀！）。</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <div className="flex items-center justify-between border-b-2 border-black pb-2 mb-3">
+              <span className="font-black text-lg text-emerald-900">DAY 2：甘川洞彩繪 ➔ 松島海上纜車 ➔ 南浦洞採買</span>
+              <span className="text-xs bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 sketch-border">次日文化與採購</span>
+            </div>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-emerald-600 shrink-0">09:00</span>
+                <span>搭公車上山抵達<strong>「甘川洞文化村」</strong>，與小王子和沙漠狐狸背影合照，穿梭色彩繽紛的階梯小巷。</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-emerald-600 shrink-0">12:30</span>
+                <span>搭乘<strong>「松島海上纜車 (Crystal Cruise)」</strong>透明水晶車廂跨海，走訪龍宮吊橋感受海風吹拂。</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-emerald-600 shrink-0">15:30</span>
+                <span>返回<strong>南浦洞 BIFF 廣場</strong>吃黑糖餅，狂逛光復路 Olive Young 採購保養彩妝，並於樂天百貨地下超市買伴手禮。</span>
+              </li>
+              <li className="flex gap-2 items-start">
+                <span className="font-mono font-bold text-emerald-600 shrink-0">18:30</span>
+                <span>搭地鐵至金海機場出境返台，結束完美的 48 小時快閃！</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Ticket className="w-6 h-6 text-indigo-600" /> Visit Busan Pass (VBP) 怎麼用最划算？
+        </h3>
+        <div className="p-5 bg-white border-2 border-black sketch-border mb-8 text-sm text-gray-800 space-y-3">
+          <p>
+            <strong>24小時卡 (約 NT$1,200) / 48小時卡 (約 NT$1,800)</strong> 包含超過 30 個頂級付費景點免費入場！
+          </p>
+          <div className="grid md:grid-cols-2 gap-3">
+            <div className="p-3 bg-emerald-50 border border-black sketch-border">
+              <p className="font-bold text-emerald-900">必去免費景點原價總計：</p>
+              <ul className="text-xs text-gray-700 mt-1 space-y-1">
+                <li>• 釜山樂天世界門票：47,000 韓元</li>
+                <li>• BUSAN X the SKY 觀景台：27,000 韓元</li>
+                <li>• 松島海上纜車來回票：17,000 韓元</li>
+                <li>• 海雲台海濱列車來回票：12,000 韓元</li>
+              </ul>
+            </div>
+            <div className="p-3 bg-amber-50 border border-black sketch-border flex flex-col justify-center">
+              <p className="font-bold text-amber-900">回本算術題：</p>
+              <p className="text-xs text-gray-700 mt-1">
+                光玩上述 4 個景點總票價就高達 <strong>103,000 韓元（約台幣 2,500 元）</strong>，買 24 小時卡直接現賺一倍以上！
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'japan-convenience-store-hacks-2026',
+    title: '【2026 日本三大超商隱藏神功能】7-11 / 全家 / Lawson 必吃炸物甜點評比！黑貓宅急便跨城市寄行李、ATM 免手續費提領日幣全實測',
+    author: '黑白飛機票特價組',
+    readTime: '6 分鐘',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '日本超商美食與便利服務圖解',
+    excerpt: '日本超商不只能買宵夜，更是自由行旅客的救命神器！三大超商王牌炸物與甜點深度評比、廉航旅客必學「超商黑貓宅急便寄行李箱到下一間飯店或機場」、Seven Bank ATM 台灣金融卡領日圓免手續費教學，以及免稅超商門市退稅技巧！',
+    badge: '超商實戰指南',
+    category: '票券攻略',
+    content: (
+      <>
+        <div className="bg-amber-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-[-1deg]">
+            自由行最強補給站
+          </div>
+          <h3 className="font-bold text-lg text-amber-900 mb-2 flex items-center gap-2">
+            <Utensils className="w-5 h-5 text-amber-800" /> 日本旅遊的神級後盾：從美味宵夜到跨城市寄行李全搞定！
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            日本街頭隨處可見的 7-Eleven、FamilyMart（全家）與 Lawson（羅森），除了是每晚回飯店前的必逛宵夜天堂，還藏著許多能解決自由行痛點的<strong>「神級生活機能」</strong>。這篇把美食推薦與實用黑科技一次整理給你！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Utensils className="w-6 h-6 text-rose-600" /> 三大超商王牌美食大 PK (旅客真實票選)
+        </h3>
+        <div className="grid md:grid-cols-3 gap-4 mb-8">
+          <div className="sketch-border p-4 bg-blue-50 border-2 border-black">
+            <div className="font-bold text-base text-blue-900 mb-2">🔵 Lawson (羅森)</div>
+            <ul className="text-xs text-gray-700 space-y-2">
+              <li><strong>• からあげクン (Karage-kun)：</strong>一口炸雞塊！原味、辣味與起司口味多汁不油膩。</li>
+              <li><strong>• Uchi Café 生乳卷：</strong>使用北海道純濃鮮奶油，蛋糕體鬆軟入口即化。</li>
+              <li><strong>• 串燒與可麗餅：</strong>保溫櫃限定烤雞肉串性價比極高。</li>
+            </ul>
+          </div>
+          <div className="sketch-border p-4 bg-emerald-50 border-2 border-black">
+            <div className="font-bold text-base text-emerald-900 mb-2">🟢 FamilyMart (全家)</div>
+            <ul className="text-xs text-gray-700 space-y-2">
+              <li><strong>• ファミチキ (Famichiki)：</strong>全日本最狂脆皮多汁無骨炸雞排！咬下去肉汁直接爆開。</li>
+              <li><strong>• 舒芙蕾布丁：</strong>上層鬆軟舒芙蕾蛋糕＋下層香濃焦糖布丁，口感層次極豐富。</li>
+              <li><strong>• 冰沙 Frappe 系列：</strong>拿冰沙杯到咖啡機注入熱牛奶攪拌，消暑神品。</li>
+            </ul>
+          </div>
+          <div className="sketch-border p-4 bg-amber-50 border-2 border-black">
+            <div className="font-bold text-base text-amber-900 mb-2">🔴 7-Eleven (小七)</div>
+            <ul className="text-xs text-gray-700 space-y-2">
+              <li><strong>• ななチキ (Nana-chiki)：</strong>香料醃漬入味厚切炸雞，肉質扎實。</li>
+              <li><strong>• 白玉宇治抹茶百匯：</strong>Q彈白玉糰子搭抹茶凍與紅豆泥，日式甜點天花板。</li>
+              <li><strong>• 現打果昔 Smoothie：</strong>冷凍水果杯放入專用攪拌機現打，新鮮無添加。</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Package className="w-6 h-6 text-indigo-600" /> 超級神技：在超商寄送「黑貓宅急便 (Yamato)」行李箱
+        </h3>
+        <div className="p-5 bg-white border-2 border-black sketch-border mb-8 space-y-3 text-sm text-gray-800">
+          <p className="leading-relaxed">
+            不想拖著 28 吋大行李箱搭新幹線或爬地鐵樓梯？日本 7-11 與全家均支援<strong>黑貓宅急便託運</strong>！
+          </p>
+          <div className="space-y-2 pt-1">
+            <p><strong>① 跟店員說：</strong>「Takkyubin onegaishimasu（宅急便お願いします）」，索取紫色「元払い（寄件人預付）」託運單。</p>
+            <p><strong>② 填寫收件資訊：</strong>填入下一間飯店名稱、地址、電話與<strong>「預計入住日期 (Check-in Date)」</strong>及訂房人英文姓名。</p>
+            <p><strong>③ 櫃檯測量支付：</strong>店員用皮尺測量行李箱三邊總和長度計費（一般 28 吋行李跨城市東京寄大阪約 ¥2,000~2,500 日圓），隔天下午就安全送達下一間飯店櫃檯！</p>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Coins className="w-6 h-6 text-emerald-600" /> Seven Bank ATM 提領日幣現金秘訣
+        </h3>
+        <div className="bg-emerald-50 p-5 sketch-border border-2 border-black mb-8 space-y-2 text-sm text-gray-800">
+          <p><strong>• 全繁體中文介面：</strong>日本 7-11 店內的 Seven Bank ATM 插入台灣支援國外提款的晶片金融卡（需先在台灣開通跨國提款密碼），直接顯示中文指引。</p>
+          <p><strong>• 快速救急：</strong>在拉麵店或小吃攤遇到只收現金時，隨時到隔壁 7-11 提領，匯率依當日國際即時匯率結算，手續費透明便利！</p>
         </div>
 
         <AffiliateFooter />
