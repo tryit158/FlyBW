@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins, QrCode, Wifi, Clock, Compass, Coffee, FileText, Receipt, Umbrella, Train, DollarSign, Building, BatteryCharging, Zap, CreditCard, Navigation, Utensils, Car, Package, RefreshCw } from 'lucide-react';
+import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins, QrCode, Wifi, Clock, Compass, Coffee, FileText, Receipt, Umbrella, Train, DollarSign, Building, BatteryCharging, Zap, CreditCard, Navigation, Utensils, Car, Package, RefreshCw, Tag, MousePointer, ShieldAlert, BadgePercent, Pill } from 'lucide-react';
 
 export interface Article {
   id: string;
@@ -3745,6 +3745,326 @@ export const articlesData: Article[] = [
         <div className="bg-emerald-50 p-5 sketch-border border-2 border-black mb-8 space-y-2 text-sm text-gray-800">
           <p><strong>• 全繁體中文介面：</strong>日本 7-11 店內的 Seven Bank ATM 插入台灣支援國外提款的晶片金融卡（需先在台灣開通跨國提款密碼），直接顯示中文指引。</p>
           <p><strong>• 快速救急：</strong>在拉麵店或小吃攤遇到只收現金時，隨時到隔壁 7-11 提領，匯率依當日國際即時匯率結算，手續費透明便利！</p>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'taiwan-overseas-credit-card-rewards-2026',
+    title: '【2026 旅日韓海外刷卡神卡推薦】告別 1.5% 手續費！實體消費/Suica交通卡加值/韓國現金回饋 3%~8% 實測避雷指南',
+    author: '黑白飛機票特價組',
+    readTime: '7 分鐘',
+    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '日本韓國旅遊海外信用卡消費與行動支付圖解',
+    excerpt: '出國刷卡每筆都被扣 1.5% 海外交易手續費？選對信用卡不只手續費全免，還能倒賺 3%~8.5% 回饋！精選 2026 台灣旅人必備日韓神卡（富邦 J 卡、玉山熊本熊卡、聯邦吉鶴卡、國泰 CUBE 卡），實測 Apple Pay 嗶日本 Suica 加值、韓國 WOWPASS 綁定與「DCC 動態貨幣轉換」天坑避雷法！',
+    badge: '2026海外神卡',
+    category: '票券攻略',
+    content: (
+      <>
+        <div className="bg-emerald-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-2">
+            台灣旅客必備
+          </div>
+          <h3 className="font-bold text-lg text-emerald-900 mb-2 flex items-center gap-2">
+            <CreditCard className="w-5 h-5 text-emerald-700" /> 出國別再傻傻換大把現金！海外刷卡回饋高達 3%~8.5%
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            台灣信用卡在海外刷卡時，銀行會收取固定 <strong>1.5% 海外交易手續費</strong>（包含國際組織 1% + 台灣發卡銀行 0.5%）。只要挑選回饋大於 1.5% 的卡片，不僅等於免手續費，還能賺進大把現金回饋或哩程！
+          </p>
+        </div>
+
+        <div className="bg-rose-50 border-2 border-black sketch-border p-5 mb-8">
+          <h4 className="font-black text-rose-900 text-base mb-2 flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-rose-600" /> 致命陷阱：絕對拒絕「DCC (動態貨幣轉換)」！
+          </h4>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            在國外實體店或免稅店結帳時，刷卡機若詢問您要用<strong>「TWD (新台幣)」</strong>還是<strong>「JPY (日圓) / KRW (韓元)」</strong>結帳，請務必堅定回答：<strong>「當地貨幣 (Local Currency)！」</strong>
+          </p>
+          <div className="mt-3 p-3 bg-white border border-black sketch-border text-xs text-rose-700 space-y-1">
+            <p>• 若選新台幣結帳（DCC 機制），店家系統會用極差的專屬匯率結算，並加收 <strong>4% ~ 8%</strong> 的隱藏換匯手續費！</p>
+            <p>• 很多海外回饋卡更會因此判定為「台幣交易」而<strong>直接取消海外高額回饋</strong>，一來一回直接現虧 10% 以上！</p>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <BadgePercent className="w-6 h-6 text-indigo-600" /> 2026 台灣熱門日韓神卡實測評比
+        </h3>
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full text-left border-collapse border-2 border-black text-sm bg-white">
+            <thead>
+              <tr className="bg-gray-50 border-b-2 border-black">
+                <th className="p-3 border-r-2 border-black font-black">信用卡名稱</th>
+                <th className="p-3 border-r-2 border-black font-black">日韓基本回饋</th>
+                <th className="p-3 border-r-2 border-black font-black">指定通路/實體最高</th>
+                <th className="p-3 font-black">特色與亮點評比</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y-2 divide-black">
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-gray-900">富邦 J 卡</td>
+                <td className="p-3 border-r-2 border-black text-xs">3% 無上限 (日韓實體)</td>
+                <td className="p-3 border-r-2 border-black text-xs font-bold text-emerald-700">最高 6% ~ 10% (需登錄/指定超商百貨)</td>
+                <td className="p-3 text-xs text-gray-700">遊日韓標配神卡，伴手禮藥妝店加碼超有感。</td>
+              </tr>
+              <tr className="bg-gray-50/50">
+                <td className="p-3 border-r-2 border-black font-bold text-indigo-900">玉山熊本熊卡</td>
+                <td className="p-3 border-r-2 border-black text-xs">2% 日本一般消費免手續費</td>
+                <td className="p-3 border-r-2 border-black text-xs font-bold text-emerald-700">最高 8.5% (指定日本交通/藥妝/唐吉訶德)</td>
+                <td className="p-3 text-xs text-gray-700"><strong>Suica / PASMO / ICOCA 加值神卡</strong>，雙幣卡直接扣日幣帳戶免匯差。</td>
+              </tr>
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-gray-900">聯邦吉鶴卡</td>
+                <td className="p-3 border-r-2 border-black text-xs">2.5% 日幣無上限</td>
+                <td className="p-3 border-r-2 border-black text-xs font-bold text-emerald-700">最高 4% ~ 4.5% (Apple Pay 感應支援 QUICPay)</td>
+                <td className="p-3 text-xs text-gray-700">支援日本國內 QUICPay 感應，結帳速度極快。</td>
+              </tr>
+              <tr className="bg-gray-50/50">
+                <td className="p-3 border-r-2 border-black font-bold text-indigo-900">國泰世華 CUBE 卡</td>
+                <td className="p-3 border-r-2 border-black text-xs">切換「日本賞/趣旅行」3%</td>
+                <td className="p-3 border-r-2 border-black text-xs font-bold text-emerald-700">3% ~ 3.3% 小樹點無上限</td>
+                <td className="p-3 text-xs text-gray-700">大額消費（精品包、昂貴電器、五星飯店）回饋無上限首選！</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Sparkles className="w-6 h-6 text-amber-500" /> 行動支付與交通卡儲值 3 大賺回饋秘招
+        </h3>
+        <div className="grid md:grid-cols-3 gap-4 mb-8">
+          <div className="sketch-border p-4 bg-white border-2 border-black">
+            <div className="font-bold text-base text-gray-900 mb-2 flex items-center gap-1.5">
+              <Smartphone className="w-4 h-4 text-indigo-600" /> 1. iPhone 內建西瓜卡直接充
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              在 Apple 錢包綁定高回饋卡，直接加值 Suica 或 ICOCA。不僅搭地鐵不用排隊買票，在日本 7-11、自動販賣機、拉麵店「嗶」手機付款同樣享受海外高額回饋！
+            </p>
+          </div>
+          <div className="sketch-border p-4 bg-white border-2 border-black">
+            <div className="font-bold text-base text-gray-900 mb-2 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600" /> 2. 韓國刷卡普及率高達 95%
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              韓國連路邊路邊攤、計程車都收信用卡！備妥一張無上限海外 3% 卡直刷，比在台灣先換大筆韓元更划算，不必為了換匯奔波明洞。
+            </p>
+          </div>
+          <div className="sketch-border p-4 bg-white border-2 border-black">
+            <div className="font-bold text-base text-gray-900 mb-2 flex items-center gap-1.5">
+              <ShieldCheck className="w-4 h-4 text-sky-600" /> 3. 出發前開啟「海外交易」
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              出發前 3 天打開銀行網銀 App，檢查「海外實體交易功能」與「網路交易」是否已開啟，並確認臨時信用額度充足，避免人在國外刷卡被拒！
+            </p>
+          </div>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'lcc-promo-flight-ticket-snatch-guide-2026',
+    title: '【廉航搶票黑客秘技】2026 台灣虎航/樂桃/酷航特價大促！搶 99 元與千元促銷票 5 大黃金技巧：防卡關結帳、隱藏加購避坑與手速防呆',
+    author: '黑白飛機票特價組',
+    readTime: '8 分鐘',
+    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '廉價航空特價搶票與機票訂位畫面圖解',
+    excerpt: '每次開賣 99 元、799 元促銷機票，轉圈圈卡在結帳頁面就賣光？2026 廉航搶票老司機不藏私公開：搶票前備妥「文字剪貼簿」防呆、無痕多開視窗防 Session 逾時、取消預選座位與加購餐點等「系統自動勾選陷阱」、信用卡 3D 簡訊驗證碼備援招式，提高搶票成功率 300%！',
+    badge: '搶票黑客秘笈',
+    category: '最新消息',
+    content: (
+      <>
+        <div className="bg-amber-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-[-1deg]">
+            省錢必學
+          </div>
+          <h3 className="font-bold text-lg text-amber-900 mb-2 flex items-center gap-2">
+            <Plane className="w-5 h-5 text-amber-800" /> 搶不到特價機票不是網速慢，而是輸在步驟細節！
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            每當台灣虎航（Tigerair）、樂桃（Peach）或酷航（Scoot）發布夏季、冬季班表或週年慶大促，動輒湧入數十萬人排隊。老司機能搶到來回台幣 3,000 元飛東京、沖繩的票，靠的是這套標準搶票作業流程（SOP）！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <MousePointer className="w-6 h-6 text-indigo-600" /> 搶票前 15 分鐘：必備「防手殘剪貼簿」
+        </h3>
+        <div className="bg-white border-2 border-black sketch-border p-5 mb-8">
+          <p className="text-sm text-gray-800 leading-relaxed mb-4">
+            搶票時系統倒數計時 10~15 分鐘，手動敲打每位乘客的英文姓名拼音最容易手抖打錯或超時被踢出！請在搶票前打開電腦<strong>「記事本 (Notepad)」</strong>預先排版好：
+          </p>
+          <div className="bg-gray-100 p-4 font-mono text-xs text-gray-800 border border-black sketch-border space-y-1">
+            <p className="text-indigo-700 font-bold">// 範例格式：方便滑鼠雙擊反白直接 Ctrl+C 複製</p>
+            <p>【旅客1】姓 (Last): WANG | 名 (First): XIAOMING</p>
+            <p>稱謂: MR | 生日 (YYYY/MM/DD): 1995/08/15</p>
+            <p>護照號碼: 312345678 | 護照效期: 2032/12/31</p>
+            <p>手機: 0912345678 | Email: mytravel@gmail.com</p>
+            <p className="text-rose-600 pt-1 font-bold">※ 虎航與樂桃購票時若護照號碼還沒辦好，部分先填舊號碼或後續可於官網免費補填！</p>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Flame className="w-6 h-6 text-rose-600" /> 5 大搶票致勝心法 (避開系統自動加價陷阱)
+        </h3>
+        <div className="space-y-4 mb-8">
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">1</span>
+            <div>
+              <p className="font-bold text-gray-900">Chrome 無痕視窗 + 手機 5G 雙軌備援</p>
+              <p className="text-sm text-gray-600 mt-1">
+                電腦開啟無痕視窗能避免 Cookie 快取造成排隊號碼卡死；同時用手機連 5G 行動網路（不同 IP 網段）同步等待，誰先進去就用誰結帳！
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">2</span>
+            <div>
+              <p className="font-bold text-gray-900">光速取消「自動勾選」的托運行李、選位與保險！</p>
+              <p className="text-sm text-gray-600 mt-1">
+                廉航系統常預設勾選 <strong>20kg 托運行李（約 +$850/單程）</strong>、<strong>標準選位（+$200）</strong>與<strong>旅遊險（+$400）</strong>。先全部點「不加購」，以最低裸票價快速鎖票，行李等開票成功後隨時都能登入官網加買！
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">3</span>
+            <div>
+              <p className="font-bold text-gray-900">結帳卡在轉圈圈（Loading）絕對不要按 F5 重新整理！</p>
+              <p className="text-sm text-gray-600 mt-1">
+                進入付款頁面轉圈圈是伺服器在跟銀行連線，若狂按 F5 會被系統判定放棄並重複扣款或退回排隊隊尾。請耐心等待至少 90 秒。
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">4</span>
+            <div>
+              <p className="font-bold text-gray-900">準備支援「網銀 App 一鍵推播」的信用卡</p>
+              <p className="text-sm text-gray-600 mt-1">
+                搶票高峰期各大電信的 3D 簡訊驗證碼常常塞車 3~5 分鐘收不到導致交易逾時！建議使用國泰、富邦或玉山等支援<strong>網銀 App 內建即時生物辨識確認</strong>的信用卡，1 秒完成刷卡驗證！
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-4 items-start p-4 bg-white sketch-border border-2 border-black">
+            <span className="font-black text-xl text-white bg-black px-3 py-1 sketch-border">5</span>
+            <div>
+              <p className="font-bold text-gray-900">看準出發日：避開台灣連假與五六日出發</p>
+              <p className="text-sm text-gray-600 mt-1">
+                促銷票名額通常集中在<strong>週二、週三、週四出發</strong>的離峰航班。避開清明、端午、中秋、雙十連假，鎖定非假期的紅眼班次，搶中機率高達 80%！
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <AffiliateFooter />
+      </>
+    )
+  },
+  {
+    id: 'taiwan-customs-duty-free-inbound-rules-2026',
+    title: '【2026 台灣入境海關違禁品清單】回國買太多被沒收罰百萬？日韓藥妝限量 36 瓶、肉品與加熱菸重罰、免稅額 3.5 萬防坑全實測',
+    author: '黑白飛機票特價組',
+    readTime: '7 分鐘',
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '台灣海關入境查驗與行李申報圖解',
+    excerpt: '滿載日韓戰利品回台灣，走綠色通道卻被米格魯狗狗攔截？2026 台灣海關入境最新規定嚴打：含肉泡麵與肉乾最高罰 100 萬、加熱菸與電子菸入境全面違法沒收重罰、免稅額 NT$35,000 計算方式、以及藥妝（合利他命/眼藥水）每種限 2 瓶、總數不超過 36 瓶防踩雷條款！',
+    badge: '台灣入境必讀',
+    category: '必讀攻略',
+    content: (
+      <>
+        <div className="bg-rose-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-1">
+            罰鍰無上限
+          </div>
+          <h3 className="font-bold text-lg text-rose-900 mb-2 flex items-center gap-2">
+            <ShieldAlert className="w-5 h-5 text-rose-700" /> 出國血拼回台必看！一個不注意，罰單可能比機票貴 10 倍！
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            近年台灣為了防堵非洲豬瘟及維護國人健康，海關與防檢署在桃園、松山、小港機場嚴格執法。帶錯一片肉乾直接開罰 <strong>新台幣 20 萬元</strong>！趕快檢查你的行李箱有沒有誤觸以下紅線！
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <XCircle className="w-6 h-6 text-rose-600" /> 絕對禁止攜帶入境黑名單 (查獲直接開罰)
+        </h3>
+        <div className="grid md:grid-cols-3 gap-4 mb-8">
+          <div className="sketch-border p-4 bg-white border-2 border-black">
+            <div className="font-bold text-base text-rose-900 mb-1 flex items-center gap-1.5">
+              <Bomb className="w-4 h-4 text-rose-600" /> 1. 所有豬肉/禽畜肉類
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              肉鬆、肉乾、香腸、火腿、含肉塊調理包（如日本特定含肉泡麵、真空包裝肉類）。<strong>首次查獲直接開罰 NT$200,000，二次查獲罰 NT$1,000,000！</strong>
+            </p>
+          </div>
+          <div className="sketch-border p-4 bg-white border-2 border-black">
+            <div className="font-bold text-base text-rose-900 mb-1 flex items-center gap-1.5">
+              <Leaf className="w-4 h-4 text-emerald-600" /> 2. 新鮮水果與植物生鮮
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              日本水蜜桃、草莓、哈密瓜、柑橘、鮮切水果盤一律禁止帶上飛機入境！經乾燥加工或醃漬的水果乾、果凍則可以攜帶。
+            </p>
+          </div>
+          <div className="sketch-border p-4 bg-white border-2 border-black">
+            <div className="font-bold text-base text-rose-900 mb-1 flex items-center gap-1.5">
+              <ShieldAlert className="w-4 h-4 text-amber-600" /> 3. 加熱菸與電子菸
+            </div>
+            <p className="text-xs text-gray-700 leading-relaxed">
+              依《菸害防制法》，加熱菸及其載具、電子菸油全面禁止攜帶入境！即使在國外免稅店購買，帶進台灣一律沒收並處 <strong>NT$50,000 ~ NT$5,000,000 罰鍰</strong>！
+            </p>
+          </div>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Pill className="w-6 h-6 text-indigo-600" /> 2026 日韓伴手禮、藥妝與免稅額度一覽表
+        </h3>
+        <div className="overflow-x-auto mb-8">
+          <table className="w-full text-left border-collapse border-2 border-black text-sm bg-white">
+            <thead>
+              <tr className="bg-gray-50 border-b-2 border-black">
+                <th className="p-3 border-r-2 border-black font-black">物品類別</th>
+                <th className="p-3 border-r-2 border-black font-black">每人入境攜帶上限規定</th>
+                <th className="p-3 font-black">海關稽查重點防踩雷叮嚀</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y-2 divide-black">
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-gray-900">非處方成藥 / 保健品</td>
+                <td className="p-3 border-r-2 border-black text-xs text-gray-700">每種最多 12 瓶（盒），合計不超過 <strong>36 瓶</strong></td>
+                <td className="p-3 text-xs text-gray-600">合利他命、EVE止痛藥、大正微粒等均在此限，僅供自用不得網購轉售！</td>
+              </tr>
+              <tr className="bg-gray-50/50">
+                <td className="p-3 border-r-2 border-black font-bold text-indigo-900">隱形眼鏡 (日拋/美瞳)</td>
+                <td className="p-3 border-r-2 border-black text-xs text-gray-700">單一度數上限 60 片，最多 2 種度數 (<strong>上限 120 片</strong>)</td>
+                <td className="p-3 text-xs text-gray-600">買太多會被視為醫療器材遭沒入海關扣留。</td>
+              </tr>
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-gray-900">酒類免稅額</td>
+                <td className="p-3 border-r-2 border-black text-xs text-gray-700">每人 <strong>1 公升 (1,000ml)</strong> 免稅，不限瓶數</td>
+                <td className="p-3 text-xs text-gray-600">需年滿 18 歲。超過 1 公升走紅線申報補繳稅金即可合法帶入（上限 5 公升）。</td>
+              </tr>
+              <tr className="bg-gray-50/50">
+                <td className="p-3 border-r-2 border-black font-bold text-indigo-900">個人物品免稅總額</td>
+                <td className="p-3 border-r-2 border-black text-xs text-gray-700">每人自用物品總值 <strong>新台幣 35,000 元</strong> 為上限</td>
+                <td className="p-3 text-xs text-gray-600">名牌包、高價手錶若未拆封且總額超過 3.5 萬，應走紅線申報繳納關稅。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <CheckCircle2 className="w-6 h-6 text-emerald-600" /> 海關保命法則：「走紅線 (申報檯)」頂多沒收、絕不罰款！
+        </h3>
+        <div className="p-5 bg-emerald-50 border-2 border-black sketch-border mb-8 text-sm text-gray-800 space-y-2">
+          <p className="font-bold text-emerald-900">
+            行李箱裡如果買了不確定能不能帶的零食、泡麵或調味包，下飛機領完行李後：
+          </p>
+          <p>
+            請<strong>毫不猶豫直接走「紅線 (應申報檯)」</strong>並向海關主動告知：「我不確定這包商品能不能帶進台灣，請幫忙確認」。
+          </p>
+          <p className="text-xs text-gray-700">
+            • 若判定違禁：海關只會請您丟入銷毀桶，<strong>合法合規、完全免罰！</strong><br/>
+            • 但若心存僥倖走「綠線 (免申報檯)」被緝毒犬或 X 光抽查抓到：<strong>視同走私違規，直接開罰數十萬，絕對沒有轉圜餘地！</strong>
+          </p>
         </div>
 
         <AffiliateFooter />
