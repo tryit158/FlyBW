@@ -11,8 +11,22 @@ import { useMemo } from 'react';
 
 export default function Home() {
   const previewArticles = useMemo(() => {
-    // 優先顯示 2026 日本賞楓、暑期大盤走勢、日本退稅新制、日本交通卡指南、夏季旅展、沖繩與上網卡相關文章 (japan-autumn-leaves-2026, summer-travel-trends-2026, japan-tax-free-2026, japan-suica-card-guide-2026, article-tte-2026, esim-usage-guide, okinawa-typhoon-guide, article-3, article-7, okinawa-family-churaumi-dino)
-    const priorityIds = ['japan-autumn-leaves-2026', 'summer-travel-trends-2026', 'japan-tax-free-2026', 'japan-suica-card-guide-2026', 'article-tte-2026', 'esim-usage-guide', 'okinawa-typhoon-guide', 'article-3', 'article-7', 'okinawa-family-churaumi-dino'];
+    // 優先顯示 2026 泰國免簽自由行、桃機外幣ATM換匯評比、出國伴手禮打包防雷、日本賞楓等精選文章
+    const priorityIds = [
+      'thailand-bangkok-free-visa-travel-guide-2026',
+      'taiwan-foreign-currency-exchange-atm-hacks-2026',
+      'souvenir-packing-carry-on-vs-checked-baggage-rules-2026',
+      'japan-autumn-leaves-2026',
+      'summer-travel-trends-2026',
+      'japan-tax-free-2026',
+      'japan-suica-card-guide-2026',
+      'article-tte-2026',
+      'esim-usage-guide',
+      'okinawa-typhoon-guide',
+      'article-3',
+      'article-7',
+      'okinawa-family-churaumi-dino'
+    ];
     const priorityArticles = articlesData.filter(a => priorityIds.includes(a.id));
     const otherArticles = articlesData.filter(a => !priorityIds.includes(a.id));
     
