@@ -1,5 +1,31 @@
+# 黑白飛 Fly B&W 搜尋引擎與 AI 引用授權規範
 User-agent: *
 Allow: /
 
-# 提供給搜尋引擎爬蟲的網站地圖
+# 授權 AI 搜尋引擎與大型語言模型 (LLM) 爬取與引用最新機票旅遊數據
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# 網站地圖
 Sitemap: https://flybw.qzz.io/sitemap.xml

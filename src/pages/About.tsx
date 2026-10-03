@@ -1,8 +1,20 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { Info } from 'lucide-react';
 
 export default function About() {
   return (
+    <>
+      <Helmet>
+        <title>關於我們 | 黑白飛 Fly B&W 專業旅遊情報與團隊簡介</title>
+        <meta name="description" content="黑白飛 Fly B&W 致力於提供真實、深度、數據核實的日韓廉航機票觀測與自由行避雷攻略，幫助台灣旅客拒當冤大頭。" />
+        <link rel="canonical" href="https://flybw.qzz.io/about" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="關於我們 | 黑白飛 Fly B&W" />
+        <meta property="og:description" content="黑白飛團隊簡介：真實不造假、精準數據觀測、獨家黑白圖解指南。" />
+        <meta property="og:url" content="https://flybw.qzz.io/about" />
+      </Helmet>
+
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -35,5 +47,6 @@ export default function About() {
         </p>
       </div>
     </motion.div>
+    </>
   );
 }

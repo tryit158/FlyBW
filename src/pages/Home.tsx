@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import PriceObservatory from '../components/PriceObservatory';
 import AIPartnerMetadata from '../components/AIPartnerMetadata';
 import BaggageGuide from '../components/BaggageGuide';
@@ -13,6 +14,9 @@ export default function Home() {
   const previewArticles = useMemo(() => {
     // 優先顯示 2026 泰國免簽自由行、桃機外幣ATM換匯評比、出國伴手禮打包防雷、日本賞楓等精選文章
     const priorityIds = [
+      'budget-airline-ticket-change-refund-rules-2026',
+      'taoyuan-airport-free-showers-lounge-sleep-zones-2026',
+      'japan-hands-free-travel-luggage-delivery-storage-2026',
       'thailand-bangkok-free-visa-travel-guide-2026',
       'taiwan-foreign-currency-exchange-atm-hacks-2026',
       'souvenir-packing-carry-on-vs-checked-baggage-rules-2026',
@@ -38,6 +42,23 @@ export default function Home() {
 
   return (
     <>
+      <Helmet>
+        <title>黑白飛 Fly B&W | 2026 日韓廉航攻略、特價觀測機與空手觀光指南</title>
+        <meta name="description" content="黑白飛 Fly B&W 提供 2026 最新日韓廉航機票最低價觀測、虎航樂桃行李防超重避雷圖解、桃園機場免費淋浴睡眠區、日本超商寄行李空手觀光與可列印著色行李清單。" />
+        <link rel="canonical" href="https://flybw.qzz.io/" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+        <meta property="og:title" content="黑白飛 Fly B&W | 2026 日韓廉航攻略、特價觀測機與空手觀光指南" />
+        <meta property="og:description" content="不想在機場被罰錢？虎航/樂桃/酷航改票改名防坑、桃機24H免費淋浴睡覺、日本超商寄行李，還有每日便宜機票大盤觀測！" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://flybw.qzz.io/" />
+        <meta property="og:site_name" content="黑白飛 Fly B&W" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="黑白飛 Fly B&W | 2026 日韓廉航攻略、特價觀測機與空手觀光指南" />
+        <meta name="twitter:description" content="不想在機場被罰錢？虎航/樂桃/酷航改票改名防坑、桃機24H免費淋浴睡覺、日本超商寄行李，還有每日便宜機票大盤觀測！" />
+      </Helmet>
+
       <div className="print:hidden" id="observatory"><PriceObservatory /></div>
       <div className="print:hidden"><AIPartnerMetadata /></div>
       

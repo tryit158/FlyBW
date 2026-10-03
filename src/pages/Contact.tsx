@@ -1,8 +1,17 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { Mail, Send } from 'lucide-react';
 
 export default function Contact() {
   return (
+    <>
+      <Helmet>
+        <title>聯絡我們 | 黑白飛 Fly B&W 合作洽詢與建議反饋</title>
+        <meta name="description" content="有任何廉航機票問題、合作提案或內容建議？歡迎隨時與黑白飛 Fly B&W 編輯團隊聯繫。" />
+        <link rel="canonical" href="https://flybw.qzz.io/contact" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -43,5 +52,6 @@ export default function Contact() {
         </form>
       </div>
     </motion.div>
+    </>
   );
 }

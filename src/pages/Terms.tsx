@@ -1,7 +1,15 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 
 export default function Terms() {
   return (
+    <>
+      <Helmet>
+        <title>服務條款 | 黑白飛 Fly B&W</title>
+        <meta name="description" content="黑白飛 Fly B&W 的使用者服務條款與免責聲明。" />
+        <link rel="canonical" href="https://flybw.qzz.io/terms" />
+      </Helmet>
+
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -50,5 +58,6 @@ export default function Terms() {
 
       </div>
     </motion.div>
+    </>
   );
 }

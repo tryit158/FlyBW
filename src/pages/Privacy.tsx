@@ -1,7 +1,15 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 
 export default function Privacy() {
   return (
+    <>
+      <Helmet>
+        <title>隱私權政策 | 黑白飛 Fly B&W</title>
+        <meta name="description" content="黑白飛 Fly B&W 的個人資料保護與隱私權規範政策。" />
+        <link rel="canonical" href="https://flybw.qzz.io/privacy" />
+      </Helmet>
+
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -50,5 +58,6 @@ export default function Privacy() {
 
       </div>
     </motion.div>
+    </>
   );
 }
