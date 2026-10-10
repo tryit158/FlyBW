@@ -14,6 +14,9 @@ export default function Home() {
   const previewArticles = useMemo(() => {
     // 優先顯示 2026 泰國免簽自由行、桃機外幣ATM換匯評比、出國伴手禮打包防雷、日本賞楓等精選文章
     const priorityIds = [
+      'japan-paypay-taiwan-cross-border-payment-guide-2026',
+      'korea-travel-pass-climate-card-namane-wowpass-2026',
+      'taiwan-airport-egate-speed-customs-pass-2026',
       'budget-airline-ticket-change-refund-rules-2026',
       'taoyuan-airport-free-showers-lounge-sleep-zones-2026',
       'japan-hands-free-travel-luggage-delivery-storage-2026',
