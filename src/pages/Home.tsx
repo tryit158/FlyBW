@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
 import PriceObservatory from '../components/PriceObservatory';
-import AIPartnerMetadata from '../components/AIPartnerMetadata';
 import BaggageGuide from '../components/BaggageGuide';
 import TravelCalendar from '../components/TravelCalendar';
 import Checklist from '../components/Checklist';
@@ -66,7 +65,6 @@ export default function Home() {
       </Helmet>
 
       <div className="print:hidden" id="observatory"><PriceObservatory /></div>
-      <div className="print:hidden"><AIPartnerMetadata /></div>
       
       <section id="article" className="space-y-8 print:hidden">
         <div className="text-center space-y-2">
