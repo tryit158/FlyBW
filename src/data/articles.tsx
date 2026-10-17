@@ -47,6 +47,532 @@ export const AffiliateFooter = () => (
 
 export const articlesData: Article[] = [
   {
+    id: 'kaohsiung-khh-seoul-direct-flights-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 高雄飛首爾直飛指南】小港出發仁川/金浦直飛航班時刻表、廉航與傳統航空機票比價與小資省錢避坑',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1538485399081-7191377e8241?w=800&q=80',
+    imageAlt: '韓國首爾東大門與市區夜景，小港出發直飛首爾仁川與金浦機場',
+    excerpt: '住南部何必專程北上跑桃園？高雄小港機場 (KHH) 直飛首爾仁川 (ICN) 與金浦 (GMP) 航班大爆發！德威航空、濟州航空、華航與長榮最新直飛航班時刻表、票價淡旺季波段（NT,500~7,500）、金浦 15 分鐘進弘大優勢、高捷末班車接駁與免稅行李避坑實測！',
+    badge: '南部首選',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        <section className="bg-neutral-50 p-6 sketch-border relative">
+          <div className="sketch-badge -top-3 left-4 bg-black text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            南部旅客直飛首爾大崛起
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Plane className="w-5 h-5 text-indigo-600" />
+            不用再跑桃園！小港出發首爾省錢又省時
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            南台灣朋友過去常常為了飛韓國，必須先搭高鐵北上桃園機場。但你知道嗎？從左營搭高鐵到桃園來回標準車廂要花 <strong>NT,660</strong>，再加上機場捷運來回 <strong>NT00</strong>，人還沒出國就先噴掉近三千元，外加單程 2 小時車程與扛行李轉乘的疲憊！
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            2026 年起，高雄小港機場 (KHH) 飛首爾的航班班次大幅加密，除了飛仁川 (ICN) 之外，還有極受自由行老手喜愛的<strong>金浦機場 (GMP) 直飛航線</strong>，下機搭地鐵 15 分鐘直達弘大商圈，連跨國交通時間都徹底壓縮！
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">省下高鐵機捷</div>
+              <div className="text-lg font-black text-emerald-600">NT$ 2,960</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">小港直飛航程</div>
+              <div className="text-lg font-black text-black">約 2 小時 55 分</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">金浦進弘大車程</div>
+              <div className="text-lg font-black text-black">約 15 分鐘</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">淡季促銷搶票價</div>
+              <div className="text-lg font-black text-emerald-600">NT$ 4,500 起</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 航司與航班時刻比價表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Ticket className="w-5 h-5 text-black" />
+            2026 高雄 (KHH) 直飛首爾執飛航司全盤點
+          </h3>
+          <p className="text-sm text-gray-600">
+            目前執飛高雄-首爾航線的主要有兩家韓國廉航（德威航空、濟州航空）與兩家台灣國籍傳統航空（華航、長榮）。下表為目前班次特性與免費行李額度對照：
+          </p>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">航空公司</th>
+                  <th className="p-3">抵達機場</th>
+                  <th className="p-3">平均班次時段</th>
+                  <th className="p-3">手提行李</th>
+                  <th className="p-3">免費託運行李</th>
+                  <th className="p-3">淡季促銷參考價</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold">德威航空 (T'way)</td>
+                  <td className="p-3">金浦 (GMP) / 仁川 (ICN)</td>
+                  <td className="p-3">午去午回 / 午去晚回</td>
+                  <td className="p-3">10 kg (嚴格)</td>
+                  <td className="p-3">促銷票無 / 一般票 15 kg</td>
+                  <td className="p-3 font-bold text-emerald-700">NT$ 4,600 ~ 6,500</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold">濟州航空 (Jeju Air)</td>
+                  <td className="p-3">金浦 (GMP) / 仁川 (ICN)</td>
+                  <td className="p-3">下午去傍晚回</td>
+                  <td className="p-3">10 kg (件數限制)</td>
+                  <td className="p-3">促銷票無 / 標配 15 kg</td>
+                  <td className="p-3 font-bold text-emerald-700">NT$ 4,800 ~ 6,800</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold">中華航空 (CI)</td>
+                  <td className="p-3">仁川 (ICN)</td>
+                  <td className="p-3">早去午回 (早鳥時段)</td>
+                  <td className="p-3">7 kg</td>
+                  <td className="p-3">含 1 件 23 kg + 供餐</td>
+                  <td className="p-3 font-bold text-gray-800">NT$ 8,800 ~ 11,500</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold">長榮航空 (BR)</td>
+                  <td className="p-3">仁川 (ICN)</td>
+                  <td className="p-3">早去午回</td>
+                  <td className="p-3">7 kg</td>
+                  <td className="p-3">含 1 件 23 kg + 供餐</td>
+                  <td className="p-3 font-bold text-gray-800">NT$ 9,200 ~ 12,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 仁川 vs 金浦機場分析 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Building className="w-5 h-5 text-indigo-600" />
+            仁川 (ICN) vs 金浦 (GMP)：南部人該選哪一個？
+          </h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="sketch-border p-5 bg-white border-2 border-black space-y-2">
+              <div className="inline-block bg-yellow-300 text-black text-xs font-bold px-2 py-0.5 sketch-border">
+                首爾老手激推
+              </div>
+              <h4 className="text-lg font-black">金浦機場 (GMP)：地鐵 15 分鐘直達弘大</h4>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                金浦是首爾舊機場，距離市中心極近！搭乘機場鐵路普通列車，僅需 3 站約 15 分鐘就能抵達年輕人最愛的弘大入口站；若前往明洞或東大門搭 5 號線地鐵也僅需 30~40 分鐘。免去仁川進市區動輒 1 小時車程與高昂車資，回程當天退房還能多逛 2 個小時！
+              </p>
+            </div>
+
+            <div className="sketch-border p-5 bg-white border-2 border-black space-y-2">
+              <div className="inline-block bg-gray-200 text-black text-xs font-bold px-2 py-0.5 sketch-border">
+                免稅購物大本營
+              </div>
+              <h4 className="text-lg font-black">仁川機場 (ICN)：航班多、免稅店最好逛</h4>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                仁川機場是世界頂級樞紐機場，華航與長榮均降落於此。優點是免稅店規模巨大、韓際新世界與樂天免稅取貨中心齊全、且 AREX 直達車 43 分鐘直達首爾站。如果你出發日是旺季且需要大量退稅提貨，仁川依然是極具穩定度的選擇。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 小港出發交通與通關避坑 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Train className="w-5 h-5 text-emerald-600" />
+            高雄小港機場出發：實務報到與捷運末班車避坑
+          </h3>
+          <div className="bg-yellow-50 p-5 sketch-border border border-amber-300 space-y-3 text-sm text-gray-800">
+            <div className="font-bold text-amber-900 flex items-center gap-2">
+              <AlertTriangle className="w-5 h-5 text-amber-700" />
+              避雷提醒 1：高捷小港站首末班車銜接時間
+            </div>
+            <p>
+              高雄捷運紅線小港站首班車為清晨 <strong>05:55</strong>，末班車抵達小港站約為夜間 <strong>00:30</strong>。若搭乘回程較晚降落的航班，務必注意出關行李提領時間，若超過半夜 12 點半，需預留計程車接駁預算。
+            </p>
+            <div className="font-bold text-amber-900 flex items-center gap-2 pt-2 border-t border-amber-200">
+              <Sparkles className="w-5 h-5 text-amber-700" />
+              避雷提醒 2：德威航空與濟州航空的手提行李規範
+            </div>
+            <p>
+              韓系廉航手提行李上限通常為 <strong>10 公斤</strong>（比台日系廉航的 7kg 寬鬆），但尺寸規定嚴格為 <strong>55 x 40 x 20 公分</strong> 內（含輪子與把手），且每人僅限攜帶 1 件登機箱 ＋ 1 件個人小型隨身包。回程在首爾機場若手提泡麵、彩妝過多，會被地勤強制要求在登機門加購託運！
+            </p>
+          </div>
+        </section>
+
+        {/* 常見問題 FAQ */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <HelpCircle className="w-5 h-5 text-black" />
+            常見問答（FAQ）
+          </h3>
+          <div className="space-y-3 text-sm">
+            <details className="bg-white p-4 sketch-border border border-black cursor-pointer group">
+              <summary className="font-bold flex items-center justify-between text-base">
+                <span>Q1：高雄飛首爾機票何時買最便宜？有推薦的搶票日嗎？</span>
+                <span className="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-3 text-gray-600 leading-relaxed">
+                最佳購票黃金期為<strong>出發前 35 到 60 天</strong>。德威航空與濟州航空常於每個月的第二週或每週二下午釋放早鳥折扣代碼；淡季（3月、5月、9月、11月）容易搶到 NT,000 以內的含稅價，但暑假、過年與清明連假則需至少提早 3 個月鎖定。
+              </p>
+            </details>
+
+            <details className="bg-white p-4 sketch-border border border-black cursor-pointer group">
+              <summary className="font-bold flex items-center justify-between text-base">
+                <span>Q2：德威航空高雄飛金浦需要填寫 Q-Code 或入境卡嗎？</span>
+                <span className="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+              </summary>
+              <p className="mt-3 text-gray-600 leading-relaxed">
+                台灣護照入境韓國享 90 天免簽（目前持台灣護照入境免申請 K-ETA 延長實施中），機上空服員會發放黃色「入境申報卡」與「海關申報卡」，持黑筆填妥即可。Q-Code（健康申報）目前若無特殊症狀已非強制填寫，下機通關通常 15~25 分鐘極為迅速。
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    )
+  },
+  {
+    id: 'redeye-flights-baggage-rules-comparison-2026',
+    category: '行李圖解',
+    title: '【2026 廉價航空紅眼班機行李限制與比價】半夜搭機地勤抓更嚴？台灣虎航/樂桃/酷航/濟州紅眼航班行李鐵架秤重、超重罰款與免稅品袋避雷實測',
+    author: '黑白飛特派團隊',
+    readTime: '12 分鐘',
+    image: 'https://images.unsplash.com/photo-1542296332-2e4473faf563?w=800&q=80',
+    imageAlt: '機場停機坪與凌晨紅眼航班廉航登機門手提行李秤重排隊人潮',
+    excerpt: '買了半夜 02:00 起飛的廉航紅眼機票省下 NT,000，卻在登機門被抓手提超重罰 NT,800？實測揭露深夜地勤執勤嚴格度、手提 7kg 鐵架規格量測（輪子把手算不算）、免稅店大紙袋合併計算潛規則、四大廉航紅眼行李費率對比與深夜通關自救指南！',
+    badge: '避坑必讀',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        <section className="bg-neutral-50 p-6 sketch-border relative">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            2026 廉航紅眼實測魔鬼細節
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Scale className="w-5 h-5 text-red-600" />
+            半夜地勤抓更嚴？紅眼班機手提行李的殘酷真相
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            許多旅人為了多玩一整天、省一晚日韓飯店錢，專門挑選半夜 <strong>01:00 ~ 04:30</strong> 起飛的紅眼班機（如台灣虎航飛羽田 IT216、樂桃飛羽田 MM860、酷航飛成田 TR898）。但很多人不知道：<strong>半夜的廉航登機門，地勤攔查行李秤重的頻率往往比白天還要嚴格！</strong>
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            原因很簡單：深夜時段航廈其他航班少，候機室安檢與地勤人手相對集中，加上紅眼航班幾乎全機客滿、機上行李架空間極為緊繃。地勤為了防止頭頂行李架過載延誤起飛，會在登機門前推著移動式磅秤與測量鐵架，逐一抽查乘客的登機箱與免稅店紙袋！
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">登機門現場罰金</div>
+              <div className="text-lg font-black text-red-600">NT$ 1,500 ~ 2,200</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">虎航/樂桃手提限制</div>
+              <div className="text-lg font-black text-black">7 kg (限 2 件)</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">免稅店紙袋規則</div>
+              <div className="text-lg font-black text-amber-600">合併計算重量</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">輪子凸出算超標</div>
+              <div className="text-lg font-black text-red-600">塞不進鐵架即罰</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 四大廉航紅眼行李規則與費率比較表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Luggage className="w-5 h-5 text-black" />
+            四大熱門紅眼廉航行李限制與罰款標準對照
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">廉價航空</th>
+                  <th className="p-3">代表性紅眼航班</th>
+                  <th className="p-3">免費手提上限</th>
+                  <th className="p-3">尺寸限制 (含輪把)</th>
+                  <th className="p-3">預購託運 20kg</th>
+                  <th className="p-3">登機門超重現場罰款</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold">台灣虎航 (Tigerair)</td>
+                  <td className="p-3">TPE-HND (00:10)<br/>TPE-KIX (02:30)</td>
+                  <td className="p-3 text-red-600 font-bold">7 kg（合計2件）</td>
+                  <td className="p-3">54 x 38 x 23 cm</td>
+                  <td className="p-3">約 NT$ 950 ~ 1,200</td>
+                  <td className="p-3 font-bold text-red-600">NT$ 1,800 / 件</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold">樂桃航空 (Peach)</td>
+                  <td className="p-3">TPE-HND (02:15)<br/>TPE-KIX (03:00)</td>
+                  <td className="p-3 text-red-600 font-bold">7 kg（合計2件）</td>
+                  <td className="p-3">三邊合計 115 cm 內</td>
+                  <td className="p-3">約 NT$ 1,000 / 20kg</td>
+                  <td className="p-3 font-bold text-red-600">約 NT$ 1,500 ~ 1,800</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold">酷航 (Scoot)</td>
+                  <td className="p-3">TPE-NRT (06:40 清晨)</td>
+                  <td className="p-3 text-emerald-700 font-bold">10 kg（合計2件）</td>
+                  <td className="p-3">54 x 38 x 23 cm</td>
+                  <td className="p-3">約 NT$ 1,150 ~ 1,400</td>
+                  <td className="p-3 font-bold text-red-600">NT$ 1,900 起</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold">濟州航空 (Jeju Air)</td>
+                  <td className="p-3">TPE-ICN (02:50)</td>
+                  <td className="p-3 text-emerald-700 font-bold">10 kg（限1件+1小包）</td>
+                  <td className="p-3">三邊合計 115 cm 內</td>
+                  <td className="p-3">約 NT$ 1,100 / 15kg</td>
+                  <td className="p-3 font-bold text-red-600">約 NT$ 2,000 / 100,000韓元</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 三大登機門被罰雷區 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            紅眼班機乘客最常被開罰的三大「致命雷區」
+          </h3>
+          <div className="space-y-3">
+            <div className="p-4 bg-white sketch-border border-2 border-black space-y-1.5">
+              <div className="font-bold text-black flex items-center gap-2">
+                <span className="bg-red-600 text-white text-xs px-2 py-0.5 rounded-full">雷區 1</span>
+                登機箱輪子或把手凸出鐵架外 1 公分
+              </div>
+              <p className="text-xs md:text-sm text-gray-600">
+                很多旅人買的「20 吋登機箱」，如果輪子是不可拆卸的外凸雙輪或側面有加厚防撞腳釘，塞進地勤的鐵架量具時會卡住。<strong>在廉航規定中：塞不平就算超標！</strong>一旦被判定超出尺寸，必須當場強制託運並繳納登機門手續費。
+              </p>
+            </div>
+
+            <div className="p-4 bg-white sketch-border border-2 border-black space-y-1.5">
+              <div className="font-bold text-black flex items-center gap-2">
+                <span className="bg-red-600 text-white text-xs px-2 py-0.5 rounded-full">雷區 2</span>
+                出境後在免稅店買的超大紙袋，算不算一件手提？
+              </div>
+              <p className="text-xs md:text-sm text-gray-600">
+                <strong>答案是：百分之百算進件數與總重量！</strong>很多人以為過了海關安檢後，在機場免稅店買的白色戀人、Royce生巧克力、化妝品紙袋可以隨便拿。但廉航登機門地勤會要求「登機箱 ＋ 隨身後背包 ＋ 免稅紙袋」總共只能有 2 件且總重必須在 7kg 內。若變成 3 件，地勤會直接要求塞入登機箱，塞不下就開罰！
+              </p>
+            </div>
+
+            <div className="p-4 bg-white sketch-border border-2 border-black space-y-1.5">
+              <div className="font-bold text-black flex items-center gap-2">
+                <span className="bg-red-600 text-white text-xs px-2 py-0.5 rounded-full">雷區 3</span>
+                深夜同行友人行李「無法互補平均計算」
+              </div>
+              <p className="text-xs md:text-sm text-gray-600">
+                在手提行李部分，廉航是「嚴格認人頭計算」，無法像托運行李那樣併件合併重量！若你的登機箱 8.2 kg、朋友的只有 4 kg，你的登機箱依然算超重 1.2 kg，必須當場開箱移轉物品，否則無法上機。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 紅眼自救省錢黃金技巧 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <ShieldCheck className="w-5 h-5 text-emerald-600" />
+            紅眼航班手提過關自救技巧：小資聰明 3 招
+          </h3>
+          <div className="grid md:grid-cols-3 gap-4 text-xs md:text-sm">
+            <div className="sketch-border p-4 bg-white border border-black space-y-2">
+              <div className="font-bold text-black flex items-center gap-1.5">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                1. 洋蔥穿法穿在身上
+              </div>
+              <p className="text-gray-600">
+                重磅外套、厚針織衫、大圍巾與厚球鞋直接穿戴在身上走過登機門，過關後上機再脫下放置腿上，輕鬆省下 1.5~2 公斤重量！
+              </p>
+            </div>
+
+            <div className="sketch-border p-4 bg-white border border-black space-y-2">
+              <div className="font-bold text-black flex items-center gap-1.5">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                2. 行李秤隨身自備防突襲
+              </div>
+              <p className="text-gray-600">
+                千萬不要賭運氣！在旅館出發前或出境免稅店買完當下，花 3 秒用便攜手提行李秤秤一下，只要維持在 6.7 kg 以下就能坦蕩通關。
+              </p>
+            </div>
+
+            <div className="sketch-border p-4 bg-white border border-black space-y-2">
+              <div className="font-bold text-black flex items-center gap-1.5">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                3. 出發前 48 小時提早加購
+              </div>
+              <p className="text-gray-600">
+                如果估算會買很多液體（化妝水、清酒、布丁），千萬不要拖到登機門被罰 ,800，出發前 48 小時上官網加購託運通常只要半價約 50。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    )
+  },
+  {
+    id: 'how-to-buy-cheapest-tokyo-flights-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 東京自由行機票怎麼買最便宜】避開天價機票！出發前幾天買最省？週二放票規律、成田 vs 羽田交通隱形成本與傳統航空超值買法全解析',
+    author: '黑白飛特派團隊',
+    readTime: '14 分鐘',
+    image: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800&q=80',
+    imageAlt: '日本東京鐵塔與繁華市景，2026 自由行購買便宜機票全攻略',
+    excerpt: '飛東京機票價格天天像雲霄飛車？揭開航空定價演算法！實測出發前 54 天至 70 天搶票黃金定律、週二週三下午放票黑客時段、成田 (NRT) vs 羽田 (HND) 隱形交通成本（NT,100 機場快線車資精算），以及廉航加上 20kg 行李後為何可能比華航/長榮促銷票更貴的殘酷真相！',
+    badge: '機票黑客',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        <section className="bg-neutral-50 p-6 sketch-border relative">
+          <div className="sketch-badge -top-3 left-4 bg-black text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            2026 航司定價演算法大拆解
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Sparkles className="w-5 h-5 text-amber-500" />
+            買東京機票不能只看表面標價：精準買在黃金低點
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            東京是台灣旅客出國首選，但機票價格從淡季的 <strong>NT$ 6,500</strong> 到旺季動輒飆破 <strong>NT$ 22,000</strong>，價差高達三倍以上！很多人以為「越早訂越便宜」，於是一年前就衝動下單，結果出發前兩個月航司大促銷直接被當盤子；也有人等到出發前兩週才買，結果只剩天價票可選。
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            根據航司收益管理系統（Yield Management）與過去 3 年大數據，飛東京機票有極為嚴格的「放票波段」與「放庫存規律」。只要掌握黃金時間點與降落機場的真實總成本，每張機票至少能省下 NT,000 以上！
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">黃金搶票時機</div>
+              <div className="text-lg font-black text-emerald-600">出發前 54~70 天</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">每週放票低價日</div>
+              <div className="text-lg font-black text-black">週二下午 ~ 週三</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">成田進市區隱形成本</div>
+              <div className="text-lg font-black text-amber-600">來回約 NT$ 1,150</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">合理入手目標價</div>
+              <div className="text-lg font-black text-emerald-600">NT$ 6,800 ~ 8,500</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 買東京便宜機票的五大黃金鐵律 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Coins className="w-5 h-5 text-black" />
+            買東京便宜機票的 5 大「黑客法則」
+          </h3>
+          <div className="space-y-3">
+            <div className="p-4 bg-white sketch-border border-2 border-black space-y-1.5">
+              <div className="font-bold text-black text-base flex items-center gap-2">
+                <span className="bg-black text-white text-xs px-2 py-0.5 rounded-xs">法則 1</span>
+                「黃金 54 天至 70 天」定律：不要過早也不要過晚
+              </div>
+              <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+                航空公司通常在起飛前 2~3 個月開始檢視全機訂位率。若訂位未達 65%，收益管理系統會自動解鎖較低艙等（如廉航的促銷 Fare Bucket 或傳統航空的 V/K 艙）。因此，非寒暑假與春節連假的常態旅遊，<strong>出發前約 7 週至 10 週</strong>是平均票價最划算的甜蜜點。
+              </p>
+            </div>
+
+            <div className="p-4 bg-white sketch-border border-2 border-black space-y-1.5">
+              <div className="font-bold text-black text-base flex items-center gap-2">
+                <span className="bg-black text-white text-xs px-2 py-0.5 rounded-xs">法則 2</span>
+                週二下午、週三上午搶票，避開週五與週末天價
+              </div>
+              <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+                台灣虎航、樂桃、酷航與日系航司的促銷活動通常在<strong>週二至週四之間開跑</strong>（例如台灣虎航常見的 Payday 促銷與週四樂桃促銷）。此外，許多旅客在週五下班後或週末才開電腦搜尋機票，演算法偵測到搜尋流量激增會自動調高價格！若想比價，請挑平日白天上班時間查詢。
+              </p>
+            </div>
+
+            <div className="p-4 bg-white sketch-border border-2 border-black space-y-1.5">
+              <div className="font-bold text-black text-base flex items-center gap-2">
+                <span className="bg-black text-white text-xs px-2 py-0.5 rounded-xs">法則 3</span>
+                算準成田 (NRT) vs 羽田 (HND) 的「真實隱形開銷」
+              </div>
+              <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+                買機票不能只比票面數字！從成田機場進東京市區（如上野、新宿），搭乘 Skyliner 或成田特快 N'EX 來回車票約需 <strong>NT$ 1,100 ~ 1,300</strong>，單程耗時 50~70 分鐘；而羽田機場搭京急線或單軌電車進品川/濱松町僅需 15 分鐘，來回車資只要 <strong>NT$ 250</strong>！若羽田機票只比成田貴 NT,000 左右，選羽田實際上更省錢、更省時！
+              </p>
+            </div>
+
+            <div className="p-4 bg-white sketch-border border-2 border-black space-y-1.5">
+              <div className="font-bold text-black text-base flex items-center gap-2">
+                <span className="bg-black text-white text-xs px-2 py-0.5 rounded-xs">法則 4</span>
+                廉航加滿行李，真的一定比傳統航空便宜嗎？
+              </div>
+              <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+                請務必算「全包總價」：廉航裸票 NT,000 + 來回 20kg 託運行李 NT,200 + 指定座位 NT00 + 信用卡手續費 NT40 = <strong>NT$ 10,240</strong>（且無餐點、無個人電視、不可免費改期）。如果此時長榮或華航特惠機票為 NT1,800，含 23kg 行李與餐點，搭乘傳統航空的舒適度與保障性絕對完勝廉航！
+              </p>
+            </div>
+
+            <div className="p-4 bg-white sketch-border border-2 border-black space-y-1.5">
+              <div className="font-bold text-black text-base flex items-center gap-2">
+                <span className="bg-black text-white text-xs px-2 py-0.5 rounded-xs">法則 5</span>
+                「去回程分開買」不同航司，混搭出完美時間與價格
+              </div>
+              <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+                搭廉航最大優勢就是「單程計價」！你可以去程買台灣虎航清晨 06:30 早班機出發，回程買樂桃航空夜間 20:30 晚班機，甚至去程飛成田、回程從羽田出發。不要被「同一家航司買來回」綁架，分開比價往往能組出「最省錢又玩滿整整 5 天」的神級組合！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 東京四季票價行情速查 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <CalendarDays className="w-5 h-5 text-indigo-600" />
+            2026 東京機票四季淡旺季價格分佈
+          </h3>
+          <div className="grid md:grid-cols-3 gap-4 text-xs md:text-sm">
+            <div className="sketch-border p-4 bg-emerald-50 border border-emerald-400 space-y-1.5">
+              <div className="font-bold text-emerald-900 flex items-center gap-1.5">
+                <Tag className="w-4 h-4 text-emerald-700" />
+                激省淡季（撿便宜最佳期）
+              </div>
+              <div className="text-lg font-black text-emerald-800">NT$ 6,500 ~ 7,800</div>
+              <p className="text-gray-600">
+                <strong>推薦月份：</strong>5月中旬至6月（避開黃金週梅雨季）、9月開學後、11月上旬初冬。觀光客人潮少，住宿機票雙雙跳水。
+              </p>
+            </div>
+
+            <div className="sketch-border p-4 bg-yellow-50 border border-amber-400 space-y-1.5">
+              <div className="font-bold text-amber-900 flex items-center gap-1.5">
+                <Tag className="w-4 h-4 text-amber-700" />
+                常態平季（氣候宜人合理價）
+              </div>
+              <div className="text-lg font-black text-amber-800">NT$ 8,000 ~ 9,800</div>
+              <p className="text-gray-600">
+                <strong>推薦月份：</strong>3月上旬、10月秋高氣爽、12月上旬聖誕點燈前夕。只要避開連假平日出發，價格非常平實。
+              </p>
+            </div>
+
+            <div className="sketch-border p-4 bg-red-50 border border-red-400 space-y-1.5">
+              <div className="font-bold text-red-900 flex items-center gap-1.5">
+                <AlertTriangle className="w-4 h-4 text-red-700" />
+                超級天價旺季（務必提早三個月）
+              </div>
+              <div className="text-lg font-black text-red-800">NT$ 13,000 ~ 22,000+</div>
+              <p className="text-gray-600">
+                <strong>高峰時段：</strong>農曆過年春節、3月底至4月初東京櫻花滿開、暑假7~8月、11月下旬明治神宮銀杏楓紅季。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    )
+  },
+  {
     id: 'japan-usj-nintendo-entry-ticket-express-pass-2026',
     category: '票券攻略',
     title: '【2026 日本環球影城 USJ 攻略】沒買快速通關也能進瑪利歐？超級任天堂世界「整理券 vs 抽籤券」搶票秘技、提早入園與大金剛園區實測避雷',

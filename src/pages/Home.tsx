@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import PriceObservatory from '../components/PriceObservatory';
+import FlightPriceTrends from '../components/FlightPriceTrends';
 import BaggageGuide from '../components/BaggageGuide';
 import TravelCalendar from '../components/TravelCalendar';
 import Checklist from '../components/Checklist';
@@ -13,6 +14,9 @@ export default function Home() {
   const previewArticles = useMemo(() => {
     // 優先顯示 2026 泰國免簽自由行、桃機外幣ATM換匯評比、出國伴手禮打包防雷、日本賞楓等精選文章
     const priorityIds = [
+      'kaohsiung-khh-seoul-direct-flights-guide-2026',
+      'redeye-flights-baggage-rules-comparison-2026',
+      'how-to-buy-cheapest-tokyo-flights-guide-2026',
       'japan-usj-nintendo-entry-ticket-express-pass-2026',
       'tokyo-fuji-excursion-fujisan-kawaguchiko-transport-2026',
       'korea-olive-young-duty-free-shopping-hacks-2026',
@@ -65,6 +69,7 @@ export default function Home() {
       </Helmet>
 
       <div className="print:hidden" id="observatory"><PriceObservatory /></div>
+      <div className="print:hidden" id="trends"><FlightPriceTrends /></div>
       
       <section id="article" className="space-y-8 print:hidden">
         <div className="text-center space-y-2">

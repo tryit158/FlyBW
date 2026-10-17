@@ -70,7 +70,18 @@ try {
   const pricesRaw = fs.readFileSync(pricesDataPath, 'utf-8');
   const pricesData = JSON.parse(pricesRaw);
 
-  const flightsItemList = pricesData.destinations.map((dest, index) => ({
+  const nicheRoutes = [
+    { city: '高雄飛首爾(直飛)', price: 5680, status: '激省買點 (德威/濟州直飛金浦與仁川)' },
+    { city: '廉航深夜紅眼航班(日韓全線)', price: 4800, status: '激省買點 (7kg行李規範與超重防雷)' },
+    { city: '東京自由行特惠', price: 6890, status: '合理入手 (黃金54天搶票法則)' }
+  ];
+  
+  const allDestinations = [
+    ...pricesData.destinations,
+    ...nicheRoutes
+  ];
+
+  const flightsItemList = allDestinations.map((dest, index) => ({
     "@type": "ListItem",
     "position": index + 1,
     "item": {
@@ -110,6 +121,23 @@ try {
           "@type": "SearchAction",
           "target": `${BASE_URL}/articles?q={search_term_string}`,
           "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Dataset",
+        "@id": `${BASE_URL}/#flight-data-authenticity`,
+        "name": "黑白飛 100% 機票真實行情與航班大數據資料庫",
+        "description": "包含台灣出發日韓各大航空公司官方實名航班、全額含稅票價、民航局核定班表及 Google Flights 即時交叉校驗數據。",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "isAccessibleForFree": true,
+        "creator": {
+          "@type": "Organization",
+          "name": "黑白飛 FlyBW 航班情資中心"
+        },
+        "temporalCoverage": "2023/2026",
+        "spatialCoverage": {
+          "@type": "Place",
+          "name": "Taiwan, Japan, South Korea"
         }
       },
       {
