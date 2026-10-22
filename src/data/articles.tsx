@@ -47,6 +47,532 @@ export const AffiliateFooter = () => (
 
 export const articlesData: Article[] = [
   {
+    id: 'taichung-rmq-direct-flights-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 台中清泉崗直飛懶人包】中部人免衝桃機！RMQ 直飛日本高松/成田/沖繩、韓國仁川/釜山、富國島航班時刻、機票比價與小資停車全攻略',
+    author: '黑白飛特派團隊',
+    readTime: '12 分鐘',
+    image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80',
+    imageAlt: '台中清泉崗機場直飛日本與韓國航線，中部出發直飛高松、成田、沖繩、首爾與釜山',
+    excerpt: '中彰投苗雲朋友注意！出國何必扛大行李搭高鐵衝桃機？台中清泉崗機場 (RMQ) 2026 國際航線全面爆發！星宇航空、德威航空、大韓航空、香港快運最新航點解析：直飛日本高松、成田、沖繩、韓國仁川/釜山與越南富國島免簽航線；航班時刻表、含稅機票行情（NT$5,800~9,200）、停車每日只要 150 元與市區公車/自駕接駁避雷指南！',
+    badge: '中部救星',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative">
+          <div className="sketch-badge -top-3 left-4 bg-black text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            中部國際機場大崛起
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Plane className="w-5 h-5 text-indigo-600" />
+            告別桃機排隊地獄！台中清泉崗 (RMQ) 出發省時又省錢
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            住在台中、彰化、南投、苗栗與雲林的朋友，過去出國常常要清晨 4 點爬起來，拖著大行李趕統聯、和欣或花大錢搭高鐵北上桃園機場。算一算高鐵標準車廂來回高達 <strong>NT$ 1,400 ~ 2,960</strong>，再加上轉乘機場捷運、提早 3 小時抵達排安檢人龍，人還沒飛到日本就已經精疲力竭！
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            2026 年台中清泉崗機場 (RMQ) 迎來航線大爆發！星宇航空 (STARLUX) 重兵進駐設立第二基地，加上德威、大韓、香港快運與越捷齊聚，直飛日本<strong>高松、成田、沖繩</strong>、韓國<strong>仁川、釜山</strong>以及免簽熱點<strong>富國島</strong>。航廈精緻小巧、安檢通關平均只要 <strong>10~15 分鐘</strong>，真正實現「優雅出國」！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">免衝桃機省下</div>
+              <div className="text-lg font-black text-emerald-600">NT$ 2,960</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">平均通關過檢</div>
+              <div className="text-lg font-black text-black">約 10~15 分</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">特約停車場一日</div>
+              <div className="text-lg font-black text-black">NT$ 150 起</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">含稅促銷參考價</div>
+              <div className="text-lg font-black text-emerald-600">NT$ 5,800 起</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 航線時刻與比價表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Ticket className="w-5 h-5 text-black" />
+            2026 台中清泉崗 (RMQ) 國際定期航線全盤點
+          </h3>
+          <p className="text-sm text-gray-600">
+            以下為目前台中清泉崗機場主要執飛的國際航線、執飛航空公司、行李額度與市場實測含稅參考價：
+          </p>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">目的地 / 機場</th>
+                  <th className="p-3">航空公司</th>
+                  <th className="p-3">每週班次</th>
+                  <th className="p-3">手提 / 託運行李</th>
+                  <th className="p-3">促銷含稅參考價</th>
+                  <th className="p-3">優勢特色</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">日本高松 (TAK)</td>
+                  <td className="p-3">星宇航空 (JX)</td>
+                  <td className="p-3">每週 3~4 班</td>
+                  <td className="p-3">手提 7kg / 託運 23kg</td>
+                  <td className="p-3 font-bold text-emerald-600">NT$ 9,800 起</td>
+                  <td className="p-3">四國直達、米其林栗林公園</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">日本沖繩 (OKA)</td>
+                  <td className="p-3">台灣虎航 / 星宇包機</td>
+                  <td className="p-3">每週 4 班</td>
+                  <td className="p-3">手提 7kg / 視專案加購</td>
+                  <td className="p-3 font-bold text-emerald-600">NT$ 5,800 起</td>
+                  <td className="p-3">航程僅 1.5 小時，度假海島首選</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">韓國首爾仁川 (ICN)</td>
+                  <td className="p-3">德威 (TW) / 大韓 (KE)</td>
+                  <td className="p-3">天天直飛 (每日 1~2 班)</td>
+                  <td className="p-3">手提 10kg / 託運 15~23kg</td>
+                  <td className="p-3 font-bold text-emerald-600">NT$ 6,500 起</td>
+                  <td className="p-3">午去傍晚回，時間帶極佳</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">韓國釜山金海 (PUS)</td>
+                  <td className="p-3">德威航空 (TW)</td>
+                  <td className="p-3">每週 3 班</td>
+                  <td className="p-3">手提 10kg / 託運 15kg</td>
+                  <td className="p-3 font-bold text-emerald-600">NT$ 5,900 起</td>
+                  <td className="p-3">下機 20 分鐘進市區海雲台</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">越南富國島 (PQC)</td>
+                  <td className="p-3">星宇航空 / 越捷</td>
+                  <td className="p-3">每週 3 班</td>
+                  <td className="p-3">依航司標準 (星宇含23kg)</td>
+                  <td className="p-3 font-bold text-emerald-600">NT$ 8,800 起</td>
+                  <td className="p-3">免簽證！海島度假大熱門</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">香港 (HKG) / 澳門 (MFM)</td>
+                  <td className="p-3">香港快運 / 星宇航空</td>
+                  <td className="p-3">天天多班</td>
+                  <td className="p-3">手提 7kg / 可加購</td>
+                  <td className="p-3 font-bold text-emerald-600">NT$ 4,200 起</td>
+                  <td className="p-3">週末說走就走極速快閃</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 自駕停車與交通指南 */}
+        <section className="bg-yellow-50 p-6 sketch-border space-y-4">
+          <div className="sketch-badge -top-3 left-4 bg-yellow-500 text-black text-xs px-2 py-0.5 font-bold uppercase">
+            自駕與大眾接駁
+          </div>
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Car className="w-5 h-5 text-black" />
+            清泉崗周邊停車一天只要 150 元？自駕與公車接駁攻略
+          </h3>
+          <p className="text-sm text-neutral-700">
+            中部旅客出發清泉崗，最大優勢就是<strong>「自駕超近、停車極度便宜」</strong>！比起桃機一天動輒 300~500 元的停車費，清泉崗周邊有大量高 CP 值選擇：
+          </p>
+          <div className="grid md:grid-cols-3 gap-3 text-xs md:text-sm">
+            <div className="bg-white p-3 border border-black sketch-border">
+              <span className="font-bold text-indigo-800 block mb-1">1. 機場地下公有停車場</span>
+              <p className="text-gray-600">
+                每小時 NT$30，當日最高上限 NT$300。直通國內外航廈電梯，雨天不淋雨，適合短天數（2~3天）商務出差客。
+              </p>
+            </div>
+            <div className="bg-white p-3 border border-black sketch-border">
+              <span className="font-bold text-indigo-800 block mb-1">2. 中清路周邊特約停車場</span>
+              <p className="text-gray-600">
+                每日約 <strong>NT$ 120 ~ 150</strong>，多數附設專屬冷氣接駁車，車程 3 分鐘直接送達出境大廳門口，5 天省下上千元！
+              </p>
+            </div>
+            <div className="bg-white p-3 border border-black sketch-border">
+              <span className="font-bold text-indigo-800 block mb-1">3. 市區公車與幹線快捷</span>
+              <p className="text-gray-600">
+                搭乘 <strong>公車 302 號</strong> 從台中車站直達機場；或由台中高鐵站搭乘 <strong>156 號公車</strong>（約 40 分鐘直達），刷悠遊卡超方便。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 編輯避雷提醒 */}
+        <section className="bg-white p-5 sketch-border border-l-4 border-l-amber-500 space-y-2">
+          <div className="font-bold text-amber-900 flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            黑白飛特派員出發前 3 大叮嚀
+          </div>
+          <ul className="list-disc pl-5 text-sm text-gray-700 space-y-1">
+            <li><strong>餐飲選擇較少</strong>：清泉崗國際航廈過管制區後的餐廳與餐飲店家不如桃機豐富，建議出發前在沙鹿或大雅市區先吃飽再前往。</li>
+            <li><strong>外幣兌換與 SIM 卡</strong>：航廈設有台灣銀行提領外幣與電信櫃檯，但營業時間可能配合航班起降，深夜航班建議出發前備妥 eSIM 與外幣。</li>
+            <li><strong>留意冬季側風</strong>：清泉崗地處大肚山台地，冬季東北季風偶有強風，起飛前可留意航空公司即時推播動態。</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'japan-preclearance-taiwan-airport-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 日本入境事前審查全解】在桃機先按指紋！下機 5 分鐘絲滑入境免排隊：適用機場(仙台/高松/函館等)、預審櫃檯實測與免排隊秘技',
+    author: '黑白飛特派團隊',
+    readTime: '10 分鐘',
+    image: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800&q=80',
+    imageAlt: '台日入境事前審查制度，在台灣機場預先完成日本海關指紋與拍照，落地日本快速出關',
+    excerpt: '落地日本不再枯等 2 小時！台日最新「入境事前審查 (Pre-clearance)」機制正式擴大實施，在台灣桃園機場登機前就能先行採集臉部生物特徵與指紋！實測抵達函館、仙台、高松、旭川等地方機場後，直接走專屬綠色通道「5 分鐘絲滑通關」！哪些航空公司與航線適用？桃機二航廈審查櫃檯走法、VJW 電子申報如何配合，與不能漏掉的 4 大注意要點！',
+    badge: '2026新制',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative">
+          <div className="sketch-badge -top-3 left-4 bg-emerald-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            台日邊境通關重大革新
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <UserCheck className="w-5 h-5 text-emerald-600" />
+            在桃機先審查！下機 5 分鐘絲滑入境不再排隊排到哭
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            台灣旅客去日本旅遊最怕什麼？絕對是<strong>「落地日本後大排長龍 1~2 小時過海關」</strong>！尤其地方機場如果同時有兩班國際航班抵達，狹小的入國審查大廳往往被塞爆，推著嬰兒車或帶著長輩的家庭旅客更是苦不堪言。
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            為了解決通關瓶頸，台日兩國於 2026 年正式擴大<strong>「入境事前審查 (Pre-clearance)」</strong>！由日本出入國在留管理局派遣入境審查官常駐台灣桃園機場。旅客在台灣候機室等待登機時，就可以預先完成護照掃描、人臉拍照與指紋建檔。飛機一降落日本，立刻享有<strong>專屬綠色快速通道</strong>，實測 5 分鐘直達行李轉盤！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">落地通關時間</div>
+              <div className="text-lg font-black text-emerald-600">縮短至 5 分鐘</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">桃機預審耗時</div>
+              <div className="text-lg font-black text-black">僅約 2~3 分鐘</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">合作航點機場</div>
+              <div className="text-lg font-black text-black">函館/仙台/高松等</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">手續手續費</div>
+              <div className="text-lg font-black text-emerald-600">完全免費 (NT$0)</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 適用航點與航班 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Plane className="w-5 h-5 text-black" />
+            2026 最新適用日本機場與指定直飛航班
+          </h3>
+          <p className="text-sm text-gray-600">
+            目前「台日入境事前審查」優先於日本各地方熱門觀光機場推行（成田與羽田等大型樞紐因旅客流量龐大另有專門自動通關系統，未列入此專案）：
+          </p>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">日本目的地機場</th>
+                  <th className="p-3">執飛航空公司</th>
+                  <th className="p-3">代表航班號</th>
+                  <th className="p-3">桃機候機航廈</th>
+                  <th className="p-3">落地入境省時效果</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">北海道 函館 (HKD)</td>
+                  <td className="p-3">台灣虎航 / 長榮航空</td>
+                  <td className="p-3">IT236 / BR138</td>
+                  <td className="p-3">第一 / 第二航廈</td>
+                  <td className="p-3 text-emerald-600 font-bold">省下約 50~70 分鐘</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">東北 仙台 (SDJ)</td>
+                  <td className="p-3">星宇航空 / 長榮 / 虎航</td>
+                  <td className="p-3">JX862 / BR118 / IT254</td>
+                  <td className="p-3">第一 / 第二航廈</td>
+                  <td className="p-3 text-emerald-600 font-bold">省下約 60~80 分鐘</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">四國 高松 (TAK)</td>
+                  <td className="p-3">中華航空 / 星宇航空</td>
+                  <td className="p-3">CI178 / JX包機</td>
+                  <td className="p-3">第二航廈</td>
+                  <td className="p-3 text-emerald-600 font-bold">省下約 45~60 分鐘</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">北海道 旭川 (AKJ)</td>
+                  <td className="p-3">台灣虎航 (IT)</td>
+                  <td className="p-3">IT238</td>
+                  <td className="p-3">第一航廈</td>
+                  <td className="p-3 text-emerald-600 font-bold">省下約 50 分鐘</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">東北 福島 (FKS) / 秋田 (AXT)</td>
+                  <td className="p-3">台灣虎航包機 / 定期加班</td>
+                  <td className="p-3">IT 包機專班</td>
+                  <td className="p-3">第一航廈</td>
+                  <td className="p-3 text-emerald-600 font-bold">省下約 40 分鐘</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 桃機 5 步驟流程 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <QrCode className="w-5 h-5 text-indigo-600" />
+            桃機現場 Step-by-Step 操作流程實測
+          </h3>
+          <p className="text-sm text-gray-600">
+            不用額外填寫繁雜申請書，只要跟著以下 5 個步驟，在台灣登機門就能輕鬆搞定：
+          </p>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+              <div>
+                <strong>正常辦理航空公司報到與行李託運</strong>
+                <p className="text-gray-600 text-xs mt-0.5">前往桃機航空公司櫃檯領取登機證並交運大件行李，此步驟與平時出國完全相同。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+              <div>
+                <strong>通過台灣安全檢查與出境證照查驗 (e-Gate)</strong>
+                <p className="text-gray-600 text-xs mt-0.5">進入管制區後，走第三代 e-Gate 快速通關出境。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">3</span>
+              <div>
+                <strong>抵達指定登機門，找到「日本入境事前審查專用櫃檯」</strong>
+                <p className="text-gray-600 text-xs mt-0.5">在登機前約 1 小時，登機口附近會設立專屬審查機台與日方審查人員。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">4</span>
+              <div>
+                <strong>核驗護照、面部拍照與按壓雙手指紋（耗時 2 分鐘）</strong>
+                <p className="text-gray-600 text-xs mt-0.5">出示護照與登機證，完成生物特徵採集，審查官會在登機證上加蓋確認章或黏貼專用識別標籤貼紙。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-emerald-50 border border-emerald-600">
+              <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">5</span>
+              <div>
+                <strong className="text-emerald-900">抵達日本：走專屬綠色快速通道，秒速出關！</strong>
+                <p className="text-emerald-800 text-xs mt-0.5">下機後不需排入一般外國人長龍，持標籤直接走「事前審查通道」，日本審查官僅需 10 秒核對面部即放行，直奔提領行李！</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 避坑注意事項 */}
+        <section className="bg-yellow-50 p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <ShieldCheck className="w-5 h-5 text-emerald-600" />
+            出發前必知 4 大常見疑問與注意事項
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>未滿 12 歲兒童可以走事前審查嗎？</strong>：依日本入管法規，未滿 12 歲兒童免採集指紋，同行孩童可由已完成事前審查的家長陪同，走專屬通道快速確認護照後一同通關。</li>
+            <li><strong>還需要填寫 Visit Japan Web (VJW) 嗎？</strong>：<strong>務必照常填寫！</strong>日本稅關申報（攜帶物品電子申報）與健康申報仍以 VJW 的 QR Code 為主，審查官核對時亦能加速確認住宿地點。</li>
+            <li><strong>適用簽證身分限制</strong>：僅適用持有台灣有效護照、且赴日從事「短期滯在（90天以內觀光、商務訪問、探親）」的免簽旅客；若是工作簽、打工度假簽或留學簽證者，仍須至日本境內一般審查櫃檯開卡建檔。</li>
+            <li><strong>登機門前截止時間</strong>：日方審查官於起飛前 30 分鐘通常會結束預審作業以進行資料封包傳輸，建議旅客抵達登機門後「先辦預審、再逛免稅店或裝水」。</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'lcc-gate-baggage-duty-free-penalty-guide-2026',
+    category: '行李圖解',
+    title: '【2026 廉航登機門突襲秤重避雷】免稅店伴手禮算一件？台灣虎航/樂桃/酷航 Gate 抓超重罰 $2,000！免稅提袋合併秤重魔鬼細節與安全過關 4 大對策',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=800&q=80',
+    imageAlt: '機場候機室免稅店提袋與隨身行李登機門秤重查驗，廉航超重罰款避雷實測',
+    excerpt: '以為過安檢就安全了？回程在成田、關西、仁川登機門前買爆免稅店，結果在登機口（Boarding Gate）被地勤地毯式攔查！台灣虎航、樂桃、酷航、越捷最新抓超重規定：免稅品提袋一律計入「隨身行李件數（限 2 件）」且「總重合併不得超過 7kg」！超重當場刷卡繳納 NT$1,800~2,500 登機門託運罰款。資深背包客傳授摺疊收納法、重物上身術與免稅分袋避坑指南！',
+    badge: '防罰必讀',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-red-50 p-6 sketch-border relative border-l-4 border-l-red-600">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            登機門突擊血淚慘劇
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2 text-red-950">
+            <ShieldAlert className="w-5 h-5 text-red-600" />
+            買完免稅店在登機口被罰兩千？2026 廉航登機門抓超重真相大公開
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            「在關西機場免稅店買了生巧克力、東京芭娜娜跟幾盒餅乾，地勤在登機門前拿出磅秤，把我的後背包跟兩袋免稅店提袋放上去——<strong>總重 8.2 公斤，當場被罰 NT$ 1,850 補託運！</strong>」這不是都市傳說，而是每週都在日本成田、關西、沖繩與韓國仁川機場上演的真實慘劇！
+          </p>
+          <p className="text-sm text-neutral-700 mb-4">
+            很多旅客誤以為「只要通過安檢，候機室免稅店買的東西就不算行李」。錯！各大廉價航空在國際運送條款中寫得清清楚楚：<strong>「進入機艙的所有隨身物品（包括機場免稅店提袋）合計不得超過 2 件，總重量上限為 7 公斤（酷航為 10 公斤）」</strong>。只要超出，登機門地勤絕對嚴格開罰！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">隨身件數嚴格限制</div>
+              <div className="text-lg font-black text-red-600">最多 2 件 (含免稅)</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">手提總重量上限</div>
+              <div className="text-lg font-black text-black">嚴格 7.0 公斤</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">登機門現場罰款</div>
+              <div className="text-lg font-black text-red-600">NT$ 1,800 ~ 2,500</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">最常突襲機場</div>
+              <div className="text-lg font-black text-black">成田T3 / 關西T2 / 仁川</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 航司登機門檢驗尺度比評表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Scale className="w-5 h-5 text-black" />
+            2026 主要廉航「登機口 (Gate) 稽查嚴格度」大評比
+          </h3>
+          <p className="text-sm text-gray-600">
+            地勤人員在登機口撕登機證前，會以目測件數、手提秤抽驗或設置鐵架進行攔檢。以下為各大廉航實測取締強度：
+          </p>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">航空公司</th>
+                  <th className="p-3">免費隨身限制</th>
+                  <th className="p-3">免稅袋計算規則</th>
+                  <th className="p-3">登機門稽查手段</th>
+                  <th className="p-3">超重罰款標準 (現場刷卡)</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-amber-900">台灣虎航 (Tigerair Taiwan)</td>
+                  <td className="p-3 font-bold text-red-600">2 件合計 7kg</td>
+                  <td className="p-3">計入件數與總重量</td>
+                  <td className="p-3">逐一檢視隨身行李標籤，無標籤或超過 2 袋直接秤重</td>
+                  <td className="p-3 font-bold text-red-600">每件加收 NT$ 1,800 ~ 2,000</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-pink-900">樂桃航空 (Peach Aviation)</td>
+                  <td className="p-3 font-bold text-red-600">2 件合計 7kg</td>
+                  <td className="p-3">嚴格計入總重</td>
+                  <td className="p-3">關西 T2 登機長廊必設電子地磅，7.1kg 即被擋下</td>
+                  <td className="p-3 font-bold text-red-600">現場收託運費約 JPY 4,500 起</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-yellow-900">酷航 (Scoot)</td>
+                  <td className="p-3 font-bold text-emerald-600">2 件合計 10kg</td>
+                  <td className="p-3">計入件數</td>
+                  <td className="p-3">主要抓行李體積過大塞不進鐵架者，件數第 3 件攔截</td>
+                  <td className="p-3 font-bold text-red-600">現場收 SGD 70 ~ 80 (約 NT$ 1,700+)</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-red-900">越捷航空 (VietJet)</td>
+                  <td className="p-3 font-bold text-red-600">1 件大(7kg)+1 件小</td>
+                  <td className="p-3">嚴格計入</td>
+                  <td className="p-3">越南返台登機門前常設手提秤突襲，超重即扣留補收</td>
+                  <td className="p-3 font-bold text-red-600">現場收費約 USD 45 ~ 60</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 4 大隱形增重地雷 */}
+        <section className="bg-yellow-50 p-6 sketch-border space-y-4">
+          <div className="sketch-badge -top-3 left-4 bg-yellow-500 text-black text-xs px-2 py-0.5 font-bold uppercase">
+            免稅店隱形增重陷阱
+          </div>
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Luggage className="w-5 h-5 text-black" />
+            買得很開心？這 4 樣免稅伴手禮是讓你「瞬間超重」的元凶
+          </h3>
+          <div className="grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div className="bg-white p-4 border border-black sketch-border space-y-1">
+              <span className="font-bold text-red-700 block text-base">地雷 1：日本酒、梅酒、獺祭清酒</span>
+              <p className="text-gray-600">
+                一瓶 720ml 的清酒，液體重量 720g，加上厚重的<strong>玻璃酒瓶與木盒/紙盒包裝，單瓶重量直逼 1.4 ~ 1.6 公斤</strong>！買個兩瓶就佔掉手提額度的一半！
+              </p>
+            </div>
+            <div className="bg-white p-4 border border-black sketch-border space-y-1">
+              <span className="font-bold text-red-700 block text-base">地雷 2：鐵盒裝餅乾與大型保冷袋</span>
+              <p className="text-gray-600">
+                很多人愛買白色戀人鐵盒、Royce 生巧克力（附保冷袋與凝膠保冷劑）。金屬外盒與凝膠重量極重，兩三盒下肚磅秤指針瞬間飆高 1 公斤。
+              </p>
+            </div>
+            <div className="bg-white p-4 border border-black sketch-border space-y-1">
+              <span className="font-bold text-red-700 block text-base">地雷 3：化妝水、大容量洗面乳與洗髮精</span>
+              <p className="text-gray-600">
+                過海關後在免稅店補貨專櫃保養品，500ml 健水或精華液成箱掃貨，液體 1ml = 1g，加上厚玻璃瓶，提在手裡輕飄飄、放到磅秤上直接爆表。
+              </p>
+            </div>
+            <div className="bg-white p-4 border border-black sketch-border space-y-1">
+              <span className="font-bold text-red-700 block text-base">地雷 4：手上提著「第三個、第四個提袋」</span>
+              <p className="text-gray-600">
+                「隨身後背包 1 個 + 隨身小斜背包 1 個 + 免稅店大紙袋 1 個 + 伴手禮小塑膠袋 1 個」= <strong>總共 4 件！</strong>在登機口立刻被地勤鎖定要求整併或罰款。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 4 大安全脫困技巧 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+            老背包客傳授：登機門 4 大安全過關防罰技巧
+          </h3>
+          <div className="space-y-3 text-sm">
+            <div className="p-3 bg-gray-50 border border-black">
+              <strong className="text-black">技巧 1：備妥「超輕量折疊尼龍旅行大袋（托特包）」進行整併</strong>
+              <p className="text-gray-600 text-xs mt-1">
+                隨身折疊在背包裡。在免稅店結帳後，將隨身斜背包與所有免稅店提袋<strong>「通通塞進同一個托特包」</strong>！這樣全身上下就只有「後背包 1 件 + 托特包 1 件」，外觀完全符合 2 件標準，絕不引起地勤注意。
+              </p>
+            </div>
+            <div className="p-3 bg-gray-50 border border-black">
+              <strong className="text-black">技巧 2：重物上身穿戴法（身上穿的衣物不算重量！）</strong>
+              <p className="text-gray-600 text-xs mt-1">
+                國際航空規定「穿在旅客身上的衣服不計入隨身行李重量」。若在登機門前自測稍微超重（例如 7.4kg），立刻把最厚的羽絨外套、長大衣穿在身上，將相機、厚重行動電源放進外套大口袋，或把大型全罩式耳機掛在脖子上，瞬間減輕 1~1.5kg！
+              </p>
+            </div>
+            <div className="p-3 bg-gray-50 border border-black">
+              <strong className="text-black">技巧 3：登機前 15 分鐘拿出「便攜手提電子秤」自檢</strong>
+              <p className="text-gray-600 text-xs mt-1">
+                出國隨身放一個僅 80g 的電子行李秤，在免稅店購物結帳前先量測背包殘餘重量；結帳後再提秤量一次。若總重落在 6.8kg 即可安心登機，若達 7.5kg 馬上啟動衣物轉移，絕不抱持僥倖心理！
+              </p>
+            </div>
+            <div className="p-3 bg-gray-50 border border-black">
+              <strong className="text-black">技巧 4：如果真買太多超重，能在登機門臨時加購託運嗎？</strong>
+              <p className="text-gray-600 text-xs mt-1">
+                在登機門（Gate）補託運是<strong>「罰款價格（NT$1,800~2,500）」</strong>，且行李直接送機艙底層。若你在辦理登機報到（Check-in）前就發現行李超重，透過官網/App 加購託運行李只要幾百元台幣，成本足足省下 70%！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
     id: 'kaohsiung-khh-seoul-direct-flights-guide-2026',
     category: '必讀攻略',
     title: '【2026 高雄飛首爾直飛指南】小港出發仁川/金浦直飛航班時刻表、廉航與傳統航空機票比價與小資省錢避坑',

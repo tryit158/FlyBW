@@ -14,6 +14,9 @@ export default function Home() {
   const previewArticles = useMemo(() => {
     // 優先顯示 2026 泰國免簽自由行、桃機外幣ATM換匯評比、出國伴手禮打包防雷、日本賞楓等精選文章
     const priorityIds = [
+      'taichung-rmq-direct-flights-guide-2026',
+      'japan-preclearance-taiwan-airport-guide-2026',
+      'lcc-gate-baggage-duty-free-penalty-guide-2026',
       'kaohsiung-khh-seoul-direct-flights-guide-2026',
       'redeye-flights-baggage-rules-comparison-2026',
       'how-to-buy-cheapest-tokyo-flights-guide-2026',
