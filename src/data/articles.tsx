@@ -47,6 +47,1429 @@ export const AffiliateFooter = () => (
 
 export const articlesData: Article[] = [
   {
+    id: 'japan-customs-inbound-prohibited-items-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 帶什麼去日本會被沒收罰百萬？】日本入境海關禁帶物品全實測：肉鬆蛋捲、含肉泡麵被檢疫犬查獲！戴金項鍊沒申報被扣押？常備藥品上限與動植物檢疫 5 大雷區',
+    author: '黑白飛特派團隊',
+    readTime: '12 分鐘',
+    image: 'https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=800&q=80',
+    imageAlt: '日本海關入境違禁品行李開箱查驗與動植物檢疫犬米格魯巡查實況',
+    excerpt: '要去日本探親送禮，行李箱塞了台灣名產肉鬆蛋捲、統一肉燥麵、鳳梨酥和隨身常備藥，下飛機竟然在行李轉盤被米格魯檢疫犬直接坐下標定！日本動植物檢疫與海關法規極其嚴厲：違規攜帶豬肉製品、新鮮水果未申報，最高重罰 300 萬日圓（約合台幣 65 萬元）或處 3 年以下有期徒刑！身上戴超過一定重量的黃金項鍊若未走申報通道甚至會被扣押罰款！本篇完整盤點台灣人最常誤帶的 10 大違禁品、常備藥品數量上限與合法通關技巧！',
+    badge: '入境避坑',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-red-600">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            日本海關邊檢震撼防雷
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2 text-red-950">
+            <ShieldAlert className="w-5 h-5 text-red-600" />
+            好心送禮卻吃官司？日本海關動植物檢疫嚴打，最高罰 300 萬日圓！
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            台灣旅客赴日旅遊人數屢創新高，許多人喜歡帶家鄉零食、泡麵或伴手禮送給日本友人。但你知道嗎？日本為了防堵非洲豬瘟與植物病蟲害，成田、關西、羽田、福岡等各大機場全面部署「檢疫偵測犬（米格魯）」，在提領行李大廳來回穿梭巡檢！
+          </p>
+          <p className="text-sm text-neutral-700 mb-4">
+            只要行李箱內含有任何<strong>未附官方檢驗證明書的肉製品（含真空包裝豬肉、雞肉、牛肉）、新鮮水果蔬菜</strong>，一經查獲不僅全數沒收銷毀，日本《家畜傳染病預防法》最高可處 <strong>300 萬日圓罰金（法人最高 5,000 萬日圓）或 3 年有期徒刑</strong>，情節重大者直接遣返並列入黑名單拒絕入境！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">動植物違規最高罰金</div>
+              <div className="text-lg font-black text-red-600">300 萬日圓</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">肉製品攜帶規定</div>
+              <div className="text-lg font-black text-red-600">一律全面禁止</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">個人常備西藥上限</div>
+              <div className="text-lg font-black text-emerald-600">最多 2 個月用量</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">黃金免申報門檻</div>
+              <div className="text-lg font-black text-black">純度90%以下/1kg內</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 台灣人最常誤帶 10 大地雷清單對照表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            2026 台灣旅客最常誤踩的「赴日禁帶物品」真實現況大檢驗
+          </h3>
+          <p className="text-sm text-gray-600">
+            許多我們在台灣超商隨手買的國民零食，跨過日本海關立刻變成違禁品：
+          </p>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">物品名稱 / 伴手禮品項</th>
+                  <th className="p-3">能否入境日本？</th>
+                  <th className="p-3">海關與檢疫判定標準</th>
+                  <th className="p-3">替換方案或處置方式</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50 bg-red-50/30">
+                  <td className="p-3 font-bold text-red-900">肉鬆蛋捲、肉鬆餅（海邊走走等）</td>
+                  <td className="p-3 font-bold text-red-600">🚫 嚴禁攜帶！</td>
+                  <td className="p-3">含豬肉肉鬆成分，即便烘烤過或真空包裝依然禁止！</td>
+                  <td className="p-3 text-gray-600">改送花生蛋捲、芝麻蛋捲、茶葉蛋捲</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-red-50/30">
+                  <td className="p-3 font-bold text-red-900">含肉塊泡麵（滿漢大餐、一度贊）</td>
+                  <td className="p-3 font-bold text-red-600">🚫 嚴禁攜帶！</td>
+                  <td className="p-3">調理包內含實體牛肉/豬肉固體塊，檢疫犬一聞必中！</td>
+                  <td className="p-3 text-gray-600">改帶海鮮口味、純素食泡麵或不含肉塊之乾麵</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">純粉包泡麵（統一肉燥麵、科學麵）</td>
+                  <td className="p-3 text-amber-700 font-bold">⚠️ 爭議邊緣（建議勿帶）</td>
+                  <td className="p-3">若調味油包提煉自動物油，部分檢疫官會從嚴認定</td>
+                  <td className="p-3 text-gray-600">避免自找麻煩，建議至日本當地唐吉訶德購買進口版</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-emerald-50/30">
+                  <td className="p-3 font-bold text-emerald-900">鳳梨酥（純土鳳梨 / 冬瓜餡）</td>
+                  <td className="p-3 font-bold text-emerald-600">✅ 可以攜帶！</td>
+                  <td className="p-3">純烘焙糕餅無生鮮肉類成分，可正常過關</td>
+                  <td className="p-3 text-gray-600">注意：若內餡包有「肉鬆」則絕對禁止！</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-red-50/30">
+                  <td className="p-3 font-bold text-red-900">台灣新鮮水果（芒果、芭樂、蓮霧）</td>
+                  <td className="p-3 font-bold text-red-600">🚫 嚴禁攜帶！</td>
+                  <td className="p-3">防止東方果實蠅等害蟲侵入，生鮮水果全面扣押</td>
+                  <td className="p-3 text-gray-600">改帶合格乾燥水果乾（芒果乾）或果醬</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-red-50/30">
+                  <td className="p-3 font-bold text-red-900">粗大金項鍊、金手鐲、未申報黃金</td>
+                  <td className="p-3 font-bold text-red-600">⚠️ 必須申報！</td>
+                  <td className="p-3">日本嚴打黃金走私逃稅，純度90%以上或超值金飾未報直接扣押</td>
+                  <td className="p-3 text-gray-600">出關走紅色「應申報通道」，填寫攜帶品申報單</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 台灣人出國常備藥與管制藥品規範 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Pill className="w-5 h-5 text-indigo-600" />
+            帶常備藥進日本會被當毒品？日本厚生勞動省藥品限量準則
+          </h3>
+          <p className="text-sm text-gray-600">
+            許多台灣人出國會自備感冒藥、腸胃藥、安眠藥或止痛藥。日本對旅客自用醫藥品有明確數量管制：
+          </p>
+          <div className="grid md:grid-cols-3 gap-3 text-xs md:text-sm">
+            <div className="bg-gray-50 p-4 border border-black space-y-2">
+              <strong className="text-black block text-base font-bold">1. 一般非處方常備成藥 (OTC)</strong>
+              <p className="text-gray-600">
+                如普拿疼、伏冒熱飲、正露丸、大正百保能等，每種藥品以<strong>不超過 2 個月標準用量</strong>為限（維他命等保健食品不超過 4 個月用量），外包裝須完整標示成分。
+              </p>
+            </div>
+            <div className="bg-gray-50 p-4 border border-black space-y-2">
+              <strong className="text-black block text-base font-bold">2. 個人慢性病處方用藥</strong>
+              <p className="text-gray-600">
+                高血壓、糖尿病等慢性病藥品，上限為 <strong>1 個月以內劑量</strong>。若需攜帶超過 1 個月以上的用量，務必隨身備妥<strong>醫院開立之「英文診斷證明書」與「英文處方箋」</strong>以供海關備查。
+              </p>
+            </div>
+            <div className="bg-gray-50 p-4 border border-black space-y-2">
+              <strong className="text-red-700 block text-base font-bold">3. 絕對嚴禁成分：偽麻黃鹼與可待因</strong>
+              <p className="text-gray-600">
+                某些台灣的鼻塞過敏噴劑或強效止痛膠囊，若含有特定高劑量之 <strong>Pseudoephedrine（偽麻黃鹼超過 10%）</strong> 在日本等同於興奮劑原料，攜帶入境可能涉嫌走私毒品重罪！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 海關申報與行李轉盤自救 */}
+        <section className="bg-yellow-50 p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <ShieldCheck className="w-5 h-5 text-emerald-600" />
+            行李轉盤被檢疫犬盯上怎麼辦？3 大應變保平安法則
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>如果不小心誤帶，請在「海關查驗前主動丟入棄置箱」</strong>：在行李轉盤旁或通過稅關前，設有動植物檢疫專用垃圾桶。只要在被官員開箱攔截前主動丟棄，絕不會受罰！</li>
+            <li><strong>不確定能不能帶？走「動植物檢疫諮詢櫃檯」主動詢問</strong>：若伴手禮成分複雜無法確定，提領行李後主動走向檢疫官窗口出示檢視。主動誠實受檢就算不合格頂多沒收，不會開立任何罰單！</li>
+            <li><strong>Visit Japan Web 誠實申報</strong>：在填寫 VJW 電子攜帶品申報時，若有攜帶金飾或可能受檢物品，勾選「有」，主動走申報檢查通道，省去被懷疑走私的心理壓力。</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'korea-tax-refund-kiosk-city-airport-guide-2026',
+    category: '票券攻略',
+    title: '【2026 韓國自由行退稅新制與流程全圖解】單筆滿 1.5 萬韓元當場退！市區即時退稅 vs 機場退稅機 (Kiosk) 實測：免稅門檻放寬、手提檢查蓋章避坑與仁川/金浦 5 分鐘領現金教學',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1538485399081-7191377e8241?w=800&q=80',
+    imageAlt: '韓國首爾仁川國際機場自助退稅機 Kiosk 掃描護照退稅單與退還現金流程',
+    excerpt: '在韓國 Olive Young、東大門、弘大爆買彩妝衣服，結帳到底退了多少錢？2026 韓國退稅重大革新：單筆退稅門檻下修至 15,000 韓元，現場即時折抵（Tax Refund）上限更一口氣翻倍放寬！但在市區沒能即時折抵的收據，到了仁川 (ICN) 或金浦 (GMP) 機場該怎麼退？很多人犯了致命錯誤：大行李託運後海關才說要「開箱驗貨」，導致上萬元退稅直接泡湯！手把手圖解市區退稅機、機場 Kiosk 自助機台與管制區領現金 5 步驟！',
+    badge: '退稅必讀',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-emerald-600">
+          <div className="sketch-badge -top-3 left-4 bg-emerald-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            韓國購物退稅重大升級
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2 text-emerald-950">
+            <Receipt className="w-5 h-5 text-emerald-600" />
+            買彩妝衣服現省 5%~8%！2026 韓國退稅新制與門檻全圖解
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            台灣旅客去韓國最愛掃貨保養品、球鞋與潮流服飾。韓國政府為了刺激觀光消費，正式推行全新退稅規範：單筆最低退稅門檻由早期的 30,000 韓元大幅下修至 <strong>15,000 韓元（約台幣 350 元即可退稅）</strong>！
+          </p>
+          <p className="text-sm text-neutral-700 mb-4">
+            更棒的是，現在大部分連鎖藥妝店（如 Olive Young）、大型超市（樂天超市、EMart）與百貨公司均支援<strong>「現場即時折抵（免稅結帳）」</strong>，只要出示外國護照，結帳時直接扣除 10% 增值稅！若是拿到一般退稅單，抵達仁川或金浦機場只要用自助機台掃描，出關後立刻能提領韓幣或美金現鈔！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">單筆退稅最低門檻</div>
+              <div className="text-lg font-black text-emerald-600">15,000 韓元</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">現場即時折抵上限</div>
+              <div className="text-lg font-black text-black">單筆 100 萬韓元</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">單趟總免稅額度</div>
+              <div className="text-lg font-black text-emerald-600">最高 500 萬韓元</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">海關抽驗免開箱線</div>
+              <div className="text-lg font-black text-black">單張退稅額 &lt; 7.5萬</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 韓國三大退稅模式對照表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Coins className="w-5 h-5 text-black" />
+            韓國三大退稅管道：即時免稅 vs 市區退稅機 vs 機場退稅
+          </h3>
+          <p className="text-sm text-gray-600">
+            結帳前先看店家門口張貼的標誌（Tax Free / Global Blue / Easy Tax），不同管道流程完全不同：
+          </p>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">退稅方式</th>
+                  <th className="p-3">代表店家地點</th>
+                  <th className="p-3">操作方式與流程</th>
+                  <th className="p-3">是否需要跑機場？</th>
+                  <th className="p-3">推薦指數</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50 bg-emerald-50/30">
+                  <td className="p-3 font-bold text-emerald-900">1. 現場即時退稅 (Immediate Refund)</td>
+                  <td className="p-3">Olive Young、大創、樂天超市、弘大連鎖服飾店</td>
+                  <td className="p-3">結帳時直接出示護照，收銀機直接扣除稅金，付純未稅金額</td>
+                  <td className="p-3 font-bold text-emerald-600">❌ 完全不用跑機場！</td>
+                  <td className="p-3 font-bold text-emerald-600">⭐⭐⭐⭐⭐ 最推薦</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">2. 市區自助退稅機 (City Refund Kiosk)</td>
+                  <td className="p-3">明洞街頭機台、現代百貨、樂天百貨退稅服務台</td>
+                  <td className="p-3">拿單據到機台掃描護照並過刷信用卡作為擔保，當場退韓幣現鈔</td>
+                  <td className="p-3 text-amber-700">⚠️ 出境時務必在機場刷出境確認</td>
+                  <td className="p-3 font-bold text-indigo-600">⭐⭐⭐⭐ 方便好用</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">3. 機場出境退稅 (Airport Kiosk)</td>
+                  <td className="p-3">仁川 (ICN) T1/T2、金浦 (GMP)、釜山金海 (PUS)</td>
+                  <td className="p-3">拿所有事後退稅單，在機場非管制區 Kiosk 登錄，出境後於 28 號登機門旁領現金</td>
+                  <td className="p-3 font-bold text-red-600">✅ 必須於機場完成</td>
+                  <td className="p-3 font-bold text-gray-600">⭐⭐⭐ 傳統做法</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 仁川機場 Kiosk 5 步驟領錢流程 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Building className="w-5 h-5 text-indigo-600" />
+            仁川機場 (ICN) Step-by-Step 實測：如何 5 分鐘光速領到退稅現金
+          </h3>
+          <p className="text-sm text-gray-600">
+            如果你的退稅單沒有在市區折抵，到仁川機場只要依照「先刷單、再出境、後領錢」三口訣：
+          </p>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+              <div>
+                <strong>抵達出境大廳（非管制區），找到自助退稅機台 (Tax Refund Kiosk)</strong>
+                <p className="text-gray-600 text-xs mt-0.5">仁川 T1 位於 3 樓 D、J 報到櫃檯旁；T2 位於 3 樓 D、E 區，機台有完整中文介面與專人協助。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+              <div>
+                <strong>掃描護照晶片，逐一掃描所有退稅單上的條碼 (Barcode)</strong>
+                <p className="text-gray-600 text-xs mt-0.5">系統會顯示總退稅金額。若單筆退稅金額在 <strong>75,000 韓元以下（商品約 100 萬韓元內）</strong>，螢幕會直接打勾核准，免海關開箱驗貨！</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">3</span>
+              <div>
+                <strong>若單筆退稅超過 7.5 萬韓元或被標示抽驗：前往海關蓋章台驗貨</strong>
+                <p className="text-gray-600 text-xs mt-0.5">這時退稅物品「千萬別先託運」！帶著商品與單據到海關蓋章櫃檯出示未拆封商品，海關確認後在旁邊「大件行李專用輸送帶」託運。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">4</span>
+              <div>
+                <strong>通過安全檢查與出境證照查驗，進入免稅管制區</strong>
+                <p className="text-gray-600 text-xs mt-0.5">通過安檢後，直接前往管制區內的「退稅提領櫃台（Refund Cashier）」或專用兌換自動機。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-emerald-50 border border-emerald-600">
+              <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">5</span>
+              <div>
+                <strong className="text-emerald-900">抵達仁川 T1 28號登機門 / T2 249號登機門旁領取現金！</strong>
+                <p className="text-emerald-800 text-xs mt-0.5">出示護照，即可選擇退還韓幣 (KRW) 現金、美金 (USD) 現金，或退刷回原信用卡（約 3~5 工作天入帳）！</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 避坑三大注意事項 */}
+        <section className="bg-yellow-50 p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            韓國退稅最常發生的 3 大致命失誤
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>市區退稅拿了現金，卻忘了在機場過閘刷條碼</strong>：在市區機台退韓幣會預刷信用卡擔保。如果出境時忘了在機場 Kiosk 刷出境確認，擔保信用卡會被強制追扣 110% 罰金！</li>
+            <li><strong>高單價精品名牌包直接託運送走</strong>：Chanel、Louis Vuitton 或單價破百萬韓元的精品，海關 99% 會要求現場出示實物。若已被地勤託運送入機艙，海關拒絕蓋章，退稅直接泡湯！</li>
+            <li><strong>護照必須正本實體</strong>：翻拍護照照片或影本無法感應退稅機台，購物當天出門務必隨身攜帶護照正本以享即時免稅。</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'hong-kong-pre-arrival-registration-octopus-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 香港快閃自由行新手全攻略】不用台胞證！台灣護照免費「台灣居民預辦入境登記 (免簽網簽)」3 分鐘搞定、手機八達通無腦嗶、港鐵與叮叮車交通省錢指南',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1506970845246-18f21d533b20?w=800&q=80',
+    imageAlt: '香港維多利亞港夜景與中環摩天大樓，台灣旅客入境香港預辦登記與手機八達通教學',
+    excerpt: '週末想來一趟 2~3 天吃港點、看維港夜景的極速小旅行，航程只要 80 分鐘的香港是台灣人的快閃天堂！很多人以為去香港一定要花上千元辦台胞證？完全不用！只要持中華民國護照，在官網免費線上填寫「台灣居民預辦入境登記」，3 分鐘核准列印出來立刻免費入境香港！本篇手把手拆解香港入境登記防雷細節、Apple Wallet 手機八達通免押金即時加值、機場快線團體票省 40%、以及叮叮車與天星小輪小資省錢玩法！',
+    badge: '快閃首選',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-indigo-600">
+          <div className="sketch-badge -top-3 left-4 bg-indigo-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            台灣旅客超速入境港澳
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Plane className="w-5 h-5 text-indigo-600" />
+            台北直飛只要 80 分鐘！不用台胞證，線上免費登記 3 分鐘出發
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            台灣飛香港只要 1 小時 20 分鐘，班次密集到像在搭高鐵，是小資族週五下班說走就走、週日晚上回台上班的快閃首選。國泰航空、中華航空、長榮航空、香港快運與大灣區航空天天多班對飛，淡季含稅促銷機票往往只要 <strong>NT$ 4,500 ~ 6,500</strong>！
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            最棒的是：入境香港<strong>「完全不需要花錢辦台胞證」</strong>！香港入境事務處提供台灣居民專屬的「免費預辦入境登記 (PAR)」，只需在電腦或手機填入護照資料，系統即時核准，列印在 A4 白紙上隨身攜帶，即可享有 <strong>2 個月內免費入境 2 次、每次停留 30 天</strong>的極大便利！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">預辦入境登記費用</div>
+              <div className="text-lg font-black text-emerald-600">完全免費 (NT$0)</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">單程飛行時間</div>
+              <div className="text-lg font-black text-black">約 80 ~ 90 分鐘</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">每次入境停留天數</div>
+              <div className="text-lg font-black text-emerald-600">長達 30 天</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">手機八達通押金</div>
+              <div className="text-lg font-black text-black">HK$50 (可全退)</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 台灣居民預辦入境登記 3 步驟實測 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <FileText className="w-5 h-5 text-indigo-600" />
+            3 分鐘線上申請：台灣居民預辦入境登記 Step-by-Step
+          </h3>
+          <p className="text-sm text-gray-600">
+            請於出發前 1~2 週至「香港特區政府一站通」官方網站免費辦理：
+          </p>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+              <div>
+                <strong>核對護照效期：必須具有 6 個月以上效期之有效台灣護照</strong>
+                <p className="text-gray-600 text-xs mt-0.5">出生地必須載明為「台灣」，若出生地為外國或大陸地區，請改持有效台胞證入境。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+              <div>
+                <strong>輸入中英文姓名、身分證字號、護照號碼與「回台旅行證件號碼」</strong>
+                <p className="text-gray-600 text-xs mt-0.5">注意：「回台旅行證件號碼」就是你的<strong>中華民國護照號碼</strong>！英文姓名拼音與大小寫必須與護照內頁完全一致。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-emerald-50 border border-emerald-600">
+              <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">3</span>
+              <div>
+                <strong className="text-emerald-900">系統即時審核通過，使用雷射印表機以 A4 白紙列印出來！</strong>
+                <p className="text-emerald-800 text-xs mt-0.5">重點天條：<strong>必須印出紙本！</strong>不可存放在手機出示電子檔，桃園機場地勤與香港海關皆必須在紙本上蓋章驗證。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 手機八達通與交通攻略 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Smartphone className="w-5 h-5 text-black" />
+            香港交通神器：手機八達通 (Apple Pay / 華為) 無腦嗶全港
+          </h3>
+          <p className="text-sm text-gray-600">
+            不用再到機場排隊買實體塑膠卡！iPhone 使用者只要在 Apple 錢包就能直接開卡加值：
+          </p>
+          <div className="grid md:grid-cols-3 gap-3 text-xs md:text-sm">
+            <div className="bg-white p-4 border border-black sketch-border space-y-2">
+              <strong className="text-indigo-900 block text-base font-bold">1. Apple 錢包即刻新增</strong>
+              <p className="text-gray-600">
+                打開 iPhone「錢包」App ➔ 點右上角「+」➔ 選擇「交通卡」➔ 搜尋「八達通 Octopus」➔ 綁定台灣信用卡（如富邦 J 卡、國泰 CUBE 卡）即可加值開卡，免解鎖手機感應秒過閘！
+              </p>
+            </div>
+            <div className="bg-white p-4 border border-black sketch-border space-y-2">
+              <strong className="text-indigo-900 block text-base font-bold">2. 機場進市區交通選擇</strong>
+              <p className="text-gray-600">
+                <strong>追求速度</strong>：搭機場快線 (AEL) 24 分鐘直達中環香港站，KKday/Klook 買 2~4 人團體票只要 6 折！<br />
+                <strong>追求省錢</strong>：搭城巴 A21 / A11，直達旺角、尖沙咀與銅鑼灣只要 HK$33，沿途還能欣賞青馬大橋海景！
+              </p>
+            </div>
+            <div className="bg-white p-4 border border-black sketch-border space-y-2">
+              <strong className="text-indigo-900 block text-base font-bold">3. 銅板價浪漫體驗</strong>
+              <p className="text-gray-600">
+                <strong>港島雙層叮叮車</strong>：單趟不限距離只要 HK$3.0（約台幣 12 元），吹著涼風穿梭中環與上環老街；<strong>天星小輪</strong>往返尖沙咀與中環只要 HK$5.0，坐擁世界級維港夜景！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 必吃與避雷提醒 */}
+        <section className="bg-yellow-50 p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <ShieldCheck className="w-5 h-5 text-emerald-600" />
+            黑白飛特派員：香港快閃避坑 3 大溫馨叮嚀
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>港式茶餐廳自備面紙與茶水規矩</strong>：香港傳統冰室與酒樓桌上的紙巾往往需要額外收費（HK$3~5），入座前建議隨身攜帶隨身包面紙；桌上第一壺熱水通常是用來燙洗餐具碗筷（洗杯洗筷），非飲用水。</li>
+            <li><strong>插座規格為英規三腳厚扁插 (Type G)</strong>：香港電壓為 220V，插頭為英國標準三角厚型插頭，出發前務必自備萬用轉接頭。</li>
+            <li><strong>港幣現鈔少量準備即可</strong>：目前香港計程車、路邊攤與老字號餅店雖仍偏好現金，但八達通已覆蓋 95% 超商、超市、快餐店與地鐵，兩天一人準備 HK$300~500 現鈔已極為充裕。</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'overseas-credit-card-declined-otp-sms-vowifi-guide-2026',
+    category: '必讀攻略',
+    title: '【出國刷卡一直被擋？國外收不到 OTP 簡訊救星】2026 海外刷卡被拒原因全破解！免漫遊費 VoWiFi 收驗證碼設定、銀行 App 開通海外刷卡、防盜刷額度設定與緊急聯絡清單',
+    author: '黑白飛特派團隊',
+    readTime: '12 分鐘',
+    image: 'https://images.unsplash.com/photo-1556742049-0a67c5574f73?w=800&q=80',
+    imageAlt: '出國刷卡交易失敗與換 eSIM 收不到台灣銀行 OTP 驗證碼簡訊解決教學',
+    excerpt: '在國外飯店 Check-in 或藥妝店結帳刷卡一直顯示「交易失敗 (Declined)」？更崩潰的是換了日韓當地 eSIM 或上網卡，線上訂新幹線車票或迪士尼門票時，台灣銀行的 3D 驗證簡訊 (OTP) 根本收不到！本篇完整拆解海外刷卡失敗 5 大主因：如何用免國際漫遊費的「VoWiFi」在國外免費秒收台灣簡訊、銀行 App 一鍵開啟「國外實體/線上交易權限」、防盜刷單日額度調整，以及各大銀行 24H 海外免費客服聯繫秘訣！',
+    badge: '出國自救',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            海外刷卡血淚自救
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <CreditCard className="w-5 h-5 text-red-600" />
+            在國外結帳卡刷不過、收不到驗證碼？出國前沒做這一步超崩潰！
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            「在東京精品店排隊排半小時，店員刷卡三次都顯示交易失敗，換別張卡也不給過，後面排隊客人狂盯著我超尷尬⋯⋯」「在飯店想臨時訂明天的大阪環球影城快速通關，結果換了日本 eSIM，根本收不到台灣富邦/國泰/玉山的 3D 驗證碼簡訊，眼睜睜看著票券被搶光！」
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            這是每週在 Dcard 和 PTT 旅遊板上最常見的慘痛案例。現代銀行為了防範跨國盜刷，對「異常時區、突然大額、非居住地」的交易監控極度嚴格；加上自由行旅客幾乎都改用<strong>上網 eSIM</strong>，台灣原本的 SIM 卡被拔掉或關閉漫遊，直接導致<strong>驗證碼斷聯</strong>！只要在出發前做好 3 項核心設定，就能 100% 杜絕這些窘境。
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">免漫遊費收簡訊</div>
+              <div className="text-lg font-black text-emerald-600">啟用 VoWiFi</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">海外交易權限</div>
+              <div className="text-lg font-black text-black">銀行 App 一鍵開</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">出國必備卡片數</div>
+              <div className="text-lg font-black text-emerald-600">至少 2~3 張</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">被擋刷解鎖耗時</div>
+              <div className="text-lg font-black text-black">約 3~5 分鐘</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 換 eSIM 收不到簡訊解法 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <div className="sketch-badge -top-3 left-4 bg-indigo-600 text-white text-xs px-2 py-0.5 font-bold uppercase">
+            核心技術破局
+          </div>
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Smartphone className="w-5 h-5 text-indigo-600" />
+            換了國外 eSIM，如何「免付昂貴漫遊費」收到台灣銀行 OTP 驗證碼？
+          </h3>
+          <p className="text-sm text-gray-600">
+            很多人以為收簡訊要開國際漫遊會產生高額漫遊費，或者直接關閉台灣門號導致收不到驗證碼。其實只要善用 <strong>VoWiFi（Wi-Fi 通話）</strong> 與雙卡雙待功能：
+          </p>
+          <div className="space-y-3 text-xs md:text-sm">
+            <div className="p-4 bg-gray-50 border border-black">
+              <strong className="text-indigo-900 block text-base mb-1">技巧 1：保留台灣門號開啟「VoWiFi Wi-Fi 通話」（免漫遊費）</strong>
+              <p className="text-gray-600 leading-relaxed">
+                在台灣出發前向中華電信、遠傳、台灣大哥大確認已開通免費的「VoWiFi」功能。在手機設定中將台灣門號的<strong>「數據漫遊關閉」</strong>（確保不吃海外流量），但<strong>「Wi-Fi 通話開啟」</strong>。到了國外飯店只要連上 Wi-Fi，手機訊號欄會顯示「中華電信 Wi-Fi」，此時<strong>接收任何台灣銀行的 OTP 簡訊完全免費</strong>，且能正常撥打或接聽台灣電話！
+              </p>
+            </div>
+            <div className="p-4 bg-gray-50 border border-black">
+              <strong className="text-indigo-900 block text-base mb-1">技巧 2：iPhone 雙卡黑科技「行動數據切換 + Wi-Fi 通話」</strong>
+              <p className="text-gray-600 leading-relaxed">
+                若使用的是 iPhone，將上網 eSIM 設為主要「行動數據」，台灣 SIM 卡設為主要「語音與簡訊」。當在外沒有 Wi-Fi 時，部分電信支援讓台灣門號借用國外 eSIM 的網路訊號進行 IMS 註冊（顯示為「中華電信使用行動數據」），在外逛街也能無縫秒收 OTP 驗證碼！
+              </p>
+            </div>
+            <div className="p-4 bg-gray-50 border border-black">
+              <strong className="text-indigo-900 block text-base mb-1">技巧 3：綁定銀行 App「推播驗證 / Email 驗證」替代簡訊</strong>
+              <p className="text-gray-600 leading-relaxed">
+                目前國泰世華 CUBE、台新 Richart、玉山 Wallet、富邦等主流銀行 App，均支援「點選 App 推播一鍵放行」或「將 OTP 密碼同步寄到電子信箱 (Email)」。出國前在銀行 App 內開啟「推播驗證」，就算完全沒有電信訊號，只要手機有網路就能秒速授權！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 刷卡失敗原因與自救 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            實體店面結帳被拒（Declined）5 大原因與即時解鎖
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">被拒原因</th>
+                  <th className="p-3">常見情境</th>
+                  <th className="p-3">現場 1 分鐘自救解法</th>
+                  <th className="p-3">出發前預防措施</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-red-900">未開通國外實體刷卡</td>
+                  <td className="p-3">銀行為防盜預設關閉海外實體交易</td>
+                  <td className="p-3 font-bold text-emerald-700">打開網銀 App ➔ 信用卡管理 ➔ 開啟「國外實體交易」</td>
+                  <td className="p-3 text-gray-500">出國前三天先將權限逐一打開</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-red-900">觸發銀行風控鎖卡</td>
+                  <td className="p-3">第一筆在免稅店刷數萬高單價包包/相機</td>
+                  <td className="p-3 font-bold text-emerald-700">回覆銀行防盜確認簡訊（按 1 確認）或進網銀智能客服解鎖</td>
+                  <td className="p-3 text-gray-500">若有大額採購預算，可致電告知預計旅遊日期</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-red-900">信用額度臨時不足</td>
+                  <td className="p-3">入住飯店預授權（Hold 押金）佔據額度</td>
+                  <td className="p-3 font-bold text-emerald-700">在網銀 App 點選「溢繳卡費」或申請「臨時調高額度」即刻生效</td>
+                  <td className="p-3 text-gray-500">出國前先向銀行申請臨時調額 2~3 倍</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-red-900">機台不支援感應刷卡</td>
+                  <td className="p-3">日本部分舊型刷卡機 Apple Pay 感應失敗</td>
+                  <td className="p-3 font-bold text-emerald-700">改出示「實體晶片信用卡」進行插卡並輸入 PIN 碼 (或直接按綠色確定鍵)</td>
+                  <td className="p-3 text-gray-500">出國務必攜帶 2 張實體卡片，勿只靠手機感應</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-red-900">國際發卡組織通道故障</td>
+                  <td className="p-3">Visa 或 Mastercard 全球單一通道壅塞</td>
+                  <td className="p-3 font-bold text-emerald-700">換用另一種發卡組織（如改用 JCB 或 Mastercard）</td>
+                  <td className="p-3 text-gray-500">皮夾配置：1 張 Visa + 1 張 Mastercard + 1 張 JCB</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 緊急聯繫工具 */}
+        <section className="bg-yellow-50 p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <ShieldCheck className="w-5 h-5 text-emerald-600" />
+            黑白飛特派員：海外免付費緊急聯繫備忘錄
+          </h4>
+          <p className="text-xs md:text-sm text-gray-700">
+            若卡片被鎖且智能客服無法排除，可使用網路電話撥打銀行海外專線：
+          </p>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1">
+            <li><strong>Skype 撥打 0800 免費電話</strong>：手機下載 Skype 只要有 Wi-Fi，直接撥打台灣各大銀行的「0800-xxx-xxx」市話免付費專線是完全免費的！</li>
+            <li><strong>銀行 App 網路電話客服</strong>：如國泰世華、玉山、中信 App 內建「網路電話客服」，點擊後直接透過網路連線專人客服，完全不吃國際通話費。</li>
+            <li><strong>記下「海外受話方付費電話 (Collect Call)」</strong>：卡片背面的國際電話號碼，請在飯店櫃台透過外線告知總機撥打受話方付費電話。</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'taipei-main-station-in-town-check-in-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 台北車站預辦登機完全指南】空手逛街到最後一刻！機捷 A1/A3 預辦登機時間、適用航司（華航/長榮/星宇/國泰/廉航支援度）、大行李託運流程與 4 大地雷避坑',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?w=800&q=80',
+    imageAlt: '桃園機場捷運 A1 台北車站市區預辦登機與自助行李託運機台流程教學',
+    excerpt: '搭傍晚或晚上的班機飛日韓歐美，退房後整天都要扛著 28 吋大行李逛街？很多人不知道：搭乘機場捷運在「A1 台北車站」或「A3 新北產業園區」就能提前完成報到與行李託運！實測早上 8 點先把行李送去機場，兩手空空在台北吃牛肉麵、喝咖啡，時間到了直接搭機捷去桃機過安檢登機！哪些航空公司適用？廉航（虎航/樂桃/酷航）可以嗎？起飛前幾小時截止？不能託運的 4 大違禁品避雷實測！',
+    badge: '空手神技',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative">
+          <div className="sketch-badge -top-3 left-4 bg-emerald-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            北台灣超省力出國神技
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Luggage className="w-5 h-5 text-emerald-600" />
+            不用扛大箱去機場！早上在台北車站先託運，優雅空手逛街到起飛
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            你是否也遇過這種窘境：下午 18:00 的飛機，飯店早上 11:00 就要 Check-out。拖著沉重的 28 吋大行李箱，不管去西門町、中山商圈還是信義區，都找不到空的置物櫃，扛著箱子爬捷運樓梯累到滿身大汗？
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            善用<strong>「桃園機場捷運市區預辦登機 (In-town Check-in)」</strong>就能徹底解放雙手！只要在 <strong>A1 台北車站（B1 預辦登機大廳）</strong> 或 <strong>A3 新北產業園區站</strong>，就能提早印出登機證並把大件行李送進地下行李分揀輸送帶，行李會直接直送桃園機場送上飛機！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">服務使用費用</div>
+              <div className="text-lg font-black text-emerald-600">完全免費 (NT$0)</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">服務開放時間</div>
+              <div className="text-lg font-black text-black">06:00 ~ 21:30</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">最晚辦理時限</div>
+              <div className="text-lg font-black text-red-600">起飛前 3 小時前</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">直達桃機車程</div>
+              <div className="text-lg font-black text-black">紫色直達車 36 分</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 航司適用清單表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Plane className="w-5 h-5 text-black" />
+            2026 機捷預辦登機「適用航空公司與限制」大對決
+          </h3>
+          <p className="text-sm text-gray-600">
+            並非所有航空公司都支援市區預辦登機！以下為目前官方最新合作執飛航司與限制條件：
+          </p>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">航空公司</th>
+                  <th className="p-3">A1 台北車站</th>
+                  <th className="p-3">A3 新北產業園區</th>
+                  <th className="p-3">當日航班起飛時間限制</th>
+                  <th className="p-3">注意事項</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-sky-900">中華航空 (CI) / 華信 (AE)</td>
+                  <td className="p-3 text-emerald-600 font-bold">✅ 支援 (人工/自助)</td>
+                  <td className="p-3 text-emerald-600 font-bold">✅ 支援 (自助行李)</td>
+                  <td className="p-3">當天 09:00 以後起飛之班機</td>
+                  <td className="p-3">起飛前 180 分鐘（3小時）截止</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-emerald-900">長榮航空 (BR) / 立榮 (B7)</td>
+                  <td className="p-3 text-emerald-600 font-bold">✅ 支援 (人工/自助)</td>
+                  <td className="p-3 text-emerald-600 font-bold">✅ 支援 (自助行李)</td>
+                  <td className="p-3">當天 09:00 以後起飛之班機</td>
+                  <td className="p-3">起飛前 180 分鐘（3小時）截止</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-amber-900">星宇航空 (JX)</td>
+                  <td className="p-3 text-emerald-600 font-bold">✅ 支援 (自助機台)</td>
+                  <td className="p-3 text-emerald-600 font-bold">✅ 支援 (自助行李)</td>
+                  <td className="p-3">當天 09:00 以後起飛之班機</td>
+                  <td className="p-3">支援自助行李託運機 (BAG DROP)</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-teal-900">國泰航空 (CX)</td>
+                  <td className="p-3 text-emerald-600 font-bold">✅ 支援 (專屬櫃檯)</td>
+                  <td className="p-3 text-gray-400">❌ 暫無</td>
+                  <td className="p-3">當天 09:00 以後起飛之班機</td>
+                  <td className="p-3">飛香港與轉機長程旅客愛用</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-red-50/50">
+                  <td className="p-3 font-bold text-red-900">台灣虎航 / 樂桃 / 酷航 (廉航)</td>
+                  <td className="p-3 text-red-600 font-bold">❌ 不支援</td>
+                  <td className="p-3 text-red-600 font-bold">❌ 不支援</td>
+                  <td className="p-3 text-red-500">無法於市區預辦</td>
+                  <td className="p-3 text-red-700">廉航旅客必須前往桃園機場航廈櫃檯報到！</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 4 步驟流程 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Train className="w-5 h-5 text-indigo-600" />
+            A1 台北車站現場託運 Step-by-Step 實測流程
+          </h3>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+              <div>
+                <strong>抵達機捷 A1 台北車站地下 1 樓（B1 預辦登機區）</strong>
+                <p className="text-gray-600 text-xs mt-0.5">從台鐵/高鐵或台北捷運沿「桃園機場捷運」指標步行至 A1 站體，還不需要刷卡進站，預辦登機區設於非管制大廳。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+              <div>
+                <strong>操作自助報到機 (Kiosk) 列印登機證與行李條</strong>
+                <p className="text-gray-600 text-xs mt-0.5">掃描護照或輸入機票代碼，確認航班與選位後，機台會印出登機證與黏貼於行李上的專用行李條碼。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">3</span>
+              <div>
+                <strong>前往自助行李託運機 (Self-bag Drop)，行李放上輸送帶</strong>
+                <p className="text-gray-600 text-xs mt-0.5">依照螢幕指示掃描登機證條碼，貼好行李條，閘門關閉後自動過磅並進入 X 光安檢通道。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-emerald-50 border border-emerald-600">
+              <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">4</span>
+              <div>
+                <strong className="text-emerald-900">務必在「行李安檢螢幕」前確認行李通過 X 光機（約 2 分鐘）</strong>
+                <p className="text-emerald-800 text-xs mt-0.5">看到螢幕上自己的行李條碼打勾顯示「安檢合格」後再行離開！若有未取出的行動電源或違禁品，地勤會立刻廣播開箱複檢。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 4 大地雷避坑 */}
+        <section className="bg-yellow-50 p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            預辦登機 4 大常見退件地雷！千萬別踩
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>起飛前 3 小時「分秒不差截止」</strong>：例如 16:00 起飛的班機，13:00 系統就準時鎖死無法辦理。強烈建議在起飛前 4~5 小時抵達辦理最保險。</li>
+            <li><strong>行動電源與鋰電池切勿託運</strong>：一旦隨身電源被放進託運行李，X 光機一照立刻退件卡關，人若已離開還必須折返開箱。</li>
+            <li><strong>紙箱與軟質行李袋無法走自助機台</strong>：紙箱、不規則形狀行李、過長雪具高爾夫球袋、或超重行李，機台感應器無法判讀，必須改走人工櫃檯或直接前往桃機辦理。</li>
+            <li><strong>未滿 12 歲單獨旅行與攜帶寵物者不適用</strong>：特殊服務旅客（如輪椅、嬰兒推車直接推到登機門者）建議直接至機場航廈報到。</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'lcc-seat-selection-emergency-exit-rules-guide-2026',
+    category: '行李圖解',
+    title: '【廉航加價選位值得嗎？2026 虎航/樂桃/酷航座位大評比】伸腳空間差了 15 公分！逃生門座席 4 大嚴格限制（不能放包包/英文能力）、第一排秒下機優缺點與不加價挑好位秘訣',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1540339832862-474599807836?w=800&q=80',
+    imageAlt: '廉價航空飛機客艙座椅間距與緊急逃生出口逃生門座位選位評比',
+    excerpt: '買廉航機票到底要不要加價選位？加價 $300~$1,500 真的有差嗎？台灣虎航（虎舒適）、樂桃（巧選座位）、酷航（酷吉/伸展座位）全實測：一般標準位椅距僅 28 吋，身高超過 175cm 膝蓋直接頂到前座！加價升級「逃生門出口座位」腿部空間暴增 15 公分，但你必須符合：具備英文或日文溝通能力、起降時腳下全面淨空嚴禁放包包、孕婦與未滿 15 歲不得乘坐！本篇傳授不花錢選連號座位的神奇報到時機！',
+    badge: '選位攻略',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative">
+          <div className="sketch-badge -top-3 left-4 bg-indigo-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            客艙空間真相對決
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Ticket className="w-5 h-5 text-indigo-600" />
+            航程 3~4 小時膝蓋頂前座？廉航加價選位 CP 值全拆解
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            搭乘廉價航空（A320 / A321 單走道窄體客機），為了塞進更多座位，標準座椅間距（Seat Pitch）通常只有 <strong>28 ~ 29 吋（約 71 ~ 74 公分）</strong>。身高超過 175 公分的成人坐進去，膝蓋往往直接頂到前排椅背，前座稍微一往後傾斜，整個航程就像被夾在沙丁魚罐頭裡動彈不得！
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            但加價選位從幾百元到破千元都有，到底哪一種最值得加價？加了錢選「逃生門出口席（Exit Row）」以為很爽，結果被空服員要求換位是怎麼回事？本篇實測台灣虎航、樂桃與酷航各區座位，教你把每一分錢花在刀口上！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">廉航標準座席椅距</div>
+              <div className="text-lg font-black text-red-600">約 28~29 吋 (極窄)</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">逃生門伸腿空間</div>
+              <div className="text-lg font-black text-emerald-600">加長 15~20 公分</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">第 1 排快速下機</div>
+              <div className="text-lg font-black text-black">省 15 分鐘排隊</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">單程加價行情</div>
+              <div className="text-lg font-black text-emerald-600">NT$ 250 ~ 950</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 三大廉航選位等級表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Scale className="w-5 h-5 text-black" />
+            2026 台灣三大廉航「選位等級、價格與空間」大比評
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">航空公司</th>
+                  <th className="p-3">座席級別名稱</th>
+                  <th className="p-3">座椅位置</th>
+                  <th className="p-3">單程加價參考</th>
+                  <th className="p-3">實際舒適度評語</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-amber-900" rowSpan={3}>台灣虎航 (Tigerair Taiwan)</td>
+                  <td className="p-3 font-bold text-indigo-700">虎舒適 (Tigercomfort)</td>
+                  <td className="p-3">第 1、12、13 排 (逃生口/第一排)</td>
+                  <td className="p-3 font-bold text-red-600">約 NT$ 650 ~ 750</td>
+                  <td className="p-3">腿部伸展天花板，大長腿必選</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-700">虎快客 (Tigerquicker)</td>
+                  <td className="p-3">第 2 ~ 4 排 (前段座位)</td>
+                  <td className="p-3 text-amber-700">約 NT$ 350 ~ 450</td>
+                  <td className="p-3">空間與一般相同，但下機極快搶先過海關</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-700">虎厝邊 (Tigerbuddy)</td>
+                  <td className="p-3">第 5 ~ 11 排、14 ~ 30 排</td>
+                  <td className="p-3 text-gray-600">約 NT$ 220 ~ 290</td>
+                  <td className="p-3">標準標準間距，同行友人選在一起用</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-pink-50/30">
+                  <td className="p-3 font-bold text-pink-900" rowSpan={3}>樂桃航空 (Peach Aviation)</td>
+                  <td className="p-3 font-bold text-indigo-700">先行座位 (Fast Seat)</td>
+                  <td className="p-3">第 1 排</td>
+                  <td className="p-3 font-bold text-red-600">約 NT$ 600 ~ 850</td>
+                  <td className="p-3">附託運行李優先送達標籤，下機第一名</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-pink-50/30">
+                  <td className="p-3 font-bold text-indigo-700">巧選座位 (Smart Seat)</td>
+                  <td className="p-3">第 2 ~ 5 排、12/13 排逃生口</td>
+                  <td className="p-3 text-amber-700">約 NT$ 350 ~ 550</td>
+                  <td className="p-3">逃生門腿部空間大，第 2~5 排下機迅速</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-pink-50/30">
+                  <td className="p-3 font-bold text-gray-700">樂享/標準座位</td>
+                  <td className="p-3">其餘走道/靠窗/中間位</td>
+                  <td className="p-3 text-gray-600">約 NT$ 200 ~ 300</td>
+                  <td className="p-3">若不加價，系統會在 Check-in 時隨機分配</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-yellow-50/30">
+                  <td className="p-3 font-bold text-yellow-900" rowSpan={2}>酷航 (Scoot)</td>
+                  <td className="p-3 font-bold text-indigo-700">伸展座位 (Stretch) / 酷吉</td>
+                  <td className="p-3">第 1 排及緊急出口排</td>
+                  <td className="p-3 font-bold text-red-600">約 NT$ 800 ~ 1,200</td>
+                  <td className="p-3">B787 雙走道寬體客機空間極寬敞，極為舒適</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-yellow-50/30">
+                  <td className="p-3 font-bold text-indigo-700">超級座位 (Super)</td>
+                  <td className="p-3">椅距 34 吋之升級位</td>
+                  <td className="p-3 text-amber-700">約 NT$ 500 ~ 750</td>
+                  <td className="p-3">比一般多 30% 伸腿空間，高 CP 首選</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 逃生口座席 4 大天條 */}
+        <section className="bg-red-50 p-6 sketch-border space-y-4 border-l-4 border-l-red-600">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase">
+            國際民航法定安全天條
+          </div>
+          <h3 className="text-lg font-bold flex items-center gap-2 text-red-950">
+            <AlertTriangle className="w-5 h-5 text-red-600" />
+            買了逃生門座位卻被空服員換掉？必須符合這 4 大法定條件
+          </h3>
+          <p className="text-xs md:text-sm text-neutral-700 leading-relaxed">
+            緊急逃生出口旁的座位依民航法規肩負「協助緊急撤離」的義務，航空公司絕不是收了錢就能隨便坐！若登機後經空服員評估不符資格，<strong>將會被強制調換至後排一般空位，且選位費用原則上不予退還</strong>：
+          </p>
+          <div className="grid md:grid-cols-2 gap-3 text-xs md:text-sm">
+            <div className="bg-white p-3 border border-black space-y-1">
+              <strong className="text-red-700 block">條件 1：具備基本英文或目的地語言溝通能力</strong>
+              <p className="text-gray-600">
+                空服員起飛前會向逃生口乘客進行口頭說明與任務徵詢。若完全聽不懂空服員指令（例如樂桃需會日語或英語，酷航需英語），會被判定無法協助撤離而換位。
+              </p>
+            </div>
+            <div className="bg-white p-3 border border-black space-y-1">
+              <strong className="text-red-700 block">條件 2：起飛降落時「腳下完全淨空」，不得放任何包包</strong>
+              <p className="text-gray-600">
+                一般座位可以把小包包或相機袋塞在前座下方；<strong>逃生口排前座下方嚴禁擺放任何物品</strong>！所有隨身行李（哪怕只是腰包、免稅店小提袋）都必須放入頭頂行李架。
+              </p>
+            </div>
+            <div className="bg-white p-3 border border-black space-y-1">
+              <strong className="text-red-700 block">條件 3：年齡與身心條件嚴格受限</strong>
+              <p className="text-gray-600">
+                未滿 15 歲兒童、孕婦、長輩行動不便需輔助者、或攜帶嬰幼兒同行的旅客，法規明文禁止坐在緊急逃生出口排。
+              </p>
+            </div>
+            <div className="bg-white p-3 border border-black space-y-1">
+              <strong className="text-red-700 block">條件 4：椅背可能無法往後傾斜（Recline）</strong>
+              <p className="text-gray-600">
+                部分機型的第 11 排或第 12 排因為緊鄰後方的逃生門通道，為了避免阻礙後排逃生，其椅背是<strong>固定直立無法傾斜</strong>的，選位時務必看清標籤！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 免費選連號小秘訣 */}
+        <section className="bg-white p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+            不想花錢買位？情侶朋友如何「免費坐在一起」的報到技巧
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>起飛前 24~48 小時「準時線上報到 (Web Check-in)」</strong>：系統隨機劃位通常是依照同一筆訂單的姓名連號自動排入未售出的空位，開放報到第一分鐘登入，被分在一起的機率高達 80%！</li>
+            <li><strong>提早 2.5 小時至機場實體櫃檯，有禮貌詢問地勤</strong>：兩人在同一張訂位代號下，櫃檯地勤在剩餘空位允許的情況下，多數會善意將同行旅客安排在相鄰座位。</li>
+            <li><strong>避開前後分散的「中間位 (B/E)」</strong>：若單人出行不介意加價，多花 $200 買走道位 (C/D) 進出上廁所極其自由，是長途小資的最聰明投資！</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'japan-shinkansen-oversized-baggage-rules-2026',
+    category: '必讀攻略',
+    title: '【2026 日本新幹線特大行李預約全解】28/30吋胖胖箱沒預約罰 1,000 日幣！JR 特大荷物座席 SmartEX 線上預約教學、尺寸算法與京都巴士禁帶行李避坑指南',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800&q=80',
+    imageAlt: '日本新幹線特大行李專用座席與大型行李尺寸測量規範，JR SmartEX 預約教學',
+    excerpt: '去日本自由行愛扛 28~32 吋大行李箱或胖胖箱？搭新幹線千萬別直接拖上車！JR 東海道、山陽、九州新幹線嚴格實施「特大荷物（長寬高大於 160 公分）預約新制」：未預約上車直接被車長加收 1,000 日圓手續費並強制移置！胖胖箱到底算不算特大行李？SmartEX 免手續費線上劃位步驟、無預約時的緊急自救法，以及 2026 京都觀光巴士全面禁帶大行李的市區移動解方全圖解！',
+    badge: '鐵道必讀',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative">
+          <div className="sketch-badge -top-3 left-4 bg-black text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            JR 新幹線行李鐵則
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Train className="w-5 h-5 text-indigo-600" />
+            扛 28 吋以上大箱搭新幹線？沒預約當場罰 1,000 日圓！
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            台灣旅客去日本旅遊最愛購物爆買，人手一個 28 吋、30 吋行李箱或是近年超夯的「四六分胖胖箱（Trunk Case）」。但你知道嗎？從東京搭新幹線去京都、大阪、名古屋或博多，只要行李<strong>「三邊長度合計超過 160 公分」</strong>，沒有提前預訂「特大荷物座席」，被車長查獲一律當場加收 <strong>1,000 日圓（約 NT$ 220）</strong>懲罰性手續費，並強制移置到指定車廂！
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            更痛苦的是：如果該班列車的特大行李置放區已經客滿，車長甚至有權<strong>「要求你在下一站下車改搭其他班次」</strong>！本篇完整拆解行李尺寸算法、免費預約方式與京都巴士最新禁帶行李規定，讓你輕鬆過關不踩雷！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">特大行李門檻</div>
+              <div className="text-lg font-black text-red-600">三邊合計 &gt; 160cm</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">預約手續費</div>
+              <div className="text-lg font-black text-emerald-600">免費 (NT$0)</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">現場違規罰金</div>
+              <div className="text-lg font-black text-red-600">1,000 日圓</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">嚴格管制路線</div>
+              <div className="text-lg font-black text-black">東海道/山陽/九州</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 尺寸計算與判定標準 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Scale className="w-5 h-5 text-black" />
+            你的行李箱算特大嗎？三邊尺寸計算與胖胖箱實測
+          </h3>
+          <p className="text-sm text-gray-600">
+            JR 官方規定計算方式為：<strong>行李的「長 + 寬 + 高（含輪子與把手全部突起處）」</strong>。以下為常見行李箱規格對照：
+          </p>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">行李箱常見尺寸</th>
+                  <th className="p-3">三邊長度合計 (概估)</th>
+                  <th className="p-3">是否需要預約？</th>
+                  <th className="p-3">車廂建議放置位置</th>
+                  <th className="p-3">注意事項</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">20~24 吋登機/中型箱</td>
+                  <td className="p-3 text-emerald-600 font-bold">115 ~ 140 公分</td>
+                  <td className="p-3 font-bold text-emerald-600">❌ 不需要</td>
+                  <td className="p-3">座位上方行李架或個人腳前</td>
+                  <td className="p-3 text-gray-500">直接帶上車，免預約</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">26~27 吋標準行李箱</td>
+                  <td className="p-3 text-emerald-600 font-bold">145 ~ 158 公分</td>
+                  <td className="p-3 font-bold text-emerald-600">❌ 不需要 (臨界值)</td>
+                  <td className="p-3">座位上方行李架 (需有力氣抬起)</td>
+                  <td className="p-3 text-gray-500">若有加厚拉鍊展開，可能超標</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-amber-50/50">
+                  <td className="p-3 font-bold text-amber-900">28~29 吋胖胖箱 (深度35cm+)</td>
+                  <td className="p-3 text-red-600 font-bold">158 ~ 168 公分</td>
+                  <td className="p-3 font-bold text-red-600">⚠️ 強烈建議預約！</td>
+                  <td className="p-3">特大行李座位後方空間</td>
+                  <td className="p-3 text-amber-800">胖胖箱太厚，塞不進座位上方架！</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-red-50/50">
+                  <td className="p-3 font-bold text-red-900">30~32 吋巨型行李箱</td>
+                  <td className="p-3 text-red-600 font-bold">165 ~ 180 公分</td>
+                  <td className="p-3 font-bold text-red-600">🔴 強制必須預約！</td>
+                  <td className="p-3">指定車廂特大荷物置場</td>
+                  <td className="p-3 text-red-800">未預約罰 1,000 日圓，且無法上架</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-gray-100">
+                  <td className="p-3 font-bold text-gray-700">三邊合計大於 250 公分</td>
+                  <td className="p-3 font-bold text-red-600">&gt; 250 公分</td>
+                  <td className="p-3 font-bold text-red-600">🚫 嚴禁攜帶上車</td>
+                  <td className="p-3">無（無法承運）</td>
+                  <td className="p-3 text-red-700">超出鐵道限制，請改用宅急便託運</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* SmartEX 與 JR 綠色窗口預約步驟 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Ticket className="w-5 h-5 text-indigo-600" />
+            如何免費預訂特大行李席？SmartEX 線上 3 步驟搞定
+          </h3>
+          <p className="text-sm text-gray-600">
+            預約「特大荷物附帶座席」<strong>不需要額外多花一毛錢</strong>（票價與普通指定席完全一樣），差別只在於選位時勾選指定座席：
+          </p>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+              <div>
+                <strong>開啟 SmartEX App 或 JR 售票機選票</strong>
+                <p className="text-gray-600 text-xs mt-0.5">選擇搭乘的新幹線車次（如 Nozomi、Hikari、Kodama）與日期時段。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+              <div>
+                <strong>座席種類勾選「特大荷物スペースつき座席」（附置放空間席）</strong>
+                <p className="text-gray-600 text-xs mt-0.5">系統會自動過濾出車廂最後一排的特殊座位，你的座位正後方就是專屬放置區；或選擇「特大荷物コーナー」（車廂走道旁的專屬密碼鎖行李櫃）。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-emerald-50 border border-emerald-600">
+              <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">3</span>
+              <div>
+                <strong className="text-emerald-900">完成付款綁定 IC 卡，刷手機 Apple Wallet Suica 輕鬆進站</strong>
+                <p className="text-emerald-800 text-xs mt-0.5">將預約的指定席綁定手機西瓜卡或實體車票，上車後行李直接推到自己座位身後的空間，安穩享受旅程！</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 京都巴士禁帶大行李警報 */}
+        <section className="bg-red-50 p-6 sketch-border space-y-3 border-l-4 border-l-red-600">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase">
+            京都觀光客必讀震撼新規
+          </div>
+          <h4 className="font-bold text-red-950 flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-red-600" />
+            2026 京都公車「全面禁帶大型行李」上車！被司機拒載解法
+          </h4>
+          <p className="text-xs md:text-sm text-red-900 leading-relaxed">
+            為了解決嚴重的「過度觀光（Overtourism）」與車廂推擠，京都交通局全面公告：<strong>市營公車原則上禁止攜帶大型行李箱搭乘！</strong>若你拖著 28 吋大箱排隊搭 206 號公車去清水寺或祇園，司機將會嚴正拒絕讓你上車。
+          </p>
+          <div className="grid md:grid-cols-2 gap-3 text-xs md:text-sm mt-3">
+            <div className="bg-white p-3 border border-black">
+              <strong className="text-black block mb-1">替代方案 1：善用「Hands-Free 空手觀光」行李當日配送</strong>
+              <p className="text-gray-600">在京都車站地下中央口 Crosta 或黑貓宅急便櫃台，早上 10:00 前寄件，下午直接送到京都各大飯店，一件僅約 1,000~1,500 日圓。</p>
+            </div>
+            <div className="bg-white p-3 border border-black">
+              <strong className="text-black block mb-1">替代方案 2：改搭地鐵 (烏丸線/東西線) 或 JR 轉計程車</strong>
+              <p className="text-gray-600">地鐵車廂寬敞不受大行李限制；若住山坡或傳統町家，建議在車站搭乘計程車（MK Taxi / GO App 叫車），車資平分一人才幾百日圓。</p>
+            </div>
+          </div>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'transit-flight-through-check-in-baggage-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 出國轉機行李直掛全攻略】分段買廉航行李沒直掛慘遭放鳥？國籍航空 vs 廉航聯程機票判斷、外站轉機提行李入境流程與防漏接 4 大法則',
+    author: '黑白飛特派團隊',
+    readTime: '12 分鐘',
+    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80',
+    imageAlt: '國際機場轉機長廊與行李直掛轉運標示，廉航分段買機票自救指南',
+    excerpt: '為了省幾千塊機票錢買轉機航班，結果在香港、新加坡或吉隆坡被擋在登機門，眼睜睜看著後段飛機飛走？很多自由行新手不知道：廉航（酷航、亞航、樂桃）與不同航空公司分開開票，行李「100% 不會自動直掛」！你必須在轉機國先辦入境、排隊過海關、提領行李、再重新到出境大廳排隊報到！轉機時間抓 2 小時根本是自殺行為！本篇教你秒懂「聯程機票 (Single Ticket)」與「自行轉機 (Self-transfer)」差別、過境簽證 (TWOV) 與防漏接行李的 4 大保命密技！',
+    badge: '轉機防坑',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            血淚轉機避坑指南
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Plane className="w-5 h-5 text-red-600" />
+            以為行李會自動直掛？分段買廉航「直接被放鳥」真實慘案
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            「在 OTA 訂票網看到台北飛倫敦只要 14,000 元，轉機吉隆坡 2 小時 15 分，以為很划算；結果在吉隆坡下機要轉機時，地勤說我的行李沒直掛，必須先入境馬來西亞提領行李再重新 Check-in！光排入境移民官就花了 80 分鐘，衝到出境櫃檯時早已關櫃，後段機票直接作廢，重買一張花了快三萬元！」
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            出國轉機最常見的悲劇就是<strong>「誤把自行轉機（分段買票）當成聯程機票」</strong>。只要航空公司之間沒有簽署「行李聯運協議（Interline Baggage Agreement）」，你的大行李就無法直掛目的地，必須全套重新跑一次通關流程！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">聯程機票行李</div>
+              <div className="text-lg font-black text-emerald-600">自動直掛終點</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">分段廉航轉機</div>
+              <div className="text-lg font-black text-red-600">需入境重新託運</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">自轉建議安全時間</div>
+              <div className="text-lg font-black text-black">至少 3.5 ~ 4 小時</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">錯過航班責任</div>
+              <div className="text-lg font-black text-red-600">旅客自行承擔</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 聯程機票 vs 分段訂票對比表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Ticket className="w-5 h-5 text-black" />
+            10 秒看懂：「真聯程 (Single Ticket)」vs「假轉機 (自行轉機)」
+          </h3>
+          <p className="text-sm text-gray-600">
+            訂票時看清楚這 5 大關鍵指標，一眼看穿你的機票到底有沒有包含行李直掛與失接保障：
+          </p>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">評比項目</th>
+                  <th className="p-3 bg-emerald-50">正規聯程機票 (Single Ticket)</th>
+                  <th className="p-3 bg-red-50">自行轉機 / 分段開票 (Self-transfer)</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">訂位代號 (PNR)</td>
+                  <td className="p-3 text-emerald-700 font-bold">全程只有 1 個 6 碼訂位代號</td>
+                  <td className="p-3 text-red-700 font-bold">會有 2 個以上不同訂位代號</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">行李是否直掛 (Through Check-in)</td>
+                  <td className="p-3 text-emerald-700 font-bold">✅ 台灣出發直接掛到最終目的地</td>
+                  <td className="p-3 text-red-700 font-bold">❌ 轉機機場必須領行李重掛</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">前段班機延誤導致失接</td>
+                  <td className="p-3 text-emerald-700 font-bold">航司免費改簽下一班 + 提供食宿</td>
+                  <td className="p-3 text-red-700 font-bold">後段直接作廢判定 No-show，需自費重買</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">轉機流程</td>
+                  <td className="p-3">直接走管制區「Transfer 轉機通道」</td>
+                  <td className="p-3 text-red-700 font-bold">必須辦理入境 ➔ 領行李 ➔ 赴大廳重新辦報到</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">簽證要求</td>
+                  <td className="p-3">免入境，多數情況免辦轉機國簽證</td>
+                  <td className="p-3 text-red-700">若轉機國無免簽，必須備妥有效簽證方可入境</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 外站自轉提行李 5 大標準步驟 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Clock className="w-5 h-5 text-indigo-600" />
+            買了分段廉航機票？外站自轉「保命防漏接」5 步驟
+          </h3>
+          <p className="text-sm text-gray-600">
+            如果你已經買了分段機票，轉機時請務必按照以下步驟分秒必爭：
+          </p>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+              <div>
+                <strong>在台灣出發報到時，雙重確認行李吊牌 (Baggage Tag)</strong>
+                <p className="text-gray-600 text-xs mt-0.5">查看行李吊牌上的最終機場三字代碼（如 LHR 還是 KUL），若只印到轉機機場，代表 100% 必須在外站領回。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+              <div>
+                <strong>下機後無視「Transfer」指標，快步走向「Arrival / Baggage」入境大廳</strong>
+                <p className="text-gray-600 text-xs mt-0.5">千千萬萬不要走管制區轉機通道！必須排外國人入境通道過關，因此務必先填妥轉機國的入境申報表（如馬來西亞 MDAC 或新加坡電子入境卡 SGAC）。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">3</span>
+              <div>
+                <strong>行李轉盤提領大行李，確認輪子與鎖扣完好</strong>
+                <p className="text-gray-600 text-xs mt-0.5">外站行李轉盤往往需等候 20~40 分鐘，拿到行李後立刻穿過海關申報台走向非管制接機大廳。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">4</span>
+              <div>
+                <strong>搭電梯直奔「出境報到大廳 (Departures)」，找到後段航司櫃檯</strong>
+                <p className="text-gray-600 text-xs mt-0.5">很多廉航在起飛前 60 分鐘「分秒不差準時關櫃」，務必提前排隊完成行李過磅與託運。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-emerald-50 border border-emerald-600">
+              <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">5</span>
+              <div>
+                <strong className="text-emerald-900">重新通過安全檢查，飛奔至指定登機門</strong>
+                <p className="text-emerald-800 text-xs mt-0.5">外站大型機場（如吉隆坡 KLIA2、曼谷廊曼、仁川）登機門步行可能長達 20 分鐘，千萬別在免稅店逗留，直衝登機口！</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 轉機時間安全守則 */}
+        <section className="bg-yellow-50 p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <ShieldCheck className="w-5 h-5 text-emerald-600" />
+            黑白飛特派員：轉機時間安全邊際建議
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>真聯程機票（行李直掛）</strong>：同一航廈轉機建議至少 <strong>1.5 ~ 2 小時</strong>；跨航廈轉機（如成田 T1 轉 T2、仁川 T1 轉 T2）建議至少 <strong>2.5 小時</strong>。</li>
+            <li><strong>自行轉機（需出入境領行李）</strong>：建議絕對要抓 <strong>3.5 ~ 4.5 小時</strong>！只要前段飛機延誤 40 分鐘，加上排隊領行李，2 小時的自轉機票 99% 必定失接。</li>
+            <li><strong>不便險理賠盲點</strong>：多數旅遊不便險針對「分段自買機票的前段延誤導致後段失接」<strong>是不予理賠的</strong>！除非前段班機延誤超過規定時數（通常為 4 小時以上），否則後段作廢的機票差額必須由個人自行吸收。</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'flight-dynamic-pricing-dcc-avoid-trap-guide-2026',
+    category: '必讀攻略',
+    title: '【機票越查越貴被演算法鎖定？】2026 廉航動態定價 5 大破解真相：無痕清 Cookie 到底有用嗎？機票結帳選「台幣」遭收 4% DCC 匯差避坑實測',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80',
+    imageAlt: '廉價航空機票比價動態定價演算法與信用卡結帳外幣匯率防坑教學',
+    excerpt: '剛看機票明明只要 5,800 元，重整網頁三次突然飆漲到 7,200 元？大家都在傳的「被演算法鎖定追蹤、開無痕視窗、清瀏覽器 Cookie」到底有沒有用？本篇揭秘航空公司機位艙等（Fare Bucket）真實控位機制！更有 90% 台灣人都踩過的結帳暗黑陷阱——在國外航空官網刷卡看到「以新台幣 (TWD) 結帳」按下去，直接被扒皮 3%~5% DCC 動態貨幣轉換手續費！手把手教你如何避開匯差剝皮、掌握最佳搶票時段！',
+    badge: '搶票省錢',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative">
+          <div className="sketch-badge -top-3 left-4 bg-indigo-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            機票比價真相破解
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <RefreshCw className="w-5 h-5 text-indigo-600" />
+            機票越查越貴真的是演算法在搞鬼？揭開艙等庫存的真正秘密
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            「昨天看台北飛東京 6,200 元，今天早上打開同一班機看竟然變成 8,500 元！我是不是被 Cookie 追蹤了？趕快開無痕模式！」幾乎所有在網路上買過機票的台灣網友都有過這個疑問。
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            但真實的航空票務運作跟都市傳說完全不同！機票價格跳動的核心不是「你的 IP 被針對」，而是航空公司的<strong>「收益管理系統（Revenue Management System）」與「機位艙等代碼（Fare Bucket）」自動鎖位釋放機制</strong>。了解這個原理，你就能在票價飆漲時精準自救，甚至等它降回原價！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">無痕清 Cookie</div>
+              <div className="text-lg font-black text-gray-800">心理安慰 &gt; 實質</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">漲價核心真相</div>
+              <div className="text-lg font-black text-red-600">低價子艙等配額售完</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">結帳 DCC 陷阱剝皮</div>
+              <div className="text-lg font-black text-red-600">手續費額外暴增 4%</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">最佳結帳策略</div>
+              <div className="text-lg font-black text-emerald-600">選出發地當地貨幣</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 破解三大迷思 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <HelpCircle className="w-5 h-5 text-black" />
+            機票價格跳漲三大都市傳說實測破解
+          </h3>
+          <div className="grid md:grid-cols-3 gap-3 text-xs md:text-sm">
+            <div className="bg-white p-4 border border-black sketch-border space-y-2">
+              <span className="font-bold text-indigo-900 block text-base">迷思 1：開無痕模式真的會變便宜？</span>
+              <p className="text-gray-600">
+                <strong>真相：大多是巧合。</strong>航空公司系統查價是連動全球分銷系統 (GDS/CRS)，票價由同一筆庫存資料庫決定。開無痕不會讓系統憑空生出廉價艙等。但無痕確實能<strong>清除暫存的過期錯誤報價快取</strong>，避免瀏覽器顯示舊資料。
+              </p>
+            </div>
+            <div className="bg-white p-4 border border-black sketch-border space-y-2">
+              <span className="font-bold text-red-900 block text-base">迷思 2：為什麼查幾次票價突然飆高？</span>
+              <p className="text-gray-600">
+                <strong>真相：有人正在結帳或「臨時保留座位 (Hold)」！</strong>低價艙等（如特價票只剩最後 2 張）被其他旅客點進結帳頁面時，系統會暫扣 15~20 分鐘。若該名旅客未付款超時退出，<strong>15 分鐘後重新整理，原先的便宜票價就會釋放復活！</strong>
+              </p>
+            </div>
+            <div className="bg-white p-4 border border-black sketch-border space-y-2">
+              <span className="font-bold text-emerald-900 block text-base">迷思 3：多人一起買機票反而更貴？</span>
+              <p className="text-gray-600">
+                <strong>真相：100% 是真的！</strong>若便宜艙等剩 2 張（$5,000），次高艙等有 5 張（$6,500）。若你一次搜尋「4 位成人」，系統無法分拆計價，會將 4 張<strong>全部以 $6,500 計費</strong>！正確買法是先拆開買 2 張，再買另外 2 張。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* DCC 結帳陷阱與真實試算對比 */}
+        <section className="bg-red-50 p-6 sketch-border space-y-4 border-l-4 border-l-red-600">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase">
+            最大隱形破財漏洞
+          </div>
+          <h3 className="text-lg font-bold flex items-center gap-2 text-red-950">
+            <CreditCard className="w-5 h-5 text-red-600" />
+            90% 台灣人都中招！國外航空刷卡「選台幣結帳」被雙重扒皮 5%
+          </h3>
+          <p className="text-xs md:text-sm text-neutral-700 leading-relaxed">
+            當你在購買外籍航空（如樂桃、酷航、亞航、越捷）或是國外 OTA 訂票網時，結帳畫面常常「貼心」問你：<strong>「是否要以新台幣 (TWD) 付款？」</strong>
+          </p>
+          
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">結帳選擇</th>
+                  <th className="p-3">計價方式與匯率</th>
+                  <th className="p-3">海外手續費</th>
+                  <th className="p-3">信用卡回饋</th>
+                  <th className="p-3">以 NT$ 10,000 機票實測實付</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-red-50/50 bg-red-50/30">
+                  <td className="p-3 font-bold text-red-800">誤選新台幣 (DCC 陷阱)</td>
+                  <td className="p-3 text-red-700">店家加水 4% 爛匯率</td>
+                  <td className="p-3 text-red-700">依然收 1.5%</td>
+                  <td className="p-3 text-gray-500">多數銀行判定台幣無海外回饋 (0.5%)</td>
+                  <td className="p-3 font-bold text-red-600">NT$ 10,500 (多噴 $500!)</td>
+                </tr>
+                <tr className="hover:bg-emerald-50/50 bg-emerald-50/30">
+                  <td className="p-3 font-bold text-emerald-800">正確選擇外幣 (JPY/KRW/USD)</td>
+                  <td className="p-3 text-emerald-700">國際發卡組織即時清算匯率</td>
+                  <td className="p-3">法定 1.5%</td>
+                  <td className="p-3 text-emerald-700 font-bold">爽拿海外刷卡回饋 3% ~ 5%</td>
+                  <td className="p-3 font-bold text-emerald-600">NT$ 9,850 (現省 $650!)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="bg-emerald-50 p-4 border border-emerald-600 text-xs md:text-sm space-y-1">
+            <strong className="text-emerald-900 block font-bold">正確結帳黃金口訣：</strong>
+            <p className="text-emerald-800">
+              結帳幣別一律選擇<strong>「出發地當地貨幣」或「外幣（如日圓 JPY、韓元 KRW、美金 USD）」</strong>，並搭配一張<strong>「海外刷卡回饋 3% 以上」</strong>的信用卡（如玉山熊本熊卡、富邦 J 卡、聯邦吉鶴卡、台新玫瑰 Giving 卡），直接現賺匯差與回饋！
+            </p>
+          </div>
+        </section>
+
+        {/* 撿便宜最佳時間點 */}
+        <section className="bg-white p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <Clock className="w-5 h-5 text-indigo-600" />
+            航空公司控位規律：何時下手最便宜？
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>起飛前 45 ~ 60 天</strong>：一般而言非連假淡季此時會釋出促銷子艙等，是小資族入手甜蜜點。</li>
+            <li><strong>每週二深夜至週三凌晨</strong>：多家航空公司的清票系統會在週二半夜自動取消未付款的過期保留位，週三清晨往往能撈到降價票。</li>
+            <li><strong>利用「黑白飛」即時價格觀測儀</strong>：隨時關注全額含稅走勢，只要票價低於歷史均價綠色區間，就是可以直接下手的保證底價！</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
     id: 'taichung-rmq-direct-flights-guide-2026',
     category: '必讀攻略',
     title: '【2026 台中清泉崗直飛懶人包】中部人免衝桃機！RMQ 直飛日本高松/成田/沖繩、韓國仁川/釜山、富國島航班時刻、機票比價與小資停車全攻略',

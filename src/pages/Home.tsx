@@ -14,6 +14,15 @@ export default function Home() {
   const previewArticles = useMemo(() => {
     // 優先顯示 2026 泰國免簽自由行、桃機外幣ATM換匯評比、出國伴手禮打包防雷、日本賞楓等精選文章
     const priorityIds = [
+      'japan-customs-inbound-prohibited-items-guide-2026',
+      'korea-tax-refund-kiosk-city-airport-guide-2026',
+      'hong-kong-pre-arrival-registration-octopus-guide-2026',
+      'overseas-credit-card-declined-otp-sms-vowifi-guide-2026',
+      'taipei-main-station-in-town-check-in-guide-2026',
+      'lcc-seat-selection-emergency-exit-rules-guide-2026',
+      'japan-shinkansen-oversized-baggage-rules-2026',
+      'transit-flight-through-check-in-baggage-guide-2026',
+      'flight-dynamic-pricing-dcc-avoid-trap-guide-2026',
       'taichung-rmq-direct-flights-guide-2026',
       'japan-preclearance-taiwan-airport-guide-2026',
       'lcc-gate-baggage-duty-free-penalty-guide-2026',
