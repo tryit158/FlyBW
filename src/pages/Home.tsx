@@ -14,6 +14,9 @@ export default function Home() {
   const previewArticles = useMemo(() => {
     // 優先顯示 2026 泰國免簽自由行、桃機外幣ATM換匯評比、出國伴手禮打包防雷、日本賞楓等精選文章
     const priorityIds = [
+      'japan-ski-snowboard-baggage-flights-guide-2026',
+      'airline-lost-damaged-baggage-pir-claim-guide-2026',
+      'macau-weekend-travel-free-shuttle-bus-guide-2026',
       'japan-customs-inbound-prohibited-items-guide-2026',
       'korea-tax-refund-kiosk-city-airport-guide-2026',
       'hong-kong-pre-arrival-registration-octopus-guide-2026',

@@ -47,6 +47,472 @@ export const AffiliateFooter = () => (
 
 export const articlesData: Article[] = [
   {
+    id: 'japan-ski-snowboard-baggage-flights-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 日本滑雪自由行機票與雪具行李全解】越後湯澤/白馬/野澤！虎航/樂桃/星宇「超長雪具袋（Snowboard）」託運尺寸與加價收費標準、新幹線直達滑雪場懶人包',
+    author: '黑白飛特派團隊',
+    readTime: '12 分鐘',
+    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&q=80',
+    imageAlt: '日本冬季滑雪雪道與旅客攜帶單板 Snowboard 雙板 Ski 雪具袋搭乘新幹線前往越後湯澤',
+    excerpt: '冬天衝日本滑雪季大爆發！去越後湯澤、白馬、野澤溫泉或北海道二世谷，想自備帥氣雪板裝備出國？很多滑雪新手不知道：長度超過 160 公分的單板/雙板雪具袋（Snowboard / Ski Bag）屬於「特殊運動器材行李」！台灣虎航、樂桃、酷航、星宇、長榮與華航各家收費大不同：有的直接計入免費託運，有的單程加收 $1,500 特殊行李費！本篇拆解各大航司雪具託運限制、防摔打包技巧、東京搭新幹線 75 分鐘直衝滑雪場與雪場租借裝備 CP 值全評比！',
+    badge: '滑雪季必看',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-indigo-600">
+          <div className="sketch-badge -top-3 left-4 bg-indigo-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            2026 冬季滑雪自由行首選
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Plane className="w-5 h-5 text-indigo-600" />
+            扛自己的雪板衝日本！各大航空公司雪具託運收費與尺寸規定全解析
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            每年 12 月到隔年 3 月是台灣人衝日本滑雪的最高峰！擁有一套自己的單板（Snowboard）或雙板（Ski）與合腳的雪鞋（Boots），滑起來舒適度與操控性遠勝雪場公發租借裝備。但雪具袋長度通常長達 <strong>150 ~ 180 公分</strong>，三邊總和動輒突破 200 公分，早已大幅超過一般行李箱 158 公分的標準上限！
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            買機票時若沒搞清楚<strong>「運動裝備託運條款」</strong>，到了機場櫃檯往往被地勤要求補繳高額「超大/特殊行李附加費」，單程多噴台幣 <strong>$1,200 ~ $2,500</strong>，來回機票成本瞬間飆漲！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">一般行李三邊上限</div>
+              <div className="text-lg font-black text-red-600">158 公分</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">雪具袋長度上限</div>
+              <div className="text-lg font-black text-emerald-600">可達 200~203cm</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">新幹線最快直達</div>
+              <div className="text-lg font-black text-black">東京 75 分抵達</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">雪場租借全套行情</div>
+              <div className="text-lg font-black text-black">每日約 4,500円</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 各大航空公司雪具託運規則比較表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Scale className="w-5 h-5 text-black" />
+            2026 台日航線主要航司「雪具裝備袋」託運規則大對決
+          </h3>
+          <p className="text-sm text-gray-600">
+            不同航司對於「雪板袋算不算一般行李件數」政策天差地遠，訂機票前務必仔細比對：
+          </p>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">航空公司</th>
+                  <th className="p-3">雪具是否計入一般免費託運？</th>
+                  <th className="p-3">單件重量與尺寸上限</th>
+                  <th className="p-3">額外超大行李收費標準</th>
+                  <th className="p-3">滑雪客評語</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50 bg-emerald-50/30">
+                  <td className="p-3 font-bold text-emerald-900">星宇航空 (STARLUX)</td>
+                  <td className="p-3 font-bold text-emerald-600">✅ 計入免費件數！</td>
+                  <td className="p-3">單件 23kg / 長度 203cm 內</td>
+                  <td className="p-3 text-emerald-700">免費（只要在 23kg 內且在額度內，不收超大費）</td>
+                  <td className="p-3 font-bold text-emerald-700">⭐⭐⭐⭐⭐ 滑雪最友善</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-emerald-50/30">
+                  <td className="p-3 font-bold text-emerald-900">長榮航空 (EVA Air)</td>
+                  <td className="p-3 font-bold text-emerald-600">✅ 計入免費件數！</td>
+                  <td className="p-3">單件 23kg / 單板雙板視為一件</td>
+                  <td className="p-3 text-emerald-700">只要不超重，豁免三邊長度限制</td>
+                  <td className="p-3 font-bold text-emerald-700">⭐⭐⭐⭐⭐ 傳統航司首選</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-emerald-50/30">
+                  <td className="p-3 font-bold text-sky-900">中華航空 (China Airlines)</td>
+                  <td className="p-3 font-bold text-emerald-600">✅ 計入免費件數！</td>
+                  <td className="p-3">單件 23kg / 需預先通報</td>
+                  <td className="p-3 text-emerald-700">雪具一組（雪板+雪靴）視為 1 件託運行李</td>
+                  <td className="p-3 font-bold text-sky-700">⭐⭐⭐⭐ 班次密集選擇多</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-amber-50/30">
+                  <td className="p-3 font-bold text-amber-900">台灣虎航 (Tigerair)</td>
+                  <td className="p-3 font-bold text-amber-600">⚠️ 需購買一般託運重量</td>
+                  <td className="p-3">單件限 30kg / 長度限 203cm 內</td>
+                  <td className="p-3 text-gray-700">買足公斤數即可，長度在 203cm 內免收特殊費</td>
+                  <td className="p-3 font-bold text-amber-800">⭐⭐⭐⭐ 廉航高 CP 值首選</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-red-50/30">
+                  <td className="p-3 font-bold text-pink-900">樂桃航空 (Peach)</td>
+                  <td className="p-3 font-bold text-red-600">🚫 無法當一般行李！</td>
+                  <td className="p-3">單件限 20kg / 長度限 203cm 內</td>
+                  <td className="p-3 font-bold text-red-600">必須單獨加購「滑雪用品特殊行李託運費」（單程約 NT$ 1,500+）</td>
+                  <td className="p-3 font-bold text-red-700">⭐⭐ 額外加收，成本較高</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 雪具打包與防摔 4 大技巧 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Luggage className="w-5 h-5 text-indigo-600" />
+            老雪友私房傳授：雪板袋打包防撞 4 大鐵則
+          </h3>
+          <div className="grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div className="bg-gray-50 p-4 border border-black space-y-1">
+              <strong className="text-black block text-base font-bold">1. 鋼邊與板頭板尾加裝防撞泡棉護套</strong>
+              <p className="text-gray-600">
+                地勤在輸送帶搬運時，最容易讓板頭（Nose）與板尾（Tail）撞擊地面導致板芯裂開。務必加裝橡膠邊刃保護套或用厚毛巾緊密包覆固定。
+              </p>
+            </div>
+            <div className="bg-gray-50 p-4 border border-black space-y-1">
+              <strong className="text-black block text-base font-bold">2. 雪衣、雪褲、防摔褲充當天然緩衝填充物</strong>
+              <p className="text-gray-600">
+                把厚重的雪服、防摔護臀、護膝與毛襪，均勻鋪塞在雪具袋空隙中，既能達到 360 度防震吸衝擊效果，又能徹底省下一般行李箱的寶貴空間！
+              </p>
+            </div>
+            <div className="bg-gray-50 p-4 border border-black space-y-1">
+              <strong className="text-black block text-base font-bold">3. 雪鞋（Boots）放中間，固定器（Bindings）拆卸或調平</strong>
+              <p className="text-gray-600">
+                單板固定器若直立容易被外力壓斷螺絲或塑膠扣帶。建議將固定器拆下平放，或用緩衝泡棉包裹；重達 2~3kg 的雪鞋放置在輪軸上方以平衡重心。
+              </p>
+            </div>
+            <div className="bg-gray-50 p-4 border border-black space-y-1">
+              <strong className="text-black block text-base font-bold">4. 善用「輪式雙板/單板輪行袋」</strong>
+              <p className="text-gray-600">
+                全套裝備加上衣物重量往往高達 15~20kg，強烈建議購買附有大型越野靜音輪的滑雪袋，在東京地鐵或雪地拖行省力 80%！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 東京直奔滑雪場交通推薦 */}
+        <section className="bg-yellow-50 p-6 sketch-border space-y-3">
+          <div className="sketch-badge -top-3 left-4 bg-yellow-500 text-black text-xs px-2 py-0.5 font-bold uppercase">
+            交通神速指南
+          </div>
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <Train className="w-5 h-5 text-indigo-600" />
+            東京出發最快滑雪場推薦：JR 東京廣域周遊券 75 分鐘直衝 GALA 湯澤
+          </h4>
+          <p className="text-xs md:text-sm text-neutral-700 leading-relaxed">
+            不想舟車勞頓？<strong>新潟縣「越後湯澤 (Echigo Yuzawa)」</strong>是全日本交通最極致便利的滑雪勝地！搭乘上越新幹線從東京站出發，<strong>只要 74~77 分鐘</strong>。其中「GALA 湯澤滑雪場」的新幹線車站更直接與滑雪中心（纜車售票口、裝備租借站）連為一體，刷卡出改札口立刻能換裝上纜車滑雪！
+          </p>
+          <div className="grid md:grid-cols-2 gap-3 text-xs md:text-sm mt-2">
+            <div className="bg-white p-3 border border-black">
+              <strong className="text-indigo-900 block mb-1">GALA 湯澤（車站直結）</strong>
+              <p className="text-gray-600">適合當日往返快閃或新手，JR 東京廣域周遊券完全涵蓋，出站即是滑雪場！</p>
+            </div>
+            <div className="bg-white p-3 border border-black">
+              <strong className="text-indigo-900 block mb-1">神樂 (Kagura) / 苗場 (Naeba)</strong>
+              <p className="text-gray-600">從越後湯澤站搭接駁公車 20~35 分鐘，以粉雪天堂聞名，適合中進階滑雪玩家！</p>
+            </div>
+          </div>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'airline-lost-damaged-baggage-pir-claim-guide-2026',
+    category: '必讀攻略',
+    title: '【出國行李箱被摔破、延誤沒到怎麼辦？】2026 機場行李理賠自救全圖解：在行李轉盤拍照保留 PIR 報告單、航空公司現場賠償新箱 vs 信用卡/旅遊不便險實測申請 5 步驟',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=800&q=80',
+    imageAlt: '國際機場行李轉盤行李箱破裂受損與地勤開立行李事故報告單 PIR 現場理賠',
+    excerpt: '滿心歡喜抵達日本或歐洲，站在行李轉盤前等到所有人走光，行李竟然沒出來？或者一拿起來發現名牌行李箱外殼裂開大洞、輪子噴飛斷裂？很多人犯了最致命的錯誤：走出海關大門後才聯絡客服，航空公司一律不認帳拒賠！本篇教你落地遇到行李損壞或延誤的黃金 30 分鐘自救指南：如何在轉盤拍照、向航司地勤索取「PIR 行李事故報告單」、現場要求換新行李箱或維修、以及啟動信用卡與旅遊不便險請領上萬元補償的 5 大實測步驟！',
+    badge: '機場自救',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-red-600">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            機場行李意外血淚指南
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2 text-red-950">
+            <ShieldAlert className="w-5 h-5 text-red-600" />
+            行李箱破大洞或行李失蹤？「離開海關大門前」沒拿這張單子直接沒得賠！
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            「在關西機場轉盤領到行李，發現新買的胖胖箱側邊裂了一條 20 公分的大裂痕，拉桿也卡死！心急之下想說先回飯店再打電話給航空公司，結果航司回覆：<strong>『旅客已離開管制區海關，無法判定損壞是否發生於飛行途中，恕無法受理賠償！』</strong>」
+          </p>
+          <p className="text-sm text-neutral-700 mb-4">
+            根據國際航空《蒙特婁公約 (Montreal Convention)》，航空公司對託運行李在運送途中的毀損或延誤負有法定賠償責任。但核心天條是：<strong>發現行李異常時，必須「立刻停在行李轉盤旁」，走向航司行李服務櫃檯開立「行李事故報告單 (PIR, Property Irregularity Report)」！</strong>一旦走出出口大門，責任判定難如登天！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">法定黃金申報時機</div>
+              <div className="text-lg font-black text-red-600">走出海關大門前</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">必備核心憑證</div>
+              <div className="text-lg font-black text-emerald-600">PIR 事故申告單</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">行李延誤判定標準</div>
+              <div className="text-lg font-black text-black">多為落地超過 6H</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">不便險理賠上限</div>
+              <div className="text-lg font-black text-emerald-600">NT$ 1萬~3萬元</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 現場處置 5 步驟實測流程 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+            轉盤現場 5 步驟黃金自救 SOP
+          </h3>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+              <div>
+                <strong>保留現場全貌：拿出手機拍照與錄影</strong>
+                <p className="text-gray-600 text-xs mt-0.5">拍下行李箱受損部位特寫、整體外觀、黏在箱子上的「行李條碼牌 (Baggage Tag)」以及轉盤號碼背景作為鐵證。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+              <div>
+                <strong>走向行李提領大廳「Baggage Service」航司地勤服務櫃台</strong>
+                <p className="text-gray-600 text-xs mt-0.5">出示登機證、護照、行李票收據存根（貼在登機證背面的小白單）以及損壞的行李箱。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">3</span>
+              <div>
+                <strong>要求填寫並領取「行李事故報告單 (PIR)」正本</strong>
+                <p className="text-gray-600 text-xs mt-0.5">確認單據上載明損壞部位、行李品牌型號、事故編號（如 TPEBR12345）與地勤人員簽名。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">4</span>
+              <div>
+                <strong>現場協商賠償方案（維修 / 現金 / 換新行李箱）</strong>
+                <p className="text-gray-600 text-xs mt-0.5">
+                  <strong>箱體破裂無法使用</strong>：多數航司現場庫存有全新備用行李箱（多為合作合約品牌），可當場挑選替換直接把舊箱交給航司。<br />
+                  <strong>回台後維修</strong>：航司指派特約維修商到府收送免費修復輪子或拉桿，若無法修復則按年限折舊給予現金賠償。
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-emerald-50 border border-emerald-600">
+              <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">5</span>
+              <div>
+                <strong className="text-emerald-900">若是「行李延誤 (Delay)」：索取應急包並啟動不便險採購日常用品！</strong>
+                <p className="text-emerald-800 text-xs mt-0.5">填寫日本飯店地址，地勤找到後會免費黑貓宅急便送到飯店；延誤期間購買換洗衣物、內衣褲、洗面乳等日用品收據務必全數保留請領保險！</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 航司 vs 不便險理賠對照表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Coins className="w-5 h-5 text-black" />
+            行李受損與延誤：航空公司賠償 vs 旅遊不便險雙軌請領
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">事故類型</th>
+                  <th className="p-3">航空公司責任與處置</th>
+                  <th className="p-3">信用卡 / 產險旅遊不便險保障</th>
+                  <th className="p-3">必備申請文件</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-red-900">行李箱本體破裂/輪斷</td>
+                  <td className="p-3 text-gray-700">現場換全新行李箱 或 免費送修判定折舊現金補償</td>
+                  <td className="p-3 text-emerald-700 font-bold">行李損失保險（通常每次上限 NT$ 5,000~10,000，扣除折舊）</td>
+                  <td className="p-3 text-xs">PIR 報告單、損壞照片、原購買發票或估價單</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">行李延誤 (超過 6 小時未到)</td>
+                  <td className="p-3 text-gray-700">提供基本過夜盥洗包，尋獲後免費宅配至入住飯店</td>
+                  <td className="p-3 text-emerald-700 font-bold">實支實付請領「必要換洗衣物與衛生用品」費用（NT$ 10,000~30,000）</td>
+                  <td className="p-3 text-xs">PIR 單據、簽收單（載明送達時間）、購買衣服收據明細</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-gray-50">
+                  <td className="p-3 font-bold text-gray-700">行李內部脆弱貴重品破碎</td>
+                  <td className="p-3 text-red-600 font-bold">❌ 航司免責不賠！（陶瓷、相機、電腦嚴禁託運）</td>
+                  <td className="p-3 text-red-600 font-bold">❌ 易碎品、珠寶現金屬於不保事項</td>
+                  <td className="p-3 text-xs text-red-600">無（貴重物品與相機鏡頭請務必隨身手提攜帶）</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 避坑三大注意事項 */}
+        <section className="bg-yellow-50 p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            黑白飛特派員：防踩雷 3 大關鍵提醒
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>出發前先替行李箱全身拍照</strong>：在家出發前或在桃機櫃檯託運前，拍下行李箱四面與拉桿無損原狀，遇到爭議時能 100% 證明「並非出發前就有的舊傷」。</li>
+            <li><strong>不便險購買衣物原則為「合理必要支出」</strong>：行李延誤期間購買 Uniqlo、無印良品等基本保暖換洗衣物均能核退；但若藉機購買高單價名牌精品名牌大衣，保險公司理賠員將會剔除過度支出！</li>
+            <li><strong>廉航也有賠償責任</strong>：虎航、樂桃、酷航等廉價航空同樣簽署國際公約，託運摔破行李照樣必須賠償或維修，千萬別因搭乘廉航就摸摸鼻子自認倒楣！</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'macau-weekend-travel-free-shuttle-bus-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 澳門自由行新手省錢攻略】台灣人免簽證！澳門輕軌橫琴延伸線、免費賭場發財車 (接駁巴) 實測路線圖、蛋撻名店排隊秘訣與港珠澳金巴雙城連玩',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1548013146-72479768bada?w=800&q=80',
+    imageAlt: '澳門大三巴牌坊與路氹城豪華度假村酒店免費穿梭發財車交通攻略',
+    excerpt: '航程只要 90 分鐘！小資族週休二日快閃避冬、吃葡式蛋撻與水蟹粥的最佳首選就是澳門！台灣護照免簽直接入境停留 30 天，台北、台中、高雄天天多班直飛！去澳門旅遊最神奇的是「交通費幾乎可以是 0 元」！各大五星級奢華酒店（威尼斯人、倫敦人、巴黎人、永利皇宮、美高梅）提供綿密的「免費穿梭巴士（發財車）」接駁機場、碼頭與各大景點！本篇整理最新免費發財車路線地圖、澳門輕軌橫琴線搭乘指南、安德魯蛋撻排隊避坑與港珠澳大橋雙城自由行！',
+    badge: '快閃首選',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-emerald-600">
+          <div className="sketch-badge -top-3 left-4 bg-emerald-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            90 分鐘直飛度假天堂
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Plane className="w-5 h-5 text-emerald-600" />
+            免台胞證免簽證！澳門自由行「交通費近乎 0 元」的神奇快閃玩法
+          </h2>
+          <p className="text-sm text-neutral-600 mb-4">
+            想利用週末放鬆住五星級飯店享受米其林美食，航程只需 1 小時 30 分鐘的澳門是台灣人的熱門避冬選擇。星宇航空、台灣虎航、長榮航空與澳門航空從<strong>台北桃園、台中清泉崗、高雄小港</strong>三大機場天天直飛，促銷含稅來回機票只要 <strong>NT$ 4,200 ~ 6,000</strong>！
+          </p>
+          <p className="text-sm text-neutral-600 mb-4">
+            台灣旅客持有 6 個月以上效期之有效護照，<strong>免簽證、免台胞證直接免簽入境停留 30 天</strong>！而且在澳門觀光，善用各大頂級度假村提供的「免費穿梭巴士（俗稱發財車）」，從機場出關到各大打卡景點，交通費幾乎不用花半毛錢！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">台灣護照入境簽證</div>
+              <div className="text-lg font-black text-emerald-600">免簽停留 30 天</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">單程直飛飛行時間</div>
+              <div className="text-lg font-black text-black">僅 90 分鐘</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">賭場接駁發財車</div>
+              <div className="text-lg font-black text-emerald-600">完全免費 (NT$0)</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">港澳金巴單程車程</div>
+              <div className="text-lg font-black text-black">約 40 分鐘</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 免費穿梭發財車四大核心搭乘路線 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Bus className="w-5 h-5 text-black" />
+            2026 最新「免費賭場穿梭發財車」實測路線與搭乘訣竅
+          </h3>
+          <p className="text-sm text-gray-600">
+            出澳門機場入境大廳後右轉步行 2 分鐘即是「酒店專車候車區」，不需要看房卡或博彩會員證，任何人均可免費搭乘：
+          </p>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">代表度假村酒店</th>
+                  <th className="p-3">發財車主要營運路線</th>
+                  <th className="p-3">發車頻率</th>
+                  <th className="p-3">推薦周邊免費亮點</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-amber-900">永利皇宮 (Wynn Palace)</td>
+                  <td className="p-3">澳門機場 ↔ 永利皇宮 ↔ 關閘 / 外港碼頭</td>
+                  <td className="p-3">約 10~15 分一班</td>
+                  <td className="p-3 font-bold text-emerald-700">免費搭乘觀光空中纜車、欣賞水舞燈光秀</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">威尼斯人 / 倫敦人 / 巴黎人</td>
+                  <td className="p-3">澳門機場 ↔ 金沙度假區 ↔ 氹仔碼頭 / 港珠澳大橋邊檢大樓</td>
+                  <td className="p-3">約 8~12 分一班</td>
+                  <td className="p-3 font-bold text-indigo-700">大笨鐘、巴黎鐵塔合照，室內人造運河貢多拉</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-yellow-900">美高梅 (MGM 澳門/美獅)</td>
+                  <td className="p-3">澳門機場 ↔ 美獅美高梅 ↔ 澳門美高梅 (本島半島)</td>
+                  <td className="p-3">約 15 分一班</td>
+                  <td className="p-3 font-bold text-amber-700">大廳免費排隊領取現做珍奶黑糖波霸與精美法式甜點</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-purple-900">新濠影滙 (Studio City)</td>
+                  <td className="p-3">澳門機場 ↔ 新濠影滙 ↔ 氹仔市區（官也街旁）</td>
+                  <td className="p-3">約 15 分一班</td>
+                  <td className="p-3 font-bold text-purple-700">搭乘接駁車直達官也街步行街吃小吃、8字形摩天輪</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 澳門輕軌與官也街蛋撻攻略 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Utensils className="w-5 h-5 text-indigo-600" />
+            官也街必吃美食與澳門輕軌橫琴延伸線體驗
+          </h3>
+          <div className="grid md:grid-cols-3 gap-3 text-xs md:text-sm">
+            <div className="bg-gray-50 p-4 border border-black space-y-2">
+              <strong className="text-amber-900 block text-base font-bold">1. 安德魯 vs 瑪嘉烈葡式蛋撻</strong>
+              <p className="text-gray-600">
+                官也街的「安德魯餅店」剛出爐的千層焦糖蛋撻酥脆濃郁！排隊避坑招：在官也街尾端外帶點餐速度通常比內用快 20 分鐘；或前往威尼斯人分店避開烈日！
+              </p>
+            </div>
+            <div className="bg-gray-50 p-4 border border-black space-y-2">
+              <strong className="text-indigo-900 block text-base font-bold">2. 澳門輕軌 (LRT) 沿線景點</strong>
+              <p className="text-gray-600">
+                最新橫琴線通車！搭乘澳門輕軌串聯「機場站」、「路氹東站（美高梅/永利）」、「排角站（官也街出口步行 3 分鐘）」與「媽閣站（本島媽閣廟）」，刷澳門通或支付寶只要 MOP 6~10 元！
+              </p>
+            </div>
+            <div className="bg-gray-50 p-4 border border-black space-y-2">
+              <strong className="text-emerald-900 block text-base font-bold">3. 港珠澳大橋金巴 40 分鐘雙城遊</strong>
+              <p className="text-gray-600">
+                想順便玩香港？從澳門口岸搭乘「港珠澳大橋穿梭巴士（金巴）」，24小時隨到隨開，單程只要 HK$65（約台幣 260 元），40 分鐘跨海極速直達香港機場與市區！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 貨幣與消費避坑提醒 */}
+        <section className="bg-yellow-50 p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <Coins className="w-5 h-5 text-emerald-600" />
+            黑白飛特派員：澳門幣消費 3 大避雷法則
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>不用特地在台灣換澳門幣 (MOP)</strong>：澳門全境通用「港幣 (HKD)」！港幣與澳門幣匯率約 1:1.03，店家一般採 1:1 收受（不補水／不退匯差）。出國只要帶港幣或台幣在當地兌換即可。</li>
+            <li><strong>澳門幣離開澳門無法在台灣兌換</strong>：找零找回的澳門幣銅板或紙鈔，離開澳門後台灣銀行不予收兌，記得在機場免稅店全部花光！</li>
+            <li><strong>電子支付普及率極高</strong>：街口支付、全支付、玉山 Wallet、Apple Pay 在澳門威尼斯人、各大商場及超商均可直接掃碼付款，匯率優異且省去找零麻煩！</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
     id: 'japan-customs-inbound-prohibited-items-guide-2026',
     category: '必讀攻略',
     title: '【2026 帶什麼去日本會被沒收罰百萬？】日本入境海關禁帶物品全實測：肉鬆蛋捲、含肉泡麵被檢疫犬查獲！戴金項鍊沒申報被扣押？常備藥品上限與動植物檢疫 5 大雷區',
