@@ -46,6 +46,633 @@ export const AffiliateFooter = () => (
 );
 
 export const articlesData: Article[] = [
+
+  {
+    id: 'korea-k-eta-e-arrival-smartpass-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 韓國入境出境全破解】免申請 K-ETA 延長至年底！必填免費「電子入境卡 (e-Arrival Card)」72 小時教學、仁川機場 SmartPass 刷臉出境 30 秒過關與 SeS 入境自動通關差別',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1517154421773-0529f29ea451?w=800&q=80',
+    imageAlt: '韓國首爾仁川機場出入境自動通關與 SmartPass 人臉辨識快速通道教學',
+    excerpt: '飛首爾、釜山、濟州島到底還要不要申請 K-ETA？韓國官方已將台灣旅客「免申請 K-ETA」延長至 2026 年 12 月 31 日，直接現省 1 萬韓元！但千萬別踩大雷：「免 K-ETA 不等於免填入境卡」！入境前 72 小時內務必免費線上填好「電子入境卡 (e-Arrival Card)」！此外，回程在仁川機場安檢常常排到天荒地老？手機先綁好「ICN SmartPass」走專屬人臉通道，30 秒極速出境！本篇完整區分 K-ETA、電子入境卡、SmartPass 與 SeS 自動通關的真正差別！',
+    badge: '韓國必讀',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-indigo-600">
+          <div className="sketch-badge -top-3 left-4 bg-indigo-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            2026 赴韓通關最新規範
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Plane className="w-5 h-5 text-indigo-600" />
+            省下 1 萬韓元！但入境韓國前 72 小時沒填「這張卡」照樣排隊卡關
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            很多台灣旅客準備飛首爾、釜山或濟州島前，常常被網路上的舊文章搞混：「到底還要不要花錢申請 K-ETA（韓國電子旅行許可）？」根據最新官方公告，韓國政府已將台灣護照旅客的<strong>「K-ETA 暫時免申請優惠」延長至 2026 年 12 月 31 日</strong>，短期觀光免申請直接現省 10,000 韓元！
+          </p>
+          <p className="text-sm text-neutral-700 mb-4">
+            <strong>但最常踩的大地雷來了：</strong>「免 K-ETA 不等於什麼都不用填！」目前所有未辦理 K-ETA 的入境旅客，在抵達韓國前 <strong>72 小時內</strong>，必須至官方系統免費填寫<strong>「韓國電子入境卡 (e-Arrival Card)」</strong>（亦可使用紙本入境卡，但現場領筆排隊超耗時）。同時回程在仁川機場出境一定要綁定「SmartPass」，直接甩開長龍秒過安檢門！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">K-ETA 豁免期限</div>
+              <div className="text-lg font-black text-emerald-600">2026/12/31 止</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">電子入境卡申報</div>
+              <div className="text-lg font-black text-black">免費 (入境前72H)</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">SmartPass 適用</div>
+              <div className="text-lg font-black text-indigo-600">仁川機場「出境」</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">SeS 自動通關</div>
+              <div className="text-lg font-black text-black">入境/出境自動門</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 四大通關系統 10 秒對照表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <QrCode className="w-5 h-5 text-black" />
+            別再搞混！K-ETA、電子入境卡、SmartPass 與 SeS 終極對照表
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">系統 / 證件名稱</th>
+                  <th className="p-3">使用時機</th>
+                  <th className="p-3">費用與效期</th>
+                  <th className="p-3">目前對台灣旅客規定</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">K-ETA (電子旅行許可)</td>
+                  <td className="p-3">飛往韓國「登機前」</td>
+                  <td className="p-3">10,000 韓元 (3 年有效)</td>
+                  <td className="p-3 text-emerald-700 font-bold">2026/12/31 前免申請（若自願付費辦理可免填入境卡）</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-amber-50/30">
+                  <td className="p-3 font-bold text-amber-900">電子入境卡 (e-Arrival Card)</td>
+                  <td className="p-3">韓國「入境查驗」</td>
+                  <td className="p-3 font-bold text-emerald-600">完全免費 (單次有效)</td>
+                  <td className="p-3 font-bold text-red-700">⚠️ 未辦 K-ETA 者，須於抵達前 72 小時內線上填寫！</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-emerald-50/30">
+                  <td className="p-3 font-bold text-emerald-900">ICN SmartPass (人臉通道)</td>
+                  <td className="p-3">仁川機場「出境安檢前」</td>
+                  <td className="p-3 font-bold text-emerald-600">免費 (效期 5 年)</td>
+                  <td className="p-3">App 掃護照+自拍，回程綁登機證走橘色 Face ID 專屬通道</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">SeS 自動通關 (Smart Entry Service)</td>
+                  <td className="p-3">韓國主要機場「入境/出境」</td>
+                  <td className="p-3 font-bold text-emerald-600">免費 (至護照效期止)</td>
+                  <td className="p-3">年滿 17 歲台灣護照持有人於機場櫃檯註冊指紋後，即享快速自動閘門</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* SmartPass 實戰 4 步驟 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Smartphone className="w-5 h-5 text-indigo-600" />
+            仁川機場回程救星：ICN SmartPass 30 秒刷臉過安檢 4 步驟
+          </h3>
+          <p className="text-sm text-gray-600">
+            仁川機場第一與第二航廈出境安檢常需排隊 40~60 分鐘，先綁定 SmartPass 就能走獨立綠色／橘色快速門（不限航空公司皆可使用）：
+          </p>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+              <div>
+                <strong>在台灣先下載「ICN SMARTPASS」官方 App</strong>
+                <p className="text-gray-600 text-xs mt-0.5">支援繁體中文介面，年滿 7 歲即可註冊（14 歲以下需監護人同意），註冊完成效期長達 5 年。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+              <div>
+                <strong>掃描台灣晶片護照封面與內頁、感應 NFC 晶片並自拍建檔</strong>
+                <p className="text-gray-600 text-xs mt-0.5">將手機貼在護照內頁塑膠片或背面感應 NFC，完成人臉活體偵測拍照。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">3</span>
+              <div>
+                <strong>【最重要步驟】回程報到拿到「登機證」後，在 App 掃描登機證條碼綁定！</strong>
+                <p className="text-gray-600 text-xs mt-0.5">每次離境都必須重新綁定當次航班的電子或紙本登機證，否則閘門刷臉會無法開門。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-emerald-50 border border-emerald-600">
+              <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">4</span>
+              <div>
+                <strong className="text-emerald-900">走向出境大廳「SMARTPASS (Face ID Only)」專屬閘門！</strong>
+                <p className="text-emerald-800 text-xs mt-0.5">不需掏出護照給保全看，直視鏡頭 2 秒開門直通隨身行李 X 光安檢台，省下至少 30 分鐘排隊時間！</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 避坑注意事項 */}
+        <section className="bg-yellow-50 p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            韓國出入境最容易搞錯的 3 個現場迷思
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>SmartPass 不能用來過「證照查驗海關」</strong>：SmartPass 只涵蓋「進入出境安檢大廳前的那道閘門」，進安檢門後過韓國海關仍須走 SeS 自動通關或人工櫃檯，護照一定要隨身收好。</li>
+            <li><strong>電子入境卡 (e-Arrival Card) 嚴格限制 72 小時內</strong>：太早一週前填系統不開放，建議在桃園機場候機或搭機前一天晚上用手機填完並截圖存證。</li>
+            <li><strong>已經辦過 SeS 自動通關的人注意護照效期</strong>：若近年剛換發新護照，舊護照綁定的韓國 SeS 自動通關資料會失效，入境時記得順便去海關櫃檯旁重新壓一次指紋登記（僅需 2 分鐘）。</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'vietnam-phu-quoc-free-visa-travel-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 越南富國島免簽自由行全攻略】台灣唯一 30 天免簽勝地！直飛星宇/越捷機票比價、越南本島轉機防踩雷（PAI 數位申報、跨海纜車與換匯 Grab 叫車避坑）',
+    author: '黑白飛特派團隊',
+    readTime: '12 分鐘',
+    image: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&q=80',
+    imageAlt: '越南富國島珍珠島海灘與太陽世界跨海纜車，台灣人免簽直飛海島自由行攻略',
+    excerpt: '想去東南亞海島避冬，卻不想花 NT$1,000~2,500 辦簽證？富國島 (Phu Quoc) 是全越南唯一給予台灣護照「30 天免簽證」的特區！台北、台中都有星宇與越捷直飛班機，3.5~4 小時就到！但千萬要注意免簽最大天條：「只限直飛進出富國島，絕不能順便跑去胡志明市、河內或峴港玩」，否則當場被拒登機！本篇完整拆解最新 PAI 電子入境申報系統、轉機簽證陷阱、世界最長跨海纜車、珍珠動物園門票與台幣換越南盾防坑指南！',
+    badge: '免簽海島',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-emerald-600">
+          <div className="sketch-badge -top-3 left-4 bg-emerald-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            全越南唯一免簽特區
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Plane className="w-5 h-5 text-emerald-600" />
+            省下電子簽證費！直飛富國島享受 30 天免簽度假天花板
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            與前往胡志明市、河內或峴港不同，台灣旅客只要持有 6 個月以上效期的中華民國護照，<strong>搭乘直飛航班抵達富國島國際機場 (PQC) 並從富國島原機返台</strong>，即可享有最長 <strong>30 天完全免簽證</strong>待遇，直接省下至少 US$25（約 NT$800）的越南電子簽證費與漫長審核期！
+          </p>
+          <p className="text-sm text-neutral-700 mb-4">
+            加上星宇航空與越捷航空從台北桃園、台中清泉崗直飛富國島，航程只要 <strong>3.5 ~ 4 小時</strong>；當地五星級國際飯店價格往往只有峇里島或普吉島的一半，還有金氏世界紀錄最長跨海纜車與野生動物園，是台灣小資與親子族群冬季避寒的最強首選！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">免簽停留期限</div>
+              <div className="text-lg font-black text-emerald-600">30 天 (免費)</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">台灣直飛航程</div>
+              <div className="text-lg font-black text-black">約 3.5 ~ 4 小時</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">淡季含稅直飛價</div>
+              <div className="text-lg font-black text-emerald-600">NT$ 7,500 起</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">2026 入境新制</div>
+              <div className="text-lg font-black text-black">需填 PAI 電子申報</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 免簽最大天條：直飛 vs 轉機陷阱 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <ShieldAlert className="w-5 h-5 text-red-600" />
+            90% 新手會踩的簽證死亡陷阱：直飛 vs 轉機／本島行程判定
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">行程與飛法組合</th>
+                  <th className="p-3">能否使用「富國島免簽」？</th>
+                  <th className="p-3">真實規定解析</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50 bg-emerald-50/30">
+                  <td className="p-3 font-bold text-emerald-900">1. 台北/台中直飛富國島，玩完直接飛回台灣</td>
+                  <td className="p-3 font-bold text-emerald-600">✅ 100% 適用免簽！</td>
+                  <td className="p-3">完全免辦越南簽證，下機前備妥 PAI 入境申報與回程機票即可。</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-red-50/30">
+                  <td className="p-3 font-bold text-red-900">2. 先去富國島玩 3 天，再搭國內線去胡志明市 / 河內</td>
+                  <td className="p-3 font-bold text-red-600">🚫 絕對不行！</td>
+                  <td className="p-3">免簽入境者不可離開富國島進入越南本島！必須在出發前先上網辦好「越南電子簽證 E-visa (US$25)」，且入境日填抵達富國島當天！</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-amber-50/30">
+                  <td className="p-3 font-bold text-amber-900">3. 在胡志明 (SGN) 或河內 (HAN) 轉機去富國島</td>
+                  <td className="p-3 font-bold text-red-600">⚠️ 極高風險！建議辦簽證</td>
+                  <td className="p-3">國際轉國內線幾乎都必須先「入境越南本島」領行李再重掛國內線！若無 E-visa 在桃機報到就會被拒絕登機。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 2026 PAI 與交通換匯攻略 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Coins className="w-5 h-5 text-indigo-600" />
+            富國島必知 4 大實戰秘技：PAI 申報、Grab 叫車與高匯率換匯
+          </h3>
+          <div className="grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div className="bg-gray-50 p-4 border border-black space-y-1.5">
+              <strong className="text-indigo-900 block text-base font-bold">1. 2026 必填數位入境系統 (PAI)</strong>
+              <p className="text-gray-600">
+                富國機場已推動 Pre-Arrival Information (PAI) 電子入境申報。免簽旅客一樣要提前線上填妥個人與住宿飯店資料並儲存憑證，過海關查驗速度才會快。
+              </p>
+            </div>
+            <div className="bg-gray-50 p-4 border border-black space-y-1.5">
+              <strong className="text-indigo-900 block text-base font-bold">2. 換錢別在台灣換越南盾！帶美金或台幣現場換</strong>
+              <p className="text-gray-600">
+                台灣銀行買越南盾匯率極差！正確做法是在台灣換「全新無摺痕百元美金鈔票」，或直接帶「台幣千元大鈔」到富國島陽東鎮市區金店、大型換匯所兌換，匯率好上 10% 以上！
+              </p>
+            </div>
+            <div className="bg-gray-50 p-4 border border-black space-y-1.5">
+              <strong className="text-indigo-900 block text-base font-bold">3. 島上交通：全程用 Grab 叫車，別搭路邊喊價計程車</strong>
+              <p className="text-gray-600">
+                富國島非常狹長（南北車程約 1 小時），但島上沒有地鐵！出發前先下載並綁定信用卡註冊 <strong>Grab App</strong>，價格透明免議價，北島（動物園/大世界）與南島（太陽世界跨海纜車）串聯超方便！
+              </p>
+            </div>
+            <div className="bg-gray-50 p-4 border border-black space-y-1.5">
+              <strong className="text-indigo-900 block text-base font-bold">4. 善用 VinBus「免費電動公車」串聯北島到機場</strong>
+              <p className="text-gray-600">
+                富國島珍珠集團（Vinpearl）營運的綠色電動公車 <strong>VinBus 17 號與 19 號</strong>，從富國機場一路開往陽東市區、Grand World 富國大世界與野生動物園，<strong>全部旅客免費搭乘 (NT$0)</strong>！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 景點避坑提醒 */}
+        <section className="bg-yellow-50 p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            黑白飛特派員：富國島旅遊避坑 3 大提醒
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>越南盾鈔票「0 很多」小心看錯</strong>：500,000 越南盾（約 NT$640）與 20,000 越南盾（約 NT$26）同為藍色系極易混淆，付現金時務必數清楚後面的零，避免多付十倍價錢！</li>
+            <li><strong>太陽世界跨海纜車維修時段</strong>：全球最長跨海三線纜車（Hon Thom Cable Car）中午常有約 1~1.5 小時的例行休息停駛時段（約 11:30~13:30），出發前務必先看官方當日營運時刻表以免白跑撲空。</li>
+            <li><strong>腸胃保健與飲水</strong>：夜市海鮮雖便宜美味，但建議避免生食與路邊攤未經殺菌之冰塊，隨身攜帶腸胃常備藥並僅飲用瓶裝礦泉水。</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'japan-winter-self-drive-etc-translation-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 日本冬天北海道自駕全指南】國際駕照日本不能用！監理站 NT$100 日文譯本效期與 3 證件檢查、4WD 雪胎選車、HEP 高速公路吃到飽與雪地防打滑保命 5 鐵則',
+    author: '黑白飛特派團隊',
+    readTime: '12 分鐘',
+    image: 'https://images.unsplash.com/photo-1548263594-a71ea65a85b3?w=800&q=80',
+    imageAlt: '日本北海道冬季雪地自駕公路與租車雪胎四輪驅動安全駕駛指南',
+    excerpt: '冬天想去北海道看破冰船、美瑛青池或合掌村點燈自駕？注意：日本完全不承認台灣核發的「國際駕照 (IDP)」，帶錯直接被租車櫃檯拒租！出發前務必去台灣監理站花 NT$100 申請「台灣駕照日文譯本」並帶齊三證件！本篇更針對冬季雪駕安全，拆解 4WD 四輪驅動與雪胎（スタッドレスタイヤ）預約重點、北海道 HEP 高速公路吃到飽 Pass 是否划算試算、以及黑冰路面煞車距離 4 倍與止まれ(TOMARE) 停車保命 5 鐵則！',
+    badge: '冬季自駕',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-red-600">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            日本租車最大烏龍警報
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2 text-red-950">
+            <Car className="w-5 h-5 text-red-600" />
+            帶「國際駕照」去日本不能開車！沒備齊這 3 樣證件當場無法取車
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            每年冬季都有大量台灣旅客興沖沖飛抵新千歲或那霸機場租車櫃檯，結果帥氣掏出「台灣國際駕照 (IDP)」後被日本店員一臉抱歉拒絕交車！原因很簡單：<strong>因為國際公約規範，日本政府完全不承認台灣核發的國際駕照</strong>，只承認基於台日雙方互惠協議的<strong>「台灣駕照官方日文譯本」</strong>！
+          </p>
+          <p className="text-sm text-neutral-700 mb-4">
+            更關鍵的是，到了冬天 11 月至隔年 4 月在北海道、東北（仙台/青森）或北陸（金澤/合掌村）自駕，與夏天開車難度截然不同！路面隨時存在肉眼看不出的<strong>「黑冰 (Black Ice)」</strong>，煞車距離可能拉長為乾燥路面的 4~8 倍，務必從證件、選車裝備到雪駕技術全面武裝！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">監理站日文譯本規費</div>
+              <div className="text-lg font-black text-emerald-600">NT$ 100</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">譯本日本有效期限</div>
+              <div className="text-lg font-black text-black">入境起 1 年內</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">冬季租車必備裝備</div>
+              <div className="text-lg font-black text-red-600">4WD + 雪胎</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">雪地煞車安全距離</div>
+              <div className="text-lg font-black text-black">一般 4 ~ 8 倍</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 取車必帶 3 證件檢查表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <FileText className="w-5 h-5 text-black" />
+            日本租車櫃檯鐵則：取車必須同時出示「缺一不可 3 證件」
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">必備證件 (全部須正本)</th>
+                  <th className="p-3">如何辦理 / 注意細節</th>
+                  <th className="p-3">常見失誤退件原因</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">1. 中華民國護照正本</td>
+                  <td className="p-3">內頁需貼有當次入境之「日本上陸許可貼紙」</td>
+                  <td className="p-3 text-red-600">只帶影本或照片檔一律拒租</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">2. 台灣駕照「正本」</td>
+                  <td className="p-3">必須在有效期限內（舊式過期駕照須先去監理站換發新卡）</td>
+                  <td className="p-3 text-red-600">忘記帶台灣駕照正本，只帶日文譯本無法核對身分！</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">3. 監理站核發「日文譯本正本」</td>
+                  <td className="p-3">帶身分證與駕照去全國監理所臨櫃申辦，規費 NT$100 當場取件（也可監理服務網線上加郵資申請，約 7~12 工作天寄達）</td>
+                  <td className="p-3 text-red-600">自己翻譯或找民間翻譯社翻的日文一律無效！</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-gray-500 bg-gray-50 p-3 border border-gray-200">
+            💡 <strong>譯本效期小知識</strong>：只要台灣駕照保持有效且未變更個人戶籍或姓名，這張 NT$100 的日文譯本沒有過期日，以後每次去日本都可重複使用；但在日本當地合法駕駛期限為「每次入境日起算 1 年內」。
+          </p>
+        </section>
+
+        {/* HEP 與 ETC Pass */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+            北海道高速公路吃到飽 HEP (Hokkaido Expressway Pass) 划算嗎？
+          </h3>
+          <p className="text-sm text-gray-600">
+            日本高速公路過路費極其昂貴（札幌開到旭川單程就要約 3,500 日圓、開到函館單程破 6,000 日圓）。如果你會跨城市拉車，建議在預約租車時同步加購 <strong>HEP (Hokkaido Expressway Pass)</strong> 並租用專用 <strong>ETC 卡</strong>：
+          </p>
+          <div className="grid md:grid-cols-2 gap-3 text-xs md:text-sm">
+            <div className="bg-emerald-50 p-4 border border-emerald-600">
+              <strong className="text-emerald-900 block mb-1">✅ 推薦購買 HEP 的情境</strong>
+              <p className="text-emerald-800">5 天以上會跑「新千歲 ➔ 登別/洞爺湖 ➔ 函館」或「札幌 ➔ 旭川/富良野 ➔ 帶廣/釧路」長途移動，直接吃到飽省下 30%~50% 過路費，還能直接走 ETC 專用閘道免找零！</p>
+            </div>
+            <div className="bg-gray-50 p-4 border border-black">
+              <strong className="text-black block mb-1">❌ 不必買 HEP 的情境</strong>
+              <p className="text-gray-600">僅在札幌市區、小樽、定山溪短距離移動，走一般平面道路（國道）為主，租單張 ETC 卡「實開實付」反而更省錢。</p>
+            </div>
+          </div>
+        </section>
+
+        {/* 冬季雪地駕駛保命 5 鐵則 */}
+        <section className="bg-yellow-50 p-6 sketch-border space-y-3 border-l-4 border-l-amber-500">
+          <div className="sketch-badge -top-3 left-4 bg-amber-500 text-black text-xs px-2 py-0.5 font-bold uppercase">
+            雪地防打滑保命守則
+          </div>
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            日本冬季雪地開車 5 大保命鐵則（新手駕駛必讀）
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-2">
+            <li><strong>1. 訂車必選「4WD 四輪驅動」＋確認已裝「雪胎 (スタッドレスタイヤ)」</strong>：北海道 11~4 月正規大型租車公司多數已標配雪胎，但建議下單時仍雙重確認 4WD 車款與雪刷除雪器，遇到積雪坡道才不會空轉卡死。</li>
+            <li><strong>2. 嚴禁「急煞車、急加速、急轉彎」</strong>：看見前方紅燈或彎道，務必提前在 3 倍距離外就放開油門滑行並使用「點放煞車」或降檔引擎煞車。一旦急踩到底觸發 ABS，輪胎在冰面上照樣會失控甩尾。</li>
+            <li><strong>3. 警惕最致命的透明陷阱「黑冰 (Black Ice)」</strong>：氣溫在 0°C 上下、路面看起來濕濕黑黑反光的地方（尤其橋面、隧道出入口與日照不到的陰影處），往往是一層透明薄冰！摩擦力近乎為零，過橋前請務必放慢至時速 40km 以下。</li>
+            <li><strong>4. 看見紅色倒三角形「止まれ (TOMARE)」必須完全靜止 3 秒</strong>：日本交通警察對「一時停止」取締極為嚴格，車輪必須 100% 停頓確認左右來車再起步，違規罰單高達 7,000 日圓且扣點。</li>
+            <li><strong>5. 一定要加購「CDW 免責補償 + NOC 營業損失賠償」全險</strong>：冬天雪地小擦撞或滑進路旁雪堆需要道路救援（拖吊）的機率極高，每天多花幾百元台幣買齊 NOC 安心險，才能避免事故後動輒數萬台幣的拖吊與營業賠償！</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+
+  {
+    id: 'japan-tax-free-nov-2026-refund-guide',
+    category: '必讀攻略',
+    title: '【2026 日本退稅新制攻略】11/1 正式上路！「先付後退」機場 KIOSK 與 VJW 退稅全圖解：免密封袋取消消耗品上限、先檢查行李再託運 SOP 與信用卡/現金領取避坑指南',
+    author: '黑白飛特派團隊',
+    readTime: '12 分鐘',
+    image: 'https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=800&q=80',
+    imageAlt: '2026年11月1日正式上路日本免稅退稅新制，機場先付後退 KIOSK 查驗與 Visit Japan Web 教學',
+    excerpt: '2026 年 11 月 1 日起，日本免稅制度迎來數十年最大變革！全面終結「店內直接免稅」，改採「先付後退（リファンド方式）」！好消息是：最令人崩潰的「藥妝零食透明密封袋（特殊包裝）」與「消耗品 50 萬日圓上限」正式全面廢除，不再區分一般物品與消耗品！但出境時務必牢記核心天條：必須在「航空公司託運行李前」先透過機場 KIOSK 或 Visit Japan Web 完成海關確認（綠燈免驗、紅燈抽查實物）！本篇手把手拆解 5 步驟 SOP、7 大機場動線與信用卡/現金退款避坑懶人包！',
+    badge: '11月新制',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-red-600">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            2026/11/01 正式實施
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2 text-red-950">
+            <Receipt className="w-5 h-5 text-red-600" />
+            告別店內現買現退！日本「先付後退」退稅新制全面啟動
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            為了徹底杜絕免稅商品在日本境內非法轉售與逃稅漏洞，日本政府自 <strong>2026 年 11 月 1 日</strong>起，正式將施行數十年的「結帳現場扣稅」改制為與歐洲同步的<strong>「先付後退（リファンド方式 / Refund 制）」</strong>。
+          </p>
+          <p className="text-sm text-neutral-700 mb-4">
+            現在無論你在唐吉訶德、Bic Camera、藥妝店或各大百貨公司血拼，結帳時一律須先支付<strong>「含稅全額」（一般商品含 10% 稅、食品飲料為 8% 輕減稅率）</strong>，待離境日本時於機場完成海關確認後，消費稅款才會自動退回你登記的信用卡或指定領取管道！不過好消息是：<strong>以往塞行李最麻煩的「防拆透明密封袋」終於廢除啦！</strong>
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">新制上路日期</div>
+              <div className="text-lg font-black text-red-600">2026/11/01</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">同店同日門檻</div>
+              <div className="text-lg font-black text-black">未稅 5,000 円+</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">密封袋與50萬上限</div>
+              <div className="text-lg font-black text-emerald-600">全面廢除取消</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">商品出境期限</div>
+              <div className="text-lg font-black text-black">購買翌日起 90 天</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 新舊制對比表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Sparkles className="w-5 h-5 text-indigo-600" />
+            10 秒秒懂：2026 年 11 月日本退稅「新舊制差異」總整理
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">比較項目</th>
+                  <th className="p-3 bg-gray-50">舊制 (2026/10/31 前)</th>
+                  <th className="p-3 bg-emerald-50">全新制度 (2026/11/01 起)</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">結帳付款金額</td>
+                  <td className="p-3">店內直接以「未稅價」結帳</td>
+                  <td className="p-3 font-bold text-red-700">店內先付「含稅全額」，離境確認後才退款</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">商品分類規則</td>
+                  <td className="p-3">嚴格區分「一般物品」與「消耗品」</td>
+                  <td className="p-3 font-bold text-emerald-700">✅ 取消分類！全部商品統一合併計算</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">藥妝零食密封袋</td>
+                  <td className="p-3 text-red-600">強制裝入紅色防拆密封袋，塞箱極難打包</td>
+                  <td className="p-3 font-bold text-emerald-700">✅ 全面廢除密封袋！可拆散自由塞入行李箱</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">消耗品購買上限</td>
+                  <td className="p-3">同店同日上限 50 萬日圓</td>
+                  <td className="p-3 font-bold text-emerald-700">✅ 取消 50 萬日圓上限，大戶爆買無阻</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">免稅最低門檻</td>
+                  <td className="p-3">同日同店未稅滿 5,000 日圓</td>
+                  <td className="p-3 font-bold text-black">維持不變：同日同店未稅 5,000 日圓以上</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">機場出境流程</td>
+                  <td className="p-3">過安檢後僅掃描護照即離境</td>
+                  <td className="p-3 font-bold text-red-700">⚠️ 必須「在託運行李前」先過 KIOSK / VJW 海關確認</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 完整 5 步驟實戰 SOP */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <QrCode className="w-5 h-5 text-indigo-600" />
+            從入境買到機場退稅：2026 新制 Step-by-Step 5 步驟全流程
+          </h3>
+          <div className="space-y-3 text-sm">
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+              <div>
+                <strong>抵達日本領完貼紙後，在 Visit Japan Web 生成「免稅 QR Code」</strong>
+                <p className="text-gray-600 text-xs mt-0.5">通過日本海關取得護照「上陸許可貼紙」後，登入 VJW 點選「準備免稅手續」掃描護照與貼紙，即可啟用專屬免稅 QR Code（亦可直接攜帶護照正本）。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+              <div>
+                <strong>市區購物支付「含稅價」，並登記退款方式</strong>
+                <p className="text-gray-600 text-xs mt-0.5">結帳時出示護照或<strong>即時聯網的 VJW 免稅 QR Code（嚴禁截圖！）</strong>，刷卡或現金支付含稅總額，並依店員或退稅平台指示綁定退稅信用卡或電子帳戶。</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-red-50 border border-red-600">
+              <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">3</span>
+              <div>
+                <strong className="text-red-950">【致命關鍵】回程抵達機場：務必「先辦海關確認、再去櫃檯託運行李」！</strong>
+                <p className="text-red-900 text-xs mt-0.5">在出境大廳（安檢門外的一般區域），前往機場退稅自助機台 (KIOSK) 掃描護照；若在成田、羽田、關西、中部、新千歲、福岡、那霸等 <strong>7 大主要機場</strong>，也可直接連上海關專用 Wi-Fi 用 VJW 手機線上完成確認！</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-gray-50 border border-black">
+              <span className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">4</span>
+              <div>
+                <strong>依海關終端機判定燈號通關（綠燈放行 vs 紅燈抽驗）</strong>
+                <p className="text-gray-600 text-xs mt-0.5">
+                  <strong>🟢 綠燈 (Pass)</strong>：恭喜過關！手續已完成，直接帶著行李箱去航空櫃檯託運！<br />
+                  <strong>🔴 紅燈 (Inspect)</strong>：被系統抽中查驗，須帶著護照、購買明細及<strong>「免稅商品實物」</strong>前往旁邊海關人工櫃檯核對無誤後，才能去託運！
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-3 bg-emerald-50 border border-emerald-600">
+              <span className="bg-emerald-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shrink-0">5</span>
+              <div>
+                <strong className="text-emerald-900">等待退稅自動入帳（或管制區機台領現）</strong>
+                <p className="text-emerald-800 text-xs mt-0.5">經海關確認出境後，綁定信用卡者稅款將自動刷退至卡片（依發卡行作業時間入帳）；若選擇現金退稅，請於通過安檢進入免稅管制區後的指定機台或櫃檯領取日圓現鈔。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 退款方式比評 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <CreditCard className="w-5 h-5 text-black" />
+            退稅款怎麼領最划算？信用卡 vs 日圓現金 vs 海外匯款大評比
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">退稅接收管道</th>
+                  <th className="p-3">操作便利度</th>
+                  <th className="p-3">手續費 / 匯差風險</th>
+                  <th className="p-3">黑白飛推薦評級</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50 bg-emerald-50/30">
+                  <td className="p-3 font-bold text-emerald-900">信用卡 / 簽帳金融卡刷退</td>
+                  <td className="p-3">免排領錢櫃台，過海關確認即等入帳</td>
+                  <td className="p-3">僅視銀行結算匯率浮動，幾乎零額外費用</td>
+                  <td className="p-3 font-bold text-emerald-600">⭐⭐⭐⭐⭐ 最推薦首選</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">機場管制區領取日圓現金</td>
+                  <td className="p-3">需於安檢後至指定機台或窗口排隊領現</td>
+                  <td className="p-3">零匯差，100% 拿回日圓現鈔可繼續在機場免稅店買伴手禮</td>
+                  <td className="p-3 font-bold text-indigo-600">⭐⭐⭐⭐ 適合現金控</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-red-50/30">
+                  <td className="p-3 font-bold text-red-900">指定海外銀行帳戶電匯</td>
+                  <td className="p-3">需輸入繁瑣英文銀行代碼與帳號</td>
+                  <td className="p-3 font-bold text-red-600">跨國電匯費 + 台灣銀行解款費可能扣走 NT$400~800！</td>
+                  <td className="p-3 font-bold text-red-600">⭐ 極不建議 (小額直接被扣光)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 4 大避坑警告 */}
+        <section className="bg-yellow-50 p-6 sketch-border space-y-3 border-l-4 border-l-amber-500">
+          <div className="sketch-badge -top-3 left-4 bg-amber-500 text-black text-xs px-2 py-0.5 font-bold uppercase">
+            台灣旅客 4 大破財地雷
+          </div>
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            沒有密封袋別高興太早！這 4 個失誤會讓你退稅直接歸零
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-2">
+            <li><strong>1. 先跑去託運行李，結果被海關抽到「紅燈驗貨」</strong>：新制最大殺手！一旦行李已經進了輸送帶，海關抽查時你拿不出免稅品實物，系統將直接判定該筆退稅失敗、稅金 100% 拿不回來！</li>
+            <li><strong>2. 誤以為取消密封袋＝日本境內可以拆開吃／用</strong>：錯！雖然不再強制封入密封袋、打包衣服玩具可混放，但<strong>「食品、藥品、美妝等消耗品在出境日本前依然嚴禁食用或使用」</strong>。若抽檢發現少了一包糖果或化妝水已被開封，整張收據的所有商品將全數失去退稅資格！</li>
+            <li><strong>3. 在店內出示「手機截圖」的 VJW 免稅 QR Code</strong>：為了防範截圖盜用，結帳出示 VJW 免稅碼必須即時聯網打開網頁顯示動態 QR Code，手機若沒網路會無法掃描建檔。</li>
+            <li><strong>4. 機場預留時間不足 2.5 小時</strong>：旺季（如楓葉季、櫻花季、寒暑假）機場大廳退稅機台排隊人潮可能多出 30~40 分鐘，搭廉航尤其要嚴防錯過 50~60 分鐘前的關櫃死線！</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
   {
     id: 'japan-ski-snowboard-baggage-flights-guide-2026',
     category: '必讀攻略',
