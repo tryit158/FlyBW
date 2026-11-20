@@ -48,6 +48,485 @@ export const AffiliateFooter = () => (
 export const articlesData: Article[] = [
 
   {
+    id: 'taiwan-2027-long-weekend-leave-flight-guide',
+    category: '必讀攻略',
+    title: '【2027 台灣連假請假攻略與搶機票行事曆】全年零補班！121 天放假、9 大連假一覽：春節請 2 休 11、清明請 3 休 9、跨年請 4 休 10，各檔期機票早鳥起跑時間表',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&q=80',
+    imageAlt: '2027年民國116年台灣行事曆9大連假請假攻略與日韓機票早鳥搶票規劃',
+    excerpt: '上班族快存起來！行政院人事行政總處公布的民國 116 年（2027 年）辦公日曆表正式出爐：全年總放假高達 121 天、共有 9 個 3 天以上連續假期，最爽的是「全年零補班」！農曆春節請 2 休 11（或請 3 休 12~16）、兒童清明請 3 休 9 賞櫻黃金檔、端午與中秋請 2 休 5、年底行憲紀念日接 2028 元旦請 4 休 10！本篇搭配「廉航與傳統航空早鳥開賣時程表」，幫你提早卡位 2027 最低價機票！',
+    badge: '2027行事曆',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-indigo-600">
+          <div className="sketch-badge -top-3 left-4 bg-indigo-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            民國 116 年官方定案
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <CalendarDays className="w-5 h-5 text-indigo-600" />
+            2027 全年 0 天補班！9 大連假配特休，最多一口氣爽休 16 天
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            規劃明年出國行程、搶廉航開賣第一波早鳥票，第一步就是把明年的國定假日摸透！根據行政院人事行政總處核定之<strong>民國 116 年（2027 年）政府行政機關辦公日曆表</strong>，全年總放假日數達 <strong>121 天</strong>，包含元旦、春節、228、清明、勞動節、國慶、台灣光復節、行憲紀念日與 2028 跨年共 <strong>9 大連續假期</strong>。
+          </p>
+          <p className="text-sm text-neutral-700 mb-4">
+            最讓台灣上班族振奮的是：<strong>2027 年全年沒有任何一天需要週六補班！</strong>而且 2027 年農曆春節落在 2 月初（2/4～2/10 放 7 天），清明 4 天連假剛好撞上日本東京、京都滿開櫻花季，只要提早 6～9 個月鎖定早鳥票，就能用平日價格飛旺季！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">全年總放假日</div>
+              <div className="text-lg font-black text-emerald-600">121 天</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">3 天以上連假</div>
+              <div className="text-lg font-black text-black">共 9 大檔期</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">全年補班天數</div>
+              <div className="text-lg font-black text-emerald-600">0 天 (免補班)</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">最強特休放大</div>
+              <div className="text-lg font-black text-indigo-600">春節最長 16 天</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 2027 9大連假與請假攻略總表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Plane className="w-5 h-5 text-black" />
+            2027 年（116 年）9 大連假 + 週間國定假日最強請假對照表
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">假期名稱</th>
+                  <th className="p-3">官方放假日期</th>
+                  <th className="p-3">原天數</th>
+                  <th className="p-3">神級請假放大法</th>
+                  <th className="p-3">推薦出國目的地</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">2027 元旦</td>
+                  <td className="p-3">1/1(五) ～ 1/3(日)</td>
+                  <td className="p-3 font-bold">3 天</td>
+                  <td className="p-3">免請假快閃；或請 12/28～31 休 9 天</td>
+                  <td className="p-3">港澳、沖繩、福岡 3 日快閃</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-red-50/30">
+                  <td className="p-3 font-bold text-red-900">農曆春節</td>
+                  <td className="p-3">2/4(四) ～ 2/10(三)</td>
+                  <td className="p-3 font-bold text-red-600">7 天</td>
+                  <td className="p-3 font-bold text-emerald-700">請 2/11～12 ➔ 休 11 天！<br />加請 2/1～3 ➔ 狂休 16 天！</td>
+                  <td className="p-3">北海道滑雪、歐洲長程、紐澳避冬</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">228 和平紀念日</td>
+                  <td className="p-3">2/27(六) ～ 3/1(一)</td>
+                  <td className="p-3 font-bold">3 天</td>
+                  <td className="p-3">請 3/2～3/5 (4天) ➔ 休 9 天</td>
+                  <td className="p-3">東京河津櫻、九州自駕、曼谷</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-pink-50/40">
+                  <td className="p-3 font-bold text-pink-900">兒童節與清明節</td>
+                  <td className="p-3">4/3(六) ～ 4/6(二)</td>
+                  <td className="p-3 font-bold text-pink-700">4 天</td>
+                  <td className="p-3 font-bold text-emerald-700">請 4/7～4/9 (3天) ➔ 爽休 9 天！</td>
+                  <td className="p-3">日本東京/京阪賞櫻、韓國鎮海/首爾賞櫻</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">勞動節</td>
+                  <td className="p-3">4/30(五) ～ 5/2(日)</td>
+                  <td className="p-3 font-bold">3 天</td>
+                  <td className="p-3">請 4/26～29 (4天) ➔ 休 9 天（避開日本黃金週）</td>
+                  <td className="p-3">立山黑部開山、黑部峽谷、釜山</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-amber-50/30">
+                  <td className="p-3 font-bold text-amber-900">端午節 (週三)</td>
+                  <td className="p-3">6/9(三) 單日</td>
+                  <td className="p-3">1 天</td>
+                  <td className="p-3 font-bold text-indigo-700">請 6/7～8 或 6/10～11 (2天) ➔ 休 5 天</td>
+                  <td className="p-3">沖繩玩水、北海道初夏花海、富國島</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-amber-50/30">
+                  <td className="p-3 font-bold text-amber-900">中秋節 (週三)</td>
+                  <td className="p-3">9/15(三) 單日</td>
+                  <td className="p-3">1 天</td>
+                  <td className="p-3 font-bold text-indigo-700">請 9/13～14 或 9/16～17 (2天) ➔ 休 5 天</td>
+                  <td className="p-3">機票淡季！東京/大阪/首爾撿便宜</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">國慶日 / 光復節</td>
+                  <td className="p-3">10/9～11、10/23～25</td>
+                  <td className="p-3 font-bold">各 3 天</td>
+                  <td className="p-3">各請 2 天即可輕鬆湊成 5 天小長假</td>
+                  <td className="p-3">北海道/東北早楓、韓國楓葉季</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-emerald-50/40">
+                  <td className="p-3 font-bold text-emerald-900">行憲紀念日 + 2028元旦</td>
+                  <td className="p-3">12/24～26、12/31～1/2</td>
+                  <td className="p-3 font-bold text-emerald-700">各 3 天</td>
+                  <td className="p-3 font-bold text-emerald-700">請 12/27～30 (4天) ➔ 跨年狂休 10 天！</td>
+                  <td className="p-3">東京聖誕點燈、日本跨年、歐洲聖誕市集</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 搶機票時間軸 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Clock className="w-5 h-5 text-indigo-600" />
+            連假機票不買貴！2027 航空「開賣搶票黃金時間表」
+          </h3>
+          <p className="text-sm text-gray-600">
+            連假機票越晚買越天價！掌握傳統航空與廉價航空的開票規律，才能第一時間搶到低艙等：
+          </p>
+          <div className="grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div className="bg-gray-50 p-4 border border-black space-y-2">
+              <strong className="text-indigo-900 block text-base font-bold">1. 傳統航空 (華航/長榮/星宇/國泰)</strong>
+              <p className="text-gray-600">
+                大多在起飛前 <strong>330～360 天</strong>即開放訂位。針對 <strong>2027 農曆春節與 4 月賞櫻清明連假</strong>，現在已經進入中後段開票期，建議立刻鎖定票價；若目標是 2027 國慶與跨年，則可在 <strong>2026 年底～2027 年 1 月</strong>搶第一波早鳥！
+              </p>
+            </div>
+            <div className="bg-gray-50 p-4 border border-black space-y-2">
+              <strong className="text-amber-900 block text-base font-bold">2. 廉價航空 (台灣虎航/樂桃/酷航)</strong>
+              <p className="text-gray-600">
+                採「夏冬季班表」分批開賣！<strong>夏季班表（3 月底～10 月底，含清明/端午/暑假）</strong>通常於前一年 <strong>11 月～1 月</strong>分波開賣；<strong>冬季班表（10 月底～隔年 3 月底，含楓葉/跨年/春節）</strong>通常於當年 <strong>5 月～7 月</strong>開賣！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 避坑提醒 */}
+        <section className="bg-yellow-50 p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            黑白飛特派員：2027 買連假機票省錢 3 大秘技
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>錯開「首日去、末日回」魔咒</strong>：以 2027 清明連假（4/3～4/6）為例，4/3 出發票價最貴；若改 4/2 晚間紅眼出發或 4/4 出發並請假延後回台，來回含稅價差可高達 NT$ 5,000～8,000！</li>
+            <li><strong>避開日本黃金週（4/29～5/5）</strong>：2027 勞動節連假（4/30～5/2）剛好與日本黃金週重疊，不僅飯店翻倍貴，景點也塞爆，該檔期建議改飛韓國、泰國或越南富國島 CP 值更高。</li>
+            <li><strong>善用「週間單日假（端午 6/9、中秋 9/15）」</strong>：這兩天因未形成官方連假，出國人潮分散，請 2 天特休湊 5 天飛日韓，往往能買到接近淡季底價的便宜機票！</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'japan-jesta-eta-taiwan-scam-warning-guide',
+    category: '最新消息',
+    title: '【日本去玩要開始收簽證費了？2026-2027 日本 JESTA 電子旅行授權真相全解】現在去需要辦嗎？何時正式上路、台灣 90 天免簽是否取消、收費制度與「假官網代辦詐騙」防坑指南',
+    author: '黑白飛特派團隊',
+    readTime: '10 分鐘',
+    image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80',
+    imageAlt: '日本東京淺草與機場入境制度解析，日本 JESTA 電子旅行授權最新實施時程與防詐騙指南',
+    excerpt: '社群媒體瘋傳「以後台灣人去日本不能免簽了、要提前申請付費 JESTA」是真的嗎？別被標題黨嚇壞，更千萬別亂點 Google 廣告上的付費代辦網站！根據日本官方於 2026 年 6 月 5 日公布之《入管法》修正案：JESTA 法定最晚於 2029 年 3 月底前實施，目前政策目標為 2028 年度上路！也就是說「2026 與 2027 年赴日完全不用辦 JESTA」，台灣 90 天免簽待遇也未取消！本篇一次破除謠言、解析未來每次入境審核機制與防範假官網詐騙！',
+    badge: '防詐必看',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-red-600">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            官方最新進度闢謠
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2 text-red-950">
+            <ShieldAlert className="w-5 h-5 text-red-600" />
+            先給結論：2026～2027 年飛日本「完全不用辦 JESTA」！千萬別被假網站騙錢
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            近期台灣各大旅遊社團與新聞不斷轉傳「日本將導入日版 ESTA——JESTA 電子旅行授權系統，免簽旅客未來出發前要先線上申請並付費」，讓許多準備今年底或明年衝日本的朋友陷入焦慮，甚至有人在搜尋引擎誤點高價代辦詐騙網站、白白外洩護照與信用卡個資！
+          </p>
+          <p className="text-sm text-neutral-700 mb-4">
+            事實查核：日本國會雖已於 <strong>2026 年 6 月 5 日</strong>公布包含 JESTA 機制的《出入國管理及難民認定法》修正案，但法案明定最晚實施期限為 <strong>2029 年 3 月 31 日前</strong>，日本出入國在留管理廳目前的實務推動目標則落在 <strong>2028 年度內</strong>。因此<strong>目前根本還沒有任何官方申請入口</strong>，2026～2027 年赴日只需照舊準備有效護照與免費的 Visit Japan Web 即可！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">2026~2027 現況</div>
+              <div className="text-lg font-black text-emerald-600">尚未上路免申請</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">官方預計啟用</div>
+              <div className="text-lg font-black text-black">2028 年度目標</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">台灣 90 天免簽</div>
+              <div className="text-lg font-black text-emerald-600">資格完全不變</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">現有付費代辦網</div>
+              <div className="text-lg font-black text-red-600">100% 非官方</div>
+            </div>
+          </div>
+        </section>
+
+        {/* JESTA vs VJW vs 簽證對照表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <HelpCircle className="w-5 h-5 text-black" />
+            1 分鐘看懂：未來的 JESTA 與現在的 Visit Japan Web (VJW) 差在哪？
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">比較項目</th>
+                  <th className="p-3 bg-emerald-50">Visit Japan Web (VJW)</th>
+                  <th className="p-3 bg-indigo-50">日本 JESTA (未來新制)</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">目前狀態</td>
+                  <td className="p-3 font-bold text-emerald-700">✅ 現行使用中（建議出發前填妥）</td>
+                  <td className="p-3 font-bold text-amber-700">⏳ 籌備建置中（預計 2028 年度實施）</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">核心用途</td>
+                  <td className="p-3">入境卡、海關申報與 2026/11 新制退稅 QR Code</td>
+                  <td className="p-3">出發登機前的「事前入境資格審查」，防堵非法滯留與黑名單</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">強制力</td>
+                  <td className="p-3">非強制（可改填紙本），但用 VJW 通關與退稅快很多</td>
+                  <td className="p-3 font-bold text-red-700">上路後屬強制！未取得授權航空公司依法不得讓旅客登機</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">申請費用</td>
+                  <td className="p-3 font-bold text-emerald-600">完全免費 (NT$ 0)</td>
+                  <td className="p-3">確定收費（確切金額待日本政令正式公告）</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-gray-900">效期與頻率</td>
+                  <td className="p-3">每次赴日行程登錄一次</td>
+                  <td className="p-3">依目前立法架構，規劃為「每次赴日入境前皆須進行線上認證」</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 防詐騙指南 */}
+        <section className="bg-red-50 p-6 sketch-border space-y-4 border-l-4 border-l-red-600">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase">
+            高度警戒防詐提醒
+          </div>
+          <h3 className="text-lg font-bold flex items-center gap-2 text-red-950">
+            <ShieldCheck className="w-5 h-5 text-red-600" />
+            辨識「假日本入境／假 JESTA 申請網站」3 大特徵
+          </h3>
+          <p className="text-xs md:text-sm text-neutral-700">
+            過去美國 ESTA、韓國 K-ETA、泰國電子入境與日本 VJW 都曾爆發大量「山寨釣魚代辦網站」買 Google 置頂廣告，誘騙旅客刷卡 US$50～100 不等。出發前請認明以下鐵則：
+          </p>
+          <div className="grid md:grid-cols-3 gap-3 text-xs md:text-sm">
+            <div className="bg-white p-4 border border-black space-y-1">
+              <strong className="text-red-700 block">特徵 1：網址不是 .go.jp 結尾</strong>
+              <p className="text-gray-600">
+                日本政府官方網站必然以 <strong>.go.jp</strong> 結尾（例如 VJW 官方為 <code>services.digital.go.jp</code>）。凡是 .com、.org、.net 結尾的「申請入口」一律高度可疑！
+              </p>
+            </div>
+            <div className="bg-white p-4 border border-black space-y-1">
+              <strong className="text-red-700 block">特徵 2：現在就叫你刷卡預約 JESTA</strong>
+              <p className="text-gray-600">
+                因為日本官方連確切上路日期與最終收費政令都尚未開放申請，任何聲稱「搶先預約 JESTA」、「代辦日本電子簽證」並要求輸入卡號的頁面都是陷阱。
+              </p>
+            </div>
+            <div className="bg-white p-4 border border-black space-y-1">
+              <strong className="text-red-700 block">特徵 3：假冒 VJW 收取手續費</strong>
+              <p className="text-gray-600">
+                <strong>Visit Japan Web 從頭到尾完全免費！</strong>如果在填寫日本入境資料的最後一步跳出「請刷卡繳納審查費」畫面，立刻關閉網頁，千萬不要付款！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 現階段行前標準動作 */}
+        <section className="bg-white p-5 sketch-border space-y-3">
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <CheckCircle2 className="w-5 h-5 text-emerald-600" />
+            2026～2027 赴日旅遊真正該準備的 3 件事
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-1.5">
+            <li><strong>確認台灣護照效期</strong>：入境日本雖無硬性規定 6 個月效期（只要在預計停留期間內有效即可），但實務上為避免航空公司系統卡關或突發改票，仍強烈建議維持 <strong>6 個月以上效期</strong>。</li>
+            <li><strong>免費填好 Visit Japan Web (VJW)</strong>：出發前線上登錄入境審查與海關申報 QR Code，下機領完上陸貼紙後還可直接啟用「2026/11 新制退稅免稅 QR Code」，一碼多用最省時。</li>
+            <li><strong>留意官方正式公告</strong>：未來當日本入管廳確定 JESTA 上路日與官方申請網址時，黑白飛團隊也會第一時間為大家實測圖解教學！</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
+    id: 'japan-appliances-bring-back-taiwan-customs-guide-2026',
+    category: '行李圖解',
+    title: '【日本買電器回台灣必讀避坑】無線離子夾安檢當場沒收！吹風機/水波爐/電鍋手提 vs 託運規定、100V 電壓壽命實測與台灣海關 3.5 萬免稅額申報全圖解',
+    author: '黑白飛特派團隊',
+    readTime: '12 分鐘',
+    image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=80',
+    imageAlt: '日本 Bic Camera 與電器賣場家電採購，帶吹風機、水波爐、電鍋與美髮離子夾回台航空安檢與海關規定',
+    excerpt: '飛日本扛 Dyson / Panasonic 吹風機、ReFa 無線離子夾、象印電子鍋或 Sharp 水波爐回台灣，價差動輒省下 3,000～10,000 元！但你買對、裝對了嗎？每年都有上千位台灣女生在成田、關西機場安檢口心碎落淚——因為「內建不可拆鋰電池的無線離子夾／電捲棒」，依日本民航法規「手提與託運雙雙全面禁止」，安檢一掃當場沒收丟垃圾桶！本篇一次整理熱門日本電器手提/託運表、日本 100V vs 台灣 110V 電壓實測，以及台灣海關每人 NT$ 35,000 免稅額紅綠線避罰攻略！',
+    badge: '電器防雷',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-red-600">
+          <div className="sketch-badge -top-3 left-4 bg-red-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            日本出境安檢沒收冠軍
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2 text-red-950">
+            <BatteryCharging className="w-5 h-5 text-red-600" />
+            別讓幾千塊直接進安檢垃圾桶！日本買電器回台 3 大死亡地雷
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            日圓匯率甜加上免稅退稅與家電折價券，去日本 Bic Camera、Yodobashi 扛一台吹風機、烤麵包機、電鍋甚至水波爐回台灣，幾乎是所有台灣人的標準行程。
+          </p>
+          <p className="text-sm text-neutral-700 mb-4">
+            但跨國扛電器有三大你絕不能忽視的關卡：<strong>① 日本機場對「不可拆鋰電池發熱電器（無線離子夾/電捲棒）」的絕對禁令</strong>（連隨身手提都不行！）、<strong>② 日本 100V 與台灣 110V 電壓差異</strong>、以及 <strong>③ 返抵桃園機場時的台灣海關每人 NT$ 35,000 免稅上限</strong>。買單前花 3 分鐘對照下表，幫你保住荷包零損失！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">不可拆電池無線離子夾</div>
+              <div className="text-lg font-black text-red-600">手提/託運全禁</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">日本 vs 台灣電壓</div>
+              <div className="text-lg font-black text-black">100V vs 110V</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">台灣入境免稅額</div>
+              <div className="text-lg font-black text-emerald-600">每人 NT$ 35,000</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">超額未報走綠線</div>
+              <div className="text-lg font-black text-red-600">補稅＋沒入風險</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 熱門日本電器手提 vs 託運總表 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Luggage className="w-5 h-5 text-black" />
+            2026 日本必買 8 大熱門電器：手提 vs 託運航空安檢對照表
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">熱門電器品項</th>
+                  <th className="p-3">隨身手提</th>
+                  <th className="p-3">辦理託運</th>
+                  <th className="p-3">必看關鍵規定與提醒</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50 bg-red-50/40">
+                  <td className="p-3 font-bold text-red-900">無線離子夾 / 無線電捲棒<br /><span className="text-xs font-normal">(電池「不可拆卸」)</span></td>
+                  <td className="p-3 font-bold text-red-600">🚫 禁止</td>
+                  <td className="p-3 font-bold text-red-600">🚫 禁止</td>
+                  <td className="p-3 text-red-800 font-bold">日本國土交通省嚴禁攜帶上機！安檢口直接沒收丟棄！</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-amber-50/30">
+                  <td className="p-3 font-bold text-amber-900">無線離子夾 / 電捲棒<br /><span className="text-xs font-normal">(電池「可拆卸」)</span></td>
+                  <td className="p-3 font-bold text-emerald-600">✅ 電池手提</td>
+                  <td className="p-3 font-bold text-emerald-600">✅ 空機可託運</td>
+                  <td className="p-3">務必把電池拔下放隨身包並絕緣保護，主機身才能放託運箱。</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">插電式吹風機 / 插電離子夾<br /><span className="text-xs font-normal">(Dyson / Panasonic NA系列)</span></td>
+                  <td className="p-3 font-bold text-emerald-600">✅ 可以</td>
+                  <td className="p-3 font-bold text-emerald-600">✅ 建議託運</td>
+                  <td className="p-3">不含鋰電池，手提託運皆可（搭廉航手提限 7kg 建議放託運）。</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">電子鍋 / 水波爐 / 烤麵包機<br /><span className="text-xs font-normal">(象印 / 虎牌 / Balmuda / Sharp)</span></td>
+                  <td className="p-3 text-gray-500">體積太大難手提</td>
+                  <td className="p-3 font-bold text-emerald-600">✅ 整箱託運</td>
+                  <td className="p-3">保留原廠外箱＋內部保麗龍即可直接整箱託運；注意廉航單件限重（20~30kg）。</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">掃地機器人 / 無線吸塵器</td>
+                  <td className="p-3 font-bold text-amber-700">⚠️ 視電池容量</td>
+                  <td className="p-3 font-bold text-amber-700">⚠️ 須確認 Wh</td>
+                  <td className="p-3">內建大型鋰電池多為 100Wh 以內，須完整關機防誤觸或拆電池隨身帶。</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-indigo-900">藍牙耳機 / 電動牙刷 / 美容儀</td>
+                  <td className="p-3 font-bold text-emerald-600">✅ 強烈建議手提</td>
+                  <td className="p-3 text-red-600">❌ 含鋰電池勿託運</td>
+                  <td className="p-3">凡含內建充電鋰電池之 3C／耳機充電盒，請一律放入隨身行李。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 100V vs 110V 電壓真相 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-lg font-bold flex items-center gap-2">
+            <Zap className="w-5 h-5 text-amber-600" />
+            日本 100V 電器插台灣 110V 插座會燒掉嗎？實測安全分級
+          </h3>
+          <p className="text-sm text-gray-600">
+            日本家用電壓為 <strong>100V</strong>，台灣家用插座標準為 <strong>110V（實測常見落在 110V～115V）</strong>，電壓高出約 10%～15%，依電器功率可分為三類：
+          </p>
+          <div className="grid md:grid-cols-3 gap-3 text-xs md:text-sm">
+            <div className="bg-emerald-50 p-4 border border-emerald-600 space-y-1">
+              <strong className="text-emerald-900 block font-bold">🟢 國際寬電壓 (100V-240V)</strong>
+              <p className="text-emerald-800">
+                如手機、筆電、相機、刮鬍刀與部分國際版吹風機，機身標示 <code>100-240V</code>，回台直接插電 100% 安全無憂！
+              </p>
+            </div>
+            <div className="bg-amber-50 p-4 border border-amber-500 space-y-1">
+              <strong className="text-amber-900 block font-bold">🟡 中高功率發熱家電 (吹風機/快煮壺)</strong>
+              <p className="text-amber-800">
+                多為 <code>100V 專用</code>。雖能插台灣 110V 啟動，但長期承受較高電壓易導致溫度偏高、發熱絲老化加速（且日本水貨在台多無原廠保固），使用時勿開最高溫連續吹太久，且切勿插在老舊多孔延長線上。
+              </p>
+            </div>
+            <div className="bg-red-50 p-4 border border-red-600 space-y-1">
+              <strong className="text-red-900 block font-bold">🔴 高價精密廚電 (水波爐/IH電子鍋)</strong>
+              <p className="text-red-800">
+                動輒台幣 1.5～3 萬元的精密加熱主機，若家中插座實測偏高（超過 115V），極容易觸發過壓保護或縮短主機板壽命，強烈建議額外購買足瓦數（如 2000W 以上）的<strong>「110V 轉 100V 專用降壓器」</strong>保護愛機！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 台灣海關 3.5 萬免稅額 */}
+        <section className="bg-yellow-50 p-6 sketch-border space-y-3 border-l-4 border-l-amber-500">
+          <div className="sketch-badge -top-3 left-4 bg-amber-500 text-black text-xs px-2 py-0.5 font-bold uppercase">
+            桃園機場入境防罰守則
+          </div>
+          <h4 className="font-bold text-black flex items-center gap-2">
+            <Coins className="w-5 h-5 text-amber-700" />
+            返台海關 NT$ 35,000 免稅額怎麼算？超額走紅線反而不虧！
+          </h4>
+          <ul className="list-disc pl-5 text-xs md:text-sm text-neutral-700 space-y-2">
+            <li><strong>每人免稅額為新台幣 35,000 元</strong>：凡於海外購買之自用家用物品（含電器、藥妝、服飾等，不含菸酒管制物）合計價值在 NT$ 35,000 以內免稅；若為一家四口同行，僅能就各自攜帶自用物品計算，單一件超過 3.5 萬的昂貴大電器無法拆成四人分攤！</li>
+            <li><strong>超額請主動走「紅線（應申報）櫃檯」</strong>：超過免稅額的差額，主動申報只需依法補繳關稅與 5% 營業稅（多數家電關稅極低，補稅往往只要幾百元至一兩千元）；但若僥倖走綠線被 X 光機攔檢查獲，除了補稅還可能面臨<strong>沒入或數倍罰鍰</strong>！</li>
+            <li><strong>務必保留所有日本購買收據／電子發票</strong>：主動申報時出示原始消費收據，海關會依實際購買金額折算台幣核稅；若沒收據，海關有權依台灣市場市價估價課稅，容易被高估！</li>
+          </ul>
+        </section>
+
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+
+  {
     id: 'korea-k-eta-e-arrival-smartpass-guide-2026',
     category: '必讀攻略',
     title: '【2026 韓國入境出境全破解】免申請 K-ETA 延長至年底！必填免費「電子入境卡 (e-Arrival Card)」72 小時教學、仁川機場 SmartPass 刷臉出境 30 秒過關與 SeS 入境自動通關差別',

@@ -14,6 +14,9 @@ export default function Home() {
   const previewArticles = useMemo(() => {
     // 優先顯示 2026 泰國免簽自由行、桃機外幣ATM換匯評比、出國伴手禮打包防雷、日本賞楓等精選文章
     const priorityIds = [
+      'taiwan-2027-long-weekend-leave-flight-guide',
+      'japan-jesta-eta-taiwan-scam-warning-guide',
+      'japan-appliances-bring-back-taiwan-customs-guide-2026',
       'korea-k-eta-e-arrival-smartpass-guide-2026',
       'vietnam-phu-quoc-free-visa-travel-guide-2026',
       'japan-winter-self-drive-etc-translation-guide-2026',
