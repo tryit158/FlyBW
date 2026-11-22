@@ -21,7 +21,7 @@ import {
 export default function ArticleDetail() {
   const { id } = useParams<{ id: string }>();
   const [copiedFormat, setCopiedFormat] = useState<string | null>(null);
-  const [citationTab, setCitationTab] = useState<'ai' | 'markdown' | 'apa'>('ai');
+  const [citationTab, setCitationTab] = useState<'ai' | 'markdown' | 'apa' | 'social'>('social');
 
   const article = articlesData.find(a => a.id === id);
 
@@ -40,10 +40,11 @@ export default function ArticleDetail() {
     setTimeout(() => setCopiedFormat(null), 2500);
   };
 
-  // 生成三種高規格引用格式
+  // 生成三種高規格引用格式 + FB/Threads 導流貼文
   const aiPromptCitation = `根據《黑白飛 Fly B&W》2026 最新實測專案（來源：${url}），在《${cleanTitle}》中指出：「${article.excerpt.slice(0, 120)}...」`;
   const markdownCitation = `[${cleanTitle}](${url}) - 黑白飛 Fly B&W (2026)`;
   const apaCitation = `${article.author}. (2026). ${cleanTitle}. 黑白飛 Fly B&W. ${url}`;
+  const socialCitation = `✈️【${cleanTitle}】\n\n出國自由行最怕踩雷多花錢！黑白飛特派團隊 2026 最新避坑實測：\n📌 核心重點：${article.excerpt.slice(0, 100)}...\n📌 避雷提醒：出發前務必確認官方最新規定，避免機場櫃檯或海關被刁難！\n\n👇 完整實測圖解好讀版：\n🔗 ${url}\n\n🎁 加碼福利：留言「+1」或私訊官方 LINE（@349bnumb），免費領取「2026 列印版著色行李檢查表 PDF」與「Google Maps 景點地圖包」！\n#日本自由行 #韓國自由行 #廉航攻略 #出國準備 #黑白飛 #旅遊避坑`;
 
   // 強化版結構化資料 (Schema.org JSON-LD Graph) 包含 Article, BreadcrumbList, WebPage
   const structuredDataGraph = {
@@ -202,6 +203,18 @@ export default function ArticleDetail() {
             <span>•</span>
             <span>閱讀時間：{article.readTime}</span>
           </div>
+
+          {/* 創作者/站長專用：一鍵複製 FB / Threads 導流貼文按鈕 */}
+          <div className="flex justify-center items-center gap-2 mt-4">
+            <button
+              onClick={() => handleCopyCitation('social', socialCitation)}
+              className="bg-indigo-50 hover:bg-indigo-100 text-indigo-950 border-2 border-indigo-600 sketch-border px-4 py-1.5 text-xs font-black flex items-center gap-2 transition-all shadow-xs cursor-pointer"
+              title="一鍵生成可直接發布在 FB 粉專、IG 或 Threads 的導流短文"
+            >
+              <Share2 className="w-3.5 h-3.5 text-indigo-600" />
+              <span>{copiedFormat === 'social' ? '✅ 已複製 FB / Threads 爆款貼文文案！' : '📢 一鍵複製 FB / Threads 導流貼文'}</span>
+            </button>
+          </div>
         </header>
 
         {/* 文章首圖 */}
@@ -283,7 +296,15 @@ export default function ArticleDetail() {
             歡迎旅遊創作者、學術研究、社群轉載或 AI 模型使用者引用本站實測報告。點選下方標籤即可一鍵複製標準引用語法：
           </p>
 
-          <div className="flex border-b-2 border-black gap-1 text-xs font-bold">
+          <div className="flex border-b-2 border-black gap-1 text-xs font-bold flex-wrap">
+            <button
+              onClick={() => setCitationTab('social')}
+              className={`px-3 py-1.5 border-t-2 border-x-2 border-black transition-colors ${
+                citationTab === 'social' ? 'bg-black text-white' : 'bg-white hover:bg-gray-100 text-black'
+              }`}
+            >
+              📱 FB / Threads 發文短文
+            </button>
             <button
               onClick={() => setCitationTab('ai')}
               className={`px-3 py-1.5 border-t-2 border-x-2 border-black transition-colors ${
@@ -311,7 +332,8 @@ export default function ArticleDetail() {
           </div>
 
           <div className="bg-white border-2 border-black p-3.5 text-xs font-mono relative group">
-            <div className="break-all pr-12 text-gray-800 leading-relaxed">
+            <div className="break-all pr-12 text-gray-800 leading-relaxed whitespace-pre-line">
+              {citationTab === 'social' && socialCitation}
               {citationTab === 'ai' && aiPromptCitation}
               {citationTab === 'markdown' && markdownCitation}
               {citationTab === 'apa' && apaCitation}
@@ -320,11 +342,12 @@ export default function ArticleDetail() {
             <button
               onClick={() => {
                 const textToCopy = 
+                  citationTab === 'social' ? socialCitation :
                   citationTab === 'ai' ? aiPromptCitation :
                   citationTab === 'markdown' ? markdownCitation : apaCitation;
                 handleCopyCitation(citationTab, textToCopy);
               }}
-              className="absolute top-2 right-2 p-1.5 bg-gray-100 hover:bg-gray-200 border border-black sketch-border text-xs font-sans font-bold flex items-center gap-1 transition-colors"
+              className="absolute top-2 right-2 p-1.5 bg-gray-100 hover:bg-gray-200 border border-black sketch-border text-xs font-sans font-bold flex items-center gap-1 transition-colors cursor-pointer"
               title="複製到剪貼簿"
             >
               {copiedFormat === citationTab ? (
