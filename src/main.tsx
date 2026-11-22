@@ -6,6 +6,7 @@ import RootLayout from './layouts/RootLayout';
 import Home from './pages/Home';
 import ArticlesList from './pages/ArticlesList';
 import ArticleDetail from './pages/ArticleDetail';
+import ItineraryPlannerPage from './pages/ItineraryPlannerPage';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       { path: '/', element: <Home /> },
+      { path: '/itinerary-planner', element: <ItineraryPlannerPage /> },
       { path: '/articles', element: <ArticlesList /> },
       { path: '/articles/:id', element: <ArticleDetail /> },
       { path: '/about', element: <About /> },

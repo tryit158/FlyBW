@@ -33,6 +33,7 @@ try {
 
 const staticRoutes = [
   { path: '', priority: '1.0', changefreq: 'daily' },
+  { path: '/itinerary-planner', priority: '0.9', changefreq: 'weekly' },
   { path: '/articles', priority: '0.9', changefreq: 'daily' },
   { path: '/about', priority: '0.5', changefreq: 'monthly' },
   { path: '/contact', priority: '0.5', changefreq: 'monthly' },

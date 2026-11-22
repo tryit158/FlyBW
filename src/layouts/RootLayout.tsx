@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import InAppBrowserBanner from '../components/InAppBrowserBanner';
+import FloatingLineWidget from '../components/FloatingLineWidget';
 
 export default function RootLayout() {
   const location = useLocation();
@@ -27,6 +28,7 @@ export default function RootLayout() {
         <Outlet />
       </main>
       <div className="print:hidden"><Footer /></div>
+      <FloatingLineWidget />
       <ScrollRestoration />
     </div>
   );
