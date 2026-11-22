@@ -850,8 +850,8 @@ export default function AIItineraryPlanner() {
               </button>
 
               <div className="text-center space-y-2">
-                <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto">
-                  <MessageCircle className="w-7 h-7" />
+                <div className="w-16 h-16 rounded-full overflow-hidden sketch-border border-2 border-black mx-auto shadow-sm bg-white">
+                  <img src="/avatar-flybw.png" alt="黑白飛飛行員小貓" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-2xl font-black">
                   {modalAction === 'maps' && '📲 一鍵匯入 Google Maps'}

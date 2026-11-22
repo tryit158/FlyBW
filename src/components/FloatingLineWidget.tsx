@@ -50,9 +50,9 @@ export default function FloatingLineWidget() {
                 <X className="w-4 h-4" />
               </button>
 
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 font-bold shrink-0">
-                  ✈️
+              <div className="flex items-center gap-2.5">
+                <div className="w-10 h-10 rounded-full overflow-hidden sketch-border border border-black shrink-0 bg-white shadow-xs">
+                  <img src="/avatar-flybw.png" alt="黑白飛飛行員小貓" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <h4 className="font-black text-base text-gray-900 leading-tight">
