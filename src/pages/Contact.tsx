@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
-import { Mail, Send } from 'lucide-react';
+import { Mail, Send, MessageCircle, ExternalLink } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -19,15 +19,30 @@ export default function Contact() {
     >
       <h1 className="text-3xl font-bold mb-6 text-center">聯絡我們</h1>
       <p className="text-gray-700 leading-relaxed text-center mb-8">
-        有任何問題、合作提案，或是想分享您的旅行故事嗎？歡迎隨時與我們聯絡！
+        有任何廉航問題、行程規劃諮詢、合作提案，或是想分享您的旅行故事？歡迎隨時與我們聯絡！
       </p>
 
-      <div className="max-w-md mx-auto mb-10">
+      <div className="grid sm:grid-cols-2 gap-4 mb-10">
+        <div className="sketch-border p-6 bg-emerald-50 border-2 border-black flex flex-col items-center text-center">
+          <MessageCircle className="w-8 h-8 mb-3 text-emerald-600" />
+          <h3 className="font-bold text-lg mb-1">官方 LINE 客服</h3>
+          <p className="text-gray-600 text-xs mb-3">最快回覆！出國行李避坑與行程諮詢：</p>
+          <a 
+            href="https://line.me/R/ti/p/@449fhwsb" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="inline-flex items-center gap-1.5 bg-[#06C755] hover:bg-[#05b34c] text-white font-black text-sm px-4 py-2 sketch-border transition-colors"
+          >
+            <span>加入 LINE (@449fhwsb)</span>
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
+
         <div className="sketch-border p-6 bg-gray-50 flex flex-col items-center text-center">
-          <Mail className="w-8 h-8 mb-4 text-indigo-600" />
-          <h3 className="font-bold text-lg mb-2">電子郵件</h3>
-          <p className="text-gray-600 mb-2">合作邀約與一般問題：</p>
-          <a href="mailto:hello@flybnw.com" className="text-indigo-600 font-bold hover:underline">hello@flybnw.com</a>
+          <Mail className="w-8 h-8 mb-3 text-indigo-600" />
+          <h3 className="font-bold text-lg mb-1">電子郵件</h3>
+          <p className="text-gray-600 text-xs mb-3">商業合作邀約與品牌推廣：</p>
+          <a href="mailto:hello@flybnw.com" className="text-indigo-600 font-bold hover:underline text-sm mt-auto">hello@flybnw.com</a>
         </div>
       </div>
 

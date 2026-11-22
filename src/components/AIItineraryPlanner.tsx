@@ -503,7 +503,7 @@ export default function AIItineraryPlanner() {
   };
 
   const handleCopyLineId = () => {
-    navigator.clipboard.writeText('@flybw');
+    navigator.clipboard.writeText('@449fhwsb');
     setCopiedId(true);
     setTimeout(() => setCopiedId(false), 2000);
   };
@@ -872,7 +872,7 @@ export default function AIItineraryPlanner() {
                 </p>
                 <div className="flex items-center justify-center gap-2">
                   <span className="text-xl font-mono font-black bg-white px-3 py-1 sketch-border border border-black">
-                    @flybw
+                    @449fhwsb
                   </span>
                   <button
                     onClick={handleCopyLineId}
@@ -890,7 +890,7 @@ export default function AIItineraryPlanner() {
               {/* 直達按鈕 */}
               <div className="space-y-2 pt-2">
                 <a
-                  href="https://line.me/R/ti/p/@flybw"
+                  href="https://line.me/R/ti/p/@449fhwsb"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-[#06C755] hover:bg-[#05b34c] text-white font-black text-base py-3 sketch-border flex items-center justify-center gap-2 transition-colors shadow-sm"
