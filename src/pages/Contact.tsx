@@ -28,12 +28,12 @@ export default function Contact() {
           <h3 className="font-bold text-lg mb-1">官方 LINE 客服</h3>
           <p className="text-gray-600 text-xs mb-3">最快回覆！出國行李避坑與行程諮詢：</p>
           <a 
-            href="https://line.me/R/ti/p/@449fhwsb" 
+            href="https://line.me/R/ti/p/@349bnumb" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="inline-flex items-center gap-1.5 bg-[#06C755] hover:bg-[#05b34c] text-white font-black text-sm px-4 py-2 sketch-border transition-colors"
           >
-            <span>加入 LINE (@449fhwsb)</span>
+            <span>加入 LINE (@349bnumb)</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>

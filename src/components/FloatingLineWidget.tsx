@@ -7,7 +7,7 @@ export default function FloatingLineWidget() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('@449fhwsb');
+    navigator.clipboard.writeText('@349bnumb');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -79,7 +79,7 @@ export default function FloatingLineWidget() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between bg-gray-50 p-2 sketch-border border border-black/30 text-xs">
                   <span className="text-gray-500 font-bold">官方 LINE ID：</span>
-                  <span className="font-mono font-black text-sm">@449fhwsb</span>
+                  <span className="font-mono font-black text-sm">@349bnumb</span>
                   <button
                     onClick={handleCopy}
                     className="p-1 px-2 bg-black text-white text-[11px] font-bold sketch-border hover:bg-gray-800 transition-colors flex items-center gap-1"
@@ -90,7 +90,7 @@ export default function FloatingLineWidget() {
                 </div>
 
                 <a
-                  href="https://line.me/R/ti/p/@449fhwsb"
+                  href="https://line.me/R/ti/p/@349bnumb"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-[#06C755] hover:bg-[#05b34c] text-white font-black text-sm py-2.5 sketch-border flex items-center justify-center gap-1.5 transition-colors shadow-xs"
