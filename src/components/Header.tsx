@@ -9,9 +9,9 @@ export default function Header() {
         <motion.div
           whileHover={{ rotate: -15, scale: 1.1, x: -5, y: -5 }}
           transition={{ type: "spring", stiffness: 300 }}
-          className="p-1 md:p-1.5 sketch-border bg-white rounded-full overflow-hidden w-11 h-11 md:w-13 md:h-13 shrink-0 flex items-center justify-center border-2 border-black"
+          className="w-10 h-10 md:w-12 md:h-12 shrink-0 flex items-center justify-center overflow-hidden rounded-full"
         >
-          <img src="/avatar-flybw.png" alt="黑白飛吉祥物" className="w-full h-full object-cover rounded-full" />
+          <img src="/avatar-flybw.png" alt="黑白飛吉祥物" className="w-full h-full object-cover" />
         </motion.div>
         <div>
           <h1 className="text-2xl md:text-4xl font-bold tracking-wider leading-tight">

@@ -51,7 +51,7 @@ export default function FloatingLineWidget() {
               </button>
 
               <div className="flex items-center gap-2.5">
-                <div className="w-10 h-10 rounded-full overflow-hidden sketch-border border border-black shrink-0 bg-white shadow-xs">
+                <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 bg-white shadow-xs">
                   <img src="/avatar-flybw.png" alt="黑白飛飛行員小貓" className="w-full h-full object-cover" />
                 </div>
                 <div>

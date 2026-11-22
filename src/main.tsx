@@ -18,7 +18,7 @@ const Terms = lazy(() => import('./pages/Terms'));
 function PageLoader() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[50vh] space-y-3 py-16 animate-in fade-in duration-200">
-      <div className="w-12 h-12 rounded-full overflow-hidden sketch-border border-2 border-black animate-bounce bg-white p-1">
+      <div className="w-12 h-12 rounded-full overflow-hidden animate-bounce bg-white">
         <img src="/avatar-flybw.png" alt="Loading" className="w-full h-full object-cover rounded-full" />
       </div>
       <p className="font-bold text-sm text-gray-700 tracking-wider">黑白飛載入中 ✈️ ...</p>

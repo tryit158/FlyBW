@@ -850,7 +850,7 @@ export default function AIItineraryPlanner() {
               </button>
 
               <div className="text-center space-y-2">
-                <div className="w-16 h-16 rounded-full overflow-hidden sketch-border border-2 border-black mx-auto shadow-sm bg-white">
+                <div className="w-16 h-16 rounded-full overflow-hidden mx-auto shadow-sm bg-white">
                   <img src="/avatar-flybw.png" alt="黑白飛飛行員小貓" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-2xl font-black">
