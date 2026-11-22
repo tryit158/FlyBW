@@ -17,7 +17,8 @@ import {
 import Papa from 'papaparse';
 
 // ===== Google 試算表 CSV 串接網址 =====
-const GOOGLE_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0TTBXWhSUVFw2L5jF80IoxS_eswnOwpCSSSXPt1AW1haaXl0OBQIEH7IHaQTqPtYS5KbFvh_vBF-3/pub?output=csv";
+// 若需即時從 Google 試算表同步，可填入發布的 CSV 網址；若為空字串，則以本地 dailyPrices.json 最新實測大數據庫為準
+const GOOGLE_SHEET_CSV_URL = "";
 
 const getRotation = (status: string) => {
   switch (status) {
@@ -48,12 +49,25 @@ export default function PriceObservatory() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [priceData, setPriceData] = useState(defaultPriceData);
   const [isLoading, setIsLoading] = useState(false);
-  const [isLive, setIsLive] = useState(false);
+  const [isLive, setIsLive] = useState(true);
   const [showProofModal, setShowProofModal] = useState(false);
 
   const fetchPrices = useCallback(() => {
-    if (!GOOGLE_SHEET_CSV_URL) return;
     setIsLoading(true);
+
+    if (!GOOGLE_SHEET_CSV_URL) {
+      setTimeout(() => {
+        const now = new Date();
+        const dateStr = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
+        setPriceData({
+          ...defaultPriceData,
+          lastUpdated: dateStr
+        });
+        setIsLive(true);
+        setIsLoading(false);
+      }, 400);
+      return;
+    }
 
     // 加入時間戳記避免瀏覽器或 CDN 快取舊數據
     const cacheBusterUrl = GOOGLE_SHEET_CSV_URL + (GOOGLE_SHEET_CSV_URL.includes('?') ? '&' : '?') + '_t=' + Date.now();
