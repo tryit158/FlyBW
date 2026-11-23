@@ -47,6 +47,245 @@ export const AffiliateFooter = () => (
 
 export const articlesData: Article[] = [
   {
+    id: 'northern-kyushu-fukuoka-kumamoto-aso-yufuin-guide-2026',
+    category: '必讀攻略',
+    title: '【2026-2027 北九州自由行全攻略】福岡/熊本/阿蘇/由布院黃金大環線！由布院之森搶票實測、阿蘇橫斷巴士預約、JR北九州周遊券回本玩法與不走回頭路行程',
+    author: '黑白飛特派團隊',
+    readTime: '12 分鐘',
+    image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80',
+    imageAlt: '2026北九州自由行福岡熊本阿蘇火山由布院之森觀光列車JRPass不走回頭路全攻略',
+    badge: '九州自由行',
+    excerpt: '台積電熊本廠帶動直飛熱潮，北九州成為 2026-2027 全台搜尋成長率第一名的日本勝地！但「熊本到由布院中間隔著阿蘇山脈，沒有直達鐵路」成為無數旅客的最大痛點！本篇實測整理北九州黃金環線破解法：JR 北九州鐵路周遊券 (3日/5日) 最強回本玩法、「由布院之森」秒殺指定席搶票時間、熊本到由布院必搭的「九州橫斷巴士」預約教學，以及 5 天 4 夜不走回頭路經典示範！',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-emerald-600">
+          <div className="sketch-badge -top-3 left-4 bg-emerald-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            2026-2027 爆紅首選航線
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Flame className="w-5 h-5 text-emerald-600" />
+            台積電效應直飛大爆發！為什麼 2026 大家都改衝「北九州」？
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            厭倦了東京、大阪人擠人的高昂房價？<strong>「北九州（福岡、熊本、阿蘇、由布院）」</strong>正是目前台灣自由行搜尋熱度竄升最快的地區！除了中華航空與星宇航空相繼直飛<strong>熊本機場 (KMJ)</strong>、台灣虎航直飛<strong>福岡 (FUK)</strong>，更擁有<strong>全球罕見的活火山景觀（阿蘇中岳火山口）</strong>、<strong>全日本票選第一名的溫泉渡假勝地（由布院）</strong>與<strong>超高速新幹線</strong>。
+          </p>
+          <p className="text-sm text-neutral-700 mb-4">
+            但安排北九州行程最大的「大魔王地雷」在於：<strong>「熊本與由布院之間被阿蘇山脈阻隔，完全沒有直達鐵路！」</strong>無數新手排行程時大迷航，本篇將為你完整解密這條黃金環線的最順走法！
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">新幹線極速</div>
+              <div className="text-base font-black text-black">博多 ➔ 熊本 38分</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">活火山奇景</div>
+              <div className="text-base font-black text-red-600">阿蘇火口直升機</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">夢幻觀光特急</div>
+              <div className="text-base font-black text-emerald-700">由布院之森</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-gray-500 font-bold">交通省錢神器</div>
+              <div className="text-base font-black text-indigo-600">JR 北九州周遊券</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 核心痛點：熊本到由布院怎麼接？ */}
+        <section className="bg-yellow-50/60 p-6 sketch-border relative border-l-4 border-l-amber-600">
+          <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+            <Compass className="w-5 h-5 text-amber-700" />
+            魔王難題破解：熊本 ➔ 阿蘇 ➔ 由布院 怎麼搭最順？
+          </h3>
+          <p className="text-sm text-gray-700 mb-4">
+            打開 Google Maps 會發現熊本到由布院如果搭火車，必須繞大半個九州回鳥栖轉車，耗時 3~4 小時！實戰中最完美的解法只有以下兩種：
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-4 text-xs md:text-sm">
+            <div className="bg-white p-4 sketch-border">
+              <div className="font-bold text-base text-amber-900 mb-2 flex items-center gap-1.5">
+                <Bus className="w-4 h-4 text-amber-600" />
+                方案 A（大眾運輸首選）：預約「九州橫斷巴士」
+              </div>
+              <p className="text-gray-600 leading-relaxed mb-2">
+                由九州產交巴士營運的「九州橫斷巴士」，直接翻越阿蘇山脈！從<strong>熊本站前 / 阿蘇站前</strong>出發，免換車直接開到<strong>由布院站前巴士中心</strong>。
+              </p>
+              <div className="bg-amber-50 p-2 border border-amber-200 rounded text-xs text-amber-900 font-bold">
+                ⚠️ 注意：此路線需提前 1 個月在「Japan Bus Online」線上劃位預約，不包含在 JR Pass 內需另自費（約 3,000~3,500円）。
+              </div>
+            </div>
+
+            <div className="bg-white p-4 sketch-border">
+              <div className="font-bold text-base text-blue-900 mb-2 flex items-center gap-1.5">
+                <Car className="w-4 h-4 text-blue-600" />
+                方案 B（自由度最高）：熊本租車 ➔ 由布院還車
+              </div>
+              <p className="text-gray-600 leading-relaxed mb-2">
+                行駛著名的「山波公路 (Yamanami Highway)」，沿途飽覽九重連山、長者原與黑川溫泉，被譽為日本百大最美公路之一！
+              </p>
+              <div className="bg-blue-50 p-2 border border-blue-200 rounded text-xs text-blue-900 font-bold">
+                💡 提醒：冬季（12~2月）山區有路面結冰機率，租車務必加購雪胎（Studless Tire）。
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 由布院之森搶票攻略 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Ticket className="w-5 h-5 text-black" />
+            夢幻觀光列車「由布院之森 (Yufuin no Mori)」秒殺劃位秘技
+          </h3>
+          <p className="text-sm text-neutral-600">
+            全車指定席、墨綠色經典復古外觀、車廂內全木質裝潢的高人氣觀光列車！如果沒搶到指定席是無法上車的。以下是搶票黃金規則：
+          </p>
+
+          <div className="bg-white p-5 sketch-border space-y-3 text-xs md:text-sm">
+            <div className="flex items-start gap-3">
+              <div className="bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded shrink-0">開搶時間</div>
+              <p className="text-gray-700">
+                <strong>乘車日 1 個月前的台灣時間上午 09:00（日本時間 10:00）</strong>正式開賣！例如 4 月 10 日要搭車，3 月 10 日早上 9 點準時在 JR 九州官方預約網站搶位。
+              </p>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded shrink-0">JR Pass 劃位</div>
+              <p className="text-gray-700">
+                持有「JR 北九州鐵路周遊券」的旅客，可在官網以每人每單程 <strong>1,500 日圓</strong>的指定席預約費提前鎖定座位，避免到日本現場窗口排隊時早已售罄。
+              </p>
+            </div>
+            <div className="flex items-start gap-3">
+              <div className="bg-emerald-100 text-emerald-800 font-bold px-2 py-1 rounded shrink-0">沒搶到備案</div>
+              <p className="text-gray-700">
+                若由布院之森客滿，可改搭同區間運行的紅色特急<strong>「由布號 (Yufu)」</strong>（速度一樣快，車次更多）或是博多直達由布院的<strong>高速巴士「由布院號」</strong>。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* JR 北九州 Pass 回本試算 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Coins className="w-5 h-5 text-black" />
+            JR 北九州鐵路周遊券：到底有多划算？
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">搭乘區間與列車</th>
+                  <th className="p-3">單買原價 (約)</th>
+                  <th className="p-3 text-emerald-700">持 JR 北九州 3 日券 (¥12,000)</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3">博多 ⇄ 熊本（九州新幹線來回）</td>
+                  <td className="p-3 font-bold">¥10,460</td>
+                  <td className="p-3 text-emerald-600 font-bold">免費搭乘</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3">熊本 ➔ 阿蘇（JR 豐肥本線特急）</td>
+                  <td className="p-3 font-bold">¥2,280</td>
+                  <td className="p-3 text-emerald-600 font-bold">免費搭乘</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3">由布院 ➔ 博多（特急由布院之森）</td>
+                  <td className="p-3 font-bold">¥4,640</td>
+                  <td className="p-3 text-emerald-600 font-bold">免費搭乘 (僅需付指定席費)</td>
+                </tr>
+                <tr className="bg-emerald-50 font-black">
+                  <td className="p-3">總行程交通費比較</td>
+                  <td className="p-3 text-red-600">¥17,380 日圓</td>
+                  <td className="p-3 text-emerald-700">現省超過 ¥5,380 日圓！</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 5 天 4 夜不走回頭路黃金行程 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <CalendarDays className="w-5 h-5 text-black" />
+            北九州 5 天 4 夜「不走回頭路」黃金示範行程
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">天數</th>
+                  <th className="p-3">交通工具</th>
+                  <th className="p-3">行程景點重點</th>
+                  <th className="p-3">推薦住宿</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-blue-900">Day 1 福岡入境</td>
+                  <td className="p-3">機場地鐵 5 分鐘</td>
+                  <td className="p-3">抵達福岡機場 ➔ 博多車站換取 JR Pass ➔ 博多運河城 ➔ 中洲屋台吃博多拉麵</td>
+                  <td className="p-3">博多站周邊飯店</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-amber-50/30">
+                  <td className="p-3 font-bold text-amber-900">Day 2 熊本霸氣古城</td>
+                  <td className="p-3">九州新幹線 (38分)</td>
+                  <td className="p-3">博多直奔熊本 ➔ 熊本城天守閣 ➔ 水前寺成趣園 ➔ 櫻之馬場城彩苑品嚐馬肉可樂餅與勝烈亭豬排</td>
+                  <td className="p-3">熊本站或辛島町周邊</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-red-50/30">
+                  <td className="p-3 font-bold text-red-900">Day 3 阿蘇火山 ➔ 溫泉</td>
+                  <td className="p-3">JR特急 + 九州橫斷巴士</td>
+                  <td className="p-3">熊本出發到阿蘇站 ➔ 草千里騎馬眺望 ➔ 中岳火山口看壯麗火山煙 ➔ 搭橫斷巴士直達由布院</td>
+                  <td className="p-3">由布院頂級溫泉旅館（一泊二食）</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-emerald-50/30">
+                  <td className="p-3 font-bold text-emerald-900">Day 4 由布院晨霧 ➔ 博多</td>
+                  <td className="p-3">特急由布院之森 (2小時)</td>
+                  <td className="p-3">清晨散步金鱗湖欣賞夢幻朝霧 ➔ 湯之坪街道吃金賞可樂餅與大豆布丁 ➔ 搭「由布院之森」景觀列車返回博多天神大採購</td>
+                  <td className="p-3">博多市區</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-purple-900">Day 5 太宰府 ➔ 返台</td>
+                  <td className="p-3">西鐵電車 / 機場巴士</td>
+                  <td className="p-3">太宰府天滿宮參拜祈求學業平安 ➔ 吃現烤梅枝餅 ➔ 隈研吾設計星巴克拍照 ➔ 福岡機場大買福砂屋與明太子返台</td>
+                  <td className="p-3">溫暖的家</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 專屬 LINE 導流引導 */}
+        <section className="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 sketch-border border-l-4 border-l-emerald-500">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="space-y-1">
+              <h4 className="text-lg font-black text-emerald-900 flex items-center gap-2">
+                💬 準備攻略北九州？讓黑白飛 AI 替你排好交通接駁！
+              </h4>
+              <p className="text-xs md:text-sm text-emerald-800">
+                在官方 LINE（ID：<strong>@349bnumb</strong>）輸入「<strong>九州</strong>」，免費領取最新《2026 北九州 5 天 4 夜鐵路時刻表 ✕ 由布院之森指定席搶票日程手帳》！
+              </p>
+            </div>
+            <a
+              href="https://line.me/R/ti/p/@349bnumb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-5 py-2.5 rounded-lg shadow-sm text-sm transition-all sketch-border"
+            >
+              加入 LINE 領取地圖 ➔
+            </a>
+          </div>
+        </section>
+
+        {/* 推薦裝備與保險 */}
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
     id: 'okinawa-no-car-bus-travel-guide-2026',
     category: '必讀攻略',
     title: '【2026 沖繩不開車自由行完全指南】不會開車也能爽玩沖繩！那霸單軌 Yui Rail 沿線景點、美麗海水族館高速巴士直達秘技、慶良間跳島渡輪與包車一日遊不踩雷規劃',
