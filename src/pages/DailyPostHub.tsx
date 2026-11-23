@@ -13,7 +13,9 @@ import {
   MessageCircle,
   HelpCircle,
   Clock,
-  ArrowRight
+  ArrowRight,
+  Lock,
+  KeyRound
 } from 'lucide-react';
 import defaultPrices from '../data/dailyPrices.json';
 
@@ -40,6 +42,11 @@ interface DailyPostData {
 }
 
 export default function DailyPostHub() {
+  const [isUnlocked, setIsUnlocked] = useState(() => {
+    return sessionStorage.getItem('flybw_admin_auth') === 'true';
+  });
+  const [pinInput, setPinInput] = useState('');
+  const [pinError, setPinError] = useState(false);
   const [activeTab, setActiveTab] = useState<'threads' | 'facebook' | 'line'>('threads');
   const [copiedTab, setCopiedTab] = useState<string | null>(null);
   const [postData, setPostData] = useState<DailyPostData | null>(null);
@@ -91,6 +98,58 @@ export default function DailyPostHub() {
     setCopiedTab(type);
     setTimeout(() => setCopiedTab(null), 2500);
   };
+
+  const handleUnlock = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (pinInput.trim() === '8888') {
+      sessionStorage.setItem('flybw_admin_auth', 'true');
+      setIsUnlocked(true);
+      setPinError(false);
+    } else {
+      setPinError(true);
+    }
+  };
+
+  if (!isUnlocked) {
+    return (
+      <div className="max-w-md mx-auto my-16 p-8 bg-white sketch-border text-center space-y-6">
+        <Helmet>
+          <title>內部營運管理 | 黑白飛 Fly B&W</title>
+          <meta name="robots" content="noindex, nofollow" />
+        </Helmet>
+        <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto sketch-border shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+          <Lock className="w-8 h-8" />
+        </div>
+        <div>
+          <h2 className="text-2xl font-black">內部營運管理中心</h2>
+          <p className="text-xs text-gray-500 mt-1">此為非公開內部行銷工作台，請輸入管理 PIN 碼解鎖</p>
+        </div>
+        <form onSubmit={handleUnlock} className="space-y-4">
+          <div>
+            <input
+              type="password"
+              value={pinInput}
+              onChange={e => { setPinInput(e.target.value); setPinError(false); }}
+              placeholder="請輸入 PIN 碼 (預設: 8888)"
+              className="w-full px-4 py-3 border-2 border-black rounded-lg text-center font-mono tracking-widest text-lg outline-none focus:ring-2 focus:ring-black"
+              autoFocus
+            />
+          </div>
+          {pinError && (
+            <p className="text-red-500 text-xs font-bold">
+              ⚠️ PIN 碼不正確，請重新輸入！
+            </p>
+          )}
+          <button
+            type="submit"
+            className="w-full bg-black text-white font-black py-3 px-6 rounded-lg sketch-border hover:bg-gray-800 transition shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center gap-2"
+          >
+            <KeyRound className="w-4 h-4" /> 解鎖進入工作台
+          </button>
+        </form>
+      </div>
+    );
+  }
 
   const currentText = postData ? postData.posts[activeTab] : '';
 

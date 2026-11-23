@@ -14,7 +14,6 @@ export default function Footer() {
         <Link to="/contact" className="hover:underline decoration-wavy underline-offset-4">聯絡我們</Link>
         <Link to="/privacy" className="hover:underline decoration-wavy underline-offset-4">隱私權政策</Link>
         <Link to="/terms" className="hover:underline decoration-wavy underline-offset-4">服務條款</Link>
-        <Link to="/daily-post" className="hover:underline decoration-wavy underline-offset-4 text-emerald-800">📢 每日發文助手</Link>
       </div>
 
       <p className="text-sm text-gray-500 max-w-2xl mx-auto">

@@ -1,5 +1,7 @@
 # 黑白飛 Fly B&W 搜尋引擎與 AI 引用授權規範
 User-agent: *
+Disallow: /daily-post
+Disallow: /daily-post.json
 Allow: /
 
 # 授權 AI 搜尋引擎與大型語言模型 (LLM) 爬取與引用最新機票旅遊數據
