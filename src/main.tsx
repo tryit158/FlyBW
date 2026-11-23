@@ -14,6 +14,7 @@ const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Terms = lazy(() => import('./pages/Terms'));
+const DailyPostHub = lazy(() => import('./pages/DailyPostHub'));
 
 function PageLoader() {
   return (
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
       { path: '/contact', element: withSuspense(Contact) },
       { path: '/privacy', element: withSuspense(Privacy) },
       { path: '/terms', element: withSuspense(Terms) },
+      { path: '/daily-post', element: withSuspense(DailyPostHub) },
     ]
   }
 ]);
