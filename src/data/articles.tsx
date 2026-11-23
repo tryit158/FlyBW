@@ -47,6 +47,230 @@ export const AffiliateFooter = () => (
 
 export const articlesData: Article[] = [
   {
+    id: 'okinawa-no-car-bus-travel-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 沖繩不開車自由行完全指南】不會開車也能爽玩沖繩！那霸單軌 Yui Rail 沿線景點、美麗海水族館高速巴士直達秘技、慶良間跳島渡輪與包車一日遊不踩雷規劃',
+    author: '黑白飛特派團隊',
+    readTime: '11 分鐘',
+    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80',
+    imageAlt: '2026沖繩不開車自由行公車巴士單軌電車美麗海水族館交通景點全攻略',
+    badge: '沖繩不開車',
+    excerpt: '誰說去沖繩一定要自駕租車？不會開車、不敢開右駕、或是想省下昂貴租車停車費的旅人看過來！本篇深度整理 2026 最新「沖繩不自駕大眾運輸全攻略」：那霸單軌電車 (Yui Rail) 沿線景點與一日券省錢算法、直達美麗海水族館的 2 大高速巴士 (Yanbaru Express / 機場利木津) 搭乘教學、慶良間諸島 (渡嘉敷/座間味) 當天來回跳島渡輪，以及最省力的中文觀光巴士一日遊行程規劃！',
+    content: (
+      <div className="space-y-8 text-neutral-800 leading-relaxed">
+        {/* 頂部速報 */}
+        <section className="bg-neutral-50 p-6 sketch-border relative border-l-4 border-l-cyan-600">
+          <div className="sketch-badge -top-3 left-4 bg-cyan-600 text-white text-xs px-2 py-0.5 font-bold uppercase rotate-[-1deg]">
+            2026 自由行無痛新玩法
+          </div>
+          <h2 className="text-xl font-black mb-3 flex items-center gap-2">
+            <Compass className="w-5 h-5 text-cyan-600" />
+            誰說沖繩只能自駕？「不開車」反而更輕鬆的 3 大神級優勢！
+          </h2>
+          <p className="text-sm text-neutral-700 mb-4">
+            許多台灣旅客想去沖繩放鬆，卻因為<strong>「沒有駕照」</strong>、<strong>「害怕日本右駕逆向」</strong>或是<strong>「不敢在狹窄巷弄開車」</strong>而猶豫不決。其實只要善用沖繩發達的<strong>單軌電車、長途高速觀光巴士、中文一日遊行程與跳島快艇</strong>，完全不開車也能無痛玩遍沖繩本島與絕美離島！
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-center mt-4">
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-cyan-700 font-bold">優勢 1</div>
+              <div className="text-base font-black text-black">零右駕事故風險</div>
+              <div className="text-xs text-gray-500 mt-1">免賠償高額 NOC 營業損失</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-cyan-700 font-bold">優勢 2</div>
+              <div className="text-base font-black text-emerald-700">省下巨額停車費</div>
+              <div className="text-xs text-gray-500 mt-1">那霸飯店每晚現省 1,500~2,000円</div>
+            </div>
+            <div className="bg-white p-3 sketch-border border border-black">
+              <div className="text-xs text-cyan-700 font-bold">優勢 3</div>
+              <div className="text-base font-black text-purple-700">全車放鬆隨意喝</div>
+              <div className="text-xs text-gray-500 mt-1">居酒屋 Orion 生啤暢飲無負擔</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 沖繩大眾交通 4 大神器速查 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <Train className="w-5 h-5 text-black" />
+            沖繩不開車「4 大神級交通工具」定位全解
+          </h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white p-4 sketch-border border-l-4 border-l-blue-500">
+              <h4 className="font-bold text-base text-blue-900 mb-1 flex items-center gap-2">
+                <Train className="w-4 h-4 text-blue-500" />
+                1. 那霸單軌電車 (Yui Rail)
+              </h4>
+              <p className="text-xs md:text-sm text-gray-700 mb-2">
+                連接「那霸機場」到「浦添前田」共 19 個站，串聯國際通、首里城、新都心購物圈與波上宮。班次密集（6~10 分鐘一班），支援 Suica / ICOCA 感應進站。
+              </p>
+              <div className="text-xs text-gray-500 font-bold">適合區域：那霸市區景點、美居美食、逛街購物。</div>
+            </div>
+
+            <div className="bg-white p-4 sketch-border border-l-4 border-l-emerald-500">
+              <h4 className="font-bold text-base text-emerald-900 mb-1 flex items-center gap-2">
+                <Bus className="w-4 h-4 text-emerald-500" />
+                2. 山原急行巴士 (Yanbaru Express)
+              </h4>
+              <p className="text-xs md:text-sm text-gray-700 mb-2">
+                直衝北部的救星！走高速公路直達「美麗海水族館」、「名護市」與「今歸仁城跡」。車上有行李置物空間，可事先線上購票或刷卡搭乘。
+              </p>
+              <div className="text-xs text-gray-500 font-bold">適合區域：直奔北部海洋博公園、免轉車首選。</div>
+            </div>
+
+            <div className="bg-white p-4 sketch-border border-l-4 border-l-amber-500">
+              <h4 className="font-bold text-base text-amber-900 mb-1 flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-amber-500" />
+                3. 中文觀光巴士一日遊
+              </h4>
+              <p className="text-xs md:text-sm text-gray-700 mb-2">
+                性價比最高！專車在那霸市區接送，一天搞定「萬座毛 + 古宇利島 + 水族館 + 美國村」。含景點門票約 NT$ 1,200~1,500，車上睡覺醒來就到景點。
+              </p>
+              <div className="text-xs text-gray-500 font-bold">適合區域：帶長輩、小孩或想一口氣打卡全島經典。</div>
+            </div>
+
+            <div className="bg-white p-4 sketch-border border-l-4 border-l-cyan-500">
+              <h4 className="font-bold text-base text-cyan-900 mb-1 flex items-center gap-2">
+                <Ship className="w-4 h-4 text-cyan-500" />
+                4. 泊港 (Tomarin) 高速渡輪
+              </h4>
+              <p className="text-xs md:text-sm text-gray-700 mb-2">
+                從那霸市區泊港搭乘高速船，僅需 35~50 分鐘即可直達「慶良間諸島」（渡嘉敷島、座間味島），海水透明度世界頂級，海龜浮潛當天來回！
+              </p>
+              <div className="text-xs text-gray-500 font-bold">適合區域：夢幻果凍海、浮潛跳島、遠離人潮。</div>
+            </div>
+          </div>
+        </section>
+
+        {/* 單軌一日券省錢小撇步 */}
+        <section className="bg-yellow-50/60 p-6 sketch-border relative border-l-4 border-l-yellow-600">
+          <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+            <Ticket className="w-5 h-5 text-yellow-700" />
+            單軌電車一日券「跨日 24 小時制」神級買法！
+          </h3>
+          <p className="text-sm text-gray-700 mb-3">
+            很多人不知道，沖繩 Yui Rail 的「一日乘車券 (800 日圓)」不是以當天午夜 12 點為限，而是<strong>實打實的「連續 24 小時有效制」</strong>！
+          </p>
+          <div className="bg-white p-4 sketch-border text-xs md:text-sm space-y-2">
+            <div className="font-bold text-black flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+              實戰示範：下午搭機抵達那霸的最佳買法
+            </div>
+            <p className="text-gray-600">
+              若你第一天下午 15:30 抵達那霸機場並購買「24 小時乘車券」：
+              <br />
+              ➔ <strong>第一天下午：</strong>機場搭到旭橋飯店 Check-in ➔ 晚上搭到牧志站逛國際通吃燒肉。
+              <br />
+              ➔ <strong>第二天上午：</strong>早上搭去首里站參觀首里城 ➔ 中午去新都心 (おもろまち) 吃午餐購物 ➔ <strong>效期一路持續到第二天下午 15:29！</strong>
+              <br />
+              只要搭超過 3 趟就直接回本，還能憑票根在首里城等指定景點享有門票 8 折優惠！
+            </p>
+          </div>
+        </section>
+
+        {/* 4天3夜不開車行程推薦 */}
+        <section className="space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <CalendarDays className="w-5 h-5 text-black" />
+            沖繩 4 天 3 夜「不自駕經典示範行程」
+          </h3>
+          <div className="overflow-x-auto sketch-border bg-white p-1">
+            <table className="w-full text-left text-xs md:text-sm">
+              <thead className="bg-gray-100 border-b-2 border-black font-bold">
+                <tr>
+                  <th className="p-3">天數</th>
+                  <th className="p-3">交通工具</th>
+                  <th className="p-3">行程重點規劃</th>
+                  <th className="p-3">住宿推薦</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-blue-900">Day 1 那霸漫遊</td>
+                  <td className="p-3">單軌電車 (Yui Rail)</td>
+                  <td className="p-3">抵達那霸機場 ➔ 飯店放行李 ➔ 波上宮神社與沙灘 ➔ 國際通屋台村晚餐</td>
+                  <td className="p-3">縣廳前站 / 旭橋站周邊</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-emerald-50/30">
+                  <td className="p-3 font-bold text-emerald-900">Day 2 全島大巡禮</td>
+                  <td className="p-3">中文觀光巴士一日遊</td>
+                  <td className="p-3">那霸出發 ➔ 萬座毛象鼻岩 ➔ 美麗海水族館看黑潮之海鯨鯊 ➔ 古宇利大橋 ➔ 美國村夕陽散步</td>
+                  <td className="p-3">續住那霸（免搬行李）</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50 bg-cyan-50/30">
+                  <td className="p-3 font-bold text-cyan-900">Day 3 慶良間跳島</td>
+                  <td className="p-3">泊港高速船 (35分)</td>
+                  <td className="p-3">那霸泊港 ➔ 渡嘉敷島阿波連海灘浮潛（慶良間藍果凍海）➔ 下午搭船回那霸 ➔ 新都心購物</td>
+                  <td className="p-3">續住那霸市區</td>
+                </tr>
+                <tr className="hover:bg-yellow-50/50">
+                  <td className="p-3 font-bold text-purple-900">Day 4 海景咖啡返台</td>
+                  <td className="p-3">東京客運 / 單軌 / 計程車</td>
+                  <td className="p-3">首里城公園文化巡禮 ➔ 搭接駁巴士至「瀨長島 Umikaji Terrace」吃幸福鬆餅看飛機降落 ➔ 那霸機場免稅大採購返台</td>
+                  <td className="p-3">溫暖的家</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        {/* 避坑指南 */}
+        <section className="bg-white p-6 sketch-border space-y-4">
+          <h3 className="text-xl font-bold flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5 text-amber-600" />
+            沖繩不開車必讀 3 大防踩雷重點
+          </h3>
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="p-4 bg-gray-50 sketch-border">
+              <div className="font-bold text-black mb-1">1. 避開一般市區公車</div>
+              <p className="text-xs text-gray-600">
+                沖繩普通路線巴士（市區公車）脫班極為嚴重，遇到尖峰塞車常延遲 30~50 分鐘！長途移動請務必鎖定走專用高速公路的「山原急行巴士」或預訂「觀光巴士一日遊」。
+              </p>
+            </div>
+            <div className="p-4 bg-gray-50 sketch-border">
+              <div className="font-bold text-black mb-1">2. 住宿務必選「旭橋站」或「縣廳前」</div>
+              <p className="text-xs text-gray-600">
+                旭橋站正下方就是「那霸巴士總站 (Naha Bus Terminal)」，所有長途巴士、觀光一日遊集合點都在這裡。住這裡每天出門搭車省下大筆腳程！
+              </p>
+            </div>
+            <div className="p-4 bg-gray-50 sketch-border">
+              <div className="font-bold text-black mb-1">3. 慶良間跳島高速船提早預訂</div>
+              <p className="text-xs text-gray-600">
+                夏秋旺季前往渡嘉敷島與座間味島的高速船（Marine Liner）座位有限，建議出發前 2 個月在官網預約完成，現場排隊常會撲空！
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* 專屬 LINE 導流引導 */}
+        <section className="bg-gradient-to-r from-cyan-50 to-blue-50 p-6 sketch-border border-l-4 border-l-cyan-500">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="space-y-1">
+              <h4 className="text-lg font-black text-cyan-950 flex items-center gap-2">
+                💬 準備出發沖繩？讓黑白飛 AI 替你安排不開車路線！
+              </h4>
+              <p className="text-xs md:text-sm text-cyan-800">
+                在官方 LINE（ID：<strong>@349bnumb</strong>）輸入「<strong>沖繩</strong>」，免費領取最新《2026 沖繩不開車全島巴士路線時刻表 ✕ 慶良間跳島預約懶人包》！
+              </p>
+            </div>
+            <a
+              href="https://line.me/R/ti/p/@349bnumb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 bg-cyan-700 hover:bg-cyan-800 text-white font-bold px-5 py-2.5 rounded-lg shadow-sm text-sm transition-all sketch-border"
+            >
+              加入 LINE 領取地圖 ➔
+            </a>
+          </div>
+        </section>
+
+        {/* 推薦裝備與保險 */}
+        <AffiliateFooter />
+      </div>
+    ),
+  },
+  {
     id: 'tokyo-disney-fantasy-springs-guide-2026',
     category: '票券攻略',
     title: '【2026 東京迪士尼完全攻略】Fantasy Springs 夢幻泉鄉免抽進場秘技！DPA 快速通關搶購順序、免費預約等候卡 Standby Pass、陸地 vs 海洋必玩設施與 App 綁定防雷',
