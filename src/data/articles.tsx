@@ -281,7 +281,6 @@ export const articlesData: Article[] = [
         </section>
 
         {/* 推薦裝備與保險 */}
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -505,7 +504,6 @@ export const articlesData: Article[] = [
         </section>
 
         {/* 推薦裝備與保險 */}
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -833,7 +831,6 @@ export const articlesData: Article[] = [
         </section>
 
         {/* 推薦裝備與保險 */}
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -1009,8 +1006,6 @@ export const articlesData: Article[] = [
             <li><strong>善用「週間單日假（端午 6/9、中秋 9/15）」</strong>：這兩天因未形成官方連假，出國人潮分散，請 2 天特休湊 5 天飛日韓，往往能買到接近淡季底價的便宜機票！</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -1154,8 +1149,6 @@ export const articlesData: Article[] = [
             <li><strong>留意官方正式公告</strong>：未來當日本入管廳確定 JESTA 上路日與官方申請網址時，黑白飛團隊也會第一時間為大家實測圖解教學！</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -1311,8 +1304,6 @@ export const articlesData: Article[] = [
             <li><strong>務必保留所有日本購買收據／電子發票</strong>：主動申報時出示原始消費收據，海關會依實際購買金額折算台幣核稅；若沒收據，海關有權依台灣市場市價估價課稅，容易被高估！</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -1464,8 +1455,6 @@ export const articlesData: Article[] = [
             <li><strong>已經辦過 SeS 自動通關的人注意護照效期</strong>：若近年剛換發新護照，舊護照綁定的韓國 SeS 自動通關資料會失效，入境時記得順便去海關櫃檯旁重新壓一次指紋登記（僅需 2 分鐘）。</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -1599,8 +1588,6 @@ export const articlesData: Article[] = [
             <li><strong>腸胃保健與飲水</strong>：夜市海鮮雖便宜美味，但建議避免生食與路邊攤未經殺菌之冰塊，隨身攜帶腸胃常備藥並僅飲用瓶裝礦泉水。</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -1729,8 +1716,6 @@ export const articlesData: Article[] = [
             <li><strong>5. 一定要加購「CDW 免責補償 + NOC 營業損失賠償」全險</strong>：冬天雪地小擦撞或滑進路旁雪堆需要道路救援（拖吊）的機率極高，每天多花幾百元台幣買齊 NOC 安心險，才能避免事故後動輒數萬台幣的拖吊與營業賠償！</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -1938,8 +1923,6 @@ export const articlesData: Article[] = [
             <li><strong>4. 機場預留時間不足 2.5 小時</strong>：旺季（如楓葉季、櫻花季、寒暑假）機場大廳退稅機台排隊人潮可能多出 30~40 分鐘，搭廉航尤其要嚴防錯過 50~60 分鐘前的關櫃死線！</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -2109,8 +2092,6 @@ export const articlesData: Article[] = [
             </div>
           </div>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -2262,8 +2243,6 @@ export const articlesData: Article[] = [
             <li><strong>廉航也有賠償責任</strong>：虎航、樂桃、酷航等廉價航空同樣簽署國際公約，託運摔破行李照樣必須賠償或維修，千萬別因搭乘廉航就摸摸鼻子自認倒楣！</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -2404,8 +2383,6 @@ export const articlesData: Article[] = [
             <li><strong>電子支付普及率極高</strong>：街口支付、全支付、玉山 Wallet、Apple Pay 在澳門威尼斯人、各大商場及超商均可直接掃碼付款，匯率優異且省去找零麻煩！</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -2561,8 +2538,6 @@ export const articlesData: Article[] = [
             <li><strong>Visit Japan Web 誠實申報</strong>：在填寫 VJW 電子攜帶品申報時，若有攜帶金飾或可能受檢物品，勾選「有」，主動走申報檢查通道，省去被懷疑走私的心理壓力。</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -2721,8 +2696,6 @@ export const articlesData: Article[] = [
             <li><strong>護照必須正本實體</strong>：翻拍護照照片或影本無法感應退稅機台，購物當天出門務必隨身攜帶護照正本以享即時免稅。</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -2852,8 +2825,6 @@ export const articlesData: Article[] = [
             <li><strong>港幣現鈔少量準備即可</strong>：目前香港計程車、路邊攤與老字號餅店雖仍偏好現金，但八達通已覆蓋 95% 超商、超市、快餐店與地鐵，兩天一人準備 HK$300~500 現鈔已極為充裕。</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -3006,8 +2977,6 @@ export const articlesData: Article[] = [
             <li><strong>記下「海外受話方付費電話 (Collect Call)」</strong>：卡片背面的國際電話號碼，請在飯店櫃台透過外線告知總機撥打受話方付費電話。</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -3171,8 +3140,6 @@ export const articlesData: Article[] = [
             <li><strong>未滿 12 歲單獨旅行與攜帶寵物者不適用</strong>：特殊服務旅客（如輪椅、嬰兒推車直接推到登機門者）建議直接至機場航廈報到。</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -3350,8 +3317,6 @@ export const articlesData: Article[] = [
             <li><strong>避開前後分散的「中間位 (B/E)」</strong>：若單人出行不介意加價，多花 $200 買走道位 (C/D) 進出上廁所極其自由，是長途小資的最聰明投資！</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -3521,8 +3486,6 @@ export const articlesData: Article[] = [
             </div>
           </div>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -3683,8 +3646,6 @@ export const articlesData: Article[] = [
             <li><strong>不便險理賠盲點</strong>：多數旅遊不便險針對「分段自買機票的前段延誤導致後段失接」<strong>是不予理賠的</strong>！除非前段班機延誤超過規定時數（通常為 4 小時以上），否則後段作廢的機票差額必須由個人自行吸收。</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -3827,8 +3788,6 @@ export const articlesData: Article[] = [
             <li><strong>利用「黑白飛」即時價格觀測儀</strong>：隨時關注全額含稅走勢，只要票價低於歷史均價綠色區間，就是可以直接下手的保證底價！</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -4001,8 +3960,6 @@ export const articlesData: Article[] = [
             <li><strong>留意冬季側風</strong>：清泉崗地處大肚山台地，冬季東北季風偶有強風，起飛前可留意航空公司即時推播動態。</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -4176,8 +4133,6 @@ export const articlesData: Article[] = [
             <li><strong>登機門前截止時間</strong>：日方審查官於起飛前 30 分鐘通常會結束預審作業以進行資料封包傳輸，建議旅客抵達登機門後「先辦預審、再逛免稅店或裝水」。</li>
           </ul>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -4353,8 +4308,6 @@ export const articlesData: Article[] = [
             </div>
           </div>
         </section>
-
-        <AffiliateFooter />
       </div>
     ),
   },
@@ -4544,8 +4497,6 @@ export const articlesData: Article[] = [
             </details>
           </div>
         </section>
-
-        <AffiliateFooter />
       </div>
     )
   },
@@ -4728,8 +4679,6 @@ export const articlesData: Article[] = [
             </div>
           </div>
         </section>
-
-        <AffiliateFooter />
       </div>
     )
   },
@@ -4879,8 +4828,6 @@ export const articlesData: Article[] = [
             </div>
           </div>
         </section>
-
-        <AffiliateFooter />
       </div>
     )
   },
@@ -5496,8 +5443,6 @@ export const articlesData: Article[] = [
             </p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     ),
   },
@@ -5642,8 +5587,6 @@ export const articlesData: Article[] = [
             </p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     ),
   },
@@ -5760,8 +5703,6 @@ export const articlesData: Article[] = [
         <p className="mb-4 text-gray-700">
           許多第一次走自動通關的人會問：「護照上沒蓋出境戳章，會不會影響回國或申請外國簽證？」答案是：<strong>完全不影響！</strong>移民署系統已全面電子化登錄入出境紀錄。如果個人因為報帳、收集紀念或特定需求一定要蓋章，走過 e-Gate 閘門後旁邊均設有「公務戳章補蓋處」，向執勤移民署警員出示護照即可免費當場補蓋當日出入境日期戳章。
         </p>
-
-        <AffiliateFooter />
       </>
     ),
   },
@@ -5933,8 +5874,6 @@ export const articlesData: Article[] = [
             </p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -6087,8 +6026,6 @@ export const articlesData: Article[] = [
             ③ <strong>設定至少 3 個手機鬧鐘：</strong>舒服躺椅太好睡，不少旅客睡過頭錯過登機門廣播！建議設定起飛前 60 分鐘鬧鈴。
           </p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -6244,8 +6181,6 @@ export const articlesData: Article[] = [
             </li>
           </ul>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -6472,8 +6407,6 @@ export const articlesData: Article[] = [
             </p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -6648,8 +6581,6 @@ export const articlesData: Article[] = [
             💡 刷卡結帳同理：店員問你「Charge in TWD or JPY?」，100% 堅定回答「JPY Please!」，拒當被匯差剝削的肥羊！
           </p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -6829,8 +6760,6 @@ export const articlesData: Article[] = [
             </p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -9088,8 +9017,6 @@ export const articlesData: Article[] = [
             </div>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -9165,8 +9092,6 @@ export const articlesData: Article[] = [
             </div>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -9233,8 +9158,6 @@ export const articlesData: Article[] = [
             <p className="text-xs text-gray-500">含行動電源、相機、相應線材與個人藥品</p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -9333,8 +9256,6 @@ export const articlesData: Article[] = [
             </p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -9435,8 +9356,6 @@ export const articlesData: Article[] = [
             <p><strong>現金為王：</strong>絕大多數傳統屋台只收日圓現金或 PayPay，請備妥千元鈔與零錢，避免無法刷信用卡。</p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -9532,8 +9451,6 @@ export const articlesData: Article[] = [
           <p><strong>2. 降落日本/韓國後才開啟「數據漫遊」：</strong>將行動數據切換至 eSIM 方案，並開啟該方案的「數據漫遊」。</p>
           <p><strong>3. 原台灣門號關閉漫遊並保留開啟：</strong>如此即可免費接收信用卡刷卡簡訊 OTP 驗證碼，又不會產生高額海外漫遊上網費！</p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -9641,8 +9558,6 @@ export const articlesData: Article[] = [
           <p><strong>• 大容量化妝水/防曬乳液（超過100ml）：</strong>受航空安檢法規限制「嚴禁手提」，必須放入託運行李，並提早到機場完成海關預先審驗。</p>
           <p><strong>• 購物發票統一收集：</strong>準備專用透明夾鏈袋存放所有退稅明細單據，核銷對帳 1 分鐘搞定。</p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -9760,8 +9675,6 @@ export const articlesData: Article[] = [
             </tbody>
           </table>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -9863,8 +9776,6 @@ export const articlesData: Article[] = [
           <p><strong>• 抵達羽田機場半夜（如虎航清晨抵達）：</strong>羽田機場國際線航廈設有 24 小時營業的<strong>「泉天空之湯」溫泉水療中心</strong>，可泡湯、躺平休息至清晨 05:30 首班電車發車。</p>
           <p><strong>• 抵達或出發成田機場清晨：</strong>可利用成田 T2 航廈地下一樓的<strong>「9h Nine Hours」膠囊旅館</strong>短暫補眠與淋浴，或搭乘深夜通宵 Airport Bus 直達東京車站（車資約 ¥1,500）。</p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -9986,8 +9897,6 @@ export const articlesData: Article[] = [
           <p><strong>2. Naver Map 預先收藏想去的景點：</strong>登入帳號後可建立「首爾咖啡廳」、「弘大美食」等自訂圖層清單，到當地一點開就能導航。</p>
           <p><strong>3. 準備好護照掃描 WOWPASS：</strong>首次於機台開卡需掃描護照正本，出國前確認護照效期大於 6 個月。</p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -10106,8 +10015,6 @@ export const articlesData: Article[] = [
             </p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -10209,8 +10116,6 @@ export const articlesData: Article[] = [
           <p><strong>2. 關西機場 T1 免稅店 2026 最新美食街已全面升級：</strong>過安檢後有超大型免稅精品與知名拉麵甜點進駐，回程記得提早進關採買伴手禮。</p>
           <p><strong>3. 綁定手機 Apple Wallet 虛擬 ICOCA / Suica：</strong>搭乘南海空港急行或大阪市區地鐵，進出閘門直接感應手機嗶一聲秒過，免去購票排隊煩惱！</p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -10344,8 +10249,6 @@ export const articlesData: Article[] = [
           <p><strong>• 有租借 ETC 卡：</strong>直接走紫色「ETC 專用車道」，時速降至 20km/h 感應自動扣款開閘門。</p>
           <p><strong>• 無 ETC 卡（走一般通道）：</strong>入口處抽一張通行券，出口處走綠色「一般通道」將通行券與日幣現金或信用卡交給收費員即可（那霸到許田終點單程約 ¥1,040）。</p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -10454,8 +10357,6 @@ export const articlesData: Article[] = [
             </div>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -10534,8 +10435,6 @@ export const articlesData: Article[] = [
           <p><strong>• 全繁體中文介面：</strong>日本 7-11 店內的 Seven Bank ATM 插入台灣支援國外提款的晶片金融卡（需先在台灣開通跨國提款密碼），直接顯示中文指引。</p>
           <p><strong>• 快速救急：</strong>在拉麵店或小吃攤遇到只收現金時，隨時到隔壁 7-11 提領，匯率依當日國際即時匯率結算，手續費透明便利！</p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -10647,8 +10546,6 @@ export const articlesData: Article[] = [
             </p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -10743,8 +10640,6 @@ export const articlesData: Article[] = [
             </div>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -10854,8 +10749,6 @@ export const articlesData: Article[] = [
             • 但若心存僥倖走「綠線 (免申報檯)」被緝毒犬或 X 光抽查抓到：<strong>視同走私違規，直接開罰數十萬，絕對沒有轉圜餘地！</strong>
           </p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -11003,8 +10896,6 @@ export const articlesData: Article[] = [
             </p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -11105,8 +10996,6 @@ export const articlesData: Article[] = [
           <p><strong>• 離線截圖到底行不行？</strong> 日本官方雖然宣導建議連上網出示即時動態畫面，但出發前<strong>請務必先將 QR Code 截圖存入手機相簿</strong>！若在飛機落地當下遇到機場 Wi-Fi 當機或 eSIM 尚未開通，截圖畫面依然可以通過多數檢驗與掃描，絕對是斷網保命符。</p>
           <p><strong>• 機上空服員發紙本黃卡/白卡要拿嗎？</strong> 建議順手拿一張備用放在隨身包包內，若手機遇到電力耗盡或系統故障，隨時可手寫備援，萬無一失。</p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -11217,8 +11106,6 @@ export const articlesData: Article[] = [
             「商品原價」➔ <strong>免稅直接扣 10%</strong> ➔ <strong>出示商場折價券再扣 7%</strong> ➔ <strong>使用台灣旅日高回饋神卡（如富邦 J 卡 / 玉山熊本熊卡）賺 3%~8.5% 刷卡金</strong> ＝ <strong>實質享有 8 折到 78 折的極致驚人優惠！</strong>
           </p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -11362,8 +11249,6 @@ export const articlesData: Article[] = [
             <p>3. 預約當天抵達領務局（台北濟南路、台中、高雄、花蓮、嘉義辦事處），至專用機台報到抽號碼牌，<strong>專屬預約櫃檯約 10 分鐘內辦理完畢</strong>！</p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -11508,8 +11393,6 @@ export const articlesData: Article[] = [
             </p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   },
@@ -11655,8 +11538,6 @@ export const articlesData: Article[] = [
             <strong>先送健保核退！</strong>健保署審核完成後，會隨函寄發<strong>「醫療費用收據正本核章返還本」</strong>以及<strong>「核定通知書」</strong>。拿到這兩份文件後，即可向你出國前投保的<strong>海外旅行平安險（含海外突發疾病醫療保險）</strong>申請實支實付理賠，商業保險公司會將健保不足的差額全數理賠，達到 100% 零損失完全填補！
           </p>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   }
@@ -11946,8 +11827,6 @@ export const articlesData: Article[] = [
             </p>
           </div>
         </div>
-
-        <AffiliateFooter />
       </>
     )
   }

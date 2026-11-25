@@ -275,10 +275,15 @@ export default function ArticleDetail() {
           {article.content}
         </div>
 
+        {/* 行前守護清單 */}
+        <div className="mt-12 pt-8 border-t-2 border-black border-dashed">
+          <AffiliateFooter />
+        </div>
+
         {/* AI 與學術引用工具箱 (Citation Tool) */}
         <section 
           aria-label="引用此文章" 
-          className="mt-12 p-6 sketch-border bg-amber-50/50 border-2 border-black space-y-4"
+          className="mt-8 p-6 sketch-border bg-amber-50/50 border-2 border-black space-y-4"
         >
           <div className="flex items-center justify-between flex-wrap gap-2">
             <div className="flex items-center gap-2">
@@ -381,8 +386,16 @@ export default function ArticleDetail() {
           </div>
         </section>
 
-        <footer className="mt-16 pt-8 border-t-2 border-black border-dashed">
-          <AffiliateFooter />
+        <footer className="mt-12 pt-6 border-t-2 border-black border-dashed flex justify-between items-center flex-wrap gap-4">
+          <Link 
+            to="/articles" 
+            className="sketch-border bg-black text-white px-5 py-2.5 font-bold text-sm hover:bg-gray-800 transition-colors flex items-center gap-2"
+          >
+            &larr; 返回專欄文章列表
+          </Link>
+          <span className="text-xs text-gray-500 font-hand">
+            黑白飛 Fly B&W 編輯部實測
+          </span>
         </footer>
       </motion.article>
     </>
