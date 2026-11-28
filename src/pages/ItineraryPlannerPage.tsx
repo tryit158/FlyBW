@@ -28,7 +28,7 @@ export default function ItineraryPlannerPage() {
           <div className="max-w-3xl">
             <h1 className="text-2xl md:text-3xl font-black mb-3 flex items-center gap-2">
               <Compass className="w-7 h-7 text-indigo-600" />
-              黑白飛 ✕ 旅遊雙軌漏斗「AI 客製行程規劃專區」
+              黑白飛 ✕ 日韓自由行「AI 智能客製行程規劃師」
             </h1>
             <p className="text-gray-700 text-sm md:text-base leading-relaxed">
               排行程查到眼花撩亂？帶著小孩怕行程太硬，帶著長輩怕樓梯太多？

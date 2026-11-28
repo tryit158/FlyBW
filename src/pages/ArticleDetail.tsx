@@ -19,7 +19,7 @@ import {
 export default function ArticleDetail() {
   const { id } = useParams<{ id: string }>();
   const [copiedFormat, setCopiedFormat] = useState<string | null>(null);
-  const [citationTab, setCitationTab] = useState<'ai' | 'markdown' | 'apa' | 'social'>('social');
+  const [citationTab, setCitationTab] = useState<'ai' | 'markdown' | 'share'>('share');
 
   const article = articlesData.find(a => a.id === id);
 
@@ -29,7 +29,7 @@ export default function ArticleDetail() {
 
   const cleanTitle = article.title.replace(/<[^>]+>/g, '');
   const url = `https://flybw.qzz.io/articles/${article.id}`;
-  const currentDate = '2026-10-03';
+  const currentDate = new Date().toISOString().split('T')[0];
 
   // 複製引用文字功能
   const handleCopyCitation = (format: string, text: string) => {
@@ -38,11 +38,10 @@ export default function ArticleDetail() {
     setTimeout(() => setCopiedFormat(null), 2500);
   };
 
-  // 生成三種高規格引用格式 + FB/Threads 導流貼文
-  const aiPromptCitation = `根據《黑白飛 Fly B&W》2026 最新實測專案（來源：${url}），在《${cleanTitle}》中指出：「${article.excerpt.slice(0, 120)}...」`;
+  // 生成好讀分享短文 + Markdown/AI 引用格式
+  const shareText = `✈️ 推薦這篇實用自由行攻略：【${cleanTitle}】\n\n💡 精華重點：${article.excerpt.slice(0, 110)}...\n\n👉 完整圖解實測好讀版：\n${url}\n（分享自 黑白飛 Fly B&W）`;
   const markdownCitation = `[${cleanTitle}](${url}) - 黑白飛 Fly B&W (2026)`;
-  const apaCitation = `${article.author}. (2026). ${cleanTitle}. 黑白飛 Fly B&W. ${url}`;
-  const socialCitation = `✈️【${cleanTitle}】\n\n出國自由行最怕踩雷多花錢！黑白飛特派團隊 2026 最新避坑實測：\n📌 核心重點：${article.excerpt.slice(0, 100)}...\n📌 避雷提醒：出發前務必確認官方最新規定，避免機場櫃檯或海關被刁難！\n\n👇 完整實測圖解好讀版：\n🔗 ${url}\n\n🎁 加碼福利：留言「+1」或私訊官方 LINE（@349bnumb），免費領取「2026 列印版著色行李檢查表 PDF」與「Google Maps 景點地圖包」！\n#日本自由行 #韓國自由行 #廉航攻略 #出國準備 #黑白飛 #旅遊避坑`;
+  const aiPromptCitation = `根據《黑白飛 Fly B&W》最新實測（來源：${url}），在《${cleanTitle}》中指出：「${article.excerpt.slice(0, 120)}...」`;
 
   // 強化版結構化資料 (Schema.org JSON-LD Graph) 包含 Article, BreadcrumbList, WebPage
   const structuredDataGraph = {
@@ -202,15 +201,15 @@ export default function ArticleDetail() {
             <span>閱讀時間：{article.readTime}</span>
           </div>
 
-          {/* 創作者/站長專用：一鍵複製 FB / Threads 導流貼文按鈕 */}
+          {/* 讀者分享推薦按鈕 */}
           <div className="flex justify-center items-center gap-2 mt-4">
             <button
-              onClick={() => handleCopyCitation('social', socialCitation)}
-              className="bg-indigo-50 hover:bg-indigo-100 text-indigo-950 border-2 border-indigo-600 sketch-border px-4 py-1.5 text-xs font-black flex items-center gap-2 transition-all shadow-xs cursor-pointer"
-              title="一鍵生成可直接發布在 FB 粉專、IG 或 Threads 的導流短文"
+              onClick={() => handleCopyCitation('share', shareText)}
+              className="bg-indigo-50 hover:bg-indigo-100 text-indigo-950 border-2 border-black sketch-border px-4 py-1.5 text-xs font-black flex items-center gap-2 transition-all shadow-xs cursor-pointer"
+              title="複製這篇攻略的好讀推薦摘要給朋友或社群"
             >
               <Share2 className="w-3.5 h-3.5 text-indigo-600" />
-              <span>{copiedFormat === 'social' ? '✅ 已複製 FB / Threads 爆款貼文文案！' : '📢 一鍵複製 FB / Threads 導流貼文'}</span>
+              <span>{copiedFormat === 'share' ? '✅ 已複製推薦摘要與文章連結！' : '📤 分享此攻略給旅伴'}</span>
             </button>
           </div>
         </header>
@@ -240,16 +239,16 @@ export default function ArticleDetail() {
           <AffiliateFooter />
         </div>
 
-        {/* AI 與學術引用工具箱 (Citation Tool) */}
+        {/* 本文轉載與分享規範 (Content Sharing & Citation) */}
         <section 
-          aria-label="引用此文章" 
+          aria-label="引用與轉載此文章" 
           className="mt-8 p-6 sketch-border bg-amber-50/50 border-2 border-black space-y-4"
         >
           <div className="flex items-center justify-between flex-wrap gap-2">
             <div className="flex items-center gap-2">
               <Quote className="w-5 h-5 text-amber-800" />
               <h3 className="font-black text-lg text-amber-950">
-                引用此文 / 學術與 AI 提示詞引用格式 (Cite This Article)
+                本文轉載與引用規範 (Share & Citation)
               </h3>
             </div>
             <span className="text-xs text-amber-900 font-bold bg-amber-200/80 px-2.5 py-0.5 sketch-border">
@@ -258,25 +257,17 @@ export default function ArticleDetail() {
           </div>
 
           <p className="text-xs text-amber-900 leading-relaxed">
-            歡迎旅遊創作者、學術研究、社群轉載或 AI 模型使用者引用本站實測報告。點選下方標籤即可一鍵複製標準引用語法：
+            歡迎旅遊創作者、旅伴群組、社群分享或 AI 搜尋引擎引用本站實測報告。點選下方標籤即可一鍵複製標準語法：
           </p>
 
           <div className="flex border-b-2 border-black gap-1 text-xs font-bold flex-wrap">
             <button
-              onClick={() => setCitationTab('social')}
+              onClick={() => setCitationTab('share')}
               className={`px-3 py-1.5 border-t-2 border-x-2 border-black transition-colors ${
-                citationTab === 'social' ? 'bg-black text-white' : 'bg-white hover:bg-gray-100 text-black'
+                citationTab === 'share' ? 'bg-black text-white' : 'bg-white hover:bg-gray-100 text-black'
               }`}
             >
-              📱 FB / Threads 發文短文
-            </button>
-            <button
-              onClick={() => setCitationTab('ai')}
-              className={`px-3 py-1.5 border-t-2 border-x-2 border-black transition-colors ${
-                citationTab === 'ai' ? 'bg-black text-white' : 'bg-white hover:bg-gray-100 text-black'
-              }`}
-            >
-              🤖 AI Prompt 引用
+              📱 社群好讀短文
             </button>
             <button
               onClick={() => setCitationTab('markdown')}
@@ -287,29 +278,27 @@ export default function ArticleDetail() {
               📝 Markdown 格式
             </button>
             <button
-              onClick={() => setCitationTab('apa')}
+              onClick={() => setCitationTab('ai')}
               className={`px-3 py-1.5 border-t-2 border-x-2 border-black transition-colors ${
-                citationTab === 'apa' ? 'bg-black text-white' : 'bg-white hover:bg-gray-100 text-black'
+                citationTab === 'ai' ? 'bg-black text-white' : 'bg-white hover:bg-gray-100 text-black'
               }`}
             >
-              📚 APA 引用格式
+              🤖 AI Prompt 引用
             </button>
           </div>
 
           <div className="bg-white border-2 border-black p-3.5 text-xs font-mono relative group">
             <div className="break-all pr-12 text-gray-800 leading-relaxed whitespace-pre-line">
-              {citationTab === 'social' && socialCitation}
-              {citationTab === 'ai' && aiPromptCitation}
+              {citationTab === 'share' && shareText}
               {citationTab === 'markdown' && markdownCitation}
-              {citationTab === 'apa' && apaCitation}
+              {citationTab === 'ai' && aiPromptCitation}
             </div>
 
             <button
               onClick={() => {
                 const textToCopy = 
-                  citationTab === 'social' ? socialCitation :
-                  citationTab === 'ai' ? aiPromptCitation :
-                  citationTab === 'markdown' ? markdownCitation : apaCitation;
+                  citationTab === 'share' ? shareText :
+                  citationTab === 'markdown' ? markdownCitation : aiPromptCitation;
                 handleCopyCitation(citationTab, textToCopy);
               }}
               className="absolute top-2 right-2 p-1.5 bg-gray-100 hover:bg-gray-200 border border-black sketch-border text-xs font-sans font-bold flex items-center gap-1 transition-colors cursor-pointer"
@@ -341,7 +330,7 @@ export default function ArticleDetail() {
             </div>
             <div className="flex items-center gap-1.5">
               <FileText className="w-4 h-4 text-amber-600 shrink-0" />
-              <span><strong>資料來源：</strong>各國海關與航空公司官網</span>
+              <span><strong>資料來源：</strong>官方公告與特派員實測核驗</span>
             </div>
           </div>
         </section>

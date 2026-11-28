@@ -42,27 +42,39 @@ export default function Contact() {
           <Mail className="w-8 h-8 mb-3 text-indigo-600" />
           <h3 className="font-bold text-lg mb-1">電子郵件</h3>
           <p className="text-gray-600 text-xs mb-3">商業合作邀約與品牌推廣：</p>
-          <a href="mailto:hello@flybnw.com" className="text-indigo-600 font-bold hover:underline text-sm mt-auto">hello@flybnw.com</a>
+          <a href="mailto:Tryit158@gmail.com?subject=%E3%80%90%E9%BB%91%E7%99%BD%E9%A3%9B%E5%90%88%E4%BD%9C%E6%B4%BD%E8%A9%A2%E3%80%91" className="text-indigo-600 font-bold hover:underline text-sm mt-auto">Tryit158@gmail.com</a>
         </div>
       </div>
 
       <div className="sketch-border p-8 border-2 border-black border-r-4 border-b-4">
         <h3 className="text-2xl font-bold mb-6 flex items-center gap-2"><Send className="w-6 h-6"/> 傳送訊息</h3>
-        <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); alert('訊息已送出，我們將盡快回覆您！'); }}>
+        <form 
+          className="space-y-4" 
+          onSubmit={(e) => { 
+            e.preventDefault(); 
+            const form = e.currentTarget;
+            const name = (form.elements.namedItem('name') as HTMLInputElement)?.value || '';
+            const email = (form.elements.namedItem('email') as HTMLInputElement)?.value || '';
+            const message = (form.elements.namedItem('message') as HTMLTextAreaElement)?.value || '';
+            const subject = encodeURIComponent(`【黑白飛網站留言】來自 ${name} 的訊息`);
+            const body = encodeURIComponent(`姓名：${name}\n電子信箱：${email}\n\n留言內容：\n${message}`);
+            window.location.href = `mailto:Tryit158@gmail.com?subject=${subject}&body=${body}`;
+          }}
+        >
           <div>
             <label className="block text-sm font-bold mb-2">您的姓名 (必填)</label>
-            <input type="text" required className="w-full sketch-border bg-white p-3 outline-none focus:border-indigo-600 focus:shadow-[4px_4px_0px_0px_#4f46e5] transition-all" placeholder="例如：王小明" />
+            <input name="name" type="text" required className="w-full sketch-border bg-white p-3 outline-none focus:border-indigo-600 focus:shadow-[4px_4px_0px_0px_#4f46e5] transition-all" placeholder="例如：王小明" />
           </div>
           <div>
             <label className="block text-sm font-bold mb-2">電子郵件 (必填)</label>
-            <input type="email" required className="w-full sketch-border bg-white p-3 outline-none focus:border-indigo-600 focus:shadow-[4px_4px_0px_0px_#4f46e5] transition-all" placeholder="例如：yourname@example.com" />
+            <input name="email" type="email" required className="w-full sketch-border bg-white p-3 outline-none focus:border-indigo-600 focus:shadow-[4px_4px_0px_0px_#4f46e5] transition-all" placeholder="例如：yourname@example.com" />
           </div>
           <div>
             <label className="block text-sm font-bold mb-2">訊息內容 (必填)</label>
-            <textarea required rows={5} className="w-full sketch-border bg-white p-3 outline-none focus:border-indigo-600 focus:shadow-[4px_4px_0px_0px_#4f46e5] transition-all" placeholder="請寫下您的問題或建議..."></textarea>
+            <textarea name="message" required rows={5} className="w-full sketch-border bg-white p-3 outline-none focus:border-indigo-600 focus:shadow-[4px_4px_0px_0px_#4f46e5] transition-all" placeholder="請寫下您的問題或合作建議..."></textarea>
           </div>
-          <button type="submit" className="w-full bg-black text-white font-bold text-lg py-3 sketch-border hover:bg-gray-800 transition-colors mt-2">
-            送出訊息
+          <button type="submit" className="w-full bg-black text-white font-bold text-lg py-3 sketch-border hover:bg-gray-800 transition-colors mt-2 flex items-center justify-center gap-2">
+            <Send className="w-5 h-5" /> 送出訊息（開啟郵件發送）
           </button>
         </form>
       </div>
