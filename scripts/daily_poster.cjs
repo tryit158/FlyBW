@@ -64,10 +64,10 @@ const busan = priceData.destinations.find(d => d.city === '釜山') || { price: 
 const threadsPost = `去日本韓國玩，千萬不要傻傻買破萬機票！
 
 今天黑白飛大數據觀測到的「真實全額含稅」甜甜買點：
-🗼 東京成田/羽田：NT$ ${tokyo.price.toLocaleString()}（${tokyo.status}）
-🐙 大阪關西機場：NT$ ${osaka.price.toLocaleString()}（${osaka.status}）
-🇰🇷 首爾仁川/金浦：NT$ ${seoul.price.toLocaleString()}（${seoul.status}）
-🏖️ 釜山金海機場：NT$ ${busan.price.toLocaleString()}（${busan.status}・激省必搶）
+🗼 東京成田/羽田：NT$ ${tokyo.price.toLocaleString()}（${tokyo.status}）👉 搶票：https://flybw.qzz.io/go/tokyo
+🐙 大阪關西機場：NT$ ${osaka.price.toLocaleString()}（${osaka.status}）👉 搶票：https://flybw.qzz.io/go/osaka
+🇰🇷 首爾仁川/金浦：NT$ ${seoul.price.toLocaleString()}（${seoul.status}）👉 搶票：https://flybw.qzz.io/go/seoul
+🏖️ 釜山金海機場：NT$ ${busan.price.toLocaleString()}（${busan.status}・激省必搶）👉 搶票：https://flybw.qzz.io/go/busan
 
 🔥 今日精選避坑攻略：
 ${featuredArticle ? featuredArticle.title : '日韓自由行新手防坑指南'}
@@ -75,7 +75,7 @@ ${featuredArticle ? featuredArticle.title : '日韓自由行新手防坑指南'}
 很多人到現場才知道踩雷！想避開排隊人潮、省下幾千塊冤枉錢？
 👇
 💬 留言「+1」或私訊我，直接傳送完整避坑地圖與手繪行程手帳給你！
-🔗 完整比價大盤：https://flybw.qzz.io
+🔗 完整即時比價大盤：https://flybw.qzz.io
 📖 攻略全文：https://flybw.qzz.io/articles/${featuredArticle ? featuredArticle.id : ''}
 
 #日本自由行 #廉航特價 #日韓旅遊 #機票比價 #黑白飛 #旅遊攻略`;
@@ -88,10 +88,10 @@ const fbPost = `✈️【黑白飛 Fly B&W】${dateStr} 每日日韓廉航行情
 
 📊 今日日韓熱門航線甜甜價指標：
 ---------------------------------------------
-🗼 台北 ⇄ 東京：NT$ ${tokyo.price.toLocaleString()} 起【${tokyo.status}】（酷航/樂桃/虎航清倉區間）
-🐙 台北 ⇄ 大阪：NT$ ${osaka.price.toLocaleString()} 起【${osaka.status}】（關西經典入手價）
-🇰🇷 台北 ⇄ 首爾：NT$ ${seoul.price.toLocaleString()} 起【${seoul.status}】（仁川/金浦直飛）
-🏖️ 台北 ⇄ 釜山：NT$ ${busan.price.toLocaleString()} 起【${busan.status}】（全站最殺小資航點，比首爾省近 2 千！）
+🗼 台北 ⇄ 東京：NT$ ${tokyo.price.toLocaleString()} 起【${tokyo.status}】👉 搶票傳送門：https://flybw.qzz.io/go/tokyo
+🐙 台北 ⇄ 大阪：NT$ ${osaka.price.toLocaleString()} 起【${osaka.status}】👉 搶票傳送門：https://flybw.qzz.io/go/osaka
+🇰🇷 台北 ⇄ 首爾：NT$ ${seoul.price.toLocaleString()} 起【${seoul.status}】👉 搶票傳送門：https://flybw.qzz.io/go/seoul
+🏖️ 台北 ⇄ 釜山：NT$ ${busan.price.toLocaleString()} 起【${busan.status}】👉 搶票傳送門：https://flybw.qzz.io/go/busan
 ---------------------------------------------
 
 💡 今日主編精選避雷必讀：
@@ -115,6 +115,12 @@ const linePost = `✈️ 黑白飛今日特價速報 (${dateStr}) ✈️
 
 哈囉！今天的日韓廉航甜甜價已經更新囉！
 今日釜山只要 NT$ ${busan.price.toLocaleString()}、東京只要 NT$ ${tokyo.price.toLocaleString()}，想快閃日韓快來看看！
+
+🎟️ 即時特價直達傳送門：
+🗼 東京比價：https://flybw.qzz.io/go/tokyo
+🐙 大阪比價：https://flybw.qzz.io/go/osaka
+🇰🇷 首爾比價：https://flybw.qzz.io/go/seoul
+🏖️ 釜山比價：https://flybw.qzz.io/go/busan
 
 本日必看攻略推薦：
 👉 ${featuredArticle ? featuredArticle.title : ''}
