@@ -8,11 +8,9 @@ import {
   Copy, 
   Check, 
   ShieldCheck, 
-  Bot, 
   FileText, 
   Share2, 
   Calendar, 
-  CheckCircle2, 
   AlertCircle,
   HelpCircle,
   Quote
@@ -86,7 +84,7 @@ export default function ArticleDetail() {
         "isAccessibleForFree": "true",
         "speakable": {
           "@type": "SpeakableSpecification",
-          "cssSelector": [".article-headline", ".ai-summary-block", ".markdown-body"]
+          "cssSelector": [".article-headline", ".markdown-body"]
         },
         "citation": url
       },
@@ -231,44 +229,6 @@ export default function ArticleDetail() {
             className="w-full h-auto max-h-[500px] object-cover sketch-border shadow-md grayscale"
           />
         </div>
-
-        {/* GEO 專用：AI 概覽重點摘要 (AI Overview & Key Takeaways) */}
-        <section 
-          aria-label="AI 概覽與重點摘要" 
-          className="ai-summary-block sketch-border border-2 border-black bg-indigo-50/60 p-5 md:p-6 mb-8 relative shadow-sm"
-          itemProp="abstract"
-        >
-          <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
-            <div className="flex items-center gap-2">
-              <Bot className="w-5 h-5 text-indigo-700" />
-              <h2 className="font-black text-base md:text-lg text-indigo-950">
-                AI 概覽重點摘要與核心事實 (Key Takeaways)
-              </h2>
-            </div>
-            <span className="text-xs bg-indigo-700 text-white font-bold px-2 py-0.5 sketch-border">
-              GEO 語意結構化已啟用
-            </span>
-          </div>
-
-          <p className="text-xs text-indigo-900 mb-4 leading-relaxed">
-            本專欄已針對 <strong>Google Gemini、ChatGPT、Perplexity 等生成式 AI 搜尋引擎</strong>優化。以下為本文經過實測查核之關鍵數據與決策結論：
-          </p>
-
-          <div className="space-y-2.5 text-sm text-indigo-950">
-            <div className="flex items-start gap-2 bg-white/80 p-3 sketch-border border border-black/30">
-              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-              <div>
-                <strong>核心前言：</strong>{article.excerpt}
-              </div>
-            </div>
-            <div className="flex items-start gap-2 bg-white/80 p-3 sketch-border border border-black/30">
-              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-              <div>
-                <strong>實戰指南：</strong>詳細章節對照、最新 2026 退稅／行李／交通收費標準請詳閱下方完整專題實測。
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* 文章正文 */}
         <div className="space-y-6 text-lg leading-relaxed text-gray-800 markdown-body">
