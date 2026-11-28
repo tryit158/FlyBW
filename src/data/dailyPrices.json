@@ -3,25 +3,25 @@
   "destinations": [
     {
       "city": "東京",
-      "price": 6890,
+      "price": 6850,
       "status": "激省",
       "link": "https://linkgo.one/s/DSzMZ"
     },
     {
       "city": "大阪",
-      "price": 6350,
-      "status": "可入手",
+      "price": 6290,
+      "status": "激省",
       "link": "https://onelink.one/s/AI7B7"
     },
     {
       "city": "首爾",
-      "price": 6120,
-      "status": "可入手",
+      "price": 5880,
+      "status": "激省",
       "link": "https://onelink.one/s/C49xv"
     },
     {
       "city": "釜山",
-      "price": 4580,
+      "price": 4380,
       "status": "激省",
       "link": "https://onelink.one/s/0StPx"
     }
