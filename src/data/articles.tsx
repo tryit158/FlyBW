@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins, QrCode, Wifi, Clock, Compass, Coffee, FileText, Receipt, Umbrella, Train, DollarSign, Building, BatteryCharging, Zap, CreditCard, Navigation, Utensils, Car, Package, RefreshCw, Tag, MousePointer, ShieldAlert, BadgePercent, Pill, Bus, HeartPulse, Scale, Luggage, UserCheck, ShowerHead, Moon, HelpCircle, Truck , MapPin } from 'lucide-react';
+import { XCircle, CloudRain, Leaf, Bomb, Sparkles, Lightbulb, Flame, Plane, Backpack, Smartphone, ShieldCheck, Map, Ship, CalendarDays, BedDouble, ShoppingCart, CheckCircle2, Ticket, AlertTriangle, Coins, QrCode, Wifi, Clock, Compass, Coffee, FileText, Receipt, Umbrella, Train, DollarSign, Building, BatteryCharging, Zap, CreditCard, Navigation, Utensils, Car, Package, RefreshCw, Tag, MousePointer, ShieldAlert, BadgePercent, Pill, Bus, HeartPulse, Scale, Luggage, UserCheck, ShowerHead, Moon, HelpCircle, Truck , MapPin, Snowflake, ShoppingBag } from 'lucide-react';
 
 export interface Article {
   id: string;
@@ -46,6 +46,298 @@ export const AffiliateFooter = () => (
 );
 
 export const articlesData: Article[] = [
+  {
+    id: 'hokkaido-sapporo-new-chitose-transport-winter-guide-2026',
+    category: '必讀攻略',
+    title: '【2026 北海道自由行新手攻略】新千歲機場 (CTS) 交通評比（JR 快速 Airport vs 機場巴士）、交通卡 Kitaca/Suica 範圍避雷、國內線航廈必買伴手禮與雪季防滑穿搭實測！',
+    author: '黑白飛特派團隊',
+    readTime: '13 分鐘',
+    image: 'https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=800&q=80',
+    imageAlt: '2026北海道自由行新千歲機場交通JR快速Airport機場巴士Kitaca交通卡避雷雪季防滑穿搭實測',
+    badge: '2026北海道新攻略',
+    excerpt: '想去北海道看雪、吃拉麵海鮮？第一次飛新千歲機場 (CTS) 的新手常踩三大坑：下機拖大行李擠不上 JR 快速 Airport 號、以為全北海道都能刷 Suica 交通卡結果被卡在出站剪票口、不知道 90% 的必買伴手禮與名店都在「國內線航廈」而提早過海關餓肚子！本篇整理 2026 最新新千歲機場進札幌/小樽交通評比、u-seat 指定席劃位秘訣、直達薄野大通的機場巴士隱藏搭法、Kitaca 適用範圍圖解，以及冬季防滑冰爪與玉米式穿法實測！',
+    content: (
+      <>
+        {/* 頂部速報與核心事實 */}
+        <div className="bg-sky-50 p-6 sketch-border mb-8 border-2 border-black relative">
+          <div className="absolute -top-3 -right-3 bg-black text-white px-3 py-1 text-xs font-bold sketch-border rotate-[-2deg]">
+            2026 最新北海道實測
+          </div>
+          <h3 className="font-bold text-lg text-sky-900 mb-2 flex items-center gap-2">
+            <Snowflake className="w-5 h-5 text-sky-700" /> 白雪與美食的國度！2026 新千歲機場 3 大行前必知核心
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed mb-3">
+            北海道是台灣人出國賞雪、滑雪與大啖帝王蟹海鮮的終極首選！但第一次抵達<strong>新千歲機場（CTS）</strong>的自由行旅客，最常遇到<strong>「大行李擠不進 JR 快速車廂」</strong>、<strong>「跨出札幌市區交通卡瞬間失效」</strong>以及<strong>「在太冷/太熱溫差中感冒」</strong>等突發狀況。
+          </p>
+          <div className="grid md:grid-cols-3 gap-3 text-xs text-gray-800 font-mono">
+            <div className="bg-white p-2.5 sketch-border border border-black">
+              📌 <strong>JR 指定席 u-seat</strong>：尖峰時段自由席極度擁擠且行李架有限，強烈建議加購 ¥840 指定席！
+            </div>
+            <div className="bg-white p-2.5 sketch-border border border-black">
+              📌 <strong>住薄野/大通選巴士</strong>：搭機場巴士免搬行李上下地鐵樓梯，直接在飯店門口下車！
+            </div>
+            <div className="bg-white p-2.5 sketch-border border border-black">
+              📌 <strong>國內線才是本體</strong>：90% 的伴手禮名店與拉麵道場都在「國內線」，回程務必提早 3.5 小時開逛！
+            </div>
+          </div>
+        </div>
+
+        {/* 區塊 1: 交通全評比 */}
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <Train className="w-6 h-6 text-indigo-600" /> 1. 新千歲機場 ➔ 札幌 / 小樽交通全評比：JR 快速 Airport vs 機場巴士怎麼選？
+        </h3>
+        <p className="text-sm text-gray-700 leading-relaxed mb-4">
+          新千歲機場距離札幌市中心約 45 公里，主要交通方式為 <strong>JR 鐵道</strong> 與 <strong>機場利木津巴士</strong>。兩者各有無法取代的優點，請依據您的「下榻飯店位置」與「同行人數行李量」挑選：
+        </p>
+
+        <div className="sketch-border p-4 bg-white border-2 border-black mb-8 overflow-x-auto">
+          <table className="w-full text-left border-collapse text-sm">
+            <thead>
+              <tr className="border-b-2 border-black bg-gray-100">
+                <th className="p-3 border-r-2 border-black font-black">交通方式</th>
+                <th className="p-3 border-r-2 border-black font-black">行車時間 (至札幌站)</th>
+                <th className="p-3 border-r-2 border-black font-black">單程票價 (成人)</th>
+                <th className="p-3 border-r-2 border-black font-black">大行李友善度</th>
+                <th className="p-3 font-black">適合族群與避坑要點</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y-2 divide-black">
+              <tr className="bg-blue-50/40">
+                <td className="p-3 border-r-2 border-black font-bold text-blue-900">
+                  JR 快速 Airport 號<br/>
+                  <span className="text-xs text-blue-700 font-normal">（快速エアポート）</span>
+                </td>
+                <td className="p-3 border-r-2 border-black text-xs font-mono font-bold text-gray-800">
+                  約 33 ~ 37 分鐘<br/>
+                  <span className="text-gray-500 font-normal">（特別快速僅需 33 分）</span>
+                </td>
+                <td className="p-3 border-r-2 border-black text-xs font-mono font-bold text-gray-900">
+                  自由席：¥1,150<br/>
+                  <span className="text-indigo-600">指定席 (u-seat)：¥1,990</span>
+                </td>
+                <td className="p-3 border-r-2 border-black text-xs text-amber-700">
+                  ⚠️ 自由席極擠<br/>
+                  指定席 4 號車有專屬行李區
+                </td>
+                <td className="p-3 text-xs text-gray-700 leading-relaxed">
+                  <strong>追求速度首選！</strong>班次極為密集（約 12 分鐘一班）。直達小樽約 73 分鐘。若攜帶 28 吋以上大行李，<strong>強烈建議多花 ¥840 劃位第 4 車廂「u-seat」</strong>，否則尖峰人潮連站立都很吃力！
+                </td>
+              </tr>
+              <tr>
+                <td className="p-3 border-r-2 border-black font-bold text-emerald-900">
+                  機場聯絡巴士<br/>
+                  <span className="text-xs text-emerald-700 font-normal">（北海道中央巴士/北都交通）</span>
+                </td>
+                <td className="p-3 border-r-2 border-black text-xs font-mono text-gray-800">
+                  約 60 ~ 80 分鐘<br/>
+                  <span className="text-gray-500 font-normal">（依雪地路況與市區車流）</span>
+                </td>
+                <td className="p-3 border-r-2 border-black text-xs font-mono font-bold text-gray-900">
+                  ¥1,300 ~ ¥1,400<br/>
+                  <span className="text-xs text-gray-500">（可用 IC 卡或售票機）</span>
+                </td>
+                <td className="p-3 border-r-2 border-black text-xs text-emerald-700 font-bold">
+                  ✅ 極佳！司機幫放行李艙
+                </td>
+                <td className="p-3 text-xs text-gray-700 leading-relaxed">
+                  <strong>住薄野 (Susukino) / 大通公園 / 中島公園的救星！</strong>免在札幌車站大迷航轉乘地鐵，更不用在結冰的雪地上推著 20 公斤大行李走 15 分鐘，巴士直停飯店門口，保溫又舒適！
+                </td>
+              </tr>
+              <tr className="bg-gray-50">
+                <td className="p-3 border-r-2 border-black font-bold text-gray-900">
+                  定額計程車 / 機場專車接送
+                </td>
+                <td className="p-3 border-r-2 border-black text-xs font-mono text-gray-800">
+                  約 50 ~ 60 分鐘
+                </td>
+                <td className="p-3 border-r-2 border-black text-xs font-mono font-bold text-gray-900">
+                  約 ¥13,000 ~ ¥16,000 / 車<br/>
+                  <span className="text-xs text-gray-500">（需事先預約定額制）</span>
+                </td>
+                <td className="p-3 border-r-2 border-black text-xs text-emerald-700 font-bold">
+                  ✅ 專車後車廂全載
+                </td>
+                <td className="p-3 text-xs text-gray-700 leading-relaxed">
+                  適合 3~4 人家庭、長輩長幼同行或深夜/清晨紅眼抵達者。平均一人約台幣 $800~$1,000，點到點直達最安心。
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* 區塊 2: 交通卡致命盲點 */}
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <AlertTriangle className="w-6 h-6 text-amber-600" /> 2. 交通卡致命陷阱：Kitaca / Suica 在北海道只有「札幌近郊」能刷！
+        </h3>
+        <div className="sketch-border p-5 bg-amber-50 border-2 border-black mb-8">
+          <h4 className="font-bold text-base text-amber-950 mb-2 flex items-center gap-2">
+            ⚠️ 慘痛真實案例：從札幌刷 iPhone Suica 去旭川看企鵝，出站直接被卡死！
+          </h4>
+          <p className="text-sm text-gray-800 leading-relaxed mb-3">
+            很多人習慣了東京或大阪「一張 Suica / ICOCA 走天下」的便利性，來到北海道就慘遭滑鐵盧！
+            <strong>北海道面積是台灣的 2.3 倍大，但 JR 北海道的 IC 卡（Kitaca、Suica、PASMO）感應機「僅建置在札幌近郊周邊 55 個車站」！</strong>
+          </p>
+          <div className="bg-white p-4 sketch-border border border-black space-y-2 text-xs text-gray-800">
+            <p>✅ <strong>可以刷 IC 卡的常用區間</strong>：</p>
+            <p className="pl-4 font-mono text-emerald-800 font-bold">
+              新千歲機場 ⇄ 札幌 ⇄ 小樽、札幌地鐵全線、札幌市電、札幌市區主要巴士。
+            </p>
+            <p className="pt-2 text-red-600 font-bold">❌ 絕對不能刷 IC 卡的觀光熱點：</p>
+            <p className="pl-4 font-mono text-red-700">
+              旭川（旭山動物園）、富良野、美瑛（青池）、登別溫泉、洞爺湖、函館、帶廣、釧路。
+            </p>
+            <p className="pt-2 text-gray-600 leading-relaxed">
+              💡 <strong>特派員防雷提醒</strong>：如果你從札幌刷卡進站搭特急列車前往旭川，抵達旭川後會發現沒有任何刷卡出站閘門！必須在人工窗口排隊由站務員開立證明、現金補票，且卡片還會處於「未出站異常狀態」，直到回到札幌站人工窗口才能解鎖消磁，白白浪費 30 分鐘！
+              <strong>只要跨出札幌近郊，請一律在售票機購買「實體磁條車票」或事先購買「JR 北海道鐵路周遊券」！</strong>
+            </p>
+          </div>
+        </div>
+
+        {/* 區塊 3: 機場購物與國內線秘密 */}
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <ShoppingBag className="w-6 h-6 text-rose-600" /> 3. 內行人才知道的新千歲秘密：為什麼回程要提早 3.5 小時去「國內線航廈」？
+        </h3>
+        <p className="text-sm text-gray-700 leading-relaxed mb-4">
+          新千歲機場被無數旅人評為<strong>「全日本最好逛、最好吃、最像百貨公司的機場」</strong>，但這句話的背後有一個巨大前提：<strong>絕不是國際線，而是「國內線航廈」！</strong>
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-5 mb-8">
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <h4 className="font-bold text-base text-gray-900 mb-2 flex items-center gap-2">
+              <Utensils className="w-5 h-5 text-orange-600" /> 國內線 3F：北海道拉麵道場 (Ramen Dojo)
+            </h4>
+            <p className="text-xs text-gray-700 leading-relaxed mb-3">
+              聚集了全北海道最強的 10 家拉麵名店！下了飛機或回國前，一定要來這裡嗑一碗熱騰騰的道地拉麵：
+            </p>
+            <ul className="text-xs text-gray-800 space-y-1.5 list-disc pl-4 font-mono">
+              <li><strong>一幻拉麵（えびそば一幻）</strong>：爆濃甜蝦頭熬製湯頭，長年排隊第一名！</li>
+              <li><strong>白樺山莊</strong>：札幌經典味噌拉麵，店內提供免費水煮蛋無限享用。</li>
+              <li><strong>弟子屈拉麵</strong>：摩周湖名水與道產醬油叉燒，濃醇回甘不油膩。</li>
+            </ul>
+          </div>
+
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <h4 className="font-bold text-base text-gray-900 mb-2 flex items-center gap-2">
+              <Sparkles className="w-5 h-5 text-amber-600" /> 國內線 2F：全日最狂伴手禮採購大道
+            </h4>
+            <p className="text-xs text-gray-700 leading-relaxed mb-3">
+              國際線過海關後的免稅店只有寥寥幾間，商品常被掃購一空。國內線 2 樓才是真正齊全的伴手禮聚落：
+            </p>
+            <ul className="text-xs text-gray-800 space-y-1.5 list-disc pl-4 font-mono">
+              <li><strong>北菓樓</strong>：「夢不思議大泡芙」酥皮薄脆爆漿卡士達，每人限購秒殺！</li>
+              <li><strong>六花亭</strong>：萊姆葡萄奶油夾心餅乾、草莓白巧克力球，機場直營齊全。</li>
+              <li><strong>LeTAO</strong>：小樽雙層乳酪蛋糕，店員可提供專用保冷袋打包上機。</li>
+              <li><strong>Royce' Chocolate World</strong>：現場透明工廠製作巧克力，造型限定款超可愛。</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-neutral-50 p-4 sketch-border border border-black mb-8 text-xs text-gray-800 leading-relaxed">
+          <p className="font-bold text-sm mb-1 text-neutral-900">🛫 聰明旅人的黃金回程動線（SOP）：</p>
+          <ol className="list-decimal pl-5 space-y-1 font-mono">
+            <li>起飛前 3.5 ~ 4 小時抵達新千歲機場「國際線航廈」。</li>
+            <li>先前往航空公司櫃台辦理報到與託運大行李（若櫃台未開，可先使用投幣置物櫃暫存）。</li>
+            <li>沿著 2 樓或 3 樓的「室內聯絡步道」步行 5 分鐘前往「國內線航廈」。</li>
+            <li>在國內線大啖拉麵、掃貨伴手禮（買完可裝進隨身手提袋，注意液體與乳酪布丁限制）。</li>
+            <li>起飛前 70 ~ 80 分鐘返回國際線過安檢出境，時間充裕不慌亂！</li>
+          </ol>
+        </div>
+
+        {/* 區塊 4: 雪季生存防滑與穿搭 */}
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <ShieldAlert className="w-6 h-6 text-blue-600" /> 4. 冬季防寒防滑生存指南：不想在雪地摔成骨折？冰爪與「玉米式穿法」實測
+        </h3>
+        <p className="text-sm text-gray-700 leading-relaxed mb-4">
+          北海道冬天的室內與室外是「兩個完全不同的世界」：室外氣溫常年 -5°C 到 -15°C，但電車與室內商場暖氣開到爆表的 22°C~25°C！如果穿著錯誤，不僅會熱到全身冒汗感冒，還會在結冰路面摔得四腳朝天。
+        </p>
+
+        <div className="space-y-4 mb-8">
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <h4 className="font-bold text-base text-gray-900 mb-2 flex items-center gap-2">
+              <Zap className="w-5 h-5 text-amber-500" /> 鞋底結冰剋星：便利商店 ¥1,200「防滑冰爪鞋套」必買！
+            </h4>
+            <p className="text-sm text-gray-700 leading-relaxed mb-2">
+              台灣旅客常穿一般的慢跑鞋、球鞋或平底靴就衝去北海道。在鬆軟新雪上走還好，一旦走到被人群踩實結冰的<strong>「黑冰路面（Black Ice）」</strong>，摩擦力直接歸零，隨便一踩就是後腦杓著地或手腕骨折！
+            </p>
+            <div className="bg-gray-50 p-3 sketch-border border border-black text-xs text-gray-800 space-y-1 font-mono">
+              <p>🥾 <strong>解法一（最划算）</strong>：在札幌機場或市區超商（Lawson / 7-11 / Seicomart），直接跟店員買<strong>「スベラナイズ（防滑鞋套/冰爪）」</strong>，約 ¥1,000 ~ ¥1,500 日圓，直接套在自己球鞋外面，金屬釘爪能狠狠咬住冰面！</p>
+              <p>🥾 <strong>解法二</strong>：走路時切記採用<strong>「企鵝步伐」</strong>：重心微向前傾、步伐放小、腳底全平面垂直著地，絕不要用腳後跟著地！</p>
+            </div>
+          </div>
+
+          <div className="sketch-border p-5 bg-white border-2 border-black">
+            <h4 className="font-bold text-base text-gray-900 mb-2 flex items-center gap-2">
+              <Compass className="w-5 h-5 text-indigo-600" /> 拒絕洋蔥式！北海道唯一正解是「玉米式穿搭」
+            </h4>
+            <p className="text-sm text-gray-700 leading-relaxed mb-2">
+              很多人習慣穿「發熱衣 + 襯衫 + 毛衣 + 外套」好幾層，一進室內暖氣房無法脫掉毛衣，直接在室內悶出大汗，走回室外寒風一吹立刻中風感冒！
+            </p>
+            <div className="grid md:grid-cols-3 gap-3 text-xs text-gray-800 font-mono mt-2">
+              <div className="p-3 bg-neutral-50 sketch-border border border-black">
+                <strong>內層（透氣發熱）</strong><br/>
+                一件薄款吸濕排汗發熱衣（避免穿太厚），維持肌膚乾爽。
+              </div>
+              <div className="p-3 bg-neutral-50 sketch-border border border-black">
+                <strong>中層（普通便服）</strong><br/>
+                普通長袖大學 T 或長袖襯衫，進入室內只需單穿這一件。
+              </div>
+              <div className="p-3 bg-neutral-50 sketch-border border border-black">
+                <strong>外層（絕對防禦）</strong><br/>
+                一件高蓬鬆度、長版、防風、防水的連帽厚羽絨大衣，一進室內直接整件脫下！
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 區塊 5: 行前總結與檢查清單 */}
+        <h3 className="text-2xl font-bold mt-8 mb-4 inline-flex items-center gap-2 sketch-border px-4 py-1.5 bg-gray-100">
+          <CheckCircle2 className="w-6 h-6 text-emerald-600" /> 5. 特派員總結：2026 北海道自由行 4 大關鍵裝備清單
+        </h3>
+        <p className="text-sm text-gray-700 leading-relaxed mb-4">
+          收拾行李出發前，請對照以下 4 項關鍵裝備，確保您的北國假期萬無一失：
+        </p>
+
+        <div className="space-y-3 mb-8 text-sm">
+          <div className="sketch-border p-4 bg-white border-2 border-black flex items-start gap-3">
+            <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+            <div>
+              <strong className="text-gray-900">1. 雙網高覆蓋吃到飽 eSIM / 上網卡</strong>
+              <p className="text-xs text-gray-600 mt-1">
+                北海道佔地遼闊，小樽天狗山、定山溪、旭川或美瑛郊區對訊號要求極高。建議挑選支援日本三大電信（Docomo / SoftBank）自動切換之吃到飽網卡，才不會在雪山地圖大迷路。
+              </p>
+            </div>
+          </div>
+          <div className="sketch-border p-4 bg-white border-2 border-black flex items-start gap-3">
+            <Umbrella className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
+            <div>
+              <strong className="text-gray-900">2. 冬季旅遊不便險（含班機延誤與意外醫療）</strong>
+              <p className="text-xs text-gray-600 mt-1">
+                冬季新千歲機場遇暴風雪經常跑道關閉除雪，班機延誤 4~6 小時甚至停飛是家常便飯。出發前務必投保足額的旅遊不便險，保留所有餐飲住宿收據與延誤證明。
+              </p>
+            </div>
+          </div>
+          <div className="sketch-border p-4 bg-white border-2 border-black flex items-start gap-3">
+            <Luggage className="w-5 h-5 text-indigo-600 shrink-0 mt-0.5" />
+            <div>
+              <strong className="text-gray-900">3. 隨身行李秤與真空壓縮袋</strong>
+              <p className="text-xs text-gray-600 mt-1">
+                厚重羽絨外套、雪靴與六花亭伴手禮極易佔用空間並超重！利用手動壓縮袋將衣物體積縮小 50%，並隨時以行李秤監控重量，避免在廉航登機門被開罰高額超重費。
+              </p>
+            </div>
+          </div>
+          <div className="sketch-border p-4 bg-white border-2 border-black flex items-start gap-3">
+            <Clock className="w-5 h-5 text-purple-600 shrink-0 mt-0.5" />
+            <div>
+              <strong className="text-gray-900">4. 行程預約與 u-seat 劃位時程</strong>
+              <p className="text-xs text-gray-600 mt-1">
+                出發前一個月可透過 JR 官方網站預約 JR 快速 Airport 指定席 u-seat；若欲造訪熱門企鵝散步或美瑛一日遊，也請及早預訂專屬中文一日遊巴士行程！
+              </p>
+            </div>
+          </div>
+        </div>
+      </>
+    ),
+  },
   {
     id: 'northern-kyushu-fukuoka-kumamoto-aso-yufuin-guide-2026',
     category: '必讀攻略',
